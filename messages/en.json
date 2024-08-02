@@ -1,0 +1,12 @@
+{
+  "Home": {
+    "title": "Exclusive distributor of <distributor>GULP</distributor> brand lubricants.",
+    "description": "Exclusive distributor of <distributor>GALP</distributor> products from <parent>PETROGAL</parent>"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about_us": "About Us",
+    "lubricants": "Lubricants",
+    "contact": "Contact"
+  }
+}
