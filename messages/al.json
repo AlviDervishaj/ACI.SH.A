@@ -8,5 +8,9 @@
     "about_us": "Rreth Nesh",
     "lubricants": "Lubrifikantet",
     "contact": "Kontakto"
+  },
+  "LocaleSwitcher": {
+    "label": "Ndrysho gjuhen",
+    "locale": "{locale, select, al {🇦🇱  Shqip} en {🇺🇸 Anglisht} other {Unknown}}"
   }
 }

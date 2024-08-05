@@ -1,4 +1,3 @@
-"use client";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -13,8 +12,8 @@ import clsx from "clsx";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Spacer } from "@nextui-org/spacer";
-import { Button } from "@nextui-org/button";
-import { usePathname, useRouter } from "next/navigation";
+
+import { LocaleSwitcher } from "../LocaleSwitcher";
 
 import { Link as NextLink } from "@/config/routing";
 import { siteConfig } from "@/config/site";
@@ -23,8 +22,6 @@ import { SearchIcon } from "@/components/icons";
 
 export const Navigation = () => {
   const t = useTranslations("Navigation");
-  const p = usePathname();
-  const router = useRouter();
   const searchInput = (
     <Input
       aria-label="Search"
@@ -40,14 +37,6 @@ export const Navigation = () => {
       type="search"
     />
   );
-
-  function handleLocaleChange() {
-    const newLocale = p.includes("/en") ? "/al" : "/en";
-
-    router.replace(newLocale);
-
-    return;
-  }
 
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
@@ -91,57 +80,14 @@ export const Navigation = () => {
         justify="end"
       >
         <ThemeSwitch />
-        <Button
-          className={"w-10 h-10 relative"}
-          variant={"light"}
-          onClick={handleLocaleChange}
-        >
-          {p.includes("/en") ? (
-            <Image
-              alt={"Albania Flag"}
-              className={"aspect-square"}
-              height={512}
-              src={"/images/languages/albania.png"}
-              width={512}
-            />
-          ) : (
-            <Image
-              alt={"US Flag"}
-              className={"aspect-square"}
-              height={512}
-              src={"/images/languages/united-states.png"}
-              width={512}
-            />
-          )}
-        </Button>
+        <LocaleSwitcher />
         {/*
           <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
           */}
       </NavbarContent>
 
       <NavbarContent className="lg:hidden basis-1 pl-4" justify="end">
-        <Button
-          className={"w-4 relative"}
-          variant={"light"}
-          onClick={handleLocaleChange}
-        >
-          {p.includes("/en") ? (
-            <Image
-              alt={"Albania Flag"}
-              height={256}
-              src={"/images/languages/albania.png"}
-              width={256}
-            />
-          ) : (
-            <Image
-              alt={"US Flag"}
-              className={"aspect-square"}
-              height={256}
-              src={"/images/languages/united-states.png"}
-              width={256}
-            />
-          )}
-        </Button>
+        <LocaleSwitcher />
         <ThemeSwitch />
         <Spacer x={2} />
         <NavbarMenuToggle />

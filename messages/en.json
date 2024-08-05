@@ -8,5 +8,9 @@
     "about_us": "About Us",
     "lubricants": "Lubricants",
     "contact": "Contact"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, al {🇦🇱  Albanian} en {🇺🇸 English} other {Unknown}}"
   }
 }
