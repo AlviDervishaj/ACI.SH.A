@@ -1,3 +1,4 @@
+"use client";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -8,18 +9,22 @@ import {
 } from "@nextui-org/navbar";
 import { Input } from "@nextui-org/input";
 import { link as linkStyles } from "@nextui-org/theme";
-import NextLink from "next/link";
 import clsx from "clsx";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Link } from "@nextui-org/link";
+import { Spacer } from "@nextui-org/spacer";
+import { Button } from "@nextui-org/button";
+import { usePathname, useRouter } from "next/navigation";
 
+import { Link as NextLink } from "@/config/routing";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { GithubIcon, SearchIcon } from "@/components/icons";
+import { SearchIcon } from "@/components/icons";
 
 export const Navigation = () => {
   const t = useTranslations("Navigation");
+  const p = usePathname();
+  const router = useRouter();
   const searchInput = (
     <Input
       aria-label="Search"
@@ -35,6 +40,14 @@ export const Navigation = () => {
       type="search"
     />
   );
+
+  function handleLocaleChange() {
+    const newLocale = p.includes("/en") ? "/al" : "/en";
+
+    router.replace(newLocale);
+
+    return;
+  }
 
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
@@ -57,6 +70,7 @@ export const Navigation = () => {
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
+                prefetch
                 className={clsx(
                   linkStyles({ color: "foreground" }),
                   "data-[active=true]:text-primary data-[active=true]:font-medium",
@@ -73,41 +87,63 @@ export const Navigation = () => {
 
       {/* Small Screen Navigation */}
       <NavbarContent
-        className="hidden md:flex basis-1/5 sm:basis-full"
+        className="hidden lg:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        {/*
-        <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal aria-label="Twitter" href={siteConfig.links.twitter}>
-            <TwitterIcon className="text-default-500" />
-          </Link>
-          <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
-            <DiscordIcon className="text-default-500" />
-          </Link>
-          <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-            <GithubIcon className="text-default-500" />
-          </Link>
-        </NavbarItem>
-
-        <NavbarItem className="hidden md:flex">
-          <Button
-            isExternal
-            as={Link}
-            className="text-sm font-normal text-default-600 bg-default-100"
-            href={siteConfig.links.sponsor}
-            startContent={<HeartFilledIcon className="text-danger" />}
-            variant="flat"
-          >
-            Sponsor
-          </Button>
-        </NavbarItem>
-        */}
         <ThemeSwitch />
-        <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
+        <Button
+          className={"w-10 h-10 relative"}
+          variant={"light"}
+          onClick={handleLocaleChange}
+        >
+          {p.includes("/en") ? (
+            <Image
+              alt={"Albania Flag"}
+              className={"aspect-square"}
+              height={512}
+              src={"/images/languages/albania.png"}
+              width={512}
+            />
+          ) : (
+            <Image
+              alt={"US Flag"}
+              className={"aspect-square"}
+              height={512}
+              src={"/images/languages/united-states.png"}
+              width={512}
+            />
+          )}
+        </Button>
+        {/*
+          <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
+          */}
       </NavbarContent>
 
-      <NavbarContent className="md:hidden basis-1 pl-4" justify="end">
+      <NavbarContent className="lg:hidden basis-1 pl-4" justify="end">
+        <Button
+          className={"w-4 relative"}
+          variant={"light"}
+          onClick={handleLocaleChange}
+        >
+          {p.includes("/en") ? (
+            <Image
+              alt={"Albania Flag"}
+              height={256}
+              src={"/images/languages/albania.png"}
+              width={256}
+            />
+          ) : (
+            <Image
+              alt={"US Flag"}
+              className={"aspect-square"}
+              height={256}
+              src={"/images/languages/united-states.png"}
+              width={256}
+            />
+          )}
+        </Button>
         <ThemeSwitch />
+        <Spacer x={2} />
         <NavbarMenuToggle />
       </NavbarContent>
 
@@ -120,6 +156,7 @@ export const Navigation = () => {
               className="font-xl"
             >
               <NextLink
+                prefetch
                 className={clsx(
                   linkStyles({ color: "foreground", size: "lg" }),
                   "data-[active=true]:text-primary data-[active=true]:font-medium",

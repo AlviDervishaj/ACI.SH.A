@@ -40,7 +40,7 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html suppressHydrationWarning lang={locale}>
+    <html lang={locale}>
       <head />
       <body
         className={clsx(
@@ -52,7 +52,7 @@ export default async function RootLayout({
           <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
             <div className="relative flex flex-col h-screen">
               <Navigation />
-              <main className="container mx-auto max-w-7xl pt-16 lg:pt-0 px-6 flex-grow">
+              <main className="container mx-auto max-w-7xl flex-grow">
                 {children}
               </main>
               <Footer />

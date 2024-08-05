@@ -15,11 +15,11 @@ export const siteConfig = {
     },
     {
       label: "lubricants",
-      href: "/blog",
+      href: "/lubricants",
     },
     {
       label: "contact",
-      href: "/pricing",
+      href: "/contact",
     },
   ],
   navMenuItems: [
@@ -33,11 +33,11 @@ export const siteConfig = {
     },
     {
       label: "lubricants",
-      href: "/blog",
+      href: "/lubricants",
     },
     {
       label: "contact",
-      href: "/pricing",
+      href: "/contact",
     },
   ],
   links: {
