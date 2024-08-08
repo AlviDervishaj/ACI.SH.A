@@ -40,17 +40,17 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html className={"w-full h-fit overflow-x-hidden relative"} lang={locale}>
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
+          "w-full h-fit bg-background font-sans antialiased",
           fontSans.variable,
         )}
       >
         <NextIntlClientProvider messages={messages}>
           <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-            <div className="relative flex flex-col h-screen">
+            <div className="relative flex flex-col h-fit">
               <Navigation />
               <main className="container mx-auto max-w-7xl flex-grow">
                 {children}

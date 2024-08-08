@@ -12,5 +12,8 @@
   "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, al {🇦🇱  Albanian} en {🇺🇸 English} other {Unknown}}"
+  },
+  "OilProducts": {
+    "viewMore": "View More"
   }
 }

@@ -10,5 +10,9 @@ export function Footer() {
         <p className="text-primary">+355 69 20 76 459</p>
       </Link>
    * */
-  return <footer className="w-full flex items-center justify-center py-3" />;
+  return (
+    <footer className="w-full flex items-center justify-center py-3">
+      <h1>End</h1>
+    </footer>
+  );
 }

@@ -12,5 +12,8 @@
   "LocaleSwitcher": {
     "label": "Ndrysho gjuhen",
     "locale": "{locale, select, al {🇦🇱  Shqip} en {🇺🇸 Anglisht} other {Unknown}}"
+  },
+  "OilProducts": {
+    "viewMore": "Shiko me Shume"
   }
 }

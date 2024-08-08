@@ -10,7 +10,7 @@ export function ParallaxBackground({ children }: { children: ReactNode }) {
         { image: "/images/oil-pouring.jpg", speed: -20 },
 
         {
-          speed: -15,
+          speed: 50,
           children: children,
         },
         { image: "/images/oil-pouring.jpg", speed: -10 },
