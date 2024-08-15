@@ -1,7 +1,27 @@
 import { tv } from "tailwind-variants";
 
+export const footer = tv({
+  base: "w-full h-full relative flex flex-col md:flex-row-reverse items-center content-center justify-evenly p-4",
+  variants: {
+    color: {
+      violet: "bg-gradient-to-b from-[#FF1CF7] to-[#b249f8]",
+      yellow: "bg-gradient-to-b from-[#FF705B] to-[#FFB457]",
+      blue: "bg-gradient-to-b from-[#5EA2EF] to-[#0072F5]",
+      cyan: "bg-gradient-to-b from-[#00b7fa] to-[#01cfea]",
+      green: "bg-gradient-to-b from-[#6FEE8D] to-[#17c964]",
+      pink: "bg-gradient-to-b from-[#FF72E1] to-[#F54C7A]",
+      orange: "bg-gradient-to-b from-orange-500 to-yellow-600/80",
+      foreground: "bg-gradient-to-b dark:from-[#FFFFFF] dark:to-[#4B4B4B]",
+    },
+  },
+  defaultVariants: {
+    color: "orange",
+  },
+
+})
+
 export const title = tv({
-  base: "tracking-tight inline font-semibold",
+  base: "tracking-wide inline font-bold",
   variants: {
     color: {
       violet: "from-[#FF1CF7] to-[#b249f8]",
@@ -16,7 +36,7 @@ export const title = tv({
     size: {
       sm: "text-3xl lg:text-4xl",
       md: "text-[2.3rem] lg:text-5xl leading-9",
-      lg: "text-4xl lg:text-6xl",
+      lg: "text-4xl lg:text-7xl",
     },
     fullWidth: {
       true: "w-full block",

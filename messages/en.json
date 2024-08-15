@@ -1,7 +1,9 @@
 {
   "Home": {
-    "title": "Exclusive distributor of <distributor>GULP</distributor> brand lubricants.",
-    "description": "Exclusive distributor of <distributor>GALP</distributor> products from <parent>PETROGAL</parent>"
+    "title": "AÇI SH.A",
+    "description": "Exclusive distributor of <distributor>GALP</distributor> products from <parent>PETROGAL</parent>",
+    "see_below": "<component>PETROGAL</component> Lubricants.",
+    "header_description": "Official Distributor of <distributor>GULP</distributor> products"
   },
   "Navigation": {
     "home": "Home",
@@ -15,5 +17,9 @@
   },
   "OilProducts": {
     "viewMore": "View More"
+  },
+  "Footer": {
+    "subscribe": "Subscribe",
+    "help": "Help"
   }
 }

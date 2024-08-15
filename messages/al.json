@@ -1,7 +1,9 @@
 {
   "Home": {
-    "title": "Distributor ekskluziv i lubrifikantëve të markës <distributor>GALP</distributor>.",
-    "description": "Lubrifikante per Automjete e Industri - Bateri Automjetesh - Vaj Motorri per makina. Distributor ekskluziv i produkteve <distributor>GALP</distributor> nga kompania <parent>PETROGAL</parent>"
+    "title": "AÇI SH.A",
+    "description": "Lubrifikante per Automjete e Industri - Bateri Automjetesh - Vaj Motorri per makina. Distributor ekskluziv i produkteve <distributor>GALP</distributor> nga kompania <parent>PETROGAL</parent>",
+    "see_below": "Lubrifikantet <component>PETROGAL</component>.",
+    "header_description": "Distributor zyrtar i <distributor>GULP</distributor>"
   },
   "Navigation": {
     "home": "Faqja Kryesore",
@@ -15,5 +17,9 @@
   },
   "OilProducts": {
     "viewMore": "Shiko me Shume"
+  },
+  "Footer": {
+    "subscribe": "Rregjistrohu",
+    "help": "Ndihma"
   }
 }

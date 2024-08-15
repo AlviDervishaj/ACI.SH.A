@@ -8,7 +8,6 @@ export function ParallaxBackground({ children }: { children: ReactNode }) {
       className="aspect-[2/1] w-full h-full"
       layers={[
         { image: "/images/oil-pouring.jpg", speed: -20 },
-
         {
           speed: 50,
           children: children,

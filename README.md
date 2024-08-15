@@ -1,5 +1,16 @@
 # AÇI SH.A
 
+## DEVELOPER TODOS
+
+- [ ] Remove animation when scrolling back up on elements. Make it only on first load.
+- [ ] Footer styling on small screen.
+- [ ] Footer input switch to ShadCN.
+- [ ] Card Links.
+- [ ] Search.
+- [ ] Search Indexing.
+- [ ] Dark Mode Logo & Light Mode Logo
+- [ ] Lubricants Heading too long on small screen. 
+
 ## Technologies Used
 
 - [Next.js 14](https://nextjs.org/docs/getting-started)
@@ -10,21 +21,6 @@
 - [Framer Motion](https://www.framer.com/motion/)
 - [next-themes](https://github.com/pacocoursey/next-themes)
 
-## How to Use
-
-### Install dependencies
-
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
-
-```bash
-npm install
-```
-
-### Run the development server
-
-```bash
-npm run dev
-```
 
 ## License
 
