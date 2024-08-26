@@ -13,11 +13,11 @@ type OilProps = {
 
 export function OilCard({ title, description, image, imageStyle }: OilProps) {
   return (
-    <Link href={`/oil/${title.toLowerCase()}/`}>
+    <Link href={`/oil/${title.toLowerCase()}/`} className="w-fit h-fit">
       <Card
-        className="md:w-[250px] md:h-[250px] w-[250px] h-[250px] group col-span-12 sm:col-span-5 border-3 border-transparent hover:border-yellow-600 transition-transform-colors duration-1000 ease-in-out"
+        className="group w-fit h-fit border-3 border-transparent hover:border-yellow-600 transition-transform-colors duration-1000 ease-in-out"
       >
-        <CardHeader className="absolute z-10 top-1 flex-col items-start">
+        <CardHeader className="absolute z-10 flex-col items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">
             {description}
           </p>
@@ -29,7 +29,7 @@ export function OilCard({ title, description, image, imageStyle }: OilProps) {
           removeWrapper
           alt="Card example background"
           className={clsx(
-            "z-0 w-full h-full scale-125 translate-y-7 translate-x-0 object-cover",
+            "z-0 object-cover md:w-[250px] md:h-[250px] w-[150px] h-[150px] ",
             imageStyle,
           )}
           src={image}
