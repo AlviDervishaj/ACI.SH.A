@@ -1,7 +1,7 @@
 import { tv } from "tailwind-variants";
 
 export const footer = tv({
-  base: "w-full h-full relative flex flex-col md:flex-row-reverse items-center content-center justify-evenly p-4",
+  base: "w-full h-full relative flex flex-col md:flex-row md:gap-0 gap-5 items-start content-center justify-evenly p-4",
   variants: {
     color: {
       violet: "bg-gradient-to-b from-[#FF1CF7] to-[#b249f8]",

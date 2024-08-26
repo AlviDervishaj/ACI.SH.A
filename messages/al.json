@@ -3,13 +3,14 @@
     "title": "AÇI SH.A",
     "description": "Lubrifikante per Automjete e Industri - Bateri Automjetesh - Vaj Motorri per makina. Distributor ekskluziv i produkteve <distributor>GALP</distributor> nga kompania <parent>PETROGAL</parent>",
     "see_below": "Lubrifikantet <component>PETROGAL</component>.",
-    "header_description": "Distributor zyrtar i <distributor>GULP</distributor>"
+    "header_description": "Distributor zyrtar i <distributor>GULP</distributor>."
   },
   "Navigation": {
     "home": "Faqja Kryesore",
     "about_us": "Rreth Nesh",
     "lubricants": "Lubrifikantet",
-    "contact": "Kontakto"
+    "contact": "Kontakto",
+    "search_text": "Kerko..."
   },
   "LocaleSwitcher": {
     "label": "Ndrysho gjuhen",
@@ -20,6 +21,7 @@
   },
   "Footer": {
     "subscribe": "Rregjistrohu",
-    "help": "Ndihma"
+    "help": "Ndihma",
+    "which_is_better": "Cili lubrifikant eshte me optimal ?"
   }
 }

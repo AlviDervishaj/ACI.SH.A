@@ -6,7 +6,7 @@ export function FadeInHeader({ children, delay }: { children: ReactNode, delay?:
   return (
     <motion.h1
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
       transition={{
         duration: 0.8,
         ease: "easeInOut",

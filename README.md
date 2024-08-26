@@ -25,3 +25,7 @@
 ## License
 
 Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
+
+## RUN :
+- [ ] sudo pacman -S autoconf automake autoconf-archive
+- [ ] 

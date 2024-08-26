@@ -4,6 +4,5 @@ export default function SingleOilSupplierPage({
   params: { supplier: string };
 }) {
   const { supplier } = params;
-
   return <h1>{supplier}</h1>;
 }

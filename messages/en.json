@@ -3,13 +3,14 @@
     "title": "AÇI SH.A",
     "description": "Exclusive distributor of <distributor>GALP</distributor> products from <parent>PETROGAL</parent>",
     "see_below": "<component>PETROGAL</component> Lubricants.",
-    "header_description": "Official Distributor of <distributor>GULP</distributor> products"
+    "header_description": "Official Distributor of <distributor>GULP</distributor> products."
   },
   "Navigation": {
     "home": "Home",
     "about_us": "About Us",
     "lubricants": "Lubricants",
-    "contact": "Contact"
+    "contact": "Contact",
+    "search_text": "Search..."
   },
   "LocaleSwitcher": {
     "label": "Change language",
@@ -20,6 +21,7 @@
   },
   "Footer": {
     "subscribe": "Subscribe",
-    "help": "Help"
+    "help": "Help",
+    "which_is_better": "Which lubricant is better ?"
   }
 }

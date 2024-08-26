@@ -39,6 +39,7 @@ export default async function RootLayout({
   // side is the easiest way to get started
   const messages = await getMessages();
 
+
   return (
     <html className={"w-full h-fit overflow-x-hidden relative"} lang={locale}>
       <head />

@@ -1,12 +1,11 @@
 "use client";
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { title } from "@/components/primitives";
 
 export function OilCompaniesHeader() {
   const t = useTranslations("Home");
   return (
-    <motion.h2
+    <h2
       className={title({
         size: "md",
         className:
@@ -20,6 +19,6 @@ export function OilCompaniesHeader() {
           </p>
         ),
       })}
-    </motion.h2>
+    </h2>
   )
 }

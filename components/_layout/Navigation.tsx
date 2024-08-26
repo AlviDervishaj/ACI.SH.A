@@ -30,7 +30,7 @@ export const Navigation = () => {
         input: "text-sm",
       }}
       labelPlacement="outside"
-      placeholder="Search..."
+      placeholder={t("search_text")}
       startContent={
         <SearchIcon className="text-base text-default-400 pointer-events-none flex-shrink-0" />
       }
@@ -79,11 +79,9 @@ export const Navigation = () => {
         className="hidden lg:flex basis-1/5 sm:basis-full"
         justify="end"
       >
+        <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
         <ThemeSwitch />
         <LocaleSwitcher />
-        {/*
-          <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
-          */}
       </NavbarContent>
 
       <NavbarContent className="lg:hidden basis-1 pl-4" justify="end">
