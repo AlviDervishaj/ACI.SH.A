@@ -1,13 +1,33 @@
-import { useTranslations } from "next-intl";
+import { useFormatter, useTranslations } from "next-intl";
 import { Card, CardBody, CardFooter } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
-type Item = { title: string, image: string, price: string, description?: string }
+import { useEffect, useState } from "react";
+type Item = { title: string, image: string, price: number, description?: string }
 type Props = {
   items: Array<Item>
 }
 
 export function BestSellers({ items }: Props) {
   const t = useTranslations("Home");
+  const numberF = useFormatter();
+
+  const [sortedItems, setSortedItems] = useState<typeof items>([]);
+
+  useEffect(() => {
+    items.sort((a, b) => {
+      if (a.price > b.price) {
+        console.log("a bigger", a);
+        return 1;
+      }
+      else if (a.price < b.price) {
+        console.log("b bigger", b);
+        return -1;
+      }
+      else return 0;
+    })
+    setSortedItems(items);
+  }, [items])
+
   return (
     <div
       className="py-8 lg:w-[850px] space-y-4"
@@ -17,7 +37,7 @@ export function BestSellers({ items }: Props) {
         {t("best_sellers")}
       </h2>
       <section className={`gap-2 grid p-2 w-full grid-cols-${items.length} px-4 py-6`}>
-        {items.length >= 1 ?
+        {sortedItems.length >= 1 ?
           items.map((item, index) => {
             return (
               <Card
@@ -40,7 +60,7 @@ export function BestSellers({ items }: Props) {
                 </CardBody>
                 <CardFooter className="text-small justify-between">
                   <b className="font-bold tracking-wider">{item.title}</b>
-                  <p className="text-default-500">{item.price}</p>
+                  <p className="text-default-500">{numberF.number(item.price, { style: "currency", currency: "USD" })}</p>
                 </CardFooter>
               </Card>
             )

@@ -12,6 +12,9 @@
 - [x] Lubricants Heading too long on small screen. 
 - [ ] Fetching data. 
 - [ ] Components Reusable !!!
+- [x] Best Selling sorted base on price.
+- [ ] Remove re-renders in best sellers filtering based on price. 
+- [ ] 
 
 ## Technologies Used
 

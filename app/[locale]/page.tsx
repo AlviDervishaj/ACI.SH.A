@@ -1,12 +1,12 @@
 "use client";
 import { MainHeaderBackground } from "@/components/MainHeaderBackground";
 import { BestSellers } from "@/components/oil/BestSellers";
-type Item = { title: string, image: string, price: string, description?: string }
+type Item = { title: string, image: string, price: number, description?: string }
 
 const bestSellers: Array<Item> = [
-  { title: "Oil 1", image: "/images/repsol-car.jpg", price: "$19.99" },
-  { title: "Oil 1", image: "/images/prefix.jpg", price: "$19.99" },
-  { title: "Oil 1", image: "/images/galp.png", price: "$19.99" },
+  { title: "Oil 1", image: "/images/repsol-car.jpg", price: 19.99 },
+  { title: "Oil 2", image: "/images/prefix.jpg", price: 1.99 },
+  { title: "Oil 3", image: "/images/galp.png", price: 9.99 },
 ]
 
 
