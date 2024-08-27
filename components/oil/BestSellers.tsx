@@ -10,33 +10,36 @@ export function BestSellers({ items }: Props) {
   const t = useTranslations("Home");
   return (
     <div
-      className="py-8"
+      className="py-8 lg:w-[850px] space-y-4"
     >
       <h2
         className={"tracking-wide inline font-bold text-center text-[2.3rem] lg:text-5xl leading-9 p-4"}>
         {t("best_sellers")}
       </h2>
-      <section className={`gap-2 grid p-2 grid-cols-${items.length} px-4 py-6`}>
+      <section className={`gap-2 grid p-2 w-full grid-cols-${items.length} px-4 py-6`}>
         {items.length >= 1 ?
-          items.map((item) => {
+          items.map((item, index) => {
             return (
               <Card
                 shadow="lg"
                 isPressable
-                key={`${item.title} ${item.description}`}
-                onPress={() => { }}>
+                isHoverable
+                key={`${item.title} ${item.description} ${index}`}
+                onPress={() => { }}
+                className={"w-fit h-fit"}
+              >
                 <CardBody className="overflow-visible p-0">
                   <Image
+                    className="w-full object-cover w-[140px] h-[140px] md:h-48 md:w-48"
                     shadow={"sm"}
                     radius={"lg"}
                     width="100%"
                     alt={item.title}
-                    className="w-full object-cover w-[140px] h-[140px] md:h-48 md:w-48"
                     src={item.image}
                   />
                 </CardBody>
                 <CardFooter className="text-small justify-between">
-                  <b>{item.title}</b>
+                  <b className="font-bold tracking-wider">{item.title}</b>
                   <p className="text-default-500">{item.price}</p>
                 </CardFooter>
               </Card>

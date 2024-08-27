@@ -2,14 +2,16 @@
 
 ## DEVELOPER TODOS
 
-- [ ] Remove animation when scrolling back up on elements. Make it only on first load.
-- [ ] Footer styling on small screen.
-- [ ] Footer input switch to ShadCN.
-- [ ] Card Links.
+- [x] Remove animation when scrolling back up on elements. Make it only on first load.
+- [x] Footer styling on small screen.
+- [x] Footer input switch to ShadCN.
+- [x] Card Links.
 - [ ] Search.
 - [ ] Search Indexing.
-- [ ] Dark Mode Logo & Light Mode Logo
-- [ ] Lubricants Heading too long on small screen. 
+- [x] Dark Mode Logo & Light Mode Logo
+- [x] Lubricants Heading too long on small screen. 
+- [ ] Fetching data. 
+- [ ] Components Reusable !!!
 
 ## Technologies Used
 
@@ -25,7 +27,3 @@
 ## License
 
 Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
-
-## RUN :
-- [ ] sudo pacman -S autoconf automake autoconf-archive
-- [ ] 
