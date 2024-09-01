@@ -2,16 +2,14 @@
 import { Link } from "@/config/routing";
 import { Card, CardHeader } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
-import clsx from "clsx";
 
 type OilProps = {
   title: string;
   image: string;
   description?: string;
-  imageStyle?: string;
 };
 
-export function OilCard({ title, description, image, imageStyle }: OilProps) {
+export function OilCard({ title, description, image }: OilProps) {
   return (
     <Link href={`/oil/${title.toLowerCase()}/`} className="w-fit h-fit">
       <Card
@@ -28,10 +26,7 @@ export function OilCard({ title, description, image, imageStyle }: OilProps) {
         <Image
           removeWrapper
           alt="Card example background"
-          className={clsx(
-            "z-0 object-cover md:w-[250px] md:h-[250px] w-[150px] h-[150px] ",
-            imageStyle,
-          )}
+          className={"z-0 object-cover md:w-[250px] md:h-[250px] w-[150px] h-[150px] transition-transform duration-500 ease-in-out group-hover:scale-110"}
           src={image}
         />
       </Card>

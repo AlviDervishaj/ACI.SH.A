@@ -1,24 +1,12 @@
-"use client";
 import { useTranslations } from "next-intl";
-import { title } from "@/components/primitives";
 
 export function OilCompaniesHeader() {
   const t = useTranslations("Home");
   return (
     <h2
-      className={title({
-        size: "md",
-        className:
-          "text-center drop-shadow-md w-fit h-fit p-2 light:text-black",
-      })}
+      className="tracking-wide inline font-bold text-center text-[2.3rem] lg:text-5xl leading-9 p-4"
     >
-      {t.rich("see_below", {
-        component: (component) => (
-          <p className={title({ size: "md", color: "orange" })}>
-            &nbsp;{component}&nbsp;
-          </p>
-        ),
-      })}
+      {t("brands")}
     </h2>
   )
 }

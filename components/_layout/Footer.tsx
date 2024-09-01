@@ -1,12 +1,11 @@
 import { useTranslations } from "next-intl";
-import { footer } from "../primitives";
 import Link from "next/link";
 
 export function Footer() {
   const tf = useTranslations("Footer");
   const tn = useTranslations("Navigation");
   return (
-    <footer className={footer({ color: "orange" })}>
+    <footer className={"w-full h-full relative flex flex-col md:flex-row p-4 gap-2 items-start content-center justify-evenly border-t-2 border-default-400"}>
       <div>
         <ul className={"w-fit h-fit p-2 flex flex-col items-start gap-1 lg:gap-4 content-center justify-evenly "}>
           <li
@@ -14,22 +13,22 @@ export function Footer() {
           >
             <h4>ACI SH.A</h4>
           </li>
-          <li className="text-md md:text-lg lg:text-xl border-b-2 hover:border-b-slate-200 border-b-transparent transition-colors duration-300 ease-in-out">
+          <li className="text-md md:text-lg lg:text-xl border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out">
             <Link href={"/"}>
               {tn("home")}
             </Link>
           </li>
-          <li className="text-md md:text-lg lg:text-xl border-b-2 hover:border-b-slate-200 border-b-transparent transition-colors duration-300 ease-in-out">
+          <li className="text-md md:text-lg lg:text-xl border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out">
             <Link href={"/"}>
               {tn("contact")}
             </Link>
           </li>
-          <li className="text-md md:text-lg lg:text-xl border-b-2 hover:border-b-slate-200 border-b-transparent transition-colors duration-300 ease-in-out">
+          <li className="text-md md:text-lg lg:text-xl border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out">
             <Link href={"/"}>
               {tn("about_us")}
             </Link>
           </li>
-          <li className="text-md md:text-lg lg:text-xl border-b-2 hover:border-b-slate-200 border-b-transparent transition-colors duration-300 ease-in-out">
+          <li className="text-md md:text-lg lg:text-xl border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out">
             <Link href={"/"}>
               {tn("lubricants")}
             </Link>
@@ -43,7 +42,7 @@ export function Footer() {
           >
             <h4>{tf("help")}</h4>
           </li>
-          <li className="text-md md:text-lg lg:text-xl border-b-2 hover:border-b-slate-200 border-b-transparent transition-colors duration-300 ease-in-out">
+          <li className="text-md md:text-lg lg:text-xl border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out">
             <Link href={"/"}>
               {tf("which_is_better")}
             </Link>

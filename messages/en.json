@@ -2,7 +2,8 @@
   "Home": {
     "title": "AÇI SH.A",
     "description": "Exclusive distributor of <distributor>GALP</distributor> products from <parent>PETROGAL</parent>",
-    "see_below": "<component>PETROGAL</component> Lubricants.",
+    "brands": "Brands",
+    "lubricants_header": "<component>PETROGAL</component> Lubricants.",
     "header_description": "Official Distributor of <distributor>GULP</distributor> products.",
     "best_sellers": "Best Sellers"
   },
