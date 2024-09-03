@@ -22,7 +22,7 @@ export function MainHeaderBackground() {
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={"absolute w-full h-full"}>
         <Image fill className={"object-cover"} src={"/images/oil-pouring.jpg"} alt={"Oil Background"} />
       </motion.div>
-      <div className="w-full h-full backdrop-blur-none bg-black/50">
+      <div className="w-full h-full backdrop-blur-sm bg-black/50">
         <motion.section style={{ y: sm }} className="absolute w-full flex inset-0 flex-col gap-10 items-center justify-center">
           <FadeInHeader delay={convertMillisecondsToSeconds(500)}>
             <p className={title({ size: "lg" })}>

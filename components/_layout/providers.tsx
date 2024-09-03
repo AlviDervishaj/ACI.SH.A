@@ -2,18 +2,17 @@
 import { NextUIProvider } from "@nextui-org/system";
 import { useRouter } from "next/navigation";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
-import { ThemeProviderProps } from "next-themes/dist/types";
 import { ParallaxProvider } from "react-scroll-parallax";
-import { ReactNode, useEffect, useRef } from "react";
+import { ReactNode, useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
-import { useScroll } from "framer-motion";
 
 export interface ProvidersProps {
-  children: ReactNode;
-  themeProps?: ThemeProviderProps;
+  children?: ReactNode;
+  locale: string;
+  themeProps?: { attribute: "class", defaultTheme: "dark" };
 }
 
-export function Providers({ children, themeProps }: ProvidersProps) {
+export function Providers({ children, locale, themeProps }: ProvidersProps) {
   const router = useRouter();
 
   useEffect(() => {
@@ -26,7 +25,7 @@ export function Providers({ children, themeProps }: ProvidersProps) {
   }, [])
 
   return (
-    <NextUIProvider navigate={router.push}>
+    <NextUIProvider locale={locale} navigate={router.push}>
       <ParallaxProvider>
         <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
       </ParallaxProvider>
