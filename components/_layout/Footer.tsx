@@ -13,22 +13,22 @@ export function Footer() {
           >
             <h4>ACI SH.A</h4>
           </li>
-          <li className="text-md md:text-lg lg:text-xl border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out">
+          <li className="text-sm md:text-lg lg:text-xl border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out">
             <Link href={"/"}>
               {tn("home")}
             </Link>
           </li>
-          <li className="text-md md:text-lg lg:text-xl border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out">
+          <li className="text-sm md:text-lg lg:text-xl border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out">
             <Link href={"/"}>
               {tn("contact")}
             </Link>
           </li>
-          <li className="text-md md:text-lg lg:text-xl border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out">
+          <li className="text-sm md:text-lg lg:text-xl border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out">
             <Link href={"/"}>
               {tn("about_us")}
             </Link>
           </li>
-          <li className="text-md md:text-lg lg:text-xl border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out">
+          <li className="text-sm md:text-lg lg:text-xl border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out">
             <Link href={"/"}>
               {tn("lubricants")}
             </Link>
@@ -42,7 +42,7 @@ export function Footer() {
           >
             <h4>{tf("help")}</h4>
           </li>
-          <li className="text-md md:text-lg lg:text-xl border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out">
+          <li className="text-sm md:text-lg lg:text-xl border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out">
             <Link href={"/"}>
               {tf("which_is_better")}
             </Link>

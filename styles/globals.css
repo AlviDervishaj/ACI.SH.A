@@ -58,7 +58,6 @@
     --chart-5: 340 75% 55%;
   }
 }
-
 @layer base {
   html, body > * {
     @apply bg-slate-200 dark:bg-background;
@@ -67,3 +66,4 @@
     @apply bg-background text-foreground;
   }
 }
+
