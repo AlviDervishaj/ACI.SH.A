@@ -20,7 +20,7 @@ export default function AboutPage() {
         Me synim rritjen e shitjeve, kompania ruan akoma të njëjtin reputacion të shkëlqyer dhe përpiqet të krijojë mënyra inovative për konsumatorët për t’i informuar dhe ndihmuar ata, pa ndikuar ndërkohë në vendim-marrjen e tyre.
         Aplikimi i strategjisë sonë të punës dhe cilësia që ofrojmë, ka bërë të mundur që kompania jonë të jetë kompani ndër më të mirat në fushën e shitjes dhe shpërndarjes së vajrave lubrifikantë në Shqipëri dhe më gjerë.
       </p>
-      <h2 className={title({size: "sm"})}>
+      <h2 className={title({size: "xs"})}>
         Të specializuar për lubrifikantë dhe bateri të teknologjisë së lartë,
         duke siguruar performancën më të mirë për automjetin tuaj.
       </h2>
