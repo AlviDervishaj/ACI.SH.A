@@ -1,11 +1,10 @@
 import { useTranslations } from "next-intl";
+import { header } from "../primitives";
 
 export function OilCompaniesHeader() {
   const t = useTranslations("Home");
   return (
-    <h2
-      className="tracking-wide inline font-bold text-center text-[2.3rem] lg:text-5xl leading-9 p-4"
-    >
+    <h2 className={header()}>
       {t("brands")}
     </h2>
   )

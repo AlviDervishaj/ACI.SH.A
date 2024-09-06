@@ -1,5 +1,4 @@
 import React, {
-  ComponentPropsWithRef,
   useCallback,
   useEffect,
   useState
@@ -60,7 +59,7 @@ export const PrevButton: React.FC<PropType> = (props) => {
 
   return (
     <Button
-      className="w-fit h-fit p-2 bg-default-400 disabled:bg-white/40 dark:disabled:bg-default-100"
+      className="w-fit h-fit p-2 disabled:cursor-not-allowed"
       {...restProps}
     >
       <svg className="w-4 h-4" viewBox="0 0 532 532">
@@ -79,7 +78,7 @@ export const NextButton: React.FC<PropType> = (props) => {
 
   return (
     <Button
-      className="w-fit h-fit p-2 bg-default-400 disabled:bg-white/40 dark:disabled:bg-default-100"
+      className="w-fit h-fit p-2 disabled:cursor-not-allowed"
       {...restProps}
     >
       <svg className="w-4 h-4" viewBox="0 0 532 532">

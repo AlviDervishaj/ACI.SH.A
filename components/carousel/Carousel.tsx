@@ -1,3 +1,4 @@
+"use client";
 import { EmblaOptionsType } from 'embla-carousel';
 import { DotButton, useDotButton } from './CarouselDotButton';
 import {
@@ -6,16 +7,16 @@ import {
   usePrevNextButtons
 } from './CarouselArrowButton';
 import useEmblaCarousel from 'embla-carousel-react';
-import { Item } from '@/types';
-import { BestSellerCard } from '../BestSellerCard';
+import { FC } from 'react';
 
-type PropType = {
-  slides: Array<Item>
+type PropType<T> = {
+  slides: Array<T>
   options?: EmblaOptionsType
+  Component: FC<{ item: T }>
 }
 
-export function Carousel(props: PropType) {
-  const { slides, options } = props;
+export function Carousel<T>(props: PropType<T>) {
+  const { slides, options, Component } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi)
   const { prevBtnDisabled, nextBtnDisabled, onPrevButtonClick, onNextButtonClick } = usePrevNextButtons(emblaApi)
@@ -24,9 +25,9 @@ export function Carousel(props: PropType) {
     <section className="max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl pb-4">
       <div className="overflow-hidden px-1" ref={emblaRef}>
         <div className="touch-pan-y flex flex-row gap-4 p-4">
-          {slides.map((item) => (
-            <div key={item.id} className="w-fit h-fit">
-              <BestSellerCard item={item} />
+          {slides.map((item, index) => (
+            <div key={`${item}__${index}`} className="w-fit h-fit">
+              <Component item={item} />
             </div>
           ))}
         </div>

@@ -4,6 +4,8 @@ import { Link } from "@/config/routing";
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Carousel } from "../carousel/Carousel";
+import { BestSellerCard } from "../BestSellerCard";
+import { Skeleton } from "@nextui-org/react";
 
 export function BestSellers() {
   const t = useTranslations("Home");
@@ -13,9 +15,10 @@ export function BestSellers() {
   useEffect(() => {
     setIsLoading(true);
     const bestSellers: Array<Item> = [
-      { title: "Oil 1", id: 0, image: "/images/repsol-car.jpg", price: 19.99 },
-      { title: "Oil 2", id: 1, image: "/images/prefix.jpg", price: 1.99 },
-      { title: "Oil 3", id: 2, image: "/images/galp.png", price: 9.99 },
+      { title: "Energy 5W-30", id: 0, image: "/images/oils/galp-oil-1.png", price: 19.99 },
+      { title: "15W-40", id: 1, image: "/images/oils/galp-oil-2.png", price: 1.99 },
+      { title: "LS Long Life III 5W-30", id: 2, image: "/images/oils/galp-oil-4.png", price: 9.99 },
+      { title: "LS 5W-40", id: 3, image: "/images/oils/galp-oil-5.png", price: 8.99 },
     ].sort((a, b) => {
       if (a.price > b.price) {
         return -1;
@@ -29,13 +32,36 @@ export function BestSellers() {
     setIsLoading(false);
   }, [])
 
+  if (isLoading) {
+    return (
+      <div className="py-2 lg:py-8 lg:w-[850px] space-y-4">
+        <Skeleton className="w-[15rem] h-[3.5rem]">
+          <h2 className={"tracking-wide inline font-bold text-center text-[2.3rem] lg:text-5xl leading-9 p-4 pl-0"}>
+            {t("best_sellers")}
+          </h2>
+        </Skeleton>
+        <div className="w-full h-fit grid grid-cols-3 gap-4 items-center">
+          <Skeleton className="w-3/4">
+            <BestSellerCard item={{ title: "Energy 5W-30", id: 0, image: "/images/oils/galp-oil-1.png", price: 19.99 }} />
+          </Skeleton>
+          <Skeleton className="w-3/4">
+            <BestSellerCard item={{ title: "Energy 5W-30", id: 0, image: "/images/oils/galp-oil-1.png", price: 19.99 }} />
+          </Skeleton>
+          <Skeleton className="w-3/4">
+            <BestSellerCard item={{ title: "Energy 5W-30", id: 0, image: "/images/oils/galp-oil-1.png", price: 19.99 }} />
+          </Skeleton>
+        </div>
+      </div>
+    )
+  }
+
   return (
-    <div>
+    <div className="py-2 lg:py-8 lg:w-[850px]">
       <h2 className={"tracking-wide inline font-bold text-center text-[2.3rem] lg:text-5xl leading-9 p-4 pl-0"}>
         {t("best_sellers")}
       </h2>
       {sortedItems.length >= 1 ?
-        <Carousel slides={sortedItems} options={{ loop: true, axis: "x", align: "start", slidesToScroll: 2 }} />
+        <Carousel slides={sortedItems} options={{ loop: false, axis: "x", align: "start", slidesToScroll: 2 }} Component={BestSellerCard} />
         :
         <section className="w-full h-full p-2 grid place-items-center gap-3">
           <h2 className="text-4xl">No items are available at this time. </h2>
