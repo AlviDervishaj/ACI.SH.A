@@ -1,3 +1,12 @@
+import { Link as NextLink } from "@/config/routing";
+import { ThemeSwitch } from "@/components/theme-switch";
+import { link as linkStyles } from "@nextui-org/theme";
+import { LocaleSwitcher } from "../LocaleSwitcher";
+import { useTranslations } from "next-intl";
+import { Spacer } from "@nextui-org/spacer";
+import { siteConfig } from "@/config/site";
+import Image from "next/image";
+import clsx from "clsx";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -6,38 +15,10 @@ import {
   NavbarBrand,
   NavbarItem,
 } from "@nextui-org/navbar";
-import { Input } from "@nextui-org/input";
-import { link as linkStyles } from "@nextui-org/theme";
-import clsx from "clsx";
-import Image from "next/image";
-import { useTranslations } from "next-intl";
-import { Spacer } from "@nextui-org/spacer";
-
-import { LocaleSwitcher } from "../LocaleSwitcher";
-
-import { Link as NextLink } from "@/config/routing";
-import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
-import { SearchIcon } from "@/components/icons";
+import { Search } from "./Search";
 
 export const Navigation = () => {
   const t = useTranslations("Navigation");
-  const searchInput = (
-    <Input
-      aria-label="Search"
-      classNames={{
-        inputWrapper: "bg-default-100",
-        input: "text-sm",
-      }}
-      labelPlacement="outside"
-      placeholder={t("search_text")}
-      startContent={
-        <SearchIcon className="text-base text-default-400 pointer-events-none flex-shrink-0" />
-      }
-      type="search"
-    />
-  );
-
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       {/* Large Screen Navigation */}
@@ -79,7 +60,9 @@ export const Navigation = () => {
         className="hidden lg:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
+        <NavbarItem className="hidden lg:flex">
+          <Search />
+        </NavbarItem>
         <ThemeSwitch />
         <LocaleSwitcher />
       </NavbarContent>
@@ -92,7 +75,7 @@ export const Navigation = () => {
       </NavbarContent>
 
       <NavbarMenu>
-        {searchInput}
+        <Search />
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarItem

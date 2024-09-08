@@ -1,7 +1,7 @@
 import { tv } from "tailwind-variants";
 
 export const header = tv({
-  base: "tracking-wide inline font-bold text-center text-[2.3rem] lg:text-5xl leading-9 p-4 pl-0",
+  base: "tracking-wide inline font-bold text-center text-2xl lg:text-3xl leading-9 p-4 pl-0",
 })
 
 export const title = tv({

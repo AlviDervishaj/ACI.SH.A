@@ -11,7 +11,7 @@ export function BestSellerCard({ item }: { item: Item }) {
       isPressable
       isHoverable
       key={`${item.title} ${item.description} ${item.id}`}
-      className="w-[7.856rem] lg:w-[12rem] h-fit group"
+      className="w-[7.856rem] lg:w-[12rem] select-none h-fit group"
     // on click ?
     >
       <CardBody className="overflow-visible p-0">
@@ -24,10 +24,10 @@ export function BestSellerCard({ item }: { item: Item }) {
           src={item.image}
         />
       </CardBody>
-      <div className="w-full h-[3.5rem] p-1 flex flex-col m-0 backdrop-blur-md absolute bottom-0 border-t-1 border-zinc-200/50 bg-white/15 dark:bg-black/50 z-10 text-small">
-        <h3 className="font-bold tracking-wider text-base self-start m-0 inline">{item.title}</h3>
-        <p className="text-sm lg:text-base font-medium tracking-wide self-end">{numberF.number(item.price, { style: "currency", currency: "usd" })}</p>
-      </div>
+      <CardFooter className="p-1 m-0 flex flex-col backdrop-blur-md absolute bottom-0 border-t-1 border-zinc-200/50 bg-white/15 dark:bg-black/50 z-10 text-small">
+        <h3 className="font-bold text-left text-xs truncate w-full md:text-base self-start m-auto inline">{item.title}</h3>
+        <p className="text-xs lg:text-base font-medium tracking-wide self-end">{numberF.number(item.price, { style: "currency", currency: "usd" })}</p>
+      </CardFooter>
     </Card>
   );
 }

@@ -8,6 +8,7 @@ import {
 } from './CarouselArrowButton';
 import useEmblaCarousel from 'embla-carousel-react';
 import { FC } from 'react';
+import Autoplay from 'embla-carousel-autoplay';
 
 type PropType<T> = {
   slides: Array<T>
@@ -17,12 +18,12 @@ type PropType<T> = {
 
 export function Carousel<T>(props: PropType<T>) {
   const { slides, options, Component } = props;
-  const [emblaRef, emblaApi] = useEmblaCarousel(options)
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay({ delay: 10 * 1000 })])
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi)
   const { prevBtnDisabled, nextBtnDisabled, onPrevButtonClick, onNextButtonClick } = usePrevNextButtons(emblaApi)
 
   return (
-    <section className="max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl pb-4">
+    <section className="w-[24rem] md:w-full pb-4">
       <div className="overflow-hidden px-1" ref={emblaRef}>
         <div className="touch-pan-y flex flex-row gap-4 p-4">
           {slides.map((item, index) => (
