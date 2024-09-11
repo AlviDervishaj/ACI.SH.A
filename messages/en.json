@@ -7,12 +7,19 @@
     "header_description": "Official Distributor of <distributor>GULP</distributor> products.",
     "best_sellers": "Best Sellers"
   },
+  "About_Us": {
+    "header": "Exclusive distributor of <distributor>GALP</distributor>",
+    "mainDescription": "<companyName>AÇI SH.A</companyName> was founded in June 2003, as a lubricants and petrochemicals distribution company. The founding team was specialized in the petroleum market and they all had previous experiences with other companies. Since the beginning our company was focused on distributing <distributor>PETROGAL</distributor> products under the <distributor>GALP</distributor> brand name, having exclusivity in Albanian territory for these products. We always strive to maintain good partnerships with our clients as well as offering  an excellent service with a good value on top. The quality of the products offered by our company is guaranteed by <distributor>GALP</distributor> through the partnership program between the two companies.",
+    "secondP": "In response with the evolving market, <companyName>AÇI SH.A</companyName>not only offers a good value for money, but also a guarantee of product quality by working with our suppliers. In 2017, our company took full exclusivity of the Balkan region in distributing <distributor>GALP</distributor> products. In 2018, we started the distribution of our own brand of automotive batteries, namely Laser Batteries. The company offers complete maintenance free (CMF) batteries, manufactured in Korea, from the Hyundai Sungwoo factory. With sales growth in mind, our company still retains it’s same flawless reputation and strives to create innovating ways for customers to get more accustomed and involved in their purchases while not influencing their decision-making at the same time. The application of our job technique and our commitment to quality is what makes us Albania’s most eligible lubricants distribution company.",
+    "footer": "We are specialists in high tech lubricants and batteries, providing the best performance for your vehicle. "
+  },
   "Navigation": {
     "home": "Home",
     "about_us": "About Us",
     "lubricants": "Lubricants",
     "contact": "Contact",
-    "search_text": "Search..."
+    "search_text": "Search...",
+    "gallery": "Gallery"    
   },
   "LocaleSwitcher": {
     "label": "Change language",

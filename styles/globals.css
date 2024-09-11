@@ -62,8 +62,5 @@
   html, body > * {
     @apply bg-slate-200 dark:bg-background;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
 }
 

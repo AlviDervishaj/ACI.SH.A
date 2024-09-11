@@ -1,123 +1,80 @@
-"use client";
-import { Autocomplete, AutocompleteItem, MenuTriggerAction } from "@nextui-org/react";
-import { useFilter } from "@react-aria/i18n";
+import { Divider, Image, Input } from "@nextui-org/react";
+import { ChangeEvent, useRef, useState } from "react";
 import { SearchIndex } from "@/searchIndex";
-import { SearchIcon } from "lucide-react";
-import { useState } from "react";
-import { usePathname, useRouter } from "@/config/routing";
-
-type Key = string | number;
-
-type FieldState = {
-  selectedKey: Key | null | undefined;
-  inputValue: string;
-  items: typeof SearchIndex;
-};
+import { LoaderCircle, SearchIcon } from "lucide-react";
+import { Link, useRouter } from "@/config/routing";
+import { useIsomorphicLayoutEffect, useOnClickOutside } from "usehooks-ts";
 
 export function Search() {
+  const [value, setValue] = useState<string>("");
+  const [results, setResults] = useState<typeof SearchIndex>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const router = useRouter();
-  const pathname = usePathname();
+  const ref = useRef(null);
 
-  // Store Autocomplete input value, selected option, open state, and items
-  // in a state tracker
-  const [fieldState, setFieldState] = useState<FieldState>({
-    selectedKey: "",
-    inputValue: "",
-    items: SearchIndex,
-  });
+  function handleClickOutside() {
+    setResults([]);
+    setIsLoading(false);
+    setValue("");
+  };
 
-  // Implement custom filtering logic and control what items are
-  // available to the Autocomplete.
-  const { startsWith } = useFilter({ sensitivity: "base" });
-
-  // Specify how each of the Autocomplete values should change when an
-  // option is selected from the list box
-  const onSelectionChange = (key: Key | null) => {
-    setFieldState((prevState) => {
-      let selectedItem = prevState.items.find((option) => option.title === key);
-
-      return {
-        inputValue: selectedItem?.title || "",
-        selectedKey: key,
-        items: SearchIndex.filter((item) => startsWith(item.title, selectedItem?.title || "")),
-      };
-    });
-    if (fieldState.items.length === 1) {
-      console.log({ items: fieldState.items });
-      router.push(fieldState.items[0].href);
-      setFieldState({
-        selectedKey: "",
-        inputValue: "",
-        items: SearchIndex,
-      })
+  function handleSearchChange(event: ChangeEvent<HTMLInputElement>) {
+    event.preventDefault();
+    setIsLoading(true);
+    setValue(event.target.value);
+    const term: string = event.currentTarget.value;
+    if (term === "") {
+      setResults([]);
+      setIsLoading(false);
+      return;
     }
+    const _tempResults = SearchIndex.filter((predicate) => predicate.title.includes(term) || predicate.keywords.find((predicate) => predicate.startsWith(term)))
+    setResults(_tempResults);
+    setIsLoading(false);
   };
 
-  // Specify how each of the Autocomplete values should change when the input
-  // field is altered by the user
-  const onInputChange = (value: string) => {
-    setFieldState((prevState) => ({
-      inputValue: value,
-      selectedKey: value === "" ? null : prevState.selectedKey,
-      items: SearchIndex.filter((item) => startsWith(item.title, value)),
-    }));
-  };
+  // Handle click outside div to hide the results.
+  useOnClickOutside(ref, handleClickOutside);
 
-  // Show entire list if user opens the menu manually
-  const onOpenChange = (isOpen: boolean, menuTrigger: MenuTriggerAction) => {
-    if (menuTrigger === "manual" && isOpen) {
-      setFieldState((prevState) => ({
-        inputValue: prevState.inputValue,
-        selectedKey: prevState.selectedKey,
-        items: SearchIndex,
-      }));
-    }
-  };
 
-  const EmptyContent = () => {
-    return (
-      <button
-        className="w-full h-full text-left cursor-pointer select-none text-default-900"
-        onClick={() => searchItemNavigation()}
-      >
-        <p> Search in Products </p>
-      </button>
-    )
+  useIsomorphicLayoutEffect(() => {
+    // prefetch links
+    SearchIndex.map((si) => router.prefetch(si.href))
+  }, [SearchIndex]);
+
+  function handleRouteChange(route: string) {
+    handleClickOutside();
+    router.push(route);
   }
 
-  function searchItemNavigation() {
-    const value: string = fieldState.inputValue;
-    console.log({ value });
-    // query params
-    const searchParams = new URLSearchParams("name");
-    if (value) {
-      // set search param
-      searchParams.set("name", value);
-    }
-    else searchParams.delete("name");
-
-    // place them in url
-    router.replace(`${pathname}/products/?${searchParams.toString()}`);
-  };
-
   return (
-    <Autocomplete
-      inputValue={fieldState.inputValue}
-      items={fieldState.items}
-      style={{ fontSize: "17px" }}
-      label="Search"
-      selectedKey={fieldState.selectedKey}
-      variant="flat"
-      selectorIcon={<SearchIcon size={24} color={"#6b7280"} />}
-      onInputChange={onInputChange}
-      disableSelectorIconRotation
-      listboxProps={{
-        emptyContent: <EmptyContent />
-      }}
-      onOpenChange={onOpenChange}
-      onSelectionChange={onSelectionChange}
-    >
-      {(item) => <AutocompleteItem key={item.title}>{item.title}</AutocompleteItem>}
-    </Autocomplete>
+    <div className="w-fit h-fit relative">
+      <Input fullWidth
+        variant="underlined"
+        size="lg"
+        classNames={{
+          input: "text-[17px]",
+        }} autoComplete="off" className="self-center justify-self-center" autoCapitalize="words" endContent={<SearchIcon />} value={value} placeholder="Search" onChange={handleSearchChange} />
+      {isLoading ? <div className="absolute mt-1 rounded-md z-50 p-1 left-0 w-full h-full bg-default-200 flex flex-row items-center content-center justify-center">
+        <button onClick={() => { }} className="animate-spin w-fit h-fit flex flex-row items-center content-center">
+          <LoaderCircle className="stroke-default-600" />
+        </button>
+      </div>
+        : results.length >= 1 ?
+          <div ref={ref} className="absolute mt-1 rounded-md p-1 z-50 left-0 w-full h-fit bg-default-200">
+            {results.map((result) =>
+              <div>
+                <div className="p-1 hover:bg-default-300 flex" key={result.title}>
+                  <button onClick={() => handleRouteChange(result.href)} className="w-full">
+                    {result.title}
+                  </button>
+                </div>
+                <Divider />
+              </div>
+            )}
+          </div>
+          : null
+      }
+    </div>
   );
 }

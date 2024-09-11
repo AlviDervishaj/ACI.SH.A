@@ -1,10 +1,9 @@
-"use client";
-
 import clsx from "clsx";
 import { useParams } from "next/navigation";
 import { ChangeEvent, ReactNode, useTransition } from "react";
 
 import { useRouter, usePathname } from "@/config/routing";
+import { ArrowDown, ChevronDown } from "lucide-react";
 
 type Props = {
   children: ReactNode;
@@ -48,7 +47,9 @@ export function LocaleSwitcherSelect({ children, defaultValue, label }: Props) {
       >
         {children}
       </select>
-      <span className="pointer-events-none absolute right-2 top-[8px]">⌄</span>
+      <span className="pointer-events-none absolute right-2 bottom-[12px]">
+        <ChevronDown />
+      </span>
     </label>
   );
 }

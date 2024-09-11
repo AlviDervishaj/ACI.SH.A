@@ -34,22 +34,24 @@ export function Carousel<T>(props: PropType<T>) {
         </div>
       </div>
 
-      <div className="flex flex-row items-center content-center justify-between">
-        <div className="hidden md:flex flex-row items-center content-center justify-start gap-4">
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+      {scrollSnaps.length > 1 ?
+        <div className="flex flex-row items-center content-center justify-between">
+          <div className="hidden md:flex flex-row items-center content-center justify-start gap-4">
+            <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+            <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+          </div>
+          <div className="space-x-3 ml-auto">
+            {scrollSnaps.map((_, index) => (
+              <DotButton
+                key={index}
+                onClick={() => onDotButtonClick(index)}
+                className={index === selectedIndex ? "dark:bg-orange-400 bg-orange-500" : "bg-default-300"}
+              />
+            ))}
+          </div>
         </div>
-
-        <div className="space-x-3 ml-auto">
-          {scrollSnaps.map((_, index) => (
-            <DotButton
-              key={index}
-              onClick={() => onDotButtonClick(index)}
-              className={index === selectedIndex ? "dark:bg-orange-400 bg-orange-500" : "bg-default-300"}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
+        : null
+      }
+    </section >
   )
 }

@@ -1,3 +1,4 @@
+"use client";
 import { Link as NextLink } from "@/config/routing";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { link as linkStyles } from "@nextui-org/theme";
@@ -16,12 +17,23 @@ import {
   NavbarItem,
 } from "@nextui-org/navbar";
 import { Search } from "./Search";
+import { ShoppingCart } from "lucide-react";
 
 export const Navigation = () => {
-  const t = useTranslations("Navigation");
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       {/* Large Screen Navigation */}
+      <LargeScreenNavigation />
+      {/* Small Screen Navigation */}
+      <SmallScreenNavigation />
+    </NextUINavbar>
+  );
+};
+
+function LargeScreenNavigation() {
+  const t = useTranslations("Navigation");
+  return (
+    <>
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         {/* Logo below */}
         <NavbarBrand as="li" className="gap-3 max-w-fit">
@@ -54,8 +66,6 @@ export const Navigation = () => {
           ))}
         </ul>
       </NavbarContent>
-
-      {/* Small Screen Navigation */}
       <NavbarContent
         className="hidden lg:flex basis-1/5 sm:basis-full"
         justify="end"
@@ -63,10 +73,21 @@ export const Navigation = () => {
         <NavbarItem className="hidden lg:flex">
           <Search />
         </NavbarItem>
-        <ThemeSwitch />
         <LocaleSwitcher />
+        <ThemeSwitch />
+        <button className="p-2">
+          <ShoppingCart />
+        </button>
       </NavbarContent>
+    </>
+  )
+}
 
+function SmallScreenNavigation() {
+  const t = useTranslations("Navigation");
+  return (
+    <>
+      {/* Hidden on large screen */}
       <NavbarContent className="lg:hidden basis-1 pl-4" justify="end">
         <LocaleSwitcher />
         <ThemeSwitch />
@@ -97,6 +118,6 @@ export const Navigation = () => {
           ))}
         </div>
       </NavbarMenu>
-    </NextUINavbar>
-  );
-};
+    </>
+  )
+}

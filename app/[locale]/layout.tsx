@@ -1,14 +1,13 @@
+import { Navigation } from "@/components/_layout/Navigation";
+import { Providers } from "@/components/_layout/providers";
+import { Footer } from "@/components/_layout/Footer";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { siteConfig } from "@/config/site";
+import { Metadata, Viewport } from "next";
+import { fontSans } from "@/config/fonts";
 import "@/styles/globals.css";
 import clsx from "clsx";
-import { Metadata, Viewport } from "next";
-import { getMessages } from "next-intl/server";
-import { NextIntlClientProvider } from "next-intl";
-
-import { fontSans } from "@/config/fonts";
-import { siteConfig } from "@/config/site";
-import { Footer } from "@/components/_layout/Footer";
-import { Providers } from "@/components/_layout/providers";
-import { Navigation } from "@/components/_layout/Navigation";
 
 export const metadata: Metadata = {
   title: {
@@ -37,17 +36,17 @@ export default async function RootLayout({
 }) {
   const messages = await getMessages();
   return (
-    <html className={"w-full h-fit overflow-x-hidden relative"} lang={locale}>
+    <html lang={locale} className="w-full h-fit overflow-x-hidden relative">
       <head />
       <body
         className={clsx(
-          "w-full h-fit bg-background font-sans antialiased",
+          "w-full min-h-dvh font-sans antialiased",
           fontSans.variable,
         )}
       >
         <NextIntlClientProvider messages={messages}>
-          <Providers locale={locale} themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-            <div className="relative flex flex-col h-fit">
+          <Providers locale={locale} themeProps={{ attribute: "class", defaultTheme: "light" }}>
+            <div className="relative flex flex-col min-h-dvh">
               <Navigation />
               <main className="container mx-auto max-w-7xl flex-grow">
                 {children}

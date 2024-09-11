@@ -11,4 +11,5 @@ export type SearchResultsType = Array<{
   title: string,
   keywords: Array<string>,
   href: string,
+  image?: string,
 }>

@@ -12,6 +12,18 @@ export const SearchIndex: SearchResultsType = [
     href: "/",
   },
   {
+    group: "Oils",
+    title: "Oils",
+    image: "/images/oils/galp-oil-1.png",
+    keywords: [
+      "Oils",
+      "Vajrat",
+      "Lubrifikantet",
+      "Lubricants",
+    ],
+    href: "/lubricants",
+  },
+  {
     title: "About Us",
     group: "About",
     keywords: [
@@ -20,5 +32,14 @@ export const SearchIndex: SearchResultsType = [
       "Description"
     ],
     href: "/about",
-  }
-]
+  },
+  {
+    group: "Products",
+    title: "Products",
+    keywords: [
+      "Products",
+      "Produktet",
+    ],
+    href: "/products",
+  },
+] as const;

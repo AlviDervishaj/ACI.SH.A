@@ -9,7 +9,7 @@ import Lenis from "@studio-freight/lenis";
 export interface ProvidersProps {
   children?: ReactNode;
   locale: string;
-  themeProps?: { attribute: "class", defaultTheme: "dark" };
+  themeProps?: { attribute: "class", defaultTheme: "light" };
 }
 
 export function Providers({ children, locale, themeProps }: ProvidersProps) {
