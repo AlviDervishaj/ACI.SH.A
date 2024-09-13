@@ -33,7 +33,10 @@ export default function GalleryHomePage() {
           alt={_img.src} as={NextImage} isZoomed
           src={_img.src} width={200} height={120}
         />)}
-      <Modal backdrop={"blur"} isOpen={isOpen} onClose={onClose}
+      <Modal backdrop={"blur"}
+        size="full"
+        isOpen={isOpen}
+        onClose={onClose}
         classNames={{
           backdrop: "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20"
         }}>
@@ -41,9 +44,11 @@ export default function GalleryHomePage() {
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">AÇI SH.A Photo</ModalHeader>
-              <ModalBody className="flex flex-row items-center content-center justify-center">
+              <ModalBody className="flex flex-row items-center content-center justify-center w-full h-full">
                 {image ?
-                  <Image width={300} height={300} as={NextImage} key={image.src} alt={image.src} src={image.src} />
+                  <div className="relative w-[100dvw] h-[40dvh] md:w-[70dvw] md:h-[50dvh] lg:w-[70dvw] lg:w-[70dvh]">
+                    <NextImage fill={true} key={image.src} className="object-contain aspect-sqaure" alt={image.src} src={image} />
+                  </div>
                   : null
                 }
               </ModalBody>
