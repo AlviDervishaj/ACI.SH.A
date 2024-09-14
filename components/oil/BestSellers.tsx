@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Carousel } from "../carousel/Carousel";
 import { BestSellerCard } from "../BestSellerCard";
-import { header } from "../primitives";
 
 export function BestSellers() {
   const t = useTranslations("Home");
@@ -29,10 +28,13 @@ export function BestSellers() {
   }, [])
 
   return (
-    <div className="py-2 lg:py-8 lg:w-[850px]">
-      <h2 className={header()}>
-        {t("best_sellers")}
-      </h2>
+    <div className="py-8 lg:w-[850px]">
+      <div className="w-full h-fit p-0 m-0 flex flex-row items-center content-center justify-between">
+        <h2 className={"tracking-wide inline font-bold text-center text-2xl lg:text-3xl leading-9 pl-0"}>
+          {t("best_sellers")}
+        </h2>
+        <Link href="/lubricants">{t("view_all")}</Link>
+      </div>
       {sortedItems.length >= 1 ?
         <Carousel slides={sortedItems} options={{ loop: false, axis: "x", align: "start", slidesToScroll: 2 }} Component={BestSellerCard} />
         :

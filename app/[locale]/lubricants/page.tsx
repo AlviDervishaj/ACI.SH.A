@@ -1,28 +1,35 @@
 "use client";
-import { BestSellerCard } from "@/components/BestSellerCard";
+import { Filters } from "@/components/lubricants/Filters";
 import { LubricantItem } from "@/components/lubricants/LubricantItem";
 import { title } from "@/components/primitives";
 import { Link, usePathname, useRouter } from "@/config/routing";
 import { MockData } from "@/mock_data";
-import { Pagination } from "@nextui-org/react";
+import { MockDataType } from "@/types";
+import { Pagination, Selection } from "@nextui-org/react";
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useIsomorphicLayoutEffect } from "usehooks-ts";
-// if 16 pages then get number of items per page
-const itemsPerPage: number = 15;
-const totalPages: number = MockData.length / itemsPerPage;
 
 export default function LubricantsPage() {
+  // if 16 pages then get number of items per page
+  const itemsPerPage: number = 15;
+  const totalPages: number = MockData.length / itemsPerPage;
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [items, setItems] = useState<typeof MockData>([]);
+  const [fullData] = useState<typeof MockData>(MockData);
+  const [items, setItems] = useState<typeof MockData>(MockData);
+  const [selectedKeys, setSelectedKeys] = useState<Selection>(new Set(["Sort By"]));
+  const selectedValue = useMemo(
+    () => Array.from(selectedKeys).join(", ").replaceAll("_", " "),
+    [selectedKeys]
+  );
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
-
   useIsomorphicLayoutEffect(() => {
     const searchParamsCurrentPage = Number(searchParams.get('page')) || 1;
     setCurrentPage(searchParamsCurrentPage)
+    setIsLoading(false);
   }, [searchParams]);
 
 
@@ -42,35 +49,74 @@ export default function LubricantsPage() {
     router.replace(`${pathname}?${params.toString()}`);
   };
 
-  function getXItemsFromArray(size: number, itemsToSkip: number) {
+  function getXItemsFromArray(size: number, itemsToSkip: number, arr?: MockDataType) {
     setIsLoading(true);
     const results = [];
-    if (itemsToSkip >= MockData.length || size > MockData.length) {
+    const array = arr ? arr : fullData
+    console.log({ arr });
+    if (itemsToSkip >= array.length || size > array.length) {
       setIsLoading(false);
       return [];
     };
 
     for (let i = itemsToSkip; i <= size + itemsToSkip - 1; i++) {
-      const _dummy = MockData[i];
+      const _dummy = array[i] ?? null;
       results.push(_dummy);
     }
     setIsLoading(true);
     return results;
   }
 
+  function filterPriceHighestToLowest() {
+    const rawData = fullData.toSorted((a, b) => {
+      if (b.price < a.price) {
+        return -1;
+      }
+      if (b.price > a.price) {
+        return 1;
+      }
+      return 0;
+    });
+    return rawData;
+  }
+
+  function filterPriceLowestToHighest() {
+    const rawData = fullData.toSorted((a, b) => {
+      if (a.price < b.price) {
+        return -1;
+      }
+      if (a.price > b.price) {
+        return 1;
+      }
+      return 0;
+    });
+    return rawData;
+  }
+
   useEffect(() => {
-    // fetch new items for the page.
     setIsLoading(true);
-    const results = getXItemsFromArray(itemsPerPage, (currentPage - 1) * itemsPerPage);
+    let rawData = fullData;
+    if (selectedValue === "default") {
+      rawData = fullData;
+    }
+    if (selectedValue === "newest") { }
+    else if (selectedValue === "price-high-low") {
+      rawData = filterPriceHighestToLowest();
+    }
+    else if (selectedValue === "price-low-high") {
+      rawData = filterPriceLowestToHighest();
+    }
+    // sort items
+    const results = getXItemsFromArray(itemsPerPage, (currentPage - 1) * itemsPerPage, rawData);
     setItems(results);
     setIsLoading(false);
-  }, [currentPage]);
+  }, [currentPage, selectedValue]);
 
   return (
     <div className="w-full h-full flex flex-col items-center content-center justify-between">
       <h1 className={title()}>Lubricants</h1>
       <Pagination
-        total={Math.floor(totalPages)}
+        total={Math.ceil(totalPages)}
         variant="flat"
         radius="full"
         showShadow
@@ -81,10 +127,13 @@ export default function LubricantsPage() {
         color="warning"
         showControls
       />
-      <div className="py-8">
+      <div className="self-end pt-2 md:p-0">
+        <Filters isLoading={isLoading} selectedValue={selectedValue} selectedKeys={selectedKeys} setSelectedKeys={setSelectedKeys} />
+      </div>
+      <div className="py-2 md:py-8">
         {items.length >= 1 ?
           <div className="w-full h-full grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-            {items.map((item) => <LubricantItem {...item} />)}
+            {items.map((item) => item ? <LubricantItem {...item} /> : null)}
           </div>
           :
           <section className="w-full h-full p-2 grid place-items-center gap-3">
