@@ -1,4 +1,6 @@
-export const MockData = [
+import { MockDataType } from "./types";
+
+export const MockData: MockDataType = [
   {
     id: 1,
     product_name: "Valvoline High Mileage 10W-40 Oil",
@@ -13999,4 +14001,4 @@ export const MockData = [
     octane_rating: 100,
     image: "http://dummyimage.com/229x100.png/ff4444/ffffff"
   }
-] as const;
+] satisfies MockDataType;

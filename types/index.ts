@@ -13,3 +13,20 @@ export type SearchResultsType = Array<{
   href: string,
   image?: string,
 }>
+
+export type MockDataType = Array<
+  {
+    id: number,
+    product_name: string,
+    product_type: string,
+    price: number,
+    quantity: number,
+    supplier: string,
+    purchase_date: string,
+    expiration_date: string,
+    density: number,
+    flash_point: number,
+    octane_rating: number,
+    image: string,
+  }
+>

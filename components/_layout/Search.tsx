@@ -48,7 +48,7 @@ export function Search() {
   }
 
   return (
-    <div className="w-fit h-fit relative">
+    <div className="w-full h-fit relative">
       <Input fullWidth
         variant="underlined"
         size="lg"
