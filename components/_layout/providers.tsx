@@ -1,9 +1,10 @@
 "use client";
-import { NextUIProvider } from "@nextui-org/system";
-import { useRouter } from "next/navigation";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { NextUIProvider } from "@nextui-org/system";
+import { ClerkProvider, } from '@clerk/nextjs';
 import { ReactNode, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import Lenis from "@studio-freight/lenis";
 
 export interface ProvidersProps {
@@ -25,10 +26,12 @@ export function Providers({ children, locale, themeProps }: ProvidersProps) {
   }, [])
 
   return (
-    <NextUIProvider locale={locale} navigate={router.push}>
-      <ParallaxProvider>
-        <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
-      </ParallaxProvider>
-    </NextUIProvider>
+    <ClerkProvider>
+      <NextUIProvider locale={locale} navigate={router.push}>
+        <ParallaxProvider>
+          <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
+        </ParallaxProvider>
+      </NextUIProvider>
+    </ClerkProvider>
   );
 }
