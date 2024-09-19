@@ -1,7 +1,8 @@
 "use client";
 
-import { useRouter } from "@/config/routing";
 import { useEffect } from "react";
+
+import { useRouter } from "@/config/routing";
 
 export default function Error({
   error,
@@ -11,6 +12,7 @@ export default function Error({
   reset: () => void;
 }) {
   const router = useRouter();
+
   useEffect(() => {
     // Log the error to an error reporting service
     /* eslint-disable no-console */
@@ -32,4 +34,3 @@ export default function Error({
     </div>
   );
 }
-

@@ -1,4 +1,3 @@
-// import { useRouter } from "@/config/routing";
 import { useRouter } from "@/config/routing";
 import { Item } from "@/types";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";

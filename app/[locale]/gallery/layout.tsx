@@ -3,10 +3,5 @@ export default function GalleryLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <div className="mx-auto">
-      {children}
-    </div>
-  );
+  return <div className="mx-auto">{children}</div>;
 }
-

@@ -1,9 +1,9 @@
 import clsx from "clsx";
 import { useParams } from "next/navigation";
 import { ChangeEvent, ReactNode, useTransition } from "react";
+import { ChevronDown } from "lucide-react";
 
 import { useRouter, usePathname } from "@/config/routing";
-import { ArrowDown, ChevronDown } from "lucide-react";
 
 type Props = {
   children: ReactNode;

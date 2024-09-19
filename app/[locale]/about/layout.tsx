@@ -3,9 +3,5 @@ export default function AboutLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <div className="mx-auto">
-      {children}
-    </div>
-  );
+  return <div className="mx-auto">{children}</div>;
 }

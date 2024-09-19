@@ -3,9 +3,5 @@ export default function PricingLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <main className="p-6">
-      {children}
-    </main>
-  );
+  return <main className="p-6">{children}</main>;
 }

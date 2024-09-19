@@ -1,11 +1,7 @@
-"use client";
-import { Link as NextLink } from "@/config/routing";
-import { ThemeSwitch } from "@/components/theme-switch";
 import { link as linkStyles } from "@nextui-org/theme";
-import { LocaleSwitcher } from "../LocaleSwitcher";
-import { useTranslations } from "next-intl";
 import { Spacer } from "@nextui-org/spacer";
-import { siteConfig } from "@/config/site";
+import { useTranslations } from "next-intl";
+import { ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import clsx from "clsx";
 import {
@@ -16,9 +12,11 @@ import {
   NavbarBrand,
   NavbarItem,
 } from "@nextui-org/navbar";
-import { Search } from "./Search";
-import { ShoppingCart } from "lucide-react";
 
+import { siteConfig } from "@/config/site";
+import { Link as NextLink } from "@/config/routing";
+import { ThemeSwitch } from "@/components/_layout/theme-switch";
+import { LocaleSwitcher } from "@/components/_layout/LocaleSwitcher";
 export const Navigation = () => {
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
@@ -32,6 +30,7 @@ export const Navigation = () => {
 
 function LargeScreenNavigation() {
   const t = useTranslations("Navigation");
+
   return (
     <>
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
@@ -70,9 +69,10 @@ function LargeScreenNavigation() {
         className="hidden lg:flex basis-1/5 sm:basis-full"
         justify="end"
       >
+        {/*
         <NavbarItem className="hidden lg:flex">
-          <Search />
         </NavbarItem>
+        */}
         <LocaleSwitcher />
         <ThemeSwitch />
         <button className="p-2">
@@ -80,11 +80,12 @@ function LargeScreenNavigation() {
         </button>
       </NavbarContent>
     </>
-  )
+  );
 }
 
 function SmallScreenNavigation() {
   const t = useTranslations("Navigation");
+
   return (
     <>
       {/* Hidden on large screen */}
@@ -96,7 +97,7 @@ function SmallScreenNavigation() {
       </NavbarContent>
 
       <NavbarMenu>
-        <Search />
+      {/* Search bar here */}
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarItem
@@ -119,5 +120,5 @@ function SmallScreenNavigation() {
         </div>
       </NavbarMenu>
     </>
-  )
+  );
 }

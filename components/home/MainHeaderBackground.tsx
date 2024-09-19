@@ -1,13 +1,14 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FadeInHeader } from "@/components/FadeInHeader";
-import { title } from "@/components/primitives";
-import { convertMillisecondsToSeconds } from "@/lib/utils";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { useRef } from "react";
 
-export function MainHeaderBackground() {
+import { FadeInHeader } from "@/components/home/FadeInHeader";
+import { convertMillisecondsToSeconds } from "@/lib/utils";
+import { title } from "@/components/primitives";
+
+export default function MainHeaderBackground() {
   const t = useTranslations("Home");
   const container = useRef<HTMLElement | null>(null);
   const { scrollYProgress } = useScroll({
@@ -15,22 +16,33 @@ export function MainHeaderBackground() {
     axis: "y",
     smooth: 10,
     target: container,
-    offset: ['start end', 'end start']
+    offset: ["start end", "end start"],
   });
   const sm = useTransform(scrollYProgress, [0, 2], [0, -500]);
+
   return (
-    <section
-      className="w-screen h-[100dvh] relative flex items-center content-center"
-    >
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={"absolute w-full h-full"}>
-        <Image priority fetchPriority="high" fill className={"object-cover"} src={"/images/oil-pouring.jpg"} alt={"Oil Background"} />
+    <section className="w-screen h-[100dvh] relative flex items-center content-center">
+      <motion.div
+        animate={{ opacity: 1 }}
+        className={"absolute w-full h-full"}
+        initial={{ opacity: 0 }}
+      >
+        <Image
+          fill
+          priority
+          alt={"Oil Background"}
+          className={"object-cover"}
+          fetchPriority="high"
+          src={"/images/oil-pouring.jpg"}
+        />
       </motion.div>
       <div className="w-full h-full backdrop-blur-sm bg-black/50">
-        <motion.section style={{ y: sm }} className="absolute w-full flex inset-0 flex-col gap-10 items-center justify-center">
+        <motion.section
+          className="absolute w-full flex inset-0 flex-col gap-10 items-center justify-center"
+          style={{ y: sm }}
+        >
           <FadeInHeader delay={convertMillisecondsToSeconds(500)}>
-            <p className={title({ size: "lg" })}>
-              {t("title")}
-            </p>
+            <p className={title({ size: "lg" })}>{t("title")}</p>
           </FadeInHeader>
           <FadeInHeader delay={convertMillisecondsToSeconds(700)}>
             <div className={title({ size: "md" })}>
@@ -43,7 +55,7 @@ export function MainHeaderBackground() {
               })}
             </div>
           </FadeInHeader>
-        </motion.section >
+        </motion.section>
       </div>
     </section>
   );

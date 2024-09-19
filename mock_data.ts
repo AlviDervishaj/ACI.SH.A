@@ -8,11 +8,6 @@ export const MockData: MockDataType = [
     price: 23.94,
     quantity: 928398,
     supplier: "Cassin, Hilll and O'Reilly",
-    purchase_date: "9/9/2016",
-    expiration_date: "11/11/2037",
-    density: 0.67,
-    flash_point: 98,
-    octane_rating: 95,
     image: "http://dummyimage.com/129x100.png/cc0000/ffffff"
   },
   {
@@ -22,11 +17,6 @@ export const MockData: MockDataType = [
     price: 761.5,
     quantity: 333727,
     supplier: "Kautzer, Upton and Hyatt",
-    purchase_date: "7/24/2019",
-    expiration_date: "10/10/2026",
-    density: 0.93,
-    flash_point: 48,
-    octane_rating: 97,
     image: "http://dummyimage.com/175x100.png/dddddd/000000"
   },
   {
@@ -36,11 +26,6 @@ export const MockData: MockDataType = [
     price: 500.76,
     quantity: 851220,
     supplier: "Reilly-Mertz",
-    purchase_date: "9/12/2006",
-    expiration_date: "8/11/2031",
-    density: 0.64,
-    flash_point: 31,
-    octane_rating: 99,
     image: "http://dummyimage.com/189x100.png/cc0000/ffffff"
   },
   {
@@ -50,11 +35,6 @@ export const MockData: MockDataType = [
     price: 497.7,
     quantity: 516105,
     supplier: "Kassulke, Haley and Buckridge",
-    purchase_date: "5/5/2009",
-    expiration_date: "3/16/2041",
-    density: 0.29,
-    flash_point: 177,
-    octane_rating: 88,
     image: "http://dummyimage.com/181x100.png/dddddd/000000"
   },
   {
@@ -64,11 +44,6 @@ export const MockData: MockDataType = [
     price: 250.03,
     quantity: 261437,
     supplier: "Beier, Hintz and Harber",
-    purchase_date: "12/16/2022",
-    expiration_date: "9/22/2027",
-    density: 0.98,
-    flash_point: 68,
-    octane_rating: 95,
     image: "http://dummyimage.com/235x100.png/cc0000/ffffff"
   },
   {
@@ -78,11 +53,6 @@ export const MockData: MockDataType = [
     price: 649.53,
     quantity: 444939,
     supplier: "O'Conner, Nienow and Anderson",
-    purchase_date: "10/27/2001",
-    expiration_date: "12/6/2031",
-    density: 0.35,
-    flash_point: 121,
-    octane_rating: 94,
     image: "http://dummyimage.com/130x100.png/ff4444/ffffff"
   },
   {
@@ -92,11 +62,6 @@ export const MockData: MockDataType = [
     price: 798.78,
     quantity: 104677,
     supplier: "Bergstrom-Dickens",
-    purchase_date: "12/7/2015",
-    expiration_date: "9/5/2038",
-    density: 0.29,
-    flash_point: 21,
-    octane_rating: 99,
     image: "http://dummyimage.com/123x100.png/ff4444/ffffff"
   },
   {
@@ -106,11 +71,6 @@ export const MockData: MockDataType = [
     price: 385.99,
     quantity: 150293,
     supplier: "Fahey, Grady and Hettinger",
-    purchase_date: "5/13/2009",
-    expiration_date: "6/28/2046",
-    density: 0.33,
-    flash_point: 7,
-    octane_rating: 85,
     image: "http://dummyimage.com/126x100.png/dddddd/000000"
   },
   {
@@ -120,11 +80,6 @@ export const MockData: MockDataType = [
     price: 300.94,
     quantity: 82507,
     supplier: "Kilback-Collier",
-    purchase_date: "6/21/2017",
-    expiration_date: "10/11/2033",
-    density: 0.12,
-    flash_point: 56,
-    octane_rating: 91,
     image: "http://dummyimage.com/181x100.png/ff4444/ffffff"
   },
   {
@@ -134,11 +89,6 @@ export const MockData: MockDataType = [
     price: 473.68,
     quantity: 414180,
     supplier: "Hayes, Ferry and Daugherty",
-    purchase_date: "6/23/2022",
-    expiration_date: "11/8/2023",
-    density: 0.73,
-    flash_point: 44,
-    octane_rating: 91,
     image: "http://dummyimage.com/191x100.png/5fa2dd/ffffff"
   },
   {
@@ -148,11 +98,6 @@ export const MockData: MockDataType = [
     price: 935.59,
     quantity: 990755,
     supplier: "Murphy, Bauch and Prosacco",
-    purchase_date: "7/9/2018",
-    expiration_date: "1/11/2044",
-    density: 0.99,
-    flash_point: 57,
-    octane_rating: 85,
     image: "http://dummyimage.com/182x100.png/5fa2dd/ffffff"
   },
   {
@@ -162,11 +107,6 @@ export const MockData: MockDataType = [
     price: 961.1,
     quantity: 978188,
     supplier: "VonRueden, Feil and Rau",
-    purchase_date: "4/12/2015",
-    expiration_date: "1/10/2033",
-    density: 0.44,
-    flash_point: 34,
-    octane_rating: 86,
     image: "http://dummyimage.com/225x100.png/dddddd/000000"
   },
   {
@@ -176,11 +116,6 @@ export const MockData: MockDataType = [
     price: 669.36,
     quantity: 338274,
     supplier: "Roberts and Sons",
-    purchase_date: "8/6/2017",
-    expiration_date: "4/11/2039",
-    density: 0.18,
-    flash_point: 125,
-    octane_rating: 100,
     image: "http://dummyimage.com/249x100.png/dddddd/000000"
   },
   {
@@ -190,11 +125,6 @@ export const MockData: MockDataType = [
     price: 109.08,
     quantity: 261756,
     supplier: "Gislason Inc",
-    purchase_date: "9/19/2020",
-    expiration_date: "12/11/2029",
-    density: 0.79,
-    flash_point: 101,
-    octane_rating: 94,
     image: "http://dummyimage.com/234x100.png/dddddd/000000"
   },
   {
@@ -204,11 +134,6 @@ export const MockData: MockDataType = [
     price: 186.27,
     quantity: 399175,
     supplier: "Glover Group",
-    purchase_date: "2/20/2012",
-    expiration_date: "6/18/2024",
-    density: 0.48,
-    flash_point: 102,
-    octane_rating: 95,
     image: "http://dummyimage.com/233x100.png/dddddd/000000"
   },
   {
@@ -218,11 +143,6 @@ export const MockData: MockDataType = [
     price: 229.05,
     quantity: 642589,
     supplier: "Abshire, Fritsch and Kohler",
-    purchase_date: "7/27/2012",
-    expiration_date: "5/24/2029",
-    density: 0.41,
-    flash_point: 131,
-    octane_rating: 88,
     image: "http://dummyimage.com/156x100.png/ff4444/ffffff"
   },
   {
@@ -232,11 +152,6 @@ export const MockData: MockDataType = [
     price: 255.07,
     quantity: 928562,
     supplier: "Keebler-Orn",
-    purchase_date: "8/28/2020",
-    expiration_date: "6/17/2043",
-    density: 0.72,
-    flash_point: 28,
-    octane_rating: 91,
     image: "http://dummyimage.com/177x100.png/5fa2dd/ffffff"
   },
   {
@@ -246,11 +161,6 @@ export const MockData: MockDataType = [
     price: 561.29,
     quantity: 716511,
     supplier: "Doyle Group",
-    purchase_date: "2/22/2005",
-    expiration_date: "11/26/2030",
-    density: 0.32,
-    flash_point: 80,
-    octane_rating: 95,
     image: "http://dummyimage.com/224x100.png/ff4444/ffffff"
   },
   {
@@ -260,11 +170,6 @@ export const MockData: MockDataType = [
     price: 386.49,
     quantity: 274778,
     supplier: "Wilkinson, Howell and Nolan",
-    purchase_date: "5/29/2006",
-    expiration_date: "2/7/2033",
-    density: 0.08,
-    flash_point: 169,
-    octane_rating: 89,
     image: "http://dummyimage.com/141x100.png/5fa2dd/ffffff"
   },
   {
@@ -274,11 +179,6 @@ export const MockData: MockDataType = [
     price: 859.67,
     quantity: 64639,
     supplier: "Frami, Smith and Dietrich",
-    purchase_date: "5/19/2004",
-    expiration_date: "4/11/2032",
-    density: 0.58,
-    flash_point: 100,
-    octane_rating: 86,
     image: "http://dummyimage.com/216x100.png/cc0000/ffffff"
   },
   {
@@ -288,11 +188,6 @@ export const MockData: MockDataType = [
     price: 602.65,
     quantity: 413833,
     supplier: "Kunze-Spinka",
-    purchase_date: "11/18/2006",
-    expiration_date: "8/17/2038",
-    density: 0.31,
-    flash_point: 37,
-    octane_rating: 99,
     image: "http://dummyimage.com/143x100.png/dddddd/000000"
   },
   {
@@ -302,11 +197,6 @@ export const MockData: MockDataType = [
     price: 282.82,
     quantity: 159812,
     supplier: "Botsford-Kulas",
-    purchase_date: "11/13/2021",
-    expiration_date: "6/28/2036",
-    density: 0.17,
-    flash_point: -32,
-    octane_rating: 96,
     image: "http://dummyimage.com/163x100.png/ff4444/ffffff"
   },
   {
@@ -316,11 +206,6 @@ export const MockData: MockDataType = [
     price: 366.72,
     quantity: 495649,
     supplier: "Senger, Considine and Thiel",
-    purchase_date: "2/3/2016",
-    expiration_date: "1/11/2025",
-    density: 0.36,
-    flash_point: -17,
-    octane_rating: 91,
     image: "http://dummyimage.com/156x100.png/ff4444/ffffff"
   },
   {
@@ -330,11 +215,6 @@ export const MockData: MockDataType = [
     price: 178.88,
     quantity: 878406,
     supplier: "Reichel Group",
-    purchase_date: "4/28/2011",
-    expiration_date: "7/24/2034",
-    density: 0.94,
-    flash_point: 29,
-    octane_rating: 88,
     image: "http://dummyimage.com/215x100.png/5fa2dd/ffffff"
   },
   {
@@ -344,11 +224,6 @@ export const MockData: MockDataType = [
     price: 295.58,
     quantity: 268624,
     supplier: "Leffler, Walsh and Deckow",
-    purchase_date: "12/9/2017",
-    expiration_date: "7/6/2033",
-    density: 0.02,
-    flash_point: 77,
-    octane_rating: 95,
     image: "http://dummyimage.com/125x100.png/cc0000/ffffff"
   },
   {
@@ -358,11 +233,6 @@ export const MockData: MockDataType = [
     price: 330.45,
     quantity: 54391,
     supplier: "Waters, Blanda and MacGyver",
-    purchase_date: "6/10/2007",
-    expiration_date: "4/5/2033",
-    density: 0.63,
-    flash_point: 162,
-    octane_rating: 93,
     image: "http://dummyimage.com/152x100.png/ff4444/ffffff"
   },
   {
@@ -372,11 +242,6 @@ export const MockData: MockDataType = [
     price: 917.65,
     quantity: 53695,
     supplier: "Farrell-Gibson",
-    purchase_date: "7/14/2019",
-    expiration_date: "12/3/2045",
-    density: 0.14,
-    flash_point: 38,
-    octane_rating: 88,
     image: "http://dummyimage.com/177x100.png/ff4444/ffffff"
   },
   {
@@ -386,11 +251,6 @@ export const MockData: MockDataType = [
     price: 310.79,
     quantity: 791618,
     supplier: "Gerlach Group",
-    purchase_date: "1/11/2017",
-    expiration_date: "3/10/2024",
-    density: 0.2,
-    flash_point: 21,
-    octane_rating: 100,
     image: "http://dummyimage.com/242x100.png/5fa2dd/ffffff"
   },
   {
@@ -400,11 +260,6 @@ export const MockData: MockDataType = [
     price: 424.22,
     quantity: 61812,
     supplier: "Daugherty, Wuckert and Orn",
-    purchase_date: "4/22/2016",
-    expiration_date: "9/26/2026",
-    density: 0.24,
-    flash_point: 199,
-    octane_rating: 97,
     image: "http://dummyimage.com/108x100.png/5fa2dd/ffffff"
   },
   {
@@ -414,11 +269,6 @@ export const MockData: MockDataType = [
     price: 700.03,
     quantity: 111703,
     supplier: "Grant, Kling and Hudson",
-    purchase_date: "4/13/2019",
-    expiration_date: "6/27/2026",
-    density: 0.91,
-    flash_point: 44,
-    octane_rating: 93,
     image: "http://dummyimage.com/162x100.png/cc0000/ffffff"
   },
   {
@@ -428,11 +278,6 @@ export const MockData: MockDataType = [
     price: 704.61,
     quantity: 92645,
     supplier: "Flatley LLC",
-    purchase_date: "12/23/2010",
-    expiration_date: "4/15/2044",
-    density: 0.49,
-    flash_point: 4,
-    octane_rating: 85,
     image: "http://dummyimage.com/178x100.png/cc0000/ffffff"
   },
   {
@@ -442,11 +287,6 @@ export const MockData: MockDataType = [
     price: 254.5,
     quantity: 108839,
     supplier: "Rosenbaum-Auer",
-    purchase_date: "7/1/2018",
-    expiration_date: "9/8/2041",
-    density: 0.74,
-    flash_point: 90,
-    octane_rating: 87,
     image: "http://dummyimage.com/140x100.png/ff4444/ffffff"
   },
   {
@@ -456,11 +296,6 @@ export const MockData: MockDataType = [
     price: 989.7,
     quantity: 657775,
     supplier: "Bernhard, Hermann and Bergnaum",
-    purchase_date: "5/12/2015",
-    expiration_date: "2/1/2039",
-    density: 0.64,
-    flash_point: 68,
-    octane_rating: 98,
     image: "http://dummyimage.com/139x100.png/dddddd/000000"
   },
   {
@@ -470,11 +305,6 @@ export const MockData: MockDataType = [
     price: 325.75,
     quantity: 448183,
     supplier: "Grady, Stracke and Monahan",
-    purchase_date: "12/14/2008",
-    expiration_date: "5/14/2030",
-    density: 0.01,
-    flash_point: 161,
-    octane_rating: 87,
     image: "http://dummyimage.com/224x100.png/5fa2dd/ffffff"
   },
   {
@@ -484,11 +314,6 @@ export const MockData: MockDataType = [
     price: 89.48,
     quantity: 121077,
     supplier: "Herzog, Crist and Wehner",
-    purchase_date: "3/20/2001",
-    expiration_date: "1/6/2040",
-    density: 0.53,
-    flash_point: -47,
-    octane_rating: 97,
     image: "http://dummyimage.com/245x100.png/5fa2dd/ffffff"
   },
   {
@@ -498,11 +323,6 @@ export const MockData: MockDataType = [
     price: 944.47,
     quantity: 408058,
     supplier: "Dooley, Fadel and Goyette",
-    purchase_date: "1/27/2018",
-    expiration_date: "12/10/2041",
-    density: 0.26,
-    flash_point: 155,
-    octane_rating: 90,
     image: "http://dummyimage.com/220x100.png/ff4444/ffffff"
   },
   {
@@ -512,11 +332,6 @@ export const MockData: MockDataType = [
     price: 267.69,
     quantity: 539147,
     supplier: "Schumm Group",
-    purchase_date: "12/20/2019",
-    expiration_date: "5/4/2038",
-    density: 0.46,
-    flash_point: 34,
-    octane_rating: 100,
     image: "http://dummyimage.com/124x100.png/5fa2dd/ffffff"
   },
   {
@@ -526,11 +341,6 @@ export const MockData: MockDataType = [
     price: 742.23,
     quantity: 534045,
     supplier: "Balistreri-Roberts",
-    purchase_date: "9/4/2019",
-    expiration_date: "4/21/2032",
-    density: 0.75,
-    flash_point: 8,
-    octane_rating: 99,
     image: "http://dummyimage.com/208x100.png/cc0000/ffffff"
   },
   {
@@ -540,11 +350,6 @@ export const MockData: MockDataType = [
     price: 223.58,
     quantity: 946400,
     supplier: "Ebert, Lakin and Prosacco",
-    purchase_date: "3/15/2015",
-    expiration_date: "10/10/2034",
-    density: 0.22,
-    flash_point: 9,
-    octane_rating: 89,
     image: "http://dummyimage.com/160x100.png/ff4444/ffffff"
   },
   {
@@ -554,11 +359,6 @@ export const MockData: MockDataType = [
     price: 319.91,
     quantity: 87933,
     supplier: "Lind, Fadel and Greenfelder",
-    purchase_date: "9/24/2007",
-    expiration_date: "9/3/2023",
-    density: 0.96,
-    flash_point: 150,
-    octane_rating: 99,
     image: "http://dummyimage.com/250x100.png/ff4444/ffffff"
   },
   {
@@ -568,11 +368,6 @@ export const MockData: MockDataType = [
     price: 972.71,
     quantity: 642669,
     supplier: "Berge Group",
-    purchase_date: "12/12/2014",
-    expiration_date: "9/12/2042",
-    density: 0.97,
-    flash_point: 167,
-    octane_rating: 89,
     image: "http://dummyimage.com/239x100.png/5fa2dd/ffffff"
   },
   {
@@ -582,11 +377,6 @@ export const MockData: MockDataType = [
     price: 706.69,
     quantity: 286010,
     supplier: "Kovacek, Schamberger and Turner",
-    purchase_date: "4/27/2016",
-    expiration_date: "2/21/2042",
-    density: 0.75,
-    flash_point: 111,
-    octane_rating: 93,
     image: "http://dummyimage.com/203x100.png/ff4444/ffffff"
   },
   {
@@ -596,11 +386,6 @@ export const MockData: MockDataType = [
     price: 703.05,
     quantity: 548763,
     supplier: "Klein Group",
-    purchase_date: "10/15/2011",
-    expiration_date: "12/22/2030",
-    density: 0.61,
-    flash_point: 27,
-    octane_rating: 95,
     image: "http://dummyimage.com/120x100.png/ff4444/ffffff"
   },
   {
@@ -610,11 +395,6 @@ export const MockData: MockDataType = [
     price: 771.81,
     quantity: 260310,
     supplier: "Russel-Spinka",
-    purchase_date: "4/19/2006",
-    expiration_date: "11/19/2033",
-    density: 0.72,
-    flash_point: 82,
-    octane_rating: 87,
     image: "http://dummyimage.com/173x100.png/cc0000/ffffff"
   },
   {
@@ -624,11 +404,6 @@ export const MockData: MockDataType = [
     price: 799.07,
     quantity: 511107,
     supplier: "Emard-Quigley",
-    purchase_date: "8/21/2010",
-    expiration_date: "10/8/2029",
-    density: 0.44,
-    flash_point: 21,
-    octane_rating: 90,
     image: "http://dummyimage.com/177x100.png/dddddd/000000"
   },
   {
@@ -638,11 +413,6 @@ export const MockData: MockDataType = [
     price: 197.48,
     quantity: 297278,
     supplier: "Ratke and Sons",
-    purchase_date: "7/23/2001",
-    expiration_date: "2/21/2034",
-    density: 0.01,
-    flash_point: 192,
-    octane_rating: 95,
     image: "http://dummyimage.com/179x100.png/5fa2dd/ffffff"
   },
   {
@@ -652,11 +422,6 @@ export const MockData: MockDataType = [
     price: 924.29,
     quantity: 149109,
     supplier: "Heller-Wilkinson",
-    purchase_date: "2/14/2015",
-    expiration_date: "2/14/2044",
-    density: 0.16,
-    flash_point: 97,
-    octane_rating: 96,
     image: "http://dummyimage.com/173x100.png/dddddd/000000"
   },
   {
@@ -666,11 +431,6 @@ export const MockData: MockDataType = [
     price: 92.93,
     quantity: 315457,
     supplier: "Graham-Koepp",
-    purchase_date: "9/15/2005",
-    expiration_date: "12/24/2038",
-    density: 0.55,
-    flash_point: 47,
-    octane_rating: 96,
     image: "http://dummyimage.com/229x100.png/cc0000/ffffff"
   },
   {
@@ -680,11 +440,6 @@ export const MockData: MockDataType = [
     price: 942.69,
     quantity: 718471,
     supplier: "Hermann LLC",
-    purchase_date: "7/14/2008",
-    expiration_date: "11/6/2030",
-    density: 0.05,
-    flash_point: -6,
-    octane_rating: 92,
     image: "http://dummyimage.com/211x100.png/5fa2dd/ffffff"
   },
   {
@@ -694,11 +449,6 @@ export const MockData: MockDataType = [
     price: 698.39,
     quantity: 431409,
     supplier: "Lesch-O'Connell",
-    purchase_date: "3/7/2018",
-    expiration_date: "12/22/2033",
-    density: 0.28,
-    flash_point: 96,
-    octane_rating: 99,
     image: "http://dummyimage.com/221x100.png/cc0000/ffffff"
   },
   {
@@ -708,11 +458,6 @@ export const MockData: MockDataType = [
     price: 159.97,
     quantity: 220587,
     supplier: "Stracke and Sons",
-    purchase_date: "12/21/2001",
-    expiration_date: "8/3/2029",
-    density: 0.55,
-    flash_point: -41,
-    octane_rating: 86,
     image: "http://dummyimage.com/219x100.png/dddddd/000000"
   },
   {
@@ -722,11 +467,6 @@ export const MockData: MockDataType = [
     price: 624.78,
     quantity: 340359,
     supplier: "Dietrich LLC",
-    purchase_date: "4/1/2012",
-    expiration_date: "8/22/2031",
-    density: 0.3,
-    flash_point: 17,
-    octane_rating: 88,
     image: "http://dummyimage.com/217x100.png/ff4444/ffffff"
   },
   {
@@ -736,11 +476,6 @@ export const MockData: MockDataType = [
     price: 683.46,
     quantity: 773706,
     supplier: "Leannon LLC",
-    purchase_date: "2/3/2016",
-    expiration_date: "8/1/2046",
-    density: 0.37,
-    flash_point: 46,
-    octane_rating: 89,
     image: "http://dummyimage.com/198x100.png/5fa2dd/ffffff"
   },
   {
@@ -750,11 +485,6 @@ export const MockData: MockDataType = [
     price: 916.91,
     quantity: 541861,
     supplier: "Morar-Grimes",
-    purchase_date: "2/4/2009",
-    expiration_date: "3/12/2043",
-    density: 0.58,
-    flash_point: -14,
-    octane_rating: 96,
     image: "http://dummyimage.com/129x100.png/5fa2dd/ffffff"
   },
   {
@@ -764,11 +494,6 @@ export const MockData: MockDataType = [
     price: 310.66,
     quantity: 933879,
     supplier: "Hettinger, Kunde and Lemke",
-    purchase_date: "11/5/2013",
-    expiration_date: "3/14/2036",
-    density: 0.3,
-    flash_point: 171,
-    octane_rating: 86,
     image: "http://dummyimage.com/140x100.png/cc0000/ffffff"
   },
   {
@@ -778,11 +503,6 @@ export const MockData: MockDataType = [
     price: 43.12,
     quantity: 554714,
     supplier: "Jacobson-Koepp",
-    purchase_date: "9/21/2002",
-    expiration_date: "8/6/2037",
-    density: 0.95,
-    flash_point: 86,
-    octane_rating: 95,
     image: "http://dummyimage.com/241x100.png/ff4444/ffffff"
   },
   {
@@ -792,11 +512,6 @@ export const MockData: MockDataType = [
     price: 787.62,
     quantity: 362935,
     supplier: "Welch, Pacocha and Rath",
-    purchase_date: "3/4/2015",
-    expiration_date: "1/18/2033",
-    density: 0.93,
-    flash_point: 173,
-    octane_rating: 92,
     image: "http://dummyimage.com/232x100.png/ff4444/ffffff"
   },
   {
@@ -806,11 +521,6 @@ export const MockData: MockDataType = [
     price: 902.47,
     quantity: 655761,
     supplier: "Stokes, Cummings and Weissnat",
-    purchase_date: "11/8/2018",
-    expiration_date: "11/21/2038",
-    density: 0.37,
-    flash_point: 139,
-    octane_rating: 88,
     image: "http://dummyimage.com/235x100.png/5fa2dd/ffffff"
   },
   {
@@ -820,11 +530,6 @@ export const MockData: MockDataType = [
     price: 190.75,
     quantity: 170649,
     supplier: "Hauck, Reinger and McKenzie",
-    purchase_date: "11/8/2011",
-    expiration_date: "12/2/2031",
-    density: 0.19,
-    flash_point: -39,
-    octane_rating: 86,
     image: "http://dummyimage.com/137x100.png/cc0000/ffffff"
   },
   {
@@ -834,11 +539,6 @@ export const MockData: MockDataType = [
     price: 448.52,
     quantity: 886217,
     supplier: "Satterfield and Sons",
-    purchase_date: "1/17/2006",
-    expiration_date: "7/24/2036",
-    density: 0.96,
-    flash_point: 125,
-    octane_rating: 97,
     image: "http://dummyimage.com/134x100.png/5fa2dd/ffffff"
   },
   {
@@ -848,11 +548,6 @@ export const MockData: MockDataType = [
     price: 604.1,
     quantity: 946701,
     supplier: "Schiller Inc",
-    purchase_date: "1/31/2006",
-    expiration_date: "10/20/2046",
-    density: 0.13,
-    flash_point: 187,
-    octane_rating: 87,
     image: "http://dummyimage.com/105x100.png/ff4444/ffffff"
   },
   {
@@ -862,11 +557,6 @@ export const MockData: MockDataType = [
     price: 604.26,
     quantity: 722209,
     supplier: "Rowe-Hudson",
-    purchase_date: "8/30/2009",
-    expiration_date: "7/7/2031",
-    density: 0.74,
-    flash_point: 3,
-    octane_rating: 93,
     image: "http://dummyimage.com/211x100.png/5fa2dd/ffffff"
   },
   {
@@ -876,11 +566,6 @@ export const MockData: MockDataType = [
     price: 538.71,
     quantity: 276141,
     supplier: "Towne Inc",
-    purchase_date: "6/15/2009",
-    expiration_date: "6/26/2038",
-    density: 0.37,
-    flash_point: -45,
-    octane_rating: 87,
     image: "http://dummyimage.com/123x100.png/5fa2dd/ffffff"
   },
   {
@@ -890,11 +575,6 @@ export const MockData: MockDataType = [
     price: 578.52,
     quantity: 7909,
     supplier: "Waelchi-Hickle",
-    purchase_date: "6/25/2021",
-    expiration_date: "8/27/2038",
-    density: 0.3,
-    flash_point: -29,
-    octane_rating: 88,
     image: "http://dummyimage.com/100x100.png/dddddd/000000"
   },
   {
@@ -904,11 +584,6 @@ export const MockData: MockDataType = [
     price: 798.7,
     quantity: 375871,
     supplier: "Grady, Kunde and Barrows",
-    purchase_date: "5/28/2020",
-    expiration_date: "9/1/2034",
-    density: 0.21,
-    flash_point: 69,
-    octane_rating: 97,
     image: "http://dummyimage.com/222x100.png/ff4444/ffffff"
   },
   {
@@ -918,11 +593,6 @@ export const MockData: MockDataType = [
     price: 750.41,
     quantity: 526828,
     supplier: "Kautzer-Zemlak",
-    purchase_date: "4/5/2005",
-    expiration_date: "4/28/2046",
-    density: 0.11,
-    flash_point: 12,
-    octane_rating: 100,
     image: "http://dummyimage.com/141x100.png/cc0000/ffffff"
   },
   {
@@ -932,11 +602,6 @@ export const MockData: MockDataType = [
     price: 889.35,
     quantity: 656101,
     supplier: "Leffler, Hahn and Kreiger",
-    purchase_date: "4/30/2020",
-    expiration_date: "2/18/2035",
-    density: 0.25,
-    flash_point: -47,
-    octane_rating: 87,
     image: "http://dummyimage.com/187x100.png/ff4444/ffffff"
   },
   {
@@ -946,11 +611,6 @@ export const MockData: MockDataType = [
     price: 699.46,
     quantity: 948698,
     supplier: "Fadel, Skiles and Marks",
-    purchase_date: "9/26/2009",
-    expiration_date: "6/30/2040",
-    density: 0.52,
-    flash_point: -46,
-    octane_rating: 85,
     image: "http://dummyimage.com/248x100.png/ff4444/ffffff"
   },
   {
@@ -960,11 +620,6 @@ export const MockData: MockDataType = [
     price: 262.79,
     quantity: 107274,
     supplier: "Wilkinson Inc",
-    purchase_date: "5/10/2003",
-    expiration_date: "12/29/2044",
-    density: 0.97,
-    flash_point: 177,
-    octane_rating: 87,
     image: "http://dummyimage.com/181x100.png/cc0000/ffffff"
   },
   {
@@ -974,11 +629,6 @@ export const MockData: MockDataType = [
     price: 872.49,
     quantity: 773394,
     supplier: "Langosh-Johnson",
-    purchase_date: "1/5/2017",
-    expiration_date: "1/20/2033",
-    density: 0.15,
-    flash_point: 143,
-    octane_rating: 97,
     image: "http://dummyimage.com/173x100.png/ff4444/ffffff"
   },
   {
@@ -988,11 +638,6 @@ export const MockData: MockDataType = [
     price: 437.86,
     quantity: 852051,
     supplier: "Lehner, Shields and Hodkiewicz",
-    purchase_date: "1/29/2002",
-    expiration_date: "1/19/2026",
-    density: 0.42,
-    flash_point: 43,
-    octane_rating: 100,
     image: "http://dummyimage.com/250x100.png/5fa2dd/ffffff"
   },
   {
@@ -1002,11 +647,6 @@ export const MockData: MockDataType = [
     price: 642.9,
     quantity: 579328,
     supplier: "Mosciski-Johns",
-    purchase_date: "9/26/2001",
-    expiration_date: "12/8/2032",
-    density: 0.92,
-    flash_point: -45,
-    octane_rating: 87,
     image: "http://dummyimage.com/215x100.png/ff4444/ffffff"
   },
   {
@@ -1016,11 +656,6 @@ export const MockData: MockDataType = [
     price: 688.22,
     quantity: 241123,
     supplier: "Torphy-Langworth",
-    purchase_date: "7/19/2015",
-    expiration_date: "10/6/2040",
-    density: 0.41,
-    flash_point: 32,
-    octane_rating: 100,
     image: "http://dummyimage.com/164x100.png/dddddd/000000"
   },
   {
@@ -1030,11 +665,6 @@ export const MockData: MockDataType = [
     price: 157.32,
     quantity: 214364,
     supplier: "Schuppe LLC",
-    purchase_date: "9/22/2011",
-    expiration_date: "7/29/2026",
-    density: 0.76,
-    flash_point: 40,
-    octane_rating: 86,
     image: "http://dummyimage.com/130x100.png/5fa2dd/ffffff"
   },
   {
@@ -1044,11 +674,6 @@ export const MockData: MockDataType = [
     price: 479.73,
     quantity: 620931,
     supplier: "Bosco LLC",
-    purchase_date: "6/28/2011",
-    expiration_date: "3/27/2043",
-    density: 0.78,
-    flash_point: -16,
-    octane_rating: 86,
     image: "http://dummyimage.com/184x100.png/5fa2dd/ffffff"
   },
   {
@@ -1058,11 +683,6 @@ export const MockData: MockDataType = [
     price: 181.42,
     quantity: 228045,
     supplier: "Kuhn Inc",
-    purchase_date: "5/31/2022",
-    expiration_date: "9/24/2038",
-    density: 0.5,
-    flash_point: 97,
-    octane_rating: 91,
     image: "http://dummyimage.com/124x100.png/dddddd/000000"
   },
   {
@@ -1072,11 +692,6 @@ export const MockData: MockDataType = [
     price: 335.41,
     quantity: 106898,
     supplier: "Volkman-Sporer",
-    purchase_date: "2/18/2011",
-    expiration_date: "6/22/2024",
-    density: 0.06,
-    flash_point: -1,
-    octane_rating: 99,
     image: "http://dummyimage.com/127x100.png/dddddd/000000"
   },
   {
@@ -1086,11 +701,6 @@ export const MockData: MockDataType = [
     price: 183.39,
     quantity: 69434,
     supplier: "Torphy-Berge",
-    purchase_date: "4/13/2020",
-    expiration_date: "2/13/2023",
-    density: 0.88,
-    flash_point: 25,
-    octane_rating: 87,
     image: "http://dummyimage.com/112x100.png/ff4444/ffffff"
   },
   {
@@ -1100,11 +710,6 @@ export const MockData: MockDataType = [
     price: 302.99,
     quantity: 488385,
     supplier: "Pacocha-Sawayn",
-    purchase_date: "3/10/2009",
-    expiration_date: "10/13/2025",
-    density: 0.26,
-    flash_point: -38,
-    octane_rating: 98,
     image: "http://dummyimage.com/241x100.png/ff4444/ffffff"
   },
   {
@@ -1114,11 +719,6 @@ export const MockData: MockDataType = [
     price: 83.97,
     quantity: 388236,
     supplier: "Moen LLC",
-    purchase_date: "7/17/2008",
-    expiration_date: "4/19/2036",
-    density: 0.87,
-    flash_point: 118,
-    octane_rating: 97,
     image: "http://dummyimage.com/239x100.png/dddddd/000000"
   },
   {
@@ -1128,11 +728,6 @@ export const MockData: MockDataType = [
     price: 444.07,
     quantity: 244076,
     supplier: "Fay-Metz",
-    purchase_date: "12/19/2021",
-    expiration_date: "9/21/2033",
-    density: 0.46,
-    flash_point: 100,
-    octane_rating: 92,
     image: "http://dummyimage.com/225x100.png/dddddd/000000"
   },
   {
@@ -1142,11 +737,6 @@ export const MockData: MockDataType = [
     price: 618.66,
     quantity: 547980,
     supplier: "Gulgowski and Sons",
-    purchase_date: "3/29/2000",
-    expiration_date: "2/13/2036",
-    density: 0.64,
-    flash_point: 81,
-    octane_rating: 91,
     image: "http://dummyimage.com/246x100.png/dddddd/000000"
   },
   {
@@ -1156,11 +746,6 @@ export const MockData: MockDataType = [
     price: 429.59,
     quantity: 885057,
     supplier: "O'Conner-Rempel",
-    purchase_date: "7/6/2016",
-    expiration_date: "1/1/2041",
-    density: 0.54,
-    flash_point: -50,
-    octane_rating: 85,
     image: "http://dummyimage.com/147x100.png/ff4444/ffffff"
   },
   {
@@ -1170,11 +755,6 @@ export const MockData: MockDataType = [
     price: 472.89,
     quantity: 371320,
     supplier: "Bailey, Shields and Frami",
-    purchase_date: "4/17/2010",
-    expiration_date: "10/4/2029",
-    density: 0.65,
-    flash_point: 196,
-    octane_rating: 85,
     image: "http://dummyimage.com/203x100.png/dddddd/000000"
   },
   {
@@ -1184,11 +764,6 @@ export const MockData: MockDataType = [
     price: 742.07,
     quantity: 317227,
     supplier: "Stanton-Robel",
-    purchase_date: "8/13/2006",
-    expiration_date: "4/18/2039",
-    density: 0.81,
-    flash_point: 90,
-    octane_rating: 90,
     image: "http://dummyimage.com/142x100.png/cc0000/ffffff"
   },
   {
@@ -1198,11 +773,6 @@ export const MockData: MockDataType = [
     price: 138.46,
     quantity: 431953,
     supplier: "Spinka-Swift",
-    purchase_date: "11/24/2000",
-    expiration_date: "4/17/2030",
-    density: 0.64,
-    flash_point: -22,
-    octane_rating: 100,
     image: "http://dummyimage.com/131x100.png/5fa2dd/ffffff"
   },
   {
@@ -1212,11 +782,6 @@ export const MockData: MockDataType = [
     price: 936.9,
     quantity: 647786,
     supplier: "Gutkowski-Yundt",
-    purchase_date: "7/15/2004",
-    expiration_date: "11/27/2041",
-    density: 0.53,
-    flash_point: 134,
-    octane_rating: 91,
     image: "http://dummyimage.com/227x100.png/cc0000/ffffff"
   },
   {
@@ -1226,11 +791,6 @@ export const MockData: MockDataType = [
     price: 995.29,
     quantity: 124657,
     supplier: "Fisher, Toy and Kub",
-    purchase_date: "9/20/2003",
-    expiration_date: "5/27/2036",
-    density: 0.59,
-    flash_point: 164,
-    octane_rating: 96,
     image: "http://dummyimage.com/143x100.png/dddddd/000000"
   },
   {
@@ -1240,11 +800,6 @@ export const MockData: MockDataType = [
     price: 983.08,
     quantity: 699339,
     supplier: "Tremblay LLC",
-    purchase_date: "4/19/2005",
-    expiration_date: "2/14/2038",
-    density: 0.81,
-    flash_point: 74,
-    octane_rating: 100,
     image: "http://dummyimage.com/133x100.png/ff4444/ffffff"
   },
   {
@@ -1254,11 +809,6 @@ export const MockData: MockDataType = [
     price: 64.58,
     quantity: 792134,
     supplier: "Mraz-Price",
-    purchase_date: "4/25/2017",
-    expiration_date: "11/6/2027",
-    density: 0.51,
-    flash_point: 145,
-    octane_rating: 95,
     image: "http://dummyimage.com/101x100.png/5fa2dd/ffffff"
   },
   {
@@ -1268,11 +818,6 @@ export const MockData: MockDataType = [
     price: 149.66,
     quantity: 427914,
     supplier: "Brown, Sporer and Kuhlman",
-    purchase_date: "12/17/2021",
-    expiration_date: "5/5/2032",
-    density: 0.75,
-    flash_point: 60,
-    octane_rating: 96,
     image: "http://dummyimage.com/166x100.png/cc0000/ffffff"
   },
   {
@@ -1282,11 +827,6 @@ export const MockData: MockDataType = [
     price: 496.85,
     quantity: 371738,
     supplier: "Cartwright-Sporer",
-    purchase_date: "5/18/2019",
-    expiration_date: "10/23/2037",
-    density: 0.13,
-    flash_point: 185,
-    octane_rating: 92,
     image: "http://dummyimage.com/107x100.png/cc0000/ffffff"
   },
   {
@@ -1296,11 +836,6 @@ export const MockData: MockDataType = [
     price: 172.95,
     quantity: 630682,
     supplier: "Schinner, Kunze and Glover",
-    purchase_date: "4/3/2018",
-    expiration_date: "12/2/2025",
-    density: 0.04,
-    flash_point: -9,
-    octane_rating: 89,
     image: "http://dummyimage.com/126x100.png/ff4444/ffffff"
   },
   {
@@ -1310,11 +845,6 @@ export const MockData: MockDataType = [
     price: 439.81,
     quantity: 882179,
     supplier: "Howell and Sons",
-    purchase_date: "12/22/2016",
-    expiration_date: "9/30/2044",
-    density: 0.96,
-    flash_point: 79,
-    octane_rating: 99,
     image: "http://dummyimage.com/200x100.png/5fa2dd/ffffff"
   },
   {
@@ -1324,11 +854,6 @@ export const MockData: MockDataType = [
     price: 316.93,
     quantity: 691062,
     supplier: "Price, Cummerata and Kshlerin",
-    purchase_date: "7/28/2016",
-    expiration_date: "4/17/2026",
-    density: 0.89,
-    flash_point: 124,
-    octane_rating: 95,
     image: "http://dummyimage.com/185x100.png/5fa2dd/ffffff"
   },
   {
@@ -1338,11 +863,6 @@ export const MockData: MockDataType = [
     price: 961.35,
     quantity: 217856,
     supplier: "Beahan-Bins",
-    purchase_date: "5/26/2006",
-    expiration_date: "7/19/2046",
-    density: 0.69,
-    flash_point: 156,
-    octane_rating: 89,
     image: "http://dummyimage.com/175x100.png/ff4444/ffffff"
   },
   {
@@ -1352,11 +872,6 @@ export const MockData: MockDataType = [
     price: 249.13,
     quantity: 395642,
     supplier: "Hodkiewicz, Spencer and Wilkinson",
-    purchase_date: "7/27/2017",
-    expiration_date: "1/7/2043",
-    density: 0.64,
-    flash_point: 7,
-    octane_rating: 87,
     image: "http://dummyimage.com/112x100.png/ff4444/ffffff"
   },
   {
@@ -1366,11 +881,6 @@ export const MockData: MockDataType = [
     price: 993.36,
     quantity: 613850,
     supplier: "Zulauf, Cartwright and Macejkovic",
-    purchase_date: "8/17/2018",
-    expiration_date: "11/29/2033",
-    density: 0.75,
-    flash_point: 18,
-    octane_rating: 91,
     image: "http://dummyimage.com/236x100.png/5fa2dd/ffffff"
   },
   {
@@ -1380,11 +890,6 @@ export const MockData: MockDataType = [
     price: 291.66,
     quantity: 727820,
     supplier: "Beier-Haley",
-    purchase_date: "12/23/2016",
-    expiration_date: "2/8/2030",
-    density: 0.45,
-    flash_point: 143,
-    octane_rating: 98,
     image: "http://dummyimage.com/116x100.png/dddddd/000000"
   },
   {
@@ -1394,11 +899,6 @@ export const MockData: MockDataType = [
     price: 374.95,
     quantity: 317663,
     supplier: "Wyman-Grimes",
-    purchase_date: "2/1/2014",
-    expiration_date: "6/2/2046",
-    density: 0.12,
-    flash_point: 92,
-    octane_rating: 86,
     image: "http://dummyimage.com/250x100.png/ff4444/ffffff"
   },
   {
@@ -1408,11 +908,6 @@ export const MockData: MockDataType = [
     price: 704.14,
     quantity: 623616,
     supplier: "Hills and Sons",
-    purchase_date: "10/3/2022",
-    expiration_date: "3/6/2038",
-    density: 0.44,
-    flash_point: 92,
-    octane_rating: 95,
     image: "http://dummyimage.com/239x100.png/cc0000/ffffff"
   },
   {
@@ -1422,11 +917,6 @@ export const MockData: MockDataType = [
     price: 525.04,
     quantity: 697399,
     supplier: "Bradtke, Hagenes and Mosciski",
-    purchase_date: "2/26/2011",
-    expiration_date: "4/16/2034",
-    density: 0.43,
-    flash_point: 116,
-    octane_rating: 87,
     image: "http://dummyimage.com/192x100.png/ff4444/ffffff"
   },
   {
@@ -1436,11 +926,6 @@ export const MockData: MockDataType = [
     price: 29.86,
     quantity: 386406,
     supplier: "Koelpin, Kihn and VonRueden",
-    purchase_date: "1/7/2019",
-    expiration_date: "11/14/2042",
-    density: 0.56,
-    flash_point: -47,
-    octane_rating: 94,
     image: "http://dummyimage.com/174x100.png/ff4444/ffffff"
   },
   {
@@ -1450,11 +935,6 @@ export const MockData: MockDataType = [
     price: 728.96,
     quantity: 950292,
     supplier: "Harber, Nicolas and Weissnat",
-    purchase_date: "5/5/2006",
-    expiration_date: "1/7/2032",
-    density: 0.36,
-    flash_point: 94,
-    octane_rating: 95,
     image: "http://dummyimage.com/100x100.png/5fa2dd/ffffff"
   },
   {
@@ -1464,11 +944,6 @@ export const MockData: MockDataType = [
     price: 241.19,
     quantity: 161551,
     supplier: "Moore-Deckow",
-    purchase_date: "3/5/2011",
-    expiration_date: "12/8/2043",
-    density: 0.84,
-    flash_point: 120,
-    octane_rating: 98,
     image: "http://dummyimage.com/158x100.png/5fa2dd/ffffff"
   },
   {
@@ -1478,11 +953,6 @@ export const MockData: MockDataType = [
     price: 207.63,
     quantity: 985507,
     supplier: "Bosco-Klein",
-    purchase_date: "10/1/2021",
-    expiration_date: "9/11/2037",
-    density: 0.55,
-    flash_point: 36,
-    octane_rating: 91,
     image: "http://dummyimage.com/200x100.png/ff4444/ffffff"
   },
   {
@@ -1492,11 +962,6 @@ export const MockData: MockDataType = [
     price: 748.13,
     quantity: 715635,
     supplier: "Predovic and Sons",
-    purchase_date: "4/26/2011",
-    expiration_date: "3/12/2045",
-    density: 0.67,
-    flash_point: 45,
-    octane_rating: 91,
     image: "http://dummyimage.com/123x100.png/cc0000/ffffff"
   },
   {
@@ -1506,11 +971,6 @@ export const MockData: MockDataType = [
     price: 251.37,
     quantity: 40256,
     supplier: "Smith-Schinner",
-    purchase_date: "3/18/2006",
-    expiration_date: "3/23/2031",
-    density: 0.81,
-    flash_point: 87,
-    octane_rating: 94,
     image: "http://dummyimage.com/185x100.png/cc0000/ffffff"
   },
   {
@@ -1520,11 +980,6 @@ export const MockData: MockDataType = [
     price: 895.05,
     quantity: 299292,
     supplier: "Von, Ernser and Luettgen",
-    purchase_date: "2/2/2010",
-    expiration_date: "7/13/2039",
-    density: 0.86,
-    flash_point: -34,
-    octane_rating: 86,
     image: "http://dummyimage.com/242x100.png/ff4444/ffffff"
   },
   {
@@ -1534,11 +989,6 @@ export const MockData: MockDataType = [
     price: 534.72,
     quantity: 729073,
     supplier: "Crooks-Watsica",
-    purchase_date: "9/21/2015",
-    expiration_date: "3/28/2037",
-    density: 0.74,
-    flash_point: 22,
-    octane_rating: 100,
     image: "http://dummyimage.com/173x100.png/dddddd/000000"
   },
   {
@@ -1548,11 +998,6 @@ export const MockData: MockDataType = [
     price: 929.18,
     quantity: 774352,
     supplier: "Zieme-Kunze",
-    purchase_date: "1/18/2005",
-    expiration_date: "1/8/2043",
-    density: 0.72,
-    flash_point: -9,
-    octane_rating: 85,
     image: "http://dummyimage.com/159x100.png/5fa2dd/ffffff"
   },
   {
@@ -1562,11 +1007,6 @@ export const MockData: MockDataType = [
     price: 649.5,
     quantity: 476790,
     supplier: "Gutkowski, Leannon and Sauer",
-    purchase_date: "1/9/2008",
-    expiration_date: "8/5/2035",
-    density: 0.96,
-    flash_point: 17,
-    octane_rating: 100,
     image: "http://dummyimage.com/150x100.png/dddddd/000000"
   },
   {
@@ -1576,11 +1016,6 @@ export const MockData: MockDataType = [
     price: 695.33,
     quantity: 109276,
     supplier: "McGlynn-Romaguera",
-    purchase_date: "10/21/2016",
-    expiration_date: "10/26/2046",
-    density: 0.05,
-    flash_point: 199,
-    octane_rating: 91,
     image: "http://dummyimage.com/237x100.png/dddddd/000000"
   },
   {
@@ -1590,11 +1025,6 @@ export const MockData: MockDataType = [
     price: 26.6,
     quantity: 915893,
     supplier: "Wiza-Effertz",
-    purchase_date: "8/3/2004",
-    expiration_date: "5/25/2041",
-    density: 0.86,
-    flash_point: 5,
-    octane_rating: 85,
     image: "http://dummyimage.com/250x100.png/dddddd/000000"
   },
   {
@@ -1604,11 +1034,6 @@ export const MockData: MockDataType = [
     price: 670.49,
     quantity: 985870,
     supplier: "Williamson-Johnston",
-    purchase_date: "7/9/2003",
-    expiration_date: "9/30/2039",
-    density: 0.39,
-    flash_point: 112,
-    octane_rating: 98,
     image: "http://dummyimage.com/165x100.png/ff4444/ffffff"
   },
   {
@@ -1618,11 +1043,6 @@ export const MockData: MockDataType = [
     price: 222.88,
     quantity: 205345,
     supplier: "Kessler Group",
-    purchase_date: "1/3/2011",
-    expiration_date: "3/14/2025",
-    density: 0.92,
-    flash_point: 109,
-    octane_rating: 93,
     image: "http://dummyimage.com/201x100.png/cc0000/ffffff"
   },
   {
@@ -1632,11 +1052,6 @@ export const MockData: MockDataType = [
     price: 25.55,
     quantity: 692950,
     supplier: "Bednar, Nikolaus and Hand",
-    purchase_date: "2/28/2007",
-    expiration_date: "11/23/2037",
-    density: 0.53,
-    flash_point: 33,
-    octane_rating: 98,
     image: "http://dummyimage.com/160x100.png/ff4444/ffffff"
   },
   {
@@ -1646,11 +1061,6 @@ export const MockData: MockDataType = [
     price: 255.26,
     quantity: 931694,
     supplier: "Shields-Brekke",
-    purchase_date: "8/17/2021",
-    expiration_date: "6/15/2024",
-    density: 0.28,
-    flash_point: 27,
-    octane_rating: 86,
     image: "http://dummyimage.com/150x100.png/cc0000/ffffff"
   },
   {
@@ -1660,11 +1070,6 @@ export const MockData: MockDataType = [
     price: 256.82,
     quantity: 811282,
     supplier: "Armstrong, Jerde and Zemlak",
-    purchase_date: "9/20/2008",
-    expiration_date: "9/20/2032",
-    density: 0.9,
-    flash_point: 15,
-    octane_rating: 86,
     image: "http://dummyimage.com/218x100.png/dddddd/000000"
   },
   {
@@ -1674,11 +1079,6 @@ export const MockData: MockDataType = [
     price: 393.7,
     quantity: 347634,
     supplier: "Howe, Friesen and Gulgowski",
-    purchase_date: "4/2/2004",
-    expiration_date: "7/1/2040",
-    density: 0.5,
-    flash_point: 172,
-    octane_rating: 89,
     image: "http://dummyimage.com/151x100.png/ff4444/ffffff"
   },
   {
@@ -1688,11 +1088,6 @@ export const MockData: MockDataType = [
     price: 102.4,
     quantity: 310312,
     supplier: "Hodkiewicz, Block and Fisher",
-    purchase_date: "2/16/2002",
-    expiration_date: "11/25/2028",
-    density: 0.23,
-    flash_point: -3,
-    octane_rating: 96,
     image: "http://dummyimage.com/242x100.png/ff4444/ffffff"
   },
   {
@@ -1702,11 +1097,6 @@ export const MockData: MockDataType = [
     price: 587.88,
     quantity: 133662,
     supplier: "Herman Group",
-    purchase_date: "7/1/2017",
-    expiration_date: "10/28/2038",
-    density: 0.26,
-    flash_point: 116,
-    octane_rating: 94,
     image: "http://dummyimage.com/239x100.png/ff4444/ffffff"
   },
   {
@@ -1716,11 +1106,6 @@ export const MockData: MockDataType = [
     price: 498.34,
     quantity: 523703,
     supplier: "Blanda Group",
-    purchase_date: "1/30/2011",
-    expiration_date: "1/15/2039",
-    density: 0.37,
-    flash_point: -17,
-    octane_rating: 97,
     image: "http://dummyimage.com/128x100.png/5fa2dd/ffffff"
   },
   {
@@ -1730,11 +1115,6 @@ export const MockData: MockDataType = [
     price: 296.7,
     quantity: 668545,
     supplier: "Franecki-Mann",
-    purchase_date: "4/26/2011",
-    expiration_date: "1/18/2040",
-    density: 0.72,
-    flash_point: 24,
-    octane_rating: 87,
     image: "http://dummyimage.com/231x100.png/ff4444/ffffff"
   },
   {
@@ -1744,11 +1124,6 @@ export const MockData: MockDataType = [
     price: 949.75,
     quantity: 632257,
     supplier: "Quigley, Cummerata and Batz",
-    purchase_date: "5/1/2008",
-    expiration_date: "1/30/2044",
-    density: 0.97,
-    flash_point: 36,
-    octane_rating: 92,
     image: "http://dummyimage.com/232x100.png/cc0000/ffffff"
   },
   {
@@ -1758,11 +1133,6 @@ export const MockData: MockDataType = [
     price: 488.32,
     quantity: 297765,
     supplier: "Krajcik, Baumbach and Gorczany",
-    purchase_date: "11/22/2018",
-    expiration_date: "10/6/2045",
-    density: 0.83,
-    flash_point: 10,
-    octane_rating: 88,
     image: "http://dummyimage.com/244x100.png/ff4444/ffffff"
   },
   {
@@ -1772,11 +1142,6 @@ export const MockData: MockDataType = [
     price: 611.76,
     quantity: 866619,
     supplier: "Weber Inc",
-    purchase_date: "6/16/2018",
-    expiration_date: "1/1/2046",
-    density: 0.65,
-    flash_point: 33,
-    octane_rating: 99,
     image: "http://dummyimage.com/185x100.png/dddddd/000000"
   },
   {
@@ -1786,11 +1151,6 @@ export const MockData: MockDataType = [
     price: 658.36,
     quantity: 458839,
     supplier: "Kertzmann Inc",
-    purchase_date: "5/28/2005",
-    expiration_date: "12/29/2024",
-    density: 0.14,
-    flash_point: 183,
-    octane_rating: 93,
     image: "http://dummyimage.com/202x100.png/cc0000/ffffff"
   },
   {
@@ -1800,11 +1160,6 @@ export const MockData: MockDataType = [
     price: 352.11,
     quantity: 484336,
     supplier: "Bergnaum-Quigley",
-    purchase_date: "12/24/2002",
-    expiration_date: "10/28/2039",
-    density: 0.47,
-    flash_point: 199,
-    octane_rating: 85,
     image: "http://dummyimage.com/143x100.png/cc0000/ffffff"
   },
   {
@@ -1814,11 +1169,6 @@ export const MockData: MockDataType = [
     price: 567.51,
     quantity: 791769,
     supplier: "Hills-Jacobi",
-    purchase_date: "4/1/2022",
-    expiration_date: "8/30/2038",
-    density: 0.27,
-    flash_point: -43,
-    octane_rating: 89,
     image: "http://dummyimage.com/246x100.png/5fa2dd/ffffff"
   },
   {
@@ -1828,11 +1178,6 @@ export const MockData: MockDataType = [
     price: 584.83,
     quantity: 398439,
     supplier: "Emard and Sons",
-    purchase_date: "9/2/2010",
-    expiration_date: "3/9/2036",
-    density: 0.96,
-    flash_point: -23,
-    octane_rating: 92,
     image: "http://dummyimage.com/193x100.png/ff4444/ffffff"
   },
   {
@@ -1842,11 +1187,6 @@ export const MockData: MockDataType = [
     price: 954.02,
     quantity: 413003,
     supplier: "Breitenberg, Goodwin and Schneider",
-    purchase_date: "3/9/2001",
-    expiration_date: "5/23/2040",
-    density: 0.34,
-    flash_point: 125,
-    octane_rating: 89,
     image: "http://dummyimage.com/203x100.png/dddddd/000000"
   },
   {
@@ -1856,11 +1196,6 @@ export const MockData: MockDataType = [
     price: 785.62,
     quantity: 734905,
     supplier: "Hermiston LLC",
-    purchase_date: "9/1/2021",
-    expiration_date: "1/18/2028",
-    density: 0.89,
-    flash_point: 124,
-    octane_rating: 97,
     image: "http://dummyimage.com/227x100.png/dddddd/000000"
   },
   {
@@ -1870,11 +1205,6 @@ export const MockData: MockDataType = [
     price: 410.33,
     quantity: 86441,
     supplier: "Lind and Sons",
-    purchase_date: "6/30/2014",
-    expiration_date: "10/29/2028",
-    density: 0.83,
-    flash_point: 161,
-    octane_rating: 87,
     image: "http://dummyimage.com/247x100.png/ff4444/ffffff"
   },
   {
@@ -1884,11 +1214,6 @@ export const MockData: MockDataType = [
     price: 165.11,
     quantity: 760901,
     supplier: "Hyatt LLC",
-    purchase_date: "2/24/2021",
-    expiration_date: "11/14/2034",
-    density: 0.97,
-    flash_point: 136,
-    octane_rating: 95,
     image: "http://dummyimage.com/198x100.png/dddddd/000000"
   },
   {
@@ -1898,11 +1223,6 @@ export const MockData: MockDataType = [
     price: 358.19,
     quantity: 407849,
     supplier: "Gottlieb LLC",
-    purchase_date: "3/9/2015",
-    expiration_date: "6/2/2026",
-    density: 0.55,
-    flash_point: 62,
-    octane_rating: 85,
     image: "http://dummyimage.com/223x100.png/5fa2dd/ffffff"
   },
   {
@@ -1912,11 +1232,6 @@ export const MockData: MockDataType = [
     price: 504.3,
     quantity: 415461,
     supplier: "Denesik-Bogan",
-    purchase_date: "12/31/2007",
-    expiration_date: "9/13/2038",
-    density: 0.42,
-    flash_point: 136,
-    octane_rating: 86,
     image: "http://dummyimage.com/206x100.png/cc0000/ffffff"
   },
   {
@@ -1926,11 +1241,6 @@ export const MockData: MockDataType = [
     price: 452.45,
     quantity: 629371,
     supplier: "Senger, Rodriguez and Streich",
-    purchase_date: "7/25/2001",
-    expiration_date: "3/24/2045",
-    density: 0.27,
-    flash_point: 140,
-    octane_rating: 95,
     image: "http://dummyimage.com/238x100.png/cc0000/ffffff"
   },
   {
@@ -1940,11 +1250,6 @@ export const MockData: MockDataType = [
     price: 149.55,
     quantity: 538013,
     supplier: "Legros-Lueilwitz",
-    purchase_date: "7/30/2016",
-    expiration_date: "5/12/2025",
-    density: 0.56,
-    flash_point: 194,
-    octane_rating: 85,
     image: "http://dummyimage.com/210x100.png/5fa2dd/ffffff"
   },
   {
@@ -1954,11 +1259,6 @@ export const MockData: MockDataType = [
     price: 903.26,
     quantity: 124446,
     supplier: "Okuneva-Kub",
-    purchase_date: "3/16/2012",
-    expiration_date: "6/28/2042",
-    density: 0.12,
-    flash_point: 118,
-    octane_rating: 88,
     image: "http://dummyimage.com/197x100.png/5fa2dd/ffffff"
   },
   {
@@ -1968,11 +1268,6 @@ export const MockData: MockDataType = [
     price: 669.01,
     quantity: 159514,
     supplier: "Little, Stoltenberg and Steuber",
-    purchase_date: "7/30/2016",
-    expiration_date: "8/8/2044",
-    density: 0.67,
-    flash_point: 7,
-    octane_rating: 92,
     image: "http://dummyimage.com/199x100.png/dddddd/000000"
   },
   {
@@ -1982,11 +1277,6 @@ export const MockData: MockDataType = [
     price: 394.01,
     quantity: 841813,
     supplier: "Lockman-Nolan",
-    purchase_date: "11/14/2010",
-    expiration_date: "11/4/2046",
-    density: 0.63,
-    flash_point: -19,
-    octane_rating: 87,
     image: "http://dummyimage.com/145x100.png/cc0000/ffffff"
   },
   {
@@ -1996,11 +1286,6 @@ export const MockData: MockDataType = [
     price: 667.61,
     quantity: 124740,
     supplier: "Kuvalis LLC",
-    purchase_date: "7/16/2004",
-    expiration_date: "10/3/2023",
-    density: 0.55,
-    flash_point: 76,
-    octane_rating: 100,
     image: "http://dummyimage.com/189x100.png/dddddd/000000"
   },
   {
@@ -2010,11 +1295,6 @@ export const MockData: MockDataType = [
     price: 292.01,
     quantity: 420059,
     supplier: "Weissnat, Yost and Heller",
-    purchase_date: "11/15/2017",
-    expiration_date: "11/4/2033",
-    density: 0.88,
-    flash_point: -37,
-    octane_rating: 85,
     image: "http://dummyimage.com/231x100.png/dddddd/000000"
   },
   {
@@ -2024,11 +1304,6 @@ export const MockData: MockDataType = [
     price: 998.76,
     quantity: 129580,
     supplier: "Walker, Turner and Heller",
-    purchase_date: "12/25/2021",
-    expiration_date: "4/11/2036",
-    density: 0.18,
-    flash_point: 188,
-    octane_rating: 85,
     image: "http://dummyimage.com/187x100.png/5fa2dd/ffffff"
   },
   {
@@ -2038,11 +1313,6 @@ export const MockData: MockDataType = [
     price: 274.39,
     quantity: 364969,
     supplier: "Altenwerth-Conroy",
-    purchase_date: "9/22/2016",
-    expiration_date: "12/11/2024",
-    density: 0.61,
-    flash_point: 122,
-    octane_rating: 98,
     image: "http://dummyimage.com/128x100.png/cc0000/ffffff"
   },
   {
@@ -2052,11 +1322,6 @@ export const MockData: MockDataType = [
     price: 2.79,
     quantity: 400858,
     supplier: "Crona, Stanton and Conroy",
-    purchase_date: "1/25/2013",
-    expiration_date: "8/22/2043",
-    density: 0.15,
-    flash_point: 85,
-    octane_rating: 97,
     image: "http://dummyimage.com/230x100.png/dddddd/000000"
   },
   {
@@ -2066,11 +1331,6 @@ export const MockData: MockDataType = [
     price: 309.38,
     quantity: 492841,
     supplier: "Lueilwitz Group",
-    purchase_date: "4/17/2004",
-    expiration_date: "3/6/2041",
-    density: 0.19,
-    flash_point: 173,
-    octane_rating: 85,
     image: "http://dummyimage.com/126x100.png/dddddd/000000"
   },
   {
@@ -2080,11 +1340,6 @@ export const MockData: MockDataType = [
     price: 637.51,
     quantity: 647364,
     supplier: "Orn-Hand",
-    purchase_date: "4/5/2014",
-    expiration_date: "12/18/2040",
-    density: 0.12,
-    flash_point: 69,
-    octane_rating: 88,
     image: "http://dummyimage.com/118x100.png/5fa2dd/ffffff"
   },
   {
@@ -2094,11 +1349,6 @@ export const MockData: MockDataType = [
     price: 223.6,
     quantity: 139293,
     supplier: "Berge-Rolfson",
-    purchase_date: "10/26/2017",
-    expiration_date: "9/10/2029",
-    density: 0.73,
-    flash_point: -22,
-    octane_rating: 90,
     image: "http://dummyimage.com/232x100.png/cc0000/ffffff"
   },
   {
@@ -2108,11 +1358,6 @@ export const MockData: MockDataType = [
     price: 488.8,
     quantity: 855731,
     supplier: "Reichel and Sons",
-    purchase_date: "3/27/2010",
-    expiration_date: "3/30/2035",
-    density: 0.7,
-    flash_point: -31,
-    octane_rating: 97,
     image: "http://dummyimage.com/188x100.png/5fa2dd/ffffff"
   },
   {
@@ -2122,11 +1367,6 @@ export const MockData: MockDataType = [
     price: 552.94,
     quantity: 586054,
     supplier: "Hermann-Hudson",
-    purchase_date: "4/18/2009",
-    expiration_date: "6/27/2034",
-    density: 0.7,
-    flash_point: 31,
-    octane_rating: 95,
     image: "http://dummyimage.com/232x100.png/5fa2dd/ffffff"
   },
   {
@@ -2136,11 +1376,6 @@ export const MockData: MockDataType = [
     price: 704.41,
     quantity: 587382,
     supplier: "Ebert, Keeling and Reilly",
-    purchase_date: "8/10/2014",
-    expiration_date: "9/12/2039",
-    density: 0.3,
-    flash_point: 181,
-    octane_rating: 95,
     image: "http://dummyimage.com/120x100.png/ff4444/ffffff"
   },
   {
@@ -2150,11 +1385,6 @@ export const MockData: MockDataType = [
     price: 519.69,
     quantity: 836196,
     supplier: "Goldner Group",
-    purchase_date: "3/21/2018",
-    expiration_date: "3/5/2037",
-    density: 0.93,
-    flash_point: -49,
-    octane_rating: 99,
     image: "http://dummyimage.com/207x100.png/ff4444/ffffff"
   },
   {
@@ -2164,11 +1394,6 @@ export const MockData: MockDataType = [
     price: 256.11,
     quantity: 855609,
     supplier: "Schroeder-Johns",
-    purchase_date: "1/2/2019",
-    expiration_date: "3/8/2034",
-    density: 0.06,
-    flash_point: -46,
-    octane_rating: 86,
     image: "http://dummyimage.com/150x100.png/cc0000/ffffff"
   },
   {
@@ -2178,11 +1403,6 @@ export const MockData: MockDataType = [
     price: 699.4,
     quantity: 568655,
     supplier: "Keeling, Simonis and Schmidt",
-    purchase_date: "11/8/2013",
-    expiration_date: "3/2/2025",
-    density: 0.26,
-    flash_point: 12,
-    octane_rating: 94,
     image: "http://dummyimage.com/195x100.png/cc0000/ffffff"
   },
   {
@@ -2192,11 +1412,6 @@ export const MockData: MockDataType = [
     price: 356.01,
     quantity: 305188,
     supplier: "Bruen, Strosin and Thiel",
-    purchase_date: "10/9/2020",
-    expiration_date: "3/25/2029",
-    density: 0.87,
-    flash_point: 186,
-    octane_rating: 90,
     image: "http://dummyimage.com/129x100.png/5fa2dd/ffffff"
   },
   {
@@ -2206,11 +1421,6 @@ export const MockData: MockDataType = [
     price: 707.29,
     quantity: 161948,
     supplier: "Ryan-Hilll",
-    purchase_date: "8/20/2014",
-    expiration_date: "11/14/2024",
-    density: 0,
-    flash_point: -23,
-    octane_rating: 96,
     image: "http://dummyimage.com/169x100.png/cc0000/ffffff"
   },
   {
@@ -2220,11 +1430,6 @@ export const MockData: MockDataType = [
     price: 539.92,
     quantity: 347921,
     supplier: "VonRueden-Kris",
-    purchase_date: "11/14/2002",
-    expiration_date: "1/23/2044",
-    density: 0.82,
-    flash_point: -40,
-    octane_rating: 96,
     image: "http://dummyimage.com/106x100.png/5fa2dd/ffffff"
   },
   {
@@ -2234,11 +1439,6 @@ export const MockData: MockDataType = [
     price: 776.31,
     quantity: 727479,
     supplier: "Purdy, Paucek and Schuster",
-    purchase_date: "7/27/2019",
-    expiration_date: "1/20/2040",
-    density: 0.9,
-    flash_point: -45,
-    octane_rating: 91,
     image: "http://dummyimage.com/240x100.png/5fa2dd/ffffff"
   },
   {
@@ -2248,11 +1448,6 @@ export const MockData: MockDataType = [
     price: 738.06,
     quantity: 195123,
     supplier: "Larson-Rogahn",
-    purchase_date: "6/23/2013",
-    expiration_date: "11/19/2045",
-    density: 0.6,
-    flash_point: 22,
-    octane_rating: 91,
     image: "http://dummyimage.com/195x100.png/5fa2dd/ffffff"
   },
   {
@@ -2262,11 +1457,6 @@ export const MockData: MockDataType = [
     price: 177.08,
     quantity: 480657,
     supplier: "Bernier and Sons",
-    purchase_date: "3/15/2003",
-    expiration_date: "3/7/2045",
-    density: 0.84,
-    flash_point: 65,
-    octane_rating: 97,
     image: "http://dummyimage.com/148x100.png/5fa2dd/ffffff"
   },
   {
@@ -2276,11 +1466,6 @@ export const MockData: MockDataType = [
     price: 496.83,
     quantity: 304501,
     supplier: "Skiles LLC",
-    purchase_date: "1/8/2013",
-    expiration_date: "6/1/2037",
-    density: 0.52,
-    flash_point: 8,
-    octane_rating: 97,
     image: "http://dummyimage.com/240x100.png/5fa2dd/ffffff"
   },
   {
@@ -2290,11 +1475,6 @@ export const MockData: MockDataType = [
     price: 659.22,
     quantity: 261080,
     supplier: "Hudson Inc",
-    purchase_date: "10/19/2015",
-    expiration_date: "10/20/2034",
-    density: 0.69,
-    flash_point: 33,
-    octane_rating: 85,
     image: "http://dummyimage.com/196x100.png/5fa2dd/ffffff"
   },
   {
@@ -2304,11 +1484,6 @@ export const MockData: MockDataType = [
     price: 353.37,
     quantity: 565576,
     supplier: "Christiansen, O'Kon and Raynor",
-    purchase_date: "2/6/2005",
-    expiration_date: "3/22/2025",
-    density: 0.71,
-    flash_point: -32,
-    octane_rating: 95,
     image: "http://dummyimage.com/137x100.png/cc0000/ffffff"
   },
   {
@@ -2318,11 +1493,6 @@ export const MockData: MockDataType = [
     price: 386.14,
     quantity: 666680,
     supplier: "Kautzer, Hodkiewicz and Gulgowski",
-    purchase_date: "5/26/2001",
-    expiration_date: "12/20/2024",
-    density: 0.94,
-    flash_point: 106,
-    octane_rating: 99,
     image: "http://dummyimage.com/120x100.png/cc0000/ffffff"
   },
   {
@@ -2332,11 +1502,6 @@ export const MockData: MockDataType = [
     price: 521.77,
     quantity: 525769,
     supplier: "Hansen and Sons",
-    purchase_date: "11/21/2004",
-    expiration_date: "10/29/2033",
-    density: 0.37,
-    flash_point: 89,
-    octane_rating: 86,
     image: "http://dummyimage.com/198x100.png/dddddd/000000"
   },
   {
@@ -2346,11 +1511,6 @@ export const MockData: MockDataType = [
     price: 124.66,
     quantity: 854315,
     supplier: "Robel, Luettgen and Muller",
-    purchase_date: "10/4/2022",
-    expiration_date: "5/6/2040",
-    density: 0.77,
-    flash_point: 40,
-    octane_rating: 99,
     image: "http://dummyimage.com/176x100.png/cc0000/ffffff"
   },
   {
@@ -2360,11 +1520,6 @@ export const MockData: MockDataType = [
     price: 953.43,
     quantity: 264138,
     supplier: "Stokes, Funk and Rice",
-    purchase_date: "3/2/2003",
-    expiration_date: "10/13/2024",
-    density: 0.84,
-    flash_point: 140,
-    octane_rating: 92,
     image: "http://dummyimage.com/196x100.png/cc0000/ffffff"
   },
   {
@@ -2374,11 +1529,6 @@ export const MockData: MockDataType = [
     price: 896.59,
     quantity: 180032,
     supplier: "McGlynn and Sons",
-    purchase_date: "6/19/2015",
-    expiration_date: "4/18/2037",
-    density: 0.68,
-    flash_point: 13,
-    octane_rating: 88,
     image: "http://dummyimage.com/122x100.png/5fa2dd/ffffff"
   },
   {
@@ -2388,11 +1538,6 @@ export const MockData: MockDataType = [
     price: 944.14,
     quantity: 170759,
     supplier: "Keeling Inc",
-    purchase_date: "4/19/2020",
-    expiration_date: "3/7/2034",
-    density: 0.5,
-    flash_point: 143,
-    octane_rating: 96,
     image: "http://dummyimage.com/208x100.png/cc0000/ffffff"
   },
   {
@@ -2402,11 +1547,6 @@ export const MockData: MockDataType = [
     price: 13.32,
     quantity: 360633,
     supplier: "Schumm Group",
-    purchase_date: "7/12/2007",
-    expiration_date: "1/26/2043",
-    density: 0.13,
-    flash_point: 195,
-    octane_rating: 93,
     image: "http://dummyimage.com/118x100.png/cc0000/ffffff"
   },
   {
@@ -2416,11 +1556,6 @@ export const MockData: MockDataType = [
     price: 676.3,
     quantity: 345958,
     supplier: "Corwin-Gleichner",
-    purchase_date: "2/13/2021",
-    expiration_date: "10/29/2045",
-    density: 0.09,
-    flash_point: 187,
-    octane_rating: 99,
     image: "http://dummyimage.com/211x100.png/cc0000/ffffff"
   },
   {
@@ -2430,11 +1565,6 @@ export const MockData: MockDataType = [
     price: 570.33,
     quantity: 474852,
     supplier: "Will-Witting",
-    purchase_date: "4/7/2020",
-    expiration_date: "3/24/2044",
-    density: 0.27,
-    flash_point: 172,
-    octane_rating: 87,
     image: "http://dummyimage.com/154x100.png/5fa2dd/ffffff"
   },
   {
@@ -2444,11 +1574,6 @@ export const MockData: MockDataType = [
     price: 388.03,
     quantity: 98615,
     supplier: "Gulgowski and Sons",
-    purchase_date: "5/26/2015",
-    expiration_date: "6/24/2034",
-    density: 0.59,
-    flash_point: 186,
-    octane_rating: 87,
     image: "http://dummyimage.com/225x100.png/cc0000/ffffff"
   },
   {
@@ -2458,11 +1583,6 @@ export const MockData: MockDataType = [
     price: 504,
     quantity: 17771,
     supplier: "Cronin-Konopelski",
-    purchase_date: "6/25/2004",
-    expiration_date: "2/15/2033",
-    density: 0.66,
-    flash_point: 16,
-    octane_rating: 100,
     image: "http://dummyimage.com/114x100.png/ff4444/ffffff"
   },
   {
@@ -2472,11 +1592,6 @@ export const MockData: MockDataType = [
     price: 359.51,
     quantity: 936327,
     supplier: "D'Amore-Kiehn",
-    purchase_date: "4/9/2005",
-    expiration_date: "12/7/2032",
-    density: 0.14,
-    flash_point: 157,
-    octane_rating: 92,
     image: "http://dummyimage.com/126x100.png/5fa2dd/ffffff"
   },
   {
@@ -2486,11 +1601,6 @@ export const MockData: MockDataType = [
     price: 933.2,
     quantity: 369633,
     supplier: "Thiel-Gulgowski",
-    purchase_date: "2/25/2014",
-    expiration_date: "3/29/2034",
-    density: 0.22,
-    flash_point: 83,
-    octane_rating: 96,
     image: "http://dummyimage.com/125x100.png/cc0000/ffffff"
   },
   {
@@ -2500,11 +1610,6 @@ export const MockData: MockDataType = [
     price: 826.28,
     quantity: 517971,
     supplier: "Hickle, Marquardt and Mante",
-    purchase_date: "7/17/2019",
-    expiration_date: "3/31/2023",
-    density: 0.32,
-    flash_point: 113,
-    octane_rating: 94,
     image: "http://dummyimage.com/145x100.png/cc0000/ffffff"
   },
   {
@@ -2514,11 +1619,6 @@ export const MockData: MockDataType = [
     price: 351.16,
     quantity: 4315,
     supplier: "Koss and Sons",
-    purchase_date: "10/12/2003",
-    expiration_date: "5/4/2023",
-    density: 0.93,
-    flash_point: -9,
-    octane_rating: 98,
     image: "http://dummyimage.com/151x100.png/ff4444/ffffff"
   },
   {
@@ -2528,11 +1628,6 @@ export const MockData: MockDataType = [
     price: 651.65,
     quantity: 714487,
     supplier: "Padberg, Wehner and Aufderhar",
-    purchase_date: "7/2/2019",
-    expiration_date: "4/10/2023",
-    density: 0.62,
-    flash_point: 138,
-    octane_rating: 99,
     image: "http://dummyimage.com/168x100.png/5fa2dd/ffffff"
   },
   {
@@ -2542,11 +1637,6 @@ export const MockData: MockDataType = [
     price: 632.65,
     quantity: 590100,
     supplier: "Klein, Kilback and Adams",
-    purchase_date: "8/26/2014",
-    expiration_date: "3/15/2038",
-    density: 0.62,
-    flash_point: -13,
-    octane_rating: 98,
     image: "http://dummyimage.com/173x100.png/ff4444/ffffff"
   },
   {
@@ -2556,11 +1646,6 @@ export const MockData: MockDataType = [
     price: 297.55,
     quantity: 911370,
     supplier: "Kulas LLC",
-    purchase_date: "8/15/2019",
-    expiration_date: "2/17/2025",
-    density: 0.95,
-    flash_point: 135,
-    octane_rating: 88,
     image: "http://dummyimage.com/229x100.png/5fa2dd/ffffff"
   },
   {
@@ -2570,11 +1655,6 @@ export const MockData: MockDataType = [
     price: 639.91,
     quantity: 101666,
     supplier: "Oberbrunner, Turcotte and Dach",
-    purchase_date: "5/30/2008",
-    expiration_date: "1/5/2036",
-    density: 0.15,
-    flash_point: 54,
-    octane_rating: 94,
     image: "http://dummyimage.com/131x100.png/dddddd/000000"
   },
   {
@@ -2584,11 +1664,6 @@ export const MockData: MockDataType = [
     price: 19.02,
     quantity: 109313,
     supplier: "McLaughlin-Lubowitz",
-    purchase_date: "10/17/2001",
-    expiration_date: "4/20/2043",
-    density: 0.2,
-    flash_point: 27,
-    octane_rating: 100,
     image: "http://dummyimage.com/241x100.png/cc0000/ffffff"
   },
   {
@@ -2598,11 +1673,6 @@ export const MockData: MockDataType = [
     price: 167.94,
     quantity: 710800,
     supplier: "Green, Konopelski and Green",
-    purchase_date: "9/27/2004",
-    expiration_date: "12/4/2025",
-    density: 0.84,
-    flash_point: 141,
-    octane_rating: 98,
     image: "http://dummyimage.com/195x100.png/dddddd/000000"
   },
   {
@@ -2612,11 +1682,6 @@ export const MockData: MockDataType = [
     price: 697.4,
     quantity: 673480,
     supplier: "Murphy-Lebsack",
-    purchase_date: "2/14/2006",
-    expiration_date: "4/27/2030",
-    density: 0.34,
-    flash_point: 188,
-    octane_rating: 98,
     image: "http://dummyimage.com/230x100.png/5fa2dd/ffffff"
   },
   {
@@ -2626,11 +1691,6 @@ export const MockData: MockDataType = [
     price: 713.59,
     quantity: 212013,
     supplier: "Swift LLC",
-    purchase_date: "8/16/2015",
-    expiration_date: "2/3/2042",
-    density: 0.61,
-    flash_point: -40,
-    octane_rating: 87,
     image: "http://dummyimage.com/238x100.png/5fa2dd/ffffff"
   },
   {
@@ -2640,11 +1700,6 @@ export const MockData: MockDataType = [
     price: 882.22,
     quantity: 352224,
     supplier: "Russel Inc",
-    purchase_date: "1/19/2002",
-    expiration_date: "1/11/2024",
-    density: 0.76,
-    flash_point: 74,
-    octane_rating: 100,
     image: "http://dummyimage.com/244x100.png/cc0000/ffffff"
   },
   {
@@ -2654,11 +1709,6 @@ export const MockData: MockDataType = [
     price: 402.27,
     quantity: 890149,
     supplier: "Mayer-Gerlach",
-    purchase_date: "11/6/2008",
-    expiration_date: "1/16/2042",
-    density: 0.44,
-    flash_point: 164,
-    octane_rating: 95,
     image: "http://dummyimage.com/223x100.png/dddddd/000000"
   },
   {
@@ -2668,11 +1718,6 @@ export const MockData: MockDataType = [
     price: 461.47,
     quantity: 575692,
     supplier: "Rodriguez, Yundt and Predovic",
-    purchase_date: "2/11/2001",
-    expiration_date: "4/21/2028",
-    density: 0.43,
-    flash_point: 29,
-    octane_rating: 95,
     image: "http://dummyimage.com/209x100.png/5fa2dd/ffffff"
   },
   {
@@ -2682,11 +1727,6 @@ export const MockData: MockDataType = [
     price: 979.56,
     quantity: 139966,
     supplier: "Tillman-Mante",
-    purchase_date: "12/7/2021",
-    expiration_date: "5/31/2026",
-    density: 0.61,
-    flash_point: 60,
-    octane_rating: 100,
     image: "http://dummyimage.com/225x100.png/5fa2dd/ffffff"
   },
   {
@@ -2696,11 +1736,6 @@ export const MockData: MockDataType = [
     price: 509.12,
     quantity: 627777,
     supplier: "Abshire, Mertz and Hegmann",
-    purchase_date: "12/9/2005",
-    expiration_date: "3/29/2028",
-    density: 0.6,
-    flash_point: 16,
-    octane_rating: 90,
     image: "http://dummyimage.com/146x100.png/ff4444/ffffff"
   },
   {
@@ -2710,11 +1745,6 @@ export const MockData: MockDataType = [
     price: 439.79,
     quantity: 455982,
     supplier: "Rau LLC",
-    purchase_date: "3/7/2011",
-    expiration_date: "4/25/2030",
-    density: 0.42,
-    flash_point: 42,
-    octane_rating: 99,
     image: "http://dummyimage.com/143x100.png/ff4444/ffffff"
   },
   {
@@ -2724,11 +1754,6 @@ export const MockData: MockDataType = [
     price: 405.03,
     quantity: 138113,
     supplier: "Howe LLC",
-    purchase_date: "5/19/2007",
-    expiration_date: "5/3/2032",
-    density: 0.9,
-    flash_point: -25,
-    octane_rating: 93,
     image: "http://dummyimage.com/180x100.png/dddddd/000000"
   },
   {
@@ -2738,11 +1763,6 @@ export const MockData: MockDataType = [
     price: 298.7,
     quantity: 915457,
     supplier: "Kautzer, Veum and Reinger",
-    purchase_date: "12/15/2001",
-    expiration_date: "2/5/2027",
-    density: 0.63,
-    flash_point: 103,
-    octane_rating: 85,
     image: "http://dummyimage.com/140x100.png/dddddd/000000"
   },
   {
@@ -2752,11 +1772,6 @@ export const MockData: MockDataType = [
     price: 78.87,
     quantity: 801643,
     supplier: "Wolff-Reynolds",
-    purchase_date: "5/23/2018",
-    expiration_date: "4/14/2028",
-    density: 0.51,
-    flash_point: 32,
-    octane_rating: 100,
     image: "http://dummyimage.com/207x100.png/cc0000/ffffff"
   },
   {
@@ -2766,11 +1781,6 @@ export const MockData: MockDataType = [
     price: 909.29,
     quantity: 302731,
     supplier: "Senger, Breitenberg and McLaughlin",
-    purchase_date: "6/26/2007",
-    expiration_date: "3/31/2041",
-    density: 0.91,
-    flash_point: -37,
-    octane_rating: 94,
     image: "http://dummyimage.com/153x100.png/ff4444/ffffff"
   },
   {
@@ -2780,11 +1790,6 @@ export const MockData: MockDataType = [
     price: 345.17,
     quantity: 270525,
     supplier: "Swaniawski, Crooks and Waelchi",
-    purchase_date: "5/17/2013",
-    expiration_date: "5/9/2044",
-    density: 0.07,
-    flash_point: -19,
-    octane_rating: 90,
     image: "http://dummyimage.com/246x100.png/ff4444/ffffff"
   },
   {
@@ -2794,11 +1799,6 @@ export const MockData: MockDataType = [
     price: 172.4,
     quantity: 749067,
     supplier: "Mitchell-Prosacco",
-    purchase_date: "8/3/2001",
-    expiration_date: "12/7/2023",
-    density: 0.7,
-    flash_point: 200,
-    octane_rating: 94,
     image: "http://dummyimage.com/226x100.png/cc0000/ffffff"
   },
   {
@@ -2808,11 +1808,6 @@ export const MockData: MockDataType = [
     price: 466.51,
     quantity: 209487,
     supplier: "Padberg-Durgan",
-    purchase_date: "1/18/2002",
-    expiration_date: "7/29/2040",
-    density: 0.15,
-    flash_point: 5,
-    octane_rating: 87,
     image: "http://dummyimage.com/142x100.png/cc0000/ffffff"
   },
   {
@@ -2822,11 +1817,6 @@ export const MockData: MockDataType = [
     price: 942.54,
     quantity: 629039,
     supplier: "Robel-Hilpert",
-    purchase_date: "1/16/2013",
-    expiration_date: "7/21/2042",
-    density: 0.89,
-    flash_point: 50,
-    octane_rating: 88,
     image: "http://dummyimage.com/109x100.png/cc0000/ffffff"
   },
   {
@@ -2836,11 +1826,6 @@ export const MockData: MockDataType = [
     price: 939.56,
     quantity: 432644,
     supplier: "Bogisich LLC",
-    purchase_date: "3/9/2020",
-    expiration_date: "9/1/2037",
-    density: 0.68,
-    flash_point: 50,
-    octane_rating: 99,
     image: "http://dummyimage.com/121x100.png/dddddd/000000"
   },
   {
@@ -2850,11 +1835,6 @@ export const MockData: MockDataType = [
     price: 383.36,
     quantity: 364858,
     supplier: "Bechtelar-Emmerich",
-    purchase_date: "1/17/2001",
-    expiration_date: "4/6/2041",
-    density: 0.06,
-    flash_point: 25,
-    octane_rating: 89,
     image: "http://dummyimage.com/130x100.png/ff4444/ffffff"
   },
   {
@@ -2864,11 +1844,6 @@ export const MockData: MockDataType = [
     price: 373.97,
     quantity: 686816,
     supplier: "Feest LLC",
-    purchase_date: "11/14/2007",
-    expiration_date: "4/17/2039",
-    density: 0.85,
-    flash_point: 174,
-    octane_rating: 85,
     image: "http://dummyimage.com/169x100.png/5fa2dd/ffffff"
   },
   {
@@ -2878,11 +1853,6 @@ export const MockData: MockDataType = [
     price: 379.27,
     quantity: 187340,
     supplier: "Douglas and Sons",
-    purchase_date: "11/29/2006",
-    expiration_date: "6/3/2041",
-    density: 0.91,
-    flash_point: 99,
-    octane_rating: 91,
     image: "http://dummyimage.com/168x100.png/5fa2dd/ffffff"
   },
   {
@@ -2892,11 +1862,6 @@ export const MockData: MockDataType = [
     price: 916.41,
     quantity: 533578,
     supplier: "Marvin, Osinski and Bauch",
-    purchase_date: "9/2/2003",
-    expiration_date: "12/11/2023",
-    density: 0.35,
-    flash_point: 82,
-    octane_rating: 96,
     image: "http://dummyimage.com/145x100.png/5fa2dd/ffffff"
   },
   {
@@ -2906,11 +1871,6 @@ export const MockData: MockDataType = [
     price: 281.66,
     quantity: 11391,
     supplier: "Shields, Herman and Franecki",
-    purchase_date: "10/7/2006",
-    expiration_date: "10/9/2029",
-    density: 0.74,
-    flash_point: 199,
-    octane_rating: 86,
     image: "http://dummyimage.com/141x100.png/ff4444/ffffff"
   },
   {
@@ -2920,11 +1880,6 @@ export const MockData: MockDataType = [
     price: 228.42,
     quantity: 475944,
     supplier: "Gulgowski-Wiegand",
-    purchase_date: "8/31/2011",
-    expiration_date: "7/28/2028",
-    density: 0.32,
-    flash_point: 108,
-    octane_rating: 97,
     image: "http://dummyimage.com/109x100.png/ff4444/ffffff"
   },
   {
@@ -2934,11 +1889,6 @@ export const MockData: MockDataType = [
     price: 859.76,
     quantity: 923631,
     supplier: "Bode, Breitenberg and Wehner",
-    purchase_date: "12/19/2020",
-    expiration_date: "7/2/2042",
-    density: 0.94,
-    flash_point: 173,
-    octane_rating: 88,
     image: "http://dummyimage.com/199x100.png/ff4444/ffffff"
   },
   {
@@ -2948,11 +1898,6 @@ export const MockData: MockDataType = [
     price: 281.72,
     quantity: 420609,
     supplier: "Harber, Nolan and Langworth",
-    purchase_date: "5/11/2011",
-    expiration_date: "2/12/2045",
-    density: 0.08,
-    flash_point: 50,
-    octane_rating: 85,
     image: "http://dummyimage.com/209x100.png/dddddd/000000"
   },
   {
@@ -2962,11 +1907,6 @@ export const MockData: MockDataType = [
     price: 164.73,
     quantity: 471760,
     supplier: "Rodriguez, Crooks and Thompson",
-    purchase_date: "5/21/2010",
-    expiration_date: "1/3/2042",
-    density: 0.82,
-    flash_point: -13,
-    octane_rating: 92,
     image: "http://dummyimage.com/167x100.png/ff4444/ffffff"
   },
   {
@@ -2976,11 +1916,6 @@ export const MockData: MockDataType = [
     price: 434.14,
     quantity: 860398,
     supplier: "West, Hyatt and Gibson",
-    purchase_date: "8/29/2006",
-    expiration_date: "3/26/2028",
-    density: 0.06,
-    flash_point: 3,
-    octane_rating: 98,
     image: "http://dummyimage.com/173x100.png/5fa2dd/ffffff"
   },
   {
@@ -2990,11 +1925,6 @@ export const MockData: MockDataType = [
     price: 507.13,
     quantity: 507877,
     supplier: "Ledner-Cremin",
-    purchase_date: "7/29/2007",
-    expiration_date: "11/4/2031",
-    density: 0.6,
-    flash_point: 30,
-    octane_rating: 90,
     image: "http://dummyimage.com/156x100.png/ff4444/ffffff"
   },
   {
@@ -3004,11 +1934,6 @@ export const MockData: MockDataType = [
     price: 157.47,
     quantity: 708241,
     supplier: "Koch, Graham and Bruen",
-    purchase_date: "7/8/2010",
-    expiration_date: "2/6/2024",
-    density: 0.26,
-    flash_point: 128,
-    octane_rating: 97,
     image: "http://dummyimage.com/119x100.png/dddddd/000000"
   },
   {
@@ -3018,11 +1943,6 @@ export const MockData: MockDataType = [
     price: 788.25,
     quantity: 193768,
     supplier: "Turner-Lockman",
-    purchase_date: "12/24/2017",
-    expiration_date: "9/3/2036",
-    density: 0.72,
-    flash_point: 33,
-    octane_rating: 94,
     image: "http://dummyimage.com/199x100.png/cc0000/ffffff"
   },
   {
@@ -3032,11 +1952,6 @@ export const MockData: MockDataType = [
     price: 892.66,
     quantity: 705506,
     supplier: "Metz Inc",
-    purchase_date: "12/12/2005",
-    expiration_date: "3/18/2032",
-    density: 0.36,
-    flash_point: 14,
-    octane_rating: 88,
     image: "http://dummyimage.com/169x100.png/ff4444/ffffff"
   },
   {
@@ -3046,11 +1961,6 @@ export const MockData: MockDataType = [
     price: 108.41,
     quantity: 705960,
     supplier: "Hilpert LLC",
-    purchase_date: "9/18/2005",
-    expiration_date: "10/27/2028",
-    density: 0.12,
-    flash_point: 186,
-    octane_rating: 97,
     image: "http://dummyimage.com/129x100.png/ff4444/ffffff"
   },
   {
@@ -3060,11 +1970,6 @@ export const MockData: MockDataType = [
     price: 464.47,
     quantity: 850667,
     supplier: "Lubowitz, Tremblay and Cormier",
-    purchase_date: "8/3/2009",
-    expiration_date: "9/1/2023",
-    density: 0.66,
-    flash_point: 68,
-    octane_rating: 97,
     image: "http://dummyimage.com/189x100.png/5fa2dd/ffffff"
   },
   {
@@ -3074,11 +1979,6 @@ export const MockData: MockDataType = [
     price: 762.91,
     quantity: 144156,
     supplier: "Rolfson LLC",
-    purchase_date: "12/11/2020",
-    expiration_date: "11/30/2033",
-    density: 0.02,
-    flash_point: 100,
-    octane_rating: 87,
     image: "http://dummyimage.com/112x100.png/cc0000/ffffff"
   },
   {
@@ -3088,11 +1988,6 @@ export const MockData: MockDataType = [
     price: 628.03,
     quantity: 577034,
     supplier: "Cronin-Keeling",
-    purchase_date: "10/26/2004",
-    expiration_date: "7/2/2023",
-    density: 0.86,
-    flash_point: 110,
-    octane_rating: 85,
     image: "http://dummyimage.com/163x100.png/5fa2dd/ffffff"
   },
   {
@@ -3102,11 +1997,6 @@ export const MockData: MockDataType = [
     price: 84.68,
     quantity: 222282,
     supplier: "Howell-Schuppe",
-    purchase_date: "1/8/2009",
-    expiration_date: "1/30/2033",
-    density: 0.48,
-    flash_point: 91,
-    octane_rating: 95,
     image: "http://dummyimage.com/228x100.png/ff4444/ffffff"
   },
   {
@@ -3116,11 +2006,6 @@ export const MockData: MockDataType = [
     price: 28.15,
     quantity: 304490,
     supplier: "Berge LLC",
-    purchase_date: "1/5/2001",
-    expiration_date: "8/21/2026",
-    density: 0.17,
-    flash_point: 135,
-    octane_rating: 96,
     image: "http://dummyimage.com/145x100.png/ff4444/ffffff"
   },
   {
@@ -3130,11 +2015,6 @@ export const MockData: MockDataType = [
     price: 434.93,
     quantity: 719781,
     supplier: "Nader, Hagenes and West",
-    purchase_date: "11/12/2018",
-    expiration_date: "7/19/2040",
-    density: 0.21,
-    flash_point: -38,
-    octane_rating: 91,
     image: "http://dummyimage.com/241x100.png/dddddd/000000"
   },
   {
@@ -3144,11 +2024,6 @@ export const MockData: MockDataType = [
     price: 252.79,
     quantity: 140566,
     supplier: "Botsford, Schuppe and Schuster",
-    purchase_date: "11/14/2018",
-    expiration_date: "6/12/2025",
-    density: 0.6,
-    flash_point: 152,
-    octane_rating: 99,
     image: "http://dummyimage.com/192x100.png/5fa2dd/ffffff"
   },
   {
@@ -3158,11 +2033,6 @@ export const MockData: MockDataType = [
     price: 617.29,
     quantity: 682218,
     supplier: "Block-Reinger",
-    purchase_date: "3/1/2004",
-    expiration_date: "8/2/2037",
-    density: 0.03,
-    flash_point: 173,
-    octane_rating: 85,
     image: "http://dummyimage.com/191x100.png/ff4444/ffffff"
   },
   {
@@ -3172,11 +2042,6 @@ export const MockData: MockDataType = [
     price: 585.57,
     quantity: 126549,
     supplier: "Crooks Inc",
-    purchase_date: "11/14/2020",
-    expiration_date: "2/1/2046",
-    density: 0.25,
-    flash_point: 194,
-    octane_rating: 86,
     image: "http://dummyimage.com/237x100.png/ff4444/ffffff"
   },
   {
@@ -3186,11 +2051,6 @@ export const MockData: MockDataType = [
     price: 70.93,
     quantity: 39447,
     supplier: "Christiansen, Wehner and Parisian",
-    purchase_date: "8/25/2011",
-    expiration_date: "6/3/2024",
-    density: 0.2,
-    flash_point: 159,
-    octane_rating: 91,
     image: "http://dummyimage.com/101x100.png/5fa2dd/ffffff"
   },
   {
@@ -3200,11 +2060,6 @@ export const MockData: MockDataType = [
     price: 418.89,
     quantity: 404500,
     supplier: "O'Kon, Dare and Lang",
-    purchase_date: "1/8/2021",
-    expiration_date: "10/29/2030",
-    density: 0.14,
-    flash_point: 42,
-    octane_rating: 98,
     image: "http://dummyimage.com/227x100.png/5fa2dd/ffffff"
   },
   {
@@ -3214,11 +2069,6 @@ export const MockData: MockDataType = [
     price: 766,
     quantity: 414852,
     supplier: "Pfeffer, Goyette and Terry",
-    purchase_date: "3/30/2005",
-    expiration_date: "4/13/2028",
-    density: 1,
-    flash_point: 29,
-    octane_rating: 98,
     image: "http://dummyimage.com/161x100.png/cc0000/ffffff"
   },
   {
@@ -3228,11 +2078,6 @@ export const MockData: MockDataType = [
     price: 10.47,
     quantity: 574933,
     supplier: "Dicki, Rau and Macejkovic",
-    purchase_date: "6/11/2007",
-    expiration_date: "12/22/2030",
-    density: 0.24,
-    flash_point: 33,
-    octane_rating: 85,
     image: "http://dummyimage.com/143x100.png/5fa2dd/ffffff"
   },
   {
@@ -3242,11 +2087,6 @@ export const MockData: MockDataType = [
     price: 97.46,
     quantity: 872683,
     supplier: "Cormier, Hauck and Altenwerth",
-    purchase_date: "2/16/2017",
-    expiration_date: "4/11/2038",
-    density: 0.98,
-    flash_point: 11,
-    octane_rating: 85,
     image: "http://dummyimage.com/180x100.png/cc0000/ffffff"
   },
   {
@@ -3256,11 +2096,6 @@ export const MockData: MockDataType = [
     price: 294.5,
     quantity: 847039,
     supplier: "McCullough-Carter",
-    purchase_date: "5/9/2020",
-    expiration_date: "1/29/2030",
-    density: 0.89,
-    flash_point: 126,
-    octane_rating: 99,
     image: "http://dummyimage.com/178x100.png/5fa2dd/ffffff"
   },
   {
@@ -3270,11 +2105,6 @@ export const MockData: MockDataType = [
     price: 975.03,
     quantity: 698684,
     supplier: "Bartoletti and Sons",
-    purchase_date: "4/28/2022",
-    expiration_date: "10/13/2040",
-    density: 0.03,
-    flash_point: 68,
-    octane_rating: 100,
     image: "http://dummyimage.com/137x100.png/cc0000/ffffff"
   },
   {
@@ -3284,11 +2114,6 @@ export const MockData: MockDataType = [
     price: 429.52,
     quantity: 1446,
     supplier: "Anderson and Sons",
-    purchase_date: "2/23/2014",
-    expiration_date: "6/7/2023",
-    density: 0.14,
-    flash_point: 15,
-    octane_rating: 85,
     image: "http://dummyimage.com/212x100.png/cc0000/ffffff"
   },
   {
@@ -3298,11 +2123,6 @@ export const MockData: MockDataType = [
     price: 497.14,
     quantity: 731552,
     supplier: "Mraz, Wilderman and Tillman",
-    purchase_date: "9/22/2012",
-    expiration_date: "5/31/2026",
-    density: 0.94,
-    flash_point: 75,
-    octane_rating: 85,
     image: "http://dummyimage.com/229x100.png/5fa2dd/ffffff"
   },
   {
@@ -3312,11 +2132,6 @@ export const MockData: MockDataType = [
     price: 943.72,
     quantity: 853971,
     supplier: "Kuhn-Altenwerth",
-    purchase_date: "3/6/2015",
-    expiration_date: "2/11/2029",
-    density: 0.53,
-    flash_point: 98,
-    octane_rating: 90,
     image: "http://dummyimage.com/136x100.png/5fa2dd/ffffff"
   },
   {
@@ -3326,11 +2141,6 @@ export const MockData: MockDataType = [
     price: 885.83,
     quantity: 802789,
     supplier: "White-Howell",
-    purchase_date: "7/2/2018",
-    expiration_date: "2/26/2041",
-    density: 0.94,
-    flash_point: 41,
-    octane_rating: 88,
     image: "http://dummyimage.com/212x100.png/ff4444/ffffff"
   },
   {
@@ -3340,11 +2150,6 @@ export const MockData: MockDataType = [
     price: 585.39,
     quantity: 374666,
     supplier: "Schiller, Runolfsdottir and Jerde",
-    purchase_date: "6/10/2021",
-    expiration_date: "6/11/2046",
-    density: 0.5,
-    flash_point: -42,
-    octane_rating: 100,
     image: "http://dummyimage.com/172x100.png/dddddd/000000"
   },
   {
@@ -3354,11 +2159,6 @@ export const MockData: MockDataType = [
     price: 808.45,
     quantity: 143765,
     supplier: "Gibson-Hintz",
-    purchase_date: "1/26/2004",
-    expiration_date: "6/4/2037",
-    density: 0.41,
-    flash_point: 75,
-    octane_rating: 92,
     image: "http://dummyimage.com/234x100.png/ff4444/ffffff"
   },
   {
@@ -3368,11 +2168,6 @@ export const MockData: MockDataType = [
     price: 950.23,
     quantity: 394145,
     supplier: "Osinski-Ferry",
-    purchase_date: "8/29/2005",
-    expiration_date: "12/23/2044",
-    density: 0.31,
-    flash_point: -29,
-    octane_rating: 86,
     image: "http://dummyimage.com/207x100.png/5fa2dd/ffffff"
   },
   {
@@ -3382,11 +2177,6 @@ export const MockData: MockDataType = [
     price: 159.57,
     quantity: 728152,
     supplier: "Spinka-Stoltenberg",
-    purchase_date: "3/21/2009",
-    expiration_date: "9/5/2043",
-    density: 0.51,
-    flash_point: 86,
-    octane_rating: 99,
     image: "http://dummyimage.com/202x100.png/cc0000/ffffff"
   },
   {
@@ -3396,11 +2186,6 @@ export const MockData: MockDataType = [
     price: 208.78,
     quantity: 270937,
     supplier: "Hackett-Crona",
-    purchase_date: "5/7/2021",
-    expiration_date: "11/5/2026",
-    density: 0.52,
-    flash_point: 25,
-    octane_rating: 98,
     image: "http://dummyimage.com/142x100.png/5fa2dd/ffffff"
   },
   {
@@ -3410,11 +2195,6 @@ export const MockData: MockDataType = [
     price: 476.24,
     quantity: 209042,
     supplier: "Fadel LLC",
-    purchase_date: "8/8/2006",
-    expiration_date: "9/21/2025",
-    density: 0.04,
-    flash_point: -6,
-    octane_rating: 98,
     image: "http://dummyimage.com/167x100.png/5fa2dd/ffffff"
   },
   {
@@ -3424,11 +2204,6 @@ export const MockData: MockDataType = [
     price: 242.07,
     quantity: 420270,
     supplier: "Heller, Kunde and Steuber",
-    purchase_date: "12/12/2000",
-    expiration_date: "11/10/2030",
-    density: 0.52,
-    flash_point: 140,
-    octane_rating: 96,
     image: "http://dummyimage.com/155x100.png/cc0000/ffffff"
   },
   {
@@ -3438,11 +2213,6 @@ export const MockData: MockDataType = [
     price: 336.5,
     quantity: 661907,
     supplier: "Medhurst, Gerhold and Abshire",
-    purchase_date: "2/11/2010",
-    expiration_date: "4/20/2027",
-    density: 0.99,
-    flash_point: 158,
-    octane_rating: 96,
     image: "http://dummyimage.com/186x100.png/dddddd/000000"
   },
   {
@@ -3452,11 +2222,6 @@ export const MockData: MockDataType = [
     price: 697.45,
     quantity: 266564,
     supplier: "Greenholt Group",
-    purchase_date: "2/13/2000",
-    expiration_date: "9/12/2046",
-    density: 0.01,
-    flash_point: 71,
-    octane_rating: 89,
     image: "http://dummyimage.com/143x100.png/dddddd/000000"
   },
   {
@@ -3466,11 +2231,6 @@ export const MockData: MockDataType = [
     price: 151.45,
     quantity: 767520,
     supplier: "Monahan-Littel",
-    purchase_date: "6/30/2014",
-    expiration_date: "12/6/2024",
-    density: 0.03,
-    flash_point: 21,
-    octane_rating: 97,
     image: "http://dummyimage.com/110x100.png/5fa2dd/ffffff"
   },
   {
@@ -3480,11 +2240,6 @@ export const MockData: MockDataType = [
     price: 599.86,
     quantity: 366656,
     supplier: "MacGyver-Orn",
-    purchase_date: "12/16/2020",
-    expiration_date: "9/15/2030",
-    density: 0.52,
-    flash_point: 55,
-    octane_rating: 88,
     image: "http://dummyimage.com/122x100.png/5fa2dd/ffffff"
   },
   {
@@ -3494,11 +2249,6 @@ export const MockData: MockDataType = [
     price: 931.26,
     quantity: 998107,
     supplier: "Windler-Cronin",
-    purchase_date: "7/28/2013",
-    expiration_date: "10/28/2043",
-    density: 0.24,
-    flash_point: 45,
-    octane_rating: 85,
     image: "http://dummyimage.com/246x100.png/dddddd/000000"
   },
   {
@@ -3508,11 +2258,6 @@ export const MockData: MockDataType = [
     price: 642.17,
     quantity: 819275,
     supplier: "Legros-Bahringer",
-    purchase_date: "7/19/2005",
-    expiration_date: "7/10/2045",
-    density: 0.53,
-    flash_point: 65,
-    octane_rating: 94,
     image: "http://dummyimage.com/212x100.png/ff4444/ffffff"
   },
   {
@@ -3522,11 +2267,6 @@ export const MockData: MockDataType = [
     price: 936.26,
     quantity: 239159,
     supplier: "Reinger-Willms",
-    purchase_date: "3/25/2011",
-    expiration_date: "5/3/2024",
-    density: 0.16,
-    flash_point: 155,
-    octane_rating: 89,
     image: "http://dummyimage.com/154x100.png/cc0000/ffffff"
   },
   {
@@ -3536,11 +2276,6 @@ export const MockData: MockDataType = [
     price: 327.16,
     quantity: 326128,
     supplier: "Beatty, Buckridge and Baumbach",
-    purchase_date: "2/23/2015",
-    expiration_date: "2/28/2023",
-    density: 0.72,
-    flash_point: 192,
-    octane_rating: 86,
     image: "http://dummyimage.com/107x100.png/cc0000/ffffff"
   },
   {
@@ -3550,11 +2285,6 @@ export const MockData: MockDataType = [
     price: 718.57,
     quantity: 312556,
     supplier: "West, Heaney and Maggio",
-    purchase_date: "10/17/2016",
-    expiration_date: "12/13/2041",
-    density: 0.55,
-    flash_point: 164,
-    octane_rating: 94,
     image: "http://dummyimage.com/231x100.png/5fa2dd/ffffff"
   },
   {
@@ -3564,11 +2294,6 @@ export const MockData: MockDataType = [
     price: 596.46,
     quantity: 216114,
     supplier: "Collier and Sons",
-    purchase_date: "6/20/2008",
-    expiration_date: "12/12/2039",
-    density: 0.24,
-    flash_point: 168,
-    octane_rating: 89,
     image: "http://dummyimage.com/113x100.png/5fa2dd/ffffff"
   },
   {
@@ -3578,11 +2303,6 @@ export const MockData: MockDataType = [
     price: 875.99,
     quantity: 668520,
     supplier: "Dickinson-Wilkinson",
-    purchase_date: "5/11/2011",
-    expiration_date: "11/16/2029",
-    density: 0.14,
-    flash_point: 119,
-    octane_rating: 88,
     image: "http://dummyimage.com/153x100.png/5fa2dd/ffffff"
   },
   {
@@ -3592,11 +2312,6 @@ export const MockData: MockDataType = [
     price: 793.36,
     quantity: 47824,
     supplier: "Paucek-Simonis",
-    purchase_date: "10/8/2006",
-    expiration_date: "12/23/2030",
-    density: 0.18,
-    flash_point: 149,
-    octane_rating: 88,
     image: "http://dummyimage.com/176x100.png/cc0000/ffffff"
   },
   {
@@ -3606,11 +2321,6 @@ export const MockData: MockDataType = [
     price: 555.63,
     quantity: 67899,
     supplier: "Lehner LLC",
-    purchase_date: "5/26/2000",
-    expiration_date: "7/6/2031",
-    density: 0.01,
-    flash_point: 115,
-    octane_rating: 97,
     image: "http://dummyimage.com/181x100.png/dddddd/000000"
   },
   {
@@ -3620,11 +2330,6 @@ export const MockData: MockDataType = [
     price: 245.86,
     quantity: 42759,
     supplier: "Gleason, Cole and Zulauf",
-    purchase_date: "12/29/2014",
-    expiration_date: "7/10/2044",
-    density: 0.32,
-    flash_point: 196,
-    octane_rating: 92,
     image: "http://dummyimage.com/120x100.png/5fa2dd/ffffff"
   },
   {
@@ -3634,11 +2339,6 @@ export const MockData: MockDataType = [
     price: 768.28,
     quantity: 531747,
     supplier: "McKenzie-Bruen",
-    purchase_date: "8/4/2021",
-    expiration_date: "10/20/2032",
-    density: 0.2,
-    flash_point: 157,
-    octane_rating: 95,
     image: "http://dummyimage.com/167x100.png/cc0000/ffffff"
   },
   {
@@ -3648,11 +2348,6 @@ export const MockData: MockDataType = [
     price: 679.68,
     quantity: 402076,
     supplier: "Cormier-Homenick",
-    purchase_date: "12/4/2010",
-    expiration_date: "8/3/2031",
-    density: 0.43,
-    flash_point: 42,
-    octane_rating: 90,
     image: "http://dummyimage.com/224x100.png/cc0000/ffffff"
   },
   {
@@ -3662,11 +2357,6 @@ export const MockData: MockDataType = [
     price: 609.28,
     quantity: 847331,
     supplier: "Monahan, Reinger and Conn",
-    purchase_date: "9/9/2016",
-    expiration_date: "7/19/2031",
-    density: 0.37,
-    flash_point: 168,
-    octane_rating: 90,
     image: "http://dummyimage.com/154x100.png/dddddd/000000"
   },
   {
@@ -3676,11 +2366,6 @@ export const MockData: MockDataType = [
     price: 452.77,
     quantity: 203119,
     supplier: "Hermiston-Olson",
-    purchase_date: "8/6/2019",
-    expiration_date: "6/3/2045",
-    density: 0.1,
-    flash_point: 189,
-    octane_rating: 91,
     image: "http://dummyimage.com/151x100.png/cc0000/ffffff"
   },
   {
@@ -3690,11 +2375,6 @@ export const MockData: MockDataType = [
     price: 417.86,
     quantity: 636391,
     supplier: "Sipes LLC",
-    purchase_date: "12/31/2005",
-    expiration_date: "1/18/2028",
-    density: 0.29,
-    flash_point: 168,
-    octane_rating: 93,
     image: "http://dummyimage.com/195x100.png/dddddd/000000"
   },
   {
@@ -3704,11 +2384,6 @@ export const MockData: MockDataType = [
     price: 268.72,
     quantity: 218583,
     supplier: "Welch, Boyle and Luettgen",
-    purchase_date: "2/24/2018",
-    expiration_date: "6/10/2033",
-    density: 0.81,
-    flash_point: 72,
-    octane_rating: 92,
     image: "http://dummyimage.com/187x100.png/ff4444/ffffff"
   },
   {
@@ -3718,11 +2393,6 @@ export const MockData: MockDataType = [
     price: 44.14,
     quantity: 831367,
     supplier: "Smitham Group",
-    purchase_date: "7/1/2002",
-    expiration_date: "1/24/2035",
-    density: 0.15,
-    flash_point: 22,
-    octane_rating: 100,
     image: "http://dummyimage.com/174x100.png/5fa2dd/ffffff"
   },
   {
@@ -3732,11 +2402,6 @@ export const MockData: MockDataType = [
     price: 366.09,
     quantity: 143994,
     supplier: "Hermiston Group",
-    purchase_date: "7/25/2010",
-    expiration_date: "1/7/2024",
-    density: 0.19,
-    flash_point: 146,
-    octane_rating: 87,
     image: "http://dummyimage.com/195x100.png/5fa2dd/ffffff"
   },
   {
@@ -3746,11 +2411,6 @@ export const MockData: MockDataType = [
     price: 892.83,
     quantity: 522084,
     supplier: "Lemke-Littel",
-    purchase_date: "5/14/2003",
-    expiration_date: "9/14/2025",
-    density: 0.08,
-    flash_point: 107,
-    octane_rating: 100,
     image: "http://dummyimage.com/172x100.png/dddddd/000000"
   },
   {
@@ -3760,11 +2420,6 @@ export const MockData: MockDataType = [
     price: 612.18,
     quantity: 878724,
     supplier: "Gorczany LLC",
-    purchase_date: "2/12/2019",
-    expiration_date: "2/24/2026",
-    density: 0.64,
-    flash_point: -33,
-    octane_rating: 94,
     image: "http://dummyimage.com/141x100.png/cc0000/ffffff"
   },
   {
@@ -3774,11 +2429,6 @@ export const MockData: MockDataType = [
     price: 532.89,
     quantity: 190715,
     supplier: "Harris, Langosh and Wisoky",
-    purchase_date: "1/21/2006",
-    expiration_date: "2/28/2034",
-    density: 0.11,
-    flash_point: -10,
-    octane_rating: 95,
     image: "http://dummyimage.com/122x100.png/5fa2dd/ffffff"
   },
   {
@@ -3788,11 +2438,6 @@ export const MockData: MockDataType = [
     price: 88.38,
     quantity: 81015,
     supplier: "Jenkins LLC",
-    purchase_date: "8/2/2017",
-    expiration_date: "2/11/2024",
-    density: 0.36,
-    flash_point: 26,
-    octane_rating: 87,
     image: "http://dummyimage.com/147x100.png/5fa2dd/ffffff"
   },
   {
@@ -3802,11 +2447,6 @@ export const MockData: MockDataType = [
     price: 340.07,
     quantity: 96233,
     supplier: "Runte-Breitenberg",
-    purchase_date: "7/14/2011",
-    expiration_date: "6/11/2029",
-    density: 0.66,
-    flash_point: -23,
-    octane_rating: 93,
     image: "http://dummyimage.com/198x100.png/dddddd/000000"
   },
   {
@@ -3816,11 +2456,6 @@ export const MockData: MockDataType = [
     price: 950.23,
     quantity: 876800,
     supplier: "O'Connell, Wehner and Hansen",
-    purchase_date: "5/6/2014",
-    expiration_date: "3/16/2044",
-    density: 0.69,
-    flash_point: 5,
-    octane_rating: 95,
     image: "http://dummyimage.com/147x100.png/5fa2dd/ffffff"
   },
   {
@@ -3830,11 +2465,6 @@ export const MockData: MockDataType = [
     price: 236.85,
     quantity: 729296,
     supplier: "Hackett-Gulgowski",
-    purchase_date: "6/17/2004",
-    expiration_date: "4/28/2030",
-    density: 0.46,
-    flash_point: 35,
-    octane_rating: 91,
     image: "http://dummyimage.com/205x100.png/dddddd/000000"
   },
   {
@@ -3844,11 +2474,6 @@ export const MockData: MockDataType = [
     price: 411.44,
     quantity: 699731,
     supplier: "Haley-Durgan",
-    purchase_date: "3/27/2011",
-    expiration_date: "5/1/2033",
-    density: 0.71,
-    flash_point: 7,
-    octane_rating: 95,
     image: "http://dummyimage.com/189x100.png/5fa2dd/ffffff"
   },
   {
@@ -3858,11 +2483,6 @@ export const MockData: MockDataType = [
     price: 750.04,
     quantity: 609346,
     supplier: "Breitenberg LLC",
-    purchase_date: "10/25/2016",
-    expiration_date: "4/7/2030",
-    density: 0.32,
-    flash_point: 92,
-    octane_rating: 86,
     image: "http://dummyimage.com/120x100.png/dddddd/000000"
   },
   {
@@ -3872,11 +2492,6 @@ export const MockData: MockDataType = [
     price: 532.45,
     quantity: 174327,
     supplier: "Schuster, Gislason and Gorczany",
-    purchase_date: "2/23/2009",
-    expiration_date: "1/26/2028",
-    density: 0.34,
-    flash_point: 125,
-    octane_rating: 88,
     image: "http://dummyimage.com/114x100.png/5fa2dd/ffffff"
   },
   {
@@ -3886,11 +2501,6 @@ export const MockData: MockDataType = [
     price: 142,
     quantity: 189034,
     supplier: "Willms Group",
-    purchase_date: "1/27/2001",
-    expiration_date: "10/22/2046",
-    density: 0,
-    flash_point: 130,
-    octane_rating: 90,
     image: "http://dummyimage.com/159x100.png/ff4444/ffffff"
   },
   {
@@ -3900,11 +2510,6 @@ export const MockData: MockDataType = [
     price: 883.53,
     quantity: 999699,
     supplier: "Veum, Cummerata and Lindgren",
-    purchase_date: "2/25/2008",
-    expiration_date: "5/28/2046",
-    density: 0.93,
-    flash_point: 25,
-    octane_rating: 93,
     image: "http://dummyimage.com/235x100.png/ff4444/ffffff"
   },
   {
@@ -3914,11 +2519,6 @@ export const MockData: MockDataType = [
     price: 110.01,
     quantity: 280364,
     supplier: "Kunze-Leuschke",
-    purchase_date: "10/20/2015",
-    expiration_date: "11/10/2033",
-    density: 0.86,
-    flash_point: 98,
-    octane_rating: 93,
     image: "http://dummyimage.com/195x100.png/cc0000/ffffff"
   },
   {
@@ -3928,11 +2528,6 @@ export const MockData: MockDataType = [
     price: 759.59,
     quantity: 889300,
     supplier: "Murray LLC",
-    purchase_date: "5/9/2003",
-    expiration_date: "4/24/2043",
-    density: 0.18,
-    flash_point: 189,
-    octane_rating: 92,
     image: "http://dummyimage.com/127x100.png/cc0000/ffffff"
   },
   {
@@ -3942,11 +2537,6 @@ export const MockData: MockDataType = [
     price: 138.64,
     quantity: 112378,
     supplier: "Ledner LLC",
-    purchase_date: "7/23/2001",
-    expiration_date: "6/24/2032",
-    density: 0.53,
-    flash_point: 184,
-    octane_rating: 98,
     image: "http://dummyimage.com/142x100.png/cc0000/ffffff"
   },
   {
@@ -3956,11 +2546,6 @@ export const MockData: MockDataType = [
     price: 261.61,
     quantity: 676662,
     supplier: "Heidenreich-Hoeger",
-    purchase_date: "4/4/2015",
-    expiration_date: "10/21/2027",
-    density: 0.86,
-    flash_point: 51,
-    octane_rating: 97,
     image: "http://dummyimage.com/223x100.png/5fa2dd/ffffff"
   },
   {
@@ -3970,11 +2555,6 @@ export const MockData: MockDataType = [
     price: 131.66,
     quantity: 322637,
     supplier: "Harvey and Sons",
-    purchase_date: "3/26/2006",
-    expiration_date: "6/22/2043",
-    density: 0.33,
-    flash_point: 25,
-    octane_rating: 93,
     image: "http://dummyimage.com/142x100.png/ff4444/ffffff"
   },
   {
@@ -3984,11 +2564,6 @@ export const MockData: MockDataType = [
     price: 89.46,
     quantity: 996654,
     supplier: "O'Reilly-Price",
-    purchase_date: "6/16/2003",
-    expiration_date: "9/15/2036",
-    density: 0.95,
-    flash_point: 69,
-    octane_rating: 93,
     image: "http://dummyimage.com/161x100.png/ff4444/ffffff"
   },
   {
@@ -3998,11 +2573,6 @@ export const MockData: MockDataType = [
     price: 889.42,
     quantity: 907367,
     supplier: "Maggio, Waelchi and Welch",
-    purchase_date: "5/27/2012",
-    expiration_date: "3/2/2029",
-    density: 0.19,
-    flash_point: 125,
-    octane_rating: 93,
     image: "http://dummyimage.com/216x100.png/ff4444/ffffff"
   },
   {
@@ -4012,11 +2582,6 @@ export const MockData: MockDataType = [
     price: 680.11,
     quantity: 600374,
     supplier: "Kovacek LLC",
-    purchase_date: "12/27/2012",
-    expiration_date: "12/21/2044",
-    density: 0.13,
-    flash_point: 105,
-    octane_rating: 85,
     image: "http://dummyimage.com/162x100.png/ff4444/ffffff"
   },
   {
@@ -4026,11 +2591,6 @@ export const MockData: MockDataType = [
     price: 298.77,
     quantity: 717377,
     supplier: "Goodwin, McKenzie and Harber",
-    purchase_date: "11/9/2017",
-    expiration_date: "1/18/2039",
-    density: 0.23,
-    flash_point: 160,
-    octane_rating: 92,
     image: "http://dummyimage.com/111x100.png/5fa2dd/ffffff"
   },
   {
@@ -4040,11 +2600,6 @@ export const MockData: MockDataType = [
     price: 919.04,
     quantity: 441835,
     supplier: "Jacobi, Welch and Lakin",
-    purchase_date: "5/11/2010",
-    expiration_date: "8/20/2033",
-    density: 0.75,
-    flash_point: -38,
-    octane_rating: 86,
     image: "http://dummyimage.com/191x100.png/dddddd/000000"
   },
   {
@@ -4054,11 +2609,6 @@ export const MockData: MockDataType = [
     price: 804.45,
     quantity: 720752,
     supplier: "Hand LLC",
-    purchase_date: "6/3/2005",
-    expiration_date: "1/13/2031",
-    density: 0.15,
-    flash_point: 200,
-    octane_rating: 94,
     image: "http://dummyimage.com/117x100.png/cc0000/ffffff"
   },
   {
@@ -4068,11 +2618,6 @@ export const MockData: MockDataType = [
     price: 588.73,
     quantity: 224639,
     supplier: "Hessel-Larson",
-    purchase_date: "7/14/2008",
-    expiration_date: "5/3/2026",
-    density: 0.41,
-    flash_point: -50,
-    octane_rating: 98,
     image: "http://dummyimage.com/129x100.png/dddddd/000000"
   },
   {
@@ -4082,11 +2627,6 @@ export const MockData: MockDataType = [
     price: 120.88,
     quantity: 142086,
     supplier: "Lindgren-Lynch",
-    purchase_date: "5/19/2012",
-    expiration_date: "3/5/2044",
-    density: 0.45,
-    flash_point: -25,
-    octane_rating: 97,
     image: "http://dummyimage.com/236x100.png/cc0000/ffffff"
   },
   {
@@ -4096,11 +2636,6 @@ export const MockData: MockDataType = [
     price: 792.09,
     quantity: 314031,
     supplier: "Robel LLC",
-    purchase_date: "8/17/2012",
-    expiration_date: "5/7/2033",
-    density: 0.57,
-    flash_point: 127,
-    octane_rating: 91,
     image: "http://dummyimage.com/213x100.png/dddddd/000000"
   },
   {
@@ -4110,11 +2645,6 @@ export const MockData: MockDataType = [
     price: 746.42,
     quantity: 813106,
     supplier: "Cummerata Inc",
-    purchase_date: "8/29/2008",
-    expiration_date: "7/24/2035",
-    density: 0.08,
-    flash_point: -47,
-    octane_rating: 85,
     image: "http://dummyimage.com/170x100.png/5fa2dd/ffffff"
   },
   {
@@ -4124,11 +2654,6 @@ export const MockData: MockDataType = [
     price: 268.19,
     quantity: 117882,
     supplier: "Larson-Schaefer",
-    purchase_date: "9/27/2012",
-    expiration_date: "3/20/2025",
-    density: 0.11,
-    flash_point: 35,
-    octane_rating: 98,
     image: "http://dummyimage.com/124x100.png/ff4444/ffffff"
   },
   {
@@ -4138,11 +2663,6 @@ export const MockData: MockDataType = [
     price: 517.47,
     quantity: 611070,
     supplier: "Mueller LLC",
-    purchase_date: "8/21/2011",
-    expiration_date: "12/4/2046",
-    density: 0.87,
-    flash_point: 120,
-    octane_rating: 98,
     image: "http://dummyimage.com/196x100.png/ff4444/ffffff"
   },
   {
@@ -4152,11 +2672,6 @@ export const MockData: MockDataType = [
     price: 116.37,
     quantity: 500825,
     supplier: "Welch, Considine and Veum",
-    purchase_date: "10/4/2010",
-    expiration_date: "5/2/2024",
-    density: 0.95,
-    flash_point: 34,
-    octane_rating: 97,
     image: "http://dummyimage.com/199x100.png/cc0000/ffffff"
   },
   {
@@ -4166,11 +2681,6 @@ export const MockData: MockDataType = [
     price: 581.78,
     quantity: 962728,
     supplier: "Rodriguez-Beatty",
-    purchase_date: "2/24/2002",
-    expiration_date: "12/28/2029",
-    density: 0.05,
-    flash_point: 2,
-    octane_rating: 91,
     image: "http://dummyimage.com/168x100.png/ff4444/ffffff"
   },
   {
@@ -4180,11 +2690,6 @@ export const MockData: MockDataType = [
     price: 13.16,
     quantity: 974884,
     supplier: "Kiehn-Nitzsche",
-    purchase_date: "11/25/2004",
-    expiration_date: "10/25/2025",
-    density: 0.89,
-    flash_point: -1,
-    octane_rating: 95,
     image: "http://dummyimage.com/184x100.png/5fa2dd/ffffff"
   },
   {
@@ -4194,11 +2699,6 @@ export const MockData: MockDataType = [
     price: 913.23,
     quantity: 503980,
     supplier: "Hoeger-Luettgen",
-    purchase_date: "9/15/2015",
-    expiration_date: "2/14/2039",
-    density: 0.69,
-    flash_point: 13,
-    octane_rating: 86,
     image: "http://dummyimage.com/246x100.png/cc0000/ffffff"
   },
   {
@@ -4208,11 +2708,6 @@ export const MockData: MockDataType = [
     price: 948.94,
     quantity: 727043,
     supplier: "Trantow-Watsica",
-    purchase_date: "7/5/2017",
-    expiration_date: "2/3/2033",
-    density: 0.59,
-    flash_point: 69,
-    octane_rating: 86,
     image: "http://dummyimage.com/217x100.png/dddddd/000000"
   },
   {
@@ -4222,11 +2717,6 @@ export const MockData: MockDataType = [
     price: 297.97,
     quantity: 215884,
     supplier: "Schinner, Lueilwitz and Rice",
-    purchase_date: "5/28/2010",
-    expiration_date: "7/18/2031",
-    density: 0.2,
-    flash_point: 114,
-    octane_rating: 88,
     image: "http://dummyimage.com/240x100.png/dddddd/000000"
   },
   {
@@ -4236,11 +2726,6 @@ export const MockData: MockDataType = [
     price: 940.87,
     quantity: 152216,
     supplier: "Runte, Dare and Lueilwitz",
-    purchase_date: "5/8/2009",
-    expiration_date: "12/22/2036",
-    density: 0.84,
-    flash_point: 129,
-    octane_rating: 96,
     image: "http://dummyimage.com/246x100.png/ff4444/ffffff"
   },
   {
@@ -4250,11 +2735,6 @@ export const MockData: MockDataType = [
     price: 582.27,
     quantity: 606252,
     supplier: "Reichel LLC",
-    purchase_date: "10/6/2002",
-    expiration_date: "5/6/2037",
-    density: 0.75,
-    flash_point: 49,
-    octane_rating: 87,
     image: "http://dummyimage.com/137x100.png/cc0000/ffffff"
   },
   {
@@ -4264,11 +2744,6 @@ export const MockData: MockDataType = [
     price: 968.82,
     quantity: 366705,
     supplier: "Wiza-Crist",
-    purchase_date: "2/8/2021",
-    expiration_date: "10/26/2044",
-    density: 0.99,
-    flash_point: 22,
-    octane_rating: 95,
     image: "http://dummyimage.com/209x100.png/5fa2dd/ffffff"
   },
   {
@@ -4278,11 +2753,6 @@ export const MockData: MockDataType = [
     price: 27.54,
     quantity: 689024,
     supplier: "Glover, Pagac and Weissnat",
-    purchase_date: "2/12/2021",
-    expiration_date: "2/19/2023",
-    density: 0.19,
-    flash_point: -1,
-    octane_rating: 87,
     image: "http://dummyimage.com/151x100.png/ff4444/ffffff"
   },
   {
@@ -4292,11 +2762,6 @@ export const MockData: MockDataType = [
     price: 487.31,
     quantity: 345161,
     supplier: "Volkman, White and Spencer",
-    purchase_date: "6/17/2007",
-    expiration_date: "7/31/2046",
-    density: 0.86,
-    flash_point: 162,
-    octane_rating: 93,
     image: "http://dummyimage.com/222x100.png/cc0000/ffffff"
   },
   {
@@ -4306,11 +2771,6 @@ export const MockData: MockDataType = [
     price: 986.37,
     quantity: 458047,
     supplier: "Upton-Smith",
-    purchase_date: "2/12/2021",
-    expiration_date: "6/17/2031",
-    density: 0.83,
-    flash_point: -35,
-    octane_rating: 91,
     image: "http://dummyimage.com/208x100.png/cc0000/ffffff"
   },
   {
@@ -4320,11 +2780,6 @@ export const MockData: MockDataType = [
     price: 59.44,
     quantity: 111048,
     supplier: "Ortiz and Sons",
-    purchase_date: "7/6/2010",
-    expiration_date: "5/13/2025",
-    density: 0.09,
-    flash_point: 137,
-    octane_rating: 88,
     image: "http://dummyimage.com/178x100.png/dddddd/000000"
   },
   {
@@ -4334,11 +2789,6 @@ export const MockData: MockDataType = [
     price: 602.88,
     quantity: 296797,
     supplier: "Smith, Hammes and Bahringer",
-    purchase_date: "6/8/2006",
-    expiration_date: "7/11/2042",
-    density: 0.89,
-    flash_point: 131,
-    octane_rating: 89,
     image: "http://dummyimage.com/241x100.png/cc0000/ffffff"
   },
   {
@@ -4348,11 +2798,6 @@ export const MockData: MockDataType = [
     price: 331.87,
     quantity: 486486,
     supplier: "Littel and Sons",
-    purchase_date: "12/1/2008",
-    expiration_date: "3/14/2039",
-    density: 0.73,
-    flash_point: -9,
-    octane_rating: 87,
     image: "http://dummyimage.com/198x100.png/5fa2dd/ffffff"
   },
   {
@@ -4362,11 +2807,6 @@ export const MockData: MockDataType = [
     price: 980.52,
     quantity: 519262,
     supplier: "Aufderhar-Auer",
-    purchase_date: "1/4/2005",
-    expiration_date: "1/7/2030",
-    density: 0.96,
-    flash_point: 54,
-    octane_rating: 87,
     image: "http://dummyimage.com/180x100.png/5fa2dd/ffffff"
   },
   {
@@ -4376,11 +2816,6 @@ export const MockData: MockDataType = [
     price: 600.65,
     quantity: 58027,
     supplier: "Stracke, Runolfsdottir and Cruickshank",
-    purchase_date: "4/16/2021",
-    expiration_date: "4/21/2031",
-    density: 0.33,
-    flash_point: 101,
-    octane_rating: 96,
     image: "http://dummyimage.com/210x100.png/ff4444/ffffff"
   },
   {
@@ -4390,11 +2825,6 @@ export const MockData: MockDataType = [
     price: 622.87,
     quantity: 443631,
     supplier: "Wyman, Feil and Brakus",
-    purchase_date: "2/25/2020",
-    expiration_date: "5/21/2024",
-    density: 0.44,
-    flash_point: -47,
-    octane_rating: 93,
     image: "http://dummyimage.com/112x100.png/dddddd/000000"
   },
   {
@@ -4404,11 +2834,6 @@ export const MockData: MockDataType = [
     price: 306.39,
     quantity: 789536,
     supplier: "Robel LLC",
-    purchase_date: "10/30/2007",
-    expiration_date: "12/22/2026",
-    density: 0.59,
-    flash_point: 55,
-    octane_rating: 92,
     image: "http://dummyimage.com/217x100.png/cc0000/ffffff"
   },
   {
@@ -4418,11 +2843,6 @@ export const MockData: MockDataType = [
     price: 640.27,
     quantity: 286785,
     supplier: "Sawayn-Hartmann",
-    purchase_date: "9/20/2016",
-    expiration_date: "7/3/2034",
-    density: 0.64,
-    flash_point: 129,
-    octane_rating: 88,
     image: "http://dummyimage.com/181x100.png/5fa2dd/ffffff"
   },
   {
@@ -4432,11 +2852,6 @@ export const MockData: MockDataType = [
     price: 0.63,
     quantity: 719292,
     supplier: "Schowalter-Ferry",
-    purchase_date: "7/5/2017",
-    expiration_date: "9/25/2031",
-    density: 0.56,
-    flash_point: 114,
-    octane_rating: 90,
     image: "http://dummyimage.com/239x100.png/dddddd/000000"
   },
   {
@@ -4446,11 +2861,6 @@ export const MockData: MockDataType = [
     price: 194.63,
     quantity: 840962,
     supplier: "Conroy-Lind",
-    purchase_date: "12/1/2022",
-    expiration_date: "4/9/2028",
-    density: 0.55,
-    flash_point: 53,
-    octane_rating: 100,
     image: "http://dummyimage.com/169x100.png/ff4444/ffffff"
   },
   {
@@ -4460,11 +2870,6 @@ export const MockData: MockDataType = [
     price: 427.86,
     quantity: 592803,
     supplier: "Gleichner, Tremblay and Gislason",
-    purchase_date: "10/9/2008",
-    expiration_date: "8/17/2039",
-    density: 0.81,
-    flash_point: 111,
-    octane_rating: 92,
     image: "http://dummyimage.com/111x100.png/ff4444/ffffff"
   },
   {
@@ -4474,11 +2879,6 @@ export const MockData: MockDataType = [
     price: 933.48,
     quantity: 637497,
     supplier: "Von, Treutel and Kertzmann",
-    purchase_date: "8/4/2017",
-    expiration_date: "2/7/2030",
-    density: 0.24,
-    flash_point: 66,
-    octane_rating: 89,
     image: "http://dummyimage.com/159x100.png/dddddd/000000"
   },
   {
@@ -4488,11 +2888,6 @@ export const MockData: MockDataType = [
     price: 648.13,
     quantity: 667290,
     supplier: "Runolfsson Group",
-    purchase_date: "6/6/2009",
-    expiration_date: "4/30/2034",
-    density: 0.63,
-    flash_point: 43,
-    octane_rating: 88,
     image: "http://dummyimage.com/172x100.png/ff4444/ffffff"
   },
   {
@@ -4502,11 +2897,6 @@ export const MockData: MockDataType = [
     price: 676.84,
     quantity: 109166,
     supplier: "Torphy, Bednar and Steuber",
-    purchase_date: "1/26/2001",
-    expiration_date: "8/27/2023",
-    density: 0.35,
-    flash_point: 81,
-    octane_rating: 95,
     image: "http://dummyimage.com/161x100.png/cc0000/ffffff"
   },
   {
@@ -4516,11 +2906,6 @@ export const MockData: MockDataType = [
     price: 379.85,
     quantity: 635163,
     supplier: "Hartmann-O'Hara",
-    purchase_date: "2/21/2004",
-    expiration_date: "2/16/2023",
-    density: 0.85,
-    flash_point: 147,
-    octane_rating: 86,
     image: "http://dummyimage.com/131x100.png/ff4444/ffffff"
   },
   {
@@ -4530,11 +2915,6 @@ export const MockData: MockDataType = [
     price: 16.2,
     quantity: 510364,
     supplier: "Johns-Weimann",
-    purchase_date: "2/20/2001",
-    expiration_date: "1/1/2036",
-    density: 0.61,
-    flash_point: 71,
-    octane_rating: 93,
     image: "http://dummyimage.com/146x100.png/ff4444/ffffff"
   },
   {
@@ -4544,11 +2924,6 @@ export const MockData: MockDataType = [
     price: 202.63,
     quantity: 203750,
     supplier: "Walsh Inc",
-    purchase_date: "7/20/2016",
-    expiration_date: "5/30/2030",
-    density: 0.02,
-    flash_point: 111,
-    octane_rating: 98,
     image: "http://dummyimage.com/127x100.png/ff4444/ffffff"
   },
   {
@@ -4558,11 +2933,6 @@ export const MockData: MockDataType = [
     price: 339.35,
     quantity: 712824,
     supplier: "Russel-Heidenreich",
-    purchase_date: "11/29/2009",
-    expiration_date: "9/25/2028",
-    density: 0.6,
-    flash_point: -15,
-    octane_rating: 90,
     image: "http://dummyimage.com/181x100.png/dddddd/000000"
   },
   {
@@ -4572,11 +2942,6 @@ export const MockData: MockDataType = [
     price: 979.55,
     quantity: 892595,
     supplier: "Schmitt, Kuvalis and Koelpin",
-    purchase_date: "11/5/2002",
-    expiration_date: "7/18/2044",
-    density: 0.15,
-    flash_point: 78,
-    octane_rating: 98,
     image: "http://dummyimage.com/153x100.png/cc0000/ffffff"
   },
   {
@@ -4586,11 +2951,6 @@ export const MockData: MockDataType = [
     price: 852.31,
     quantity: 449990,
     supplier: "Johnston, Romaguera and Lesch",
-    purchase_date: "5/2/2001",
-    expiration_date: "11/2/2025",
-    density: 0.35,
-    flash_point: 132,
-    octane_rating: 85,
     image: "http://dummyimage.com/129x100.png/dddddd/000000"
   },
   {
@@ -4600,11 +2960,6 @@ export const MockData: MockDataType = [
     price: 578.82,
     quantity: 910422,
     supplier: "Kuhic, Lockman and Wyman",
-    purchase_date: "11/16/2007",
-    expiration_date: "7/24/2033",
-    density: 0.76,
-    flash_point: 58,
-    octane_rating: 94,
     image: "http://dummyimage.com/181x100.png/dddddd/000000"
   },
   {
@@ -4614,11 +2969,6 @@ export const MockData: MockDataType = [
     price: 353.3,
     quantity: 87215,
     supplier: "Kiehn-Deckow",
-    purchase_date: "12/4/2006",
-    expiration_date: "4/5/2031",
-    density: 0.63,
-    flash_point: 144,
-    octane_rating: 96,
     image: "http://dummyimage.com/246x100.png/5fa2dd/ffffff"
   },
   {
@@ -4628,11 +2978,6 @@ export const MockData: MockDataType = [
     price: 951.06,
     quantity: 614140,
     supplier: "Gottlieb-Ziemann",
-    purchase_date: "3/24/2014",
-    expiration_date: "7/6/2046",
-    density: 0.21,
-    flash_point: 102,
-    octane_rating: 99,
     image: "http://dummyimage.com/115x100.png/5fa2dd/ffffff"
   },
   {
@@ -4642,11 +2987,6 @@ export const MockData: MockDataType = [
     price: 565.38,
     quantity: 113183,
     supplier: "Lesch, DuBuque and Johnson",
-    purchase_date: "1/2/2010",
-    expiration_date: "1/11/2030",
-    density: 0.87,
-    flash_point: 10,
-    octane_rating: 90,
     image: "http://dummyimage.com/106x100.png/cc0000/ffffff"
   },
   {
@@ -4656,11 +2996,6 @@ export const MockData: MockDataType = [
     price: 553.34,
     quantity: 262703,
     supplier: "Bartell-Mills",
-    purchase_date: "5/24/2016",
-    expiration_date: "12/23/2034",
-    density: 0.78,
-    flash_point: 66,
-    octane_rating: 100,
     image: "http://dummyimage.com/117x100.png/ff4444/ffffff"
   },
   {
@@ -4670,11 +3005,6 @@ export const MockData: MockDataType = [
     price: 17.23,
     quantity: 184971,
     supplier: "Botsford, Prohaska and Vandervort",
-    purchase_date: "2/10/2014",
-    expiration_date: "9/8/2045",
-    density: 0.01,
-    flash_point: 104,
-    octane_rating: 87,
     image: "http://dummyimage.com/214x100.png/5fa2dd/ffffff"
   },
   {
@@ -4684,11 +3014,6 @@ export const MockData: MockDataType = [
     price: 493.49,
     quantity: 941942,
     supplier: "Torp, Wilderman and Cremin",
-    purchase_date: "7/7/2003",
-    expiration_date: "12/18/2029",
-    density: 0.68,
-    flash_point: 139,
-    octane_rating: 91,
     image: "http://dummyimage.com/224x100.png/cc0000/ffffff"
   },
   {
@@ -4698,11 +3023,6 @@ export const MockData: MockDataType = [
     price: 196.25,
     quantity: 79298,
     supplier: "Reichel LLC",
-    purchase_date: "10/4/2005",
-    expiration_date: "5/16/2038",
-    density: 0.68,
-    flash_point: 200,
-    octane_rating: 89,
     image: "http://dummyimage.com/183x100.png/cc0000/ffffff"
   },
   {
@@ -4712,11 +3032,6 @@ export const MockData: MockDataType = [
     price: 223.83,
     quantity: 678545,
     supplier: "O'Conner, Spinka and Effertz",
-    purchase_date: "3/27/2011",
-    expiration_date: "2/18/2038",
-    density: 0.97,
-    flash_point: 50,
-    octane_rating: 91,
     image: "http://dummyimage.com/218x100.png/ff4444/ffffff"
   },
   {
@@ -4726,11 +3041,6 @@ export const MockData: MockDataType = [
     price: 396.08,
     quantity: 894321,
     supplier: "Roob Inc",
-    purchase_date: "5/27/2011",
-    expiration_date: "1/5/2036",
-    density: 0.07,
-    flash_point: 151,
-    octane_rating: 91,
     image: "http://dummyimage.com/214x100.png/5fa2dd/ffffff"
   },
   {
@@ -4740,11 +3050,6 @@ export const MockData: MockDataType = [
     price: 150.69,
     quantity: 118478,
     supplier: "Kuvalis Group",
-    purchase_date: "11/4/2013",
-    expiration_date: "1/7/2025",
-    density: 0.32,
-    flash_point: -50,
-    octane_rating: 89,
     image: "http://dummyimage.com/119x100.png/ff4444/ffffff"
   },
   {
@@ -4754,11 +3059,6 @@ export const MockData: MockDataType = [
     price: 231.92,
     quantity: 484592,
     supplier: "Leuschke Inc",
-    purchase_date: "5/14/2005",
-    expiration_date: "9/23/2032",
-    density: 0.81,
-    flash_point: 128,
-    octane_rating: 95,
     image: "http://dummyimage.com/110x100.png/cc0000/ffffff"
   },
   {
@@ -4768,11 +3068,6 @@ export const MockData: MockDataType = [
     price: 160.31,
     quantity: 662915,
     supplier: "Jones-Greenfelder",
-    purchase_date: "11/28/2019",
-    expiration_date: "1/6/2039",
-    density: 0.03,
-    flash_point: 177,
-    octane_rating: 91,
     image: "http://dummyimage.com/150x100.png/dddddd/000000"
   },
   {
@@ -4782,11 +3077,6 @@ export const MockData: MockDataType = [
     price: 275.15,
     quantity: 601845,
     supplier: "Borer-Boehm",
-    purchase_date: "4/23/2017",
-    expiration_date: "5/15/2031",
-    density: 0.58,
-    flash_point: -29,
-    octane_rating: 88,
     image: "http://dummyimage.com/211x100.png/5fa2dd/ffffff"
   },
   {
@@ -4796,11 +3086,6 @@ export const MockData: MockDataType = [
     price: 947.37,
     quantity: 437155,
     supplier: "Dooley, Hoeger and Pollich",
-    purchase_date: "7/18/2012",
-    expiration_date: "4/19/2027",
-    density: 0.58,
-    flash_point: 63,
-    octane_rating: 89,
     image: "http://dummyimage.com/216x100.png/ff4444/ffffff"
   },
   {
@@ -4810,11 +3095,6 @@ export const MockData: MockDataType = [
     price: 563.45,
     quantity: 108983,
     supplier: "Watsica Inc",
-    purchase_date: "12/15/2005",
-    expiration_date: "4/13/2026",
-    density: 0.2,
-    flash_point: 89,
-    octane_rating: 86,
     image: "http://dummyimage.com/242x100.png/ff4444/ffffff"
   },
   {
@@ -4824,11 +3104,6 @@ export const MockData: MockDataType = [
     price: 417.93,
     quantity: 111567,
     supplier: "Kris Inc",
-    purchase_date: "10/11/2021",
-    expiration_date: "1/16/2024",
-    density: 0.08,
-    flash_point: -29,
-    octane_rating: 93,
     image: "http://dummyimage.com/105x100.png/cc0000/ffffff"
   },
   {
@@ -4838,11 +3113,6 @@ export const MockData: MockDataType = [
     price: 352.17,
     quantity: 343754,
     supplier: "Dare Group",
-    purchase_date: "6/13/2014",
-    expiration_date: "4/26/2034",
-    density: 0.18,
-    flash_point: 4,
-    octane_rating: 88,
     image: "http://dummyimage.com/180x100.png/5fa2dd/ffffff"
   },
   {
@@ -4852,11 +3122,6 @@ export const MockData: MockDataType = [
     price: 377.04,
     quantity: 626753,
     supplier: "Maggio Inc",
-    purchase_date: "12/8/2016",
-    expiration_date: "4/25/2029",
-    density: 0.31,
-    flash_point: 149,
-    octane_rating: 93,
     image: "http://dummyimage.com/101x100.png/5fa2dd/ffffff"
   },
   {
@@ -4866,11 +3131,6 @@ export const MockData: MockDataType = [
     price: 420.47,
     quantity: 27220,
     supplier: "Crooks-Shanahan",
-    purchase_date: "6/22/2021",
-    expiration_date: "10/9/2037",
-    density: 0.84,
-    flash_point: -18,
-    octane_rating: 88,
     image: "http://dummyimage.com/213x100.png/cc0000/ffffff"
   },
   {
@@ -4880,11 +3140,6 @@ export const MockData: MockDataType = [
     price: 217.61,
     quantity: 435168,
     supplier: "Weimann-Krajcik",
-    purchase_date: "10/24/2002",
-    expiration_date: "5/26/2026",
-    density: 0.35,
-    flash_point: 153,
-    octane_rating: 92,
     image: "http://dummyimage.com/179x100.png/cc0000/ffffff"
   },
   {
@@ -4894,11 +3149,6 @@ export const MockData: MockDataType = [
     price: 819.44,
     quantity: 917532,
     supplier: "Reichert-Zboncak",
-    purchase_date: "5/25/2006",
-    expiration_date: "7/17/2037",
-    density: 0.11,
-    flash_point: -8,
-    octane_rating: 95,
     image: "http://dummyimage.com/143x100.png/cc0000/ffffff"
   },
   {
@@ -4908,11 +3158,6 @@ export const MockData: MockDataType = [
     price: 897.27,
     quantity: 795715,
     supplier: "Hayes Group",
-    purchase_date: "12/29/2013",
-    expiration_date: "3/11/2028",
-    density: 0.35,
-    flash_point: 114,
-    octane_rating: 98,
     image: "http://dummyimage.com/131x100.png/cc0000/ffffff"
   },
   {
@@ -4922,11 +3167,6 @@ export const MockData: MockDataType = [
     price: 130.75,
     quantity: 79939,
     supplier: "Hirthe Inc",
-    purchase_date: "2/16/2020",
-    expiration_date: "7/18/2037",
-    density: 0.29,
-    flash_point: 82,
-    octane_rating: 92,
     image: "http://dummyimage.com/161x100.png/cc0000/ffffff"
   },
   {
@@ -4936,11 +3176,6 @@ export const MockData: MockDataType = [
     price: 814.44,
     quantity: 577741,
     supplier: "Lesch Group",
-    purchase_date: "1/21/2007",
-    expiration_date: "12/1/2023",
-    density: 0.25,
-    flash_point: -20,
-    octane_rating: 87,
     image: "http://dummyimage.com/228x100.png/ff4444/ffffff"
   },
   {
@@ -4950,11 +3185,6 @@ export const MockData: MockDataType = [
     price: 916.39,
     quantity: 251081,
     supplier: "Mitchell Inc",
-    purchase_date: "1/22/2020",
-    expiration_date: "10/11/2029",
-    density: 0.55,
-    flash_point: 55,
-    octane_rating: 100,
     image: "http://dummyimage.com/100x100.png/dddddd/000000"
   },
   {
@@ -4964,11 +3194,6 @@ export const MockData: MockDataType = [
     price: 886.77,
     quantity: 83229,
     supplier: "McDermott Group",
-    purchase_date: "12/10/2008",
-    expiration_date: "12/16/2041",
-    density: 0.22,
-    flash_point: -28,
-    octane_rating: 94,
     image: "http://dummyimage.com/122x100.png/ff4444/ffffff"
   },
   {
@@ -4978,11 +3203,6 @@ export const MockData: MockDataType = [
     price: 563.21,
     quantity: 349840,
     supplier: "Schoen Inc",
-    purchase_date: "6/2/2014",
-    expiration_date: "10/27/2032",
-    density: 0.99,
-    flash_point: 81,
-    octane_rating: 95,
     image: "http://dummyimage.com/149x100.png/cc0000/ffffff"
   },
   {
@@ -4992,11 +3212,6 @@ export const MockData: MockDataType = [
     price: 441.98,
     quantity: 225974,
     supplier: "Dibbert-Gerlach",
-    purchase_date: "5/15/2015",
-    expiration_date: "6/22/2029",
-    density: 0.99,
-    flash_point: 142,
-    octane_rating: 98,
     image: "http://dummyimage.com/228x100.png/ff4444/ffffff"
   },
   {
@@ -5006,11 +3221,6 @@ export const MockData: MockDataType = [
     price: 219.97,
     quantity: 90757,
     supplier: "Ortiz-Ondricka",
-    purchase_date: "5/13/2000",
-    expiration_date: "8/20/2024",
-    density: 0.39,
-    flash_point: 56,
-    octane_rating: 93,
     image: "http://dummyimage.com/122x100.png/cc0000/ffffff"
   },
   {
@@ -5020,11 +3230,6 @@ export const MockData: MockDataType = [
     price: 592.59,
     quantity: 108315,
     supplier: "Konopelski-Schiller",
-    purchase_date: "8/5/2022",
-    expiration_date: "3/15/2033",
-    density: 0.61,
-    flash_point: 150,
-    octane_rating: 99,
     image: "http://dummyimage.com/225x100.png/ff4444/ffffff"
   },
   {
@@ -5034,11 +3239,6 @@ export const MockData: MockDataType = [
     price: 605.99,
     quantity: 290498,
     supplier: "Pacocha Inc",
-    purchase_date: "11/22/2004",
-    expiration_date: "1/19/2035",
-    density: 0.72,
-    flash_point: 119,
-    octane_rating: 87,
     image: "http://dummyimage.com/179x100.png/5fa2dd/ffffff"
   },
   {
@@ -5048,11 +3248,6 @@ export const MockData: MockDataType = [
     price: 375.91,
     quantity: 279140,
     supplier: "Grady, Harvey and Conn",
-    purchase_date: "6/13/2006",
-    expiration_date: "5/28/2040",
-    density: 0.13,
-    flash_point: 55,
-    octane_rating: 98,
     image: "http://dummyimage.com/156x100.png/cc0000/ffffff"
   },
   {
@@ -5062,11 +3257,6 @@ export const MockData: MockDataType = [
     price: 891.89,
     quantity: 942338,
     supplier: "Becker, Haley and Pagac",
-    purchase_date: "9/22/2010",
-    expiration_date: "7/29/2026",
-    density: 0.02,
-    flash_point: 74,
-    octane_rating: 94,
     image: "http://dummyimage.com/138x100.png/ff4444/ffffff"
   },
   {
@@ -5076,11 +3266,6 @@ export const MockData: MockDataType = [
     price: 885.97,
     quantity: 517881,
     supplier: "Zieme and Sons",
-    purchase_date: "7/23/2013",
-    expiration_date: "8/3/2046",
-    density: 0.02,
-    flash_point: 120,
-    octane_rating: 98,
     image: "http://dummyimage.com/117x100.png/5fa2dd/ffffff"
   },
   {
@@ -5090,11 +3275,6 @@ export const MockData: MockDataType = [
     price: 664.04,
     quantity: 862665,
     supplier: "Nikolaus-Rath",
-    purchase_date: "6/13/2004",
-    expiration_date: "11/17/2035",
-    density: 0.41,
-    flash_point: 52,
-    octane_rating: 91,
     image: "http://dummyimage.com/237x100.png/cc0000/ffffff"
   },
   {
@@ -5104,11 +3284,6 @@ export const MockData: MockDataType = [
     price: 5.86,
     quantity: 155832,
     supplier: "McDermott-Heller",
-    purchase_date: "2/3/2004",
-    expiration_date: "4/27/2037",
-    density: 0.69,
-    flash_point: 10,
-    octane_rating: 89,
     image: "http://dummyimage.com/229x100.png/dddddd/000000"
   },
   {
@@ -5118,11 +3293,6 @@ export const MockData: MockDataType = [
     price: 567.87,
     quantity: 173800,
     supplier: "Jerde-Pouros",
-    purchase_date: "6/21/2021",
-    expiration_date: "8/6/2023",
-    density: 0.79,
-    flash_point: 175,
-    octane_rating: 95,
     image: "http://dummyimage.com/126x100.png/dddddd/000000"
   },
   {
@@ -5132,11 +3302,6 @@ export const MockData: MockDataType = [
     price: 144.05,
     quantity: 753378,
     supplier: "Johns-Robel",
-    purchase_date: "8/8/2004",
-    expiration_date: "10/19/2030",
-    density: 0.57,
-    flash_point: 92,
-    octane_rating: 100,
     image: "http://dummyimage.com/104x100.png/ff4444/ffffff"
   },
   {
@@ -5146,11 +3311,6 @@ export const MockData: MockDataType = [
     price: 901.89,
     quantity: 708646,
     supplier: "Conroy-Smitham",
-    purchase_date: "12/14/2015",
-    expiration_date: "1/14/2025",
-    density: 0.14,
-    flash_point: 56,
-    octane_rating: 86,
     image: "http://dummyimage.com/180x100.png/5fa2dd/ffffff"
   },
   {
@@ -5160,11 +3320,6 @@ export const MockData: MockDataType = [
     price: 459.96,
     quantity: 10210,
     supplier: "Walsh Group",
-    purchase_date: "5/2/2016",
-    expiration_date: "1/14/2028",
-    density: 0.95,
-    flash_point: 164,
-    octane_rating: 96,
     image: "http://dummyimage.com/141x100.png/cc0000/ffffff"
   },
   {
@@ -5174,11 +3329,6 @@ export const MockData: MockDataType = [
     price: 87.37,
     quantity: 54729,
     supplier: "Shanahan Group",
-    purchase_date: "10/18/2005",
-    expiration_date: "4/24/2042",
-    density: 0.88,
-    flash_point: 27,
-    octane_rating: 91,
     image: "http://dummyimage.com/219x100.png/cc0000/ffffff"
   },
   {
@@ -5188,11 +3338,6 @@ export const MockData: MockDataType = [
     price: 998.85,
     quantity: 725315,
     supplier: "Lebsack-Ebert",
-    purchase_date: "9/24/2019",
-    expiration_date: "7/31/2025",
-    density: 0.55,
-    flash_point: 126,
-    octane_rating: 100,
     image: "http://dummyimage.com/247x100.png/dddddd/000000"
   },
   {
@@ -5202,11 +3347,6 @@ export const MockData: MockDataType = [
     price: 723.09,
     quantity: 76927,
     supplier: "Moore, Wiza and Mills",
-    purchase_date: "10/19/2011",
-    expiration_date: "7/1/2039",
-    density: 0.71,
-    flash_point: 42,
-    octane_rating: 96,
     image: "http://dummyimage.com/166x100.png/cc0000/ffffff"
   },
   {
@@ -5216,11 +3356,6 @@ export const MockData: MockDataType = [
     price: 249.46,
     quantity: 451571,
     supplier: "Moen, Dooley and Smith",
-    purchase_date: "5/7/2003",
-    expiration_date: "1/14/2045",
-    density: 0.14,
-    flash_point: 106,
-    octane_rating: 94,
     image: "http://dummyimage.com/242x100.png/dddddd/000000"
   },
   {
@@ -5230,11 +3365,6 @@ export const MockData: MockDataType = [
     price: 544.92,
     quantity: 943780,
     supplier: "Frami-McGlynn",
-    purchase_date: "3/8/2021",
-    expiration_date: "4/20/2031",
-    density: 0.87,
-    flash_point: 2,
-    octane_rating: 91,
     image: "http://dummyimage.com/179x100.png/5fa2dd/ffffff"
   },
   {
@@ -5244,11 +3374,6 @@ export const MockData: MockDataType = [
     price: 444.99,
     quantity: 680187,
     supplier: "Quitzon-Zemlak",
-    purchase_date: "12/22/2005",
-    expiration_date: "2/23/2029",
-    density: 0.04,
-    flash_point: -12,
-    octane_rating: 86,
     image: "http://dummyimage.com/166x100.png/cc0000/ffffff"
   },
   {
@@ -5258,11 +3383,6 @@ export const MockData: MockDataType = [
     price: 248.65,
     quantity: 43915,
     supplier: "Schiller and Sons",
-    purchase_date: "9/23/2011",
-    expiration_date: "11/19/2035",
-    density: 0.42,
-    flash_point: 1,
-    octane_rating: 86,
     image: "http://dummyimage.com/223x100.png/cc0000/ffffff"
   },
   {
@@ -5272,11 +3392,6 @@ export const MockData: MockDataType = [
     price: 41.2,
     quantity: 56934,
     supplier: "Wunsch-Strosin",
-    purchase_date: "11/24/2014",
-    expiration_date: "2/3/2034",
-    density: 0.58,
-    flash_point: 188,
-    octane_rating: 95,
     image: "http://dummyimage.com/172x100.png/dddddd/000000"
   },
   {
@@ -5286,11 +3401,6 @@ export const MockData: MockDataType = [
     price: 648.25,
     quantity: 115294,
     supplier: "Conn-Feil",
-    purchase_date: "2/27/2010",
-    expiration_date: "3/3/2040",
-    density: 0.28,
-    flash_point: 3,
-    octane_rating: 99,
     image: "http://dummyimage.com/180x100.png/dddddd/000000"
   },
   {
@@ -5300,11 +3410,6 @@ export const MockData: MockDataType = [
     price: 847.94,
     quantity: 112450,
     supplier: "Macejkovic, Sanford and Gutkowski",
-    purchase_date: "6/3/2017",
-    expiration_date: "11/26/2029",
-    density: 0.8,
-    flash_point: -47,
-    octane_rating: 98,
     image: "http://dummyimage.com/137x100.png/dddddd/000000"
   },
   {
@@ -5314,11 +3419,6 @@ export const MockData: MockDataType = [
     price: 427.92,
     quantity: 396607,
     supplier: "Kirlin, Osinski and Boyle",
-    purchase_date: "9/7/2004",
-    expiration_date: "11/9/2042",
-    density: 0.14,
-    flash_point: 14,
-    octane_rating: 91,
     image: "http://dummyimage.com/136x100.png/5fa2dd/ffffff"
   },
   {
@@ -5328,11 +3428,6 @@ export const MockData: MockDataType = [
     price: 520.49,
     quantity: 21724,
     supplier: "Abernathy Inc",
-    purchase_date: "2/3/2015",
-    expiration_date: "11/28/2028",
-    density: 0.39,
-    flash_point: 68,
-    octane_rating: 90,
     image: "http://dummyimage.com/165x100.png/cc0000/ffffff"
   },
   {
@@ -5342,11 +3437,6 @@ export const MockData: MockDataType = [
     price: 472.71,
     quantity: 487726,
     supplier: "Purdy-Schowalter",
-    purchase_date: "6/25/2000",
-    expiration_date: "7/18/2041",
-    density: 0.19,
-    flash_point: 113,
-    octane_rating: 89,
     image: "http://dummyimage.com/162x100.png/cc0000/ffffff"
   },
   {
@@ -5356,11 +3446,6 @@ export const MockData: MockDataType = [
     price: 673.37,
     quantity: 726901,
     supplier: "Konopelski, Carroll and Schowalter",
-    purchase_date: "6/21/2001",
-    expiration_date: "10/3/2028",
-    density: 0.32,
-    flash_point: -39,
-    octane_rating: 100,
     image: "http://dummyimage.com/220x100.png/dddddd/000000"
   },
   {
@@ -5370,11 +3455,6 @@ export const MockData: MockDataType = [
     price: 983.52,
     quantity: 610811,
     supplier: "Carroll, VonRueden and Mitchell",
-    purchase_date: "9/9/2010",
-    expiration_date: "3/13/2030",
-    density: 0.59,
-    flash_point: 9,
-    octane_rating: 87,
     image: "http://dummyimage.com/117x100.png/ff4444/ffffff"
   },
   {
@@ -5384,11 +3464,6 @@ export const MockData: MockDataType = [
     price: 607.88,
     quantity: 139931,
     supplier: "Wolf, Goyette and Gibson",
-    purchase_date: "9/16/2018",
-    expiration_date: "6/30/2043",
-    density: 0.63,
-    flash_point: 13,
-    octane_rating: 95,
     image: "http://dummyimage.com/248x100.png/dddddd/000000"
   },
   {
@@ -5398,11 +3473,6 @@ export const MockData: MockDataType = [
     price: 259.34,
     quantity: 66404,
     supplier: "Ward, Zboncak and Koelpin",
-    purchase_date: "7/9/2010",
-    expiration_date: "1/7/2030",
-    density: 0.38,
-    flash_point: 199,
-    octane_rating: 95,
     image: "http://dummyimage.com/229x100.png/ff4444/ffffff"
   },
   {
@@ -5412,11 +3482,6 @@ export const MockData: MockDataType = [
     price: 943.6,
     quantity: 914747,
     supplier: "Towne, Hammes and Dicki",
-    purchase_date: "7/30/2005",
-    expiration_date: "4/21/2038",
-    density: 0.58,
-    flash_point: 64,
-    octane_rating: 89,
     image: "http://dummyimage.com/141x100.png/cc0000/ffffff"
   },
   {
@@ -5426,11 +3491,6 @@ export const MockData: MockDataType = [
     price: 550.03,
     quantity: 737133,
     supplier: "Keebler, Cummings and Schimmel",
-    purchase_date: "12/23/2019",
-    expiration_date: "2/22/2025",
-    density: 0.32,
-    flash_point: 0,
-    octane_rating: 93,
     image: "http://dummyimage.com/221x100.png/ff4444/ffffff"
   },
   {
@@ -5440,11 +3500,6 @@ export const MockData: MockDataType = [
     price: 681.27,
     quantity: 841718,
     supplier: "Spencer, Buckridge and Connelly",
-    purchase_date: "3/7/2000",
-    expiration_date: "4/28/2041",
-    density: 0.77,
-    flash_point: 8,
-    octane_rating: 93,
     image: "http://dummyimage.com/191x100.png/ff4444/ffffff"
   },
   {
@@ -5454,11 +3509,6 @@ export const MockData: MockDataType = [
     price: 366.13,
     quantity: 739040,
     supplier: "McGlynn Inc",
-    purchase_date: "4/2/2008",
-    expiration_date: "10/19/2033",
-    density: 0.84,
-    flash_point: 134,
-    octane_rating: 92,
     image: "http://dummyimage.com/184x100.png/dddddd/000000"
   },
   {
@@ -5468,11 +3518,6 @@ export const MockData: MockDataType = [
     price: 572.24,
     quantity: 670163,
     supplier: "Hermann-Dibbert",
-    purchase_date: "6/16/2016",
-    expiration_date: "12/19/2040",
-    density: 0.3,
-    flash_point: 14,
-    octane_rating: 97,
     image: "http://dummyimage.com/229x100.png/5fa2dd/ffffff"
   },
   {
@@ -5482,11 +3527,6 @@ export const MockData: MockDataType = [
     price: 389.06,
     quantity: 188796,
     supplier: "Bartell-Gusikowski",
-    purchase_date: "5/19/2000",
-    expiration_date: "10/19/2032",
-    density: 0.64,
-    flash_point: 168,
-    octane_rating: 97,
     image: "http://dummyimage.com/148x100.png/ff4444/ffffff"
   },
   {
@@ -5496,11 +3536,6 @@ export const MockData: MockDataType = [
     price: 495.63,
     quantity: 302702,
     supplier: "Stark-Grant",
-    purchase_date: "6/1/2000",
-    expiration_date: "1/14/2029",
-    density: 0.81,
-    flash_point: 80,
-    octane_rating: 91,
     image: "http://dummyimage.com/141x100.png/5fa2dd/ffffff"
   },
   {
@@ -5510,11 +3545,6 @@ export const MockData: MockDataType = [
     price: 87.11,
     quantity: 536486,
     supplier: "Russel-Bartoletti",
-    purchase_date: "5/15/2020",
-    expiration_date: "2/24/2025",
-    density: 0.34,
-    flash_point: 0,
-    octane_rating: 89,
     image: "http://dummyimage.com/243x100.png/dddddd/000000"
   },
   {
@@ -5524,11 +3554,6 @@ export const MockData: MockDataType = [
     price: 154.92,
     quantity: 295333,
     supplier: "Schulist-Cummings",
-    purchase_date: "2/26/2015",
-    expiration_date: "12/6/2042",
-    density: 0.08,
-    flash_point: 199,
-    octane_rating: 86,
     image: "http://dummyimage.com/107x100.png/ff4444/ffffff"
   },
   {
@@ -5538,11 +3563,6 @@ export const MockData: MockDataType = [
     price: 713.27,
     quantity: 881641,
     supplier: "Gutkowski, Schneider and Murazik",
-    purchase_date: "12/18/2000",
-    expiration_date: "7/27/2024",
-    density: 0.37,
-    flash_point: 147,
-    octane_rating: 98,
     image: "http://dummyimage.com/114x100.png/cc0000/ffffff"
   },
   {
@@ -5552,11 +3572,6 @@ export const MockData: MockDataType = [
     price: 658.11,
     quantity: 127072,
     supplier: "Keeling-Sanford",
-    purchase_date: "4/9/2020",
-    expiration_date: "12/14/2031",
-    density: 0.57,
-    flash_point: 129,
-    octane_rating: 100,
     image: "http://dummyimage.com/241x100.png/ff4444/ffffff"
   },
   {
@@ -5566,11 +3581,6 @@ export const MockData: MockDataType = [
     price: 8.11,
     quantity: 613015,
     supplier: "Larkin Group",
-    purchase_date: "5/8/2010",
-    expiration_date: "10/28/2040",
-    density: 0.16,
-    flash_point: 148,
-    octane_rating: 85,
     image: "http://dummyimage.com/245x100.png/ff4444/ffffff"
   },
   {
@@ -5580,11 +3590,6 @@ export const MockData: MockDataType = [
     price: 359.99,
     quantity: 669848,
     supplier: "Goyette, Mraz and Stamm",
-    purchase_date: "6/3/2006",
-    expiration_date: "6/18/2031",
-    density: 0.07,
-    flash_point: -14,
-    octane_rating: 95,
     image: "http://dummyimage.com/212x100.png/ff4444/ffffff"
   },
   {
@@ -5594,11 +3599,6 @@ export const MockData: MockDataType = [
     price: 773.24,
     quantity: 690882,
     supplier: "Strosin-Gleason",
-    purchase_date: "11/11/2021",
-    expiration_date: "12/26/2031",
-    density: 0.02,
-    flash_point: 97,
-    octane_rating: 87,
     image: "http://dummyimage.com/244x100.png/dddddd/000000"
   },
   {
@@ -5608,11 +3608,6 @@ export const MockData: MockDataType = [
     price: 949.16,
     quantity: 936362,
     supplier: "Steuber Inc",
-    purchase_date: "2/4/2017",
-    expiration_date: "3/22/2039",
-    density: 0.26,
-    flash_point: 138,
-    octane_rating: 85,
     image: "http://dummyimage.com/213x100.png/5fa2dd/ffffff"
   },
   {
@@ -5622,11 +3617,6 @@ export const MockData: MockDataType = [
     price: 351.1,
     quantity: 331739,
     supplier: "Hayes, Hudson and West",
-    purchase_date: "1/24/2003",
-    expiration_date: "7/25/2036",
-    density: 0.45,
-    flash_point: -31,
-    octane_rating: 90,
     image: "http://dummyimage.com/113x100.png/5fa2dd/ffffff"
   },
   {
@@ -5636,11 +3626,6 @@ export const MockData: MockDataType = [
     price: 69.46,
     quantity: 569349,
     supplier: "Blanda and Sons",
-    purchase_date: "8/5/2008",
-    expiration_date: "4/23/2040",
-    density: 0.13,
-    flash_point: 12,
-    octane_rating: 100,
     image: "http://dummyimage.com/234x100.png/ff4444/ffffff"
   },
   {
@@ -5650,11 +3635,6 @@ export const MockData: MockDataType = [
     price: 44.98,
     quantity: 12122,
     supplier: "Dare, Altenwerth and Shanahan",
-    purchase_date: "3/18/2013",
-    expiration_date: "9/25/2029",
-    density: 0.44,
-    flash_point: 152,
-    octane_rating: 96,
     image: "http://dummyimage.com/202x100.png/5fa2dd/ffffff"
   },
   {
@@ -5664,11 +3644,6 @@ export const MockData: MockDataType = [
     price: 846.41,
     quantity: 360285,
     supplier: "Corkery and Sons",
-    purchase_date: "10/22/2008",
-    expiration_date: "4/3/2039",
-    density: 0.81,
-    flash_point: 103,
-    octane_rating: 98,
     image: "http://dummyimage.com/211x100.png/dddddd/000000"
   },
   {
@@ -5678,11 +3653,6 @@ export const MockData: MockDataType = [
     price: 825.14,
     quantity: 811908,
     supplier: "Jenkins Inc",
-    purchase_date: "6/8/2001",
-    expiration_date: "10/21/2024",
-    density: 0.95,
-    flash_point: 170,
-    octane_rating: 88,
     image: "http://dummyimage.com/161x100.png/cc0000/ffffff"
   },
   {
@@ -5692,11 +3662,6 @@ export const MockData: MockDataType = [
     price: 287.49,
     quantity: 45411,
     supplier: "Ernser, Wilkinson and Krajcik",
-    purchase_date: "9/10/2009",
-    expiration_date: "11/16/2029",
-    density: 0.97,
-    flash_point: 164,
-    octane_rating: 93,
     image: "http://dummyimage.com/168x100.png/ff4444/ffffff"
   },
   {
@@ -5706,11 +3671,6 @@ export const MockData: MockDataType = [
     price: 751.73,
     quantity: 449632,
     supplier: "Paucek, Barton and Howe",
-    purchase_date: "6/28/2006",
-    expiration_date: "2/16/2046",
-    density: 0.82,
-    flash_point: 182,
-    octane_rating: 88,
     image: "http://dummyimage.com/103x100.png/ff4444/ffffff"
   },
   {
@@ -5720,11 +3680,6 @@ export const MockData: MockDataType = [
     price: 773.1,
     quantity: 193029,
     supplier: "Cole, Kirlin and Schaefer",
-    purchase_date: "1/31/2021",
-    expiration_date: "1/2/2024",
-    density: 0.82,
-    flash_point: 128,
-    octane_rating: 91,
     image: "http://dummyimage.com/239x100.png/ff4444/ffffff"
   },
   {
@@ -5734,11 +3689,6 @@ export const MockData: MockDataType = [
     price: 900.46,
     quantity: 63838,
     supplier: "Roberts and Sons",
-    purchase_date: "1/19/2007",
-    expiration_date: "12/14/2043",
-    density: 0.89,
-    flash_point: 79,
-    octane_rating: 97,
     image: "http://dummyimage.com/164x100.png/dddddd/000000"
   },
   {
@@ -5748,11 +3698,6 @@ export const MockData: MockDataType = [
     price: 990.38,
     quantity: 129969,
     supplier: "Hermann-Robel",
-    purchase_date: "12/6/2011",
-    expiration_date: "1/11/2034",
-    density: 1,
-    flash_point: 71,
-    octane_rating: 85,
     image: "http://dummyimage.com/165x100.png/cc0000/ffffff"
   },
   {
@@ -5762,11 +3707,6 @@ export const MockData: MockDataType = [
     price: 879.91,
     quantity: 830311,
     supplier: "Erdman, Waelchi and Bode",
-    purchase_date: "4/8/2006",
-    expiration_date: "10/30/2037",
-    density: 0.29,
-    flash_point: 60,
-    octane_rating: 92,
     image: "http://dummyimage.com/197x100.png/cc0000/ffffff"
   },
   {
@@ -5776,11 +3716,6 @@ export const MockData: MockDataType = [
     price: 510.34,
     quantity: 161282,
     supplier: "Lebsack, Upton and Fisher",
-    purchase_date: "2/2/2009",
-    expiration_date: "9/18/2044",
-    density: 0.78,
-    flash_point: -8,
-    octane_rating: 100,
     image: "http://dummyimage.com/168x100.png/ff4444/ffffff"
   },
   {
@@ -5790,11 +3725,6 @@ export const MockData: MockDataType = [
     price: 379.35,
     quantity: 173090,
     supplier: "Davis, Johnston and Casper",
-    purchase_date: "9/20/2000",
-    expiration_date: "5/28/2036",
-    density: 0.81,
-    flash_point: -35,
-    octane_rating: 87,
     image: "http://dummyimage.com/158x100.png/cc0000/ffffff"
   },
   {
@@ -5804,11 +3734,6 @@ export const MockData: MockDataType = [
     price: 368.11,
     quantity: 985409,
     supplier: "Barrows LLC",
-    purchase_date: "8/21/2010",
-    expiration_date: "3/28/2031",
-    density: 0.9,
-    flash_point: 6,
-    octane_rating: 99,
     image: "http://dummyimage.com/157x100.png/dddddd/000000"
   },
   {
@@ -5818,11 +3743,6 @@ export const MockData: MockDataType = [
     price: 398.88,
     quantity: 411009,
     supplier: "Hagenes-Schoen",
-    purchase_date: "4/7/2013",
-    expiration_date: "12/15/2032",
-    density: 0.78,
-    flash_point: -30,
-    octane_rating: 93,
     image: "http://dummyimage.com/214x100.png/5fa2dd/ffffff"
   },
   {
@@ -5832,11 +3752,6 @@ export const MockData: MockDataType = [
     price: 494.52,
     quantity: 168110,
     supplier: "Connelly-Koch",
-    purchase_date: "8/5/2022",
-    expiration_date: "6/27/2039",
-    density: 0.94,
-    flash_point: -35,
-    octane_rating: 100,
     image: "http://dummyimage.com/249x100.png/ff4444/ffffff"
   },
   {
@@ -5846,11 +3761,6 @@ export const MockData: MockDataType = [
     price: 120.76,
     quantity: 735205,
     supplier: "Waelchi, Carroll and Dickens",
-    purchase_date: "10/3/2022",
-    expiration_date: "9/28/2025",
-    density: 0.28,
-    flash_point: 34,
-    octane_rating: 92,
     image: "http://dummyimage.com/129x100.png/cc0000/ffffff"
   },
   {
@@ -5860,11 +3770,6 @@ export const MockData: MockDataType = [
     price: 392.16,
     quantity: 292227,
     supplier: "Reichel-Senger",
-    purchase_date: "9/6/2003",
-    expiration_date: "7/8/2024",
-    density: 0.84,
-    flash_point: 117,
-    octane_rating: 86,
     image: "http://dummyimage.com/176x100.png/dddddd/000000"
   },
   {
@@ -5874,11 +3779,6 @@ export const MockData: MockDataType = [
     price: 423.49,
     quantity: 39419,
     supplier: "Bins and Sons",
-    purchase_date: "7/7/2000",
-    expiration_date: "6/21/2030",
-    density: 0.61,
-    flash_point: 6,
-    octane_rating: 100,
     image: "http://dummyimage.com/233x100.png/cc0000/ffffff"
   },
   {
@@ -5888,11 +3788,6 @@ export const MockData: MockDataType = [
     price: 118.77,
     quantity: 530403,
     supplier: "O'Reilly, Feeney and Gusikowski",
-    purchase_date: "9/23/2006",
-    expiration_date: "1/17/2036",
-    density: 0.16,
-    flash_point: 63,
-    octane_rating: 85,
     image: "http://dummyimage.com/151x100.png/cc0000/ffffff"
   },
   {
@@ -5902,11 +3797,6 @@ export const MockData: MockDataType = [
     price: 66.54,
     quantity: 149157,
     supplier: "Bogisich, Hermann and Gusikowski",
-    purchase_date: "10/1/2018",
-    expiration_date: "1/5/2026",
-    density: 0.82,
-    flash_point: 72,
-    octane_rating: 94,
     image: "http://dummyimage.com/240x100.png/ff4444/ffffff"
   },
   {
@@ -5916,11 +3806,6 @@ export const MockData: MockDataType = [
     price: 779.68,
     quantity: 28996,
     supplier: "Kunde Inc",
-    purchase_date: "8/18/2004",
-    expiration_date: "2/23/2037",
-    density: 0.77,
-    flash_point: 109,
-    octane_rating: 95,
     image: "http://dummyimage.com/170x100.png/dddddd/000000"
   },
   {
@@ -5930,11 +3815,6 @@ export const MockData: MockDataType = [
     price: 175.84,
     quantity: 255832,
     supplier: "Skiles-Volkman",
-    purchase_date: "4/20/2012",
-    expiration_date: "10/31/2043",
-    density: 0.68,
-    flash_point: 151,
-    octane_rating: 91,
     image: "http://dummyimage.com/182x100.png/cc0000/ffffff"
   },
   {
@@ -5944,11 +3824,6 @@ export const MockData: MockDataType = [
     price: 11.02,
     quantity: 316364,
     supplier: "Becker, Schamberger and Bins",
-    purchase_date: "5/3/2007",
-    expiration_date: "9/16/2029",
-    density: 0.88,
-    flash_point: -42,
-    octane_rating: 92,
     image: "http://dummyimage.com/239x100.png/dddddd/000000"
   },
   {
@@ -5958,11 +3833,6 @@ export const MockData: MockDataType = [
     price: 758.49,
     quantity: 205876,
     supplier: "Collins Group",
-    purchase_date: "9/25/2014",
-    expiration_date: "11/2/2032",
-    density: 0.03,
-    flash_point: 24,
-    octane_rating: 85,
     image: "http://dummyimage.com/152x100.png/ff4444/ffffff"
   },
   {
@@ -5972,11 +3842,6 @@ export const MockData: MockDataType = [
     price: 945.68,
     quantity: 45739,
     supplier: "Denesik-Cormier",
-    purchase_date: "2/3/2021",
-    expiration_date: "1/7/2044",
-    density: 0.9,
-    flash_point: -21,
-    octane_rating: 87,
     image: "http://dummyimage.com/122x100.png/5fa2dd/ffffff"
   },
   {
@@ -5986,11 +3851,6 @@ export const MockData: MockDataType = [
     price: 983.28,
     quantity: 643684,
     supplier: "Jast LLC",
-    purchase_date: "9/16/2000",
-    expiration_date: "12/27/2025",
-    density: 0.13,
-    flash_point: -46,
-    octane_rating: 96,
     image: "http://dummyimage.com/198x100.png/dddddd/000000"
   },
   {
@@ -6000,11 +3860,6 @@ export const MockData: MockDataType = [
     price: 568.47,
     quantity: 364137,
     supplier: "Nikolaus-Kirlin",
-    purchase_date: "7/24/2017",
-    expiration_date: "4/11/2045",
-    density: 0.2,
-    flash_point: 113,
-    octane_rating: 93,
     image: "http://dummyimage.com/131x100.png/dddddd/000000"
   },
   {
@@ -6014,11 +3869,6 @@ export const MockData: MockDataType = [
     price: 540.63,
     quantity: 122259,
     supplier: "Casper, Bergnaum and Skiles",
-    purchase_date: "2/17/2020",
-    expiration_date: "7/24/2033",
-    density: 0.8,
-    flash_point: 147,
-    octane_rating: 90,
     image: "http://dummyimage.com/201x100.png/dddddd/000000"
   },
   {
@@ -6028,11 +3878,6 @@ export const MockData: MockDataType = [
     price: 570.75,
     quantity: 778020,
     supplier: "Gorczany-Witting",
-    purchase_date: "2/25/2013",
-    expiration_date: "3/10/2042",
-    density: 0.93,
-    flash_point: 124,
-    octane_rating: 97,
     image: "http://dummyimage.com/156x100.png/5fa2dd/ffffff"
   },
   {
@@ -6042,11 +3887,6 @@ export const MockData: MockDataType = [
     price: 767.73,
     quantity: 890415,
     supplier: "Terry-Streich",
-    purchase_date: "2/11/2003",
-    expiration_date: "7/6/2042",
-    density: 0.3,
-    flash_point: 58,
-    octane_rating: 89,
     image: "http://dummyimage.com/105x100.png/cc0000/ffffff"
   },
   {
@@ -6056,11 +3896,6 @@ export const MockData: MockDataType = [
     price: 253.23,
     quantity: 238723,
     supplier: "Langosh, Grady and Rempel",
-    purchase_date: "1/16/2019",
-    expiration_date: "5/12/2025",
-    density: 0.8,
-    flash_point: 145,
-    octane_rating: 87,
     image: "http://dummyimage.com/146x100.png/5fa2dd/ffffff"
   },
   {
@@ -6070,11 +3905,6 @@ export const MockData: MockDataType = [
     price: 316.45,
     quantity: 266906,
     supplier: "Feest-Bauch",
-    purchase_date: "7/26/2003",
-    expiration_date: "2/27/2027",
-    density: 0.95,
-    flash_point: -23,
-    octane_rating: 94,
     image: "http://dummyimage.com/166x100.png/cc0000/ffffff"
   },
   {
@@ -6084,11 +3914,6 @@ export const MockData: MockDataType = [
     price: 981.24,
     quantity: 843660,
     supplier: "Jerde Inc",
-    purchase_date: "6/13/2007",
-    expiration_date: "1/21/2033",
-    density: 0.75,
-    flash_point: 19,
-    octane_rating: 100,
     image: "http://dummyimage.com/130x100.png/cc0000/ffffff"
   },
   {
@@ -6098,11 +3923,6 @@ export const MockData: MockDataType = [
     price: 53.44,
     quantity: 343324,
     supplier: "Feil-Shields",
-    purchase_date: "2/11/2009",
-    expiration_date: "2/20/2039",
-    density: 0.72,
-    flash_point: 43,
-    octane_rating: 86,
     image: "http://dummyimage.com/153x100.png/dddddd/000000"
   },
   {
@@ -6112,11 +3932,6 @@ export const MockData: MockDataType = [
     price: 894.14,
     quantity: 962706,
     supplier: "Thompson Inc",
-    purchase_date: "2/5/2003",
-    expiration_date: "6/25/2027",
-    density: 0.58,
-    flash_point: 175,
-    octane_rating: 88,
     image: "http://dummyimage.com/164x100.png/ff4444/ffffff"
   },
   {
@@ -6126,11 +3941,6 @@ export const MockData: MockDataType = [
     price: 88.59,
     quantity: 78176,
     supplier: "Roberts, Torp and Jacobson",
-    purchase_date: "10/18/2010",
-    expiration_date: "8/10/2034",
-    density: 0.24,
-    flash_point: 91,
-    octane_rating: 95,
     image: "http://dummyimage.com/181x100.png/5fa2dd/ffffff"
   },
   {
@@ -6140,11 +3950,6 @@ export const MockData: MockDataType = [
     price: 412.07,
     quantity: 180483,
     supplier: "Bode, Wintheiser and Spencer",
-    purchase_date: "3/17/2011",
-    expiration_date: "4/4/2036",
-    density: 0.26,
-    flash_point: 55,
-    octane_rating: 98,
     image: "http://dummyimage.com/221x100.png/cc0000/ffffff"
   },
   {
@@ -6154,11 +3959,6 @@ export const MockData: MockDataType = [
     price: 830.44,
     quantity: 513474,
     supplier: "Jacobson and Sons",
-    purchase_date: "2/15/2001",
-    expiration_date: "9/30/2045",
-    density: 0.69,
-    flash_point: 109,
-    octane_rating: 99,
     image: "http://dummyimage.com/204x100.png/ff4444/ffffff"
   },
   {
@@ -6168,11 +3968,6 @@ export const MockData: MockDataType = [
     price: 400.66,
     quantity: 299642,
     supplier: "Yost-Schaefer",
-    purchase_date: "3/22/2007",
-    expiration_date: "8/24/2026",
-    density: 0.51,
-    flash_point: 96,
-    octane_rating: 94,
     image: "http://dummyimage.com/115x100.png/5fa2dd/ffffff"
   },
   {
@@ -6182,11 +3977,6 @@ export const MockData: MockDataType = [
     price: 405.61,
     quantity: 602976,
     supplier: "Spinka-Spinka",
-    purchase_date: "12/30/2006",
-    expiration_date: "10/7/2044",
-    density: 0.39,
-    flash_point: 103,
-    octane_rating: 87,
     image: "http://dummyimage.com/222x100.png/ff4444/ffffff"
   },
   {
@@ -6196,11 +3986,6 @@ export const MockData: MockDataType = [
     price: 720.89,
     quantity: 235019,
     supplier: "Toy Group",
-    purchase_date: "3/19/2010",
-    expiration_date: "9/12/2041",
-    density: 0.53,
-    flash_point: 155,
-    octane_rating: 92,
     image: "http://dummyimage.com/141x100.png/ff4444/ffffff"
   },
   {
@@ -6210,11 +3995,6 @@ export const MockData: MockDataType = [
     price: 995.36,
     quantity: 90999,
     supplier: "Wisozk Group",
-    purchase_date: "3/23/2009",
-    expiration_date: "1/11/2045",
-    density: 0.7,
-    flash_point: -46,
-    octane_rating: 92,
     image: "http://dummyimage.com/126x100.png/5fa2dd/ffffff"
   },
   {
@@ -6224,11 +4004,6 @@ export const MockData: MockDataType = [
     price: 234.49,
     quantity: 114847,
     supplier: "Trantow-Hilpert",
-    purchase_date: "1/21/2009",
-    expiration_date: "4/11/2042",
-    density: 0.94,
-    flash_point: 150,
-    octane_rating: 97,
     image: "http://dummyimage.com/101x100.png/5fa2dd/ffffff"
   },
   {
@@ -6238,11 +4013,6 @@ export const MockData: MockDataType = [
     price: 384.41,
     quantity: 872704,
     supplier: "Rowe, Watsica and Lockman",
-    purchase_date: "7/26/2015",
-    expiration_date: "10/3/2041",
-    density: 0.71,
-    flash_point: 69,
-    octane_rating: 90,
     image: "http://dummyimage.com/223x100.png/5fa2dd/ffffff"
   },
   {
@@ -6252,11 +4022,6 @@ export const MockData: MockDataType = [
     price: 489.76,
     quantity: 430306,
     supplier: "Strosin, Mayert and Gislason",
-    purchase_date: "5/5/2009",
-    expiration_date: "11/4/2034",
-    density: 0.48,
-    flash_point: -33,
-    octane_rating: 90,
     image: "http://dummyimage.com/209x100.png/dddddd/000000"
   },
   {
@@ -6266,11 +4031,6 @@ export const MockData: MockDataType = [
     price: 803.5,
     quantity: 889832,
     supplier: "Veum Group",
-    purchase_date: "12/10/2005",
-    expiration_date: "10/25/2042",
-    density: 0.62,
-    flash_point: -35,
-    octane_rating: 85,
     image: "http://dummyimage.com/194x100.png/5fa2dd/ffffff"
   },
   {
@@ -6280,11 +4040,6 @@ export const MockData: MockDataType = [
     price: 899.74,
     quantity: 535136,
     supplier: "Hirthe-Schowalter",
-    purchase_date: "1/30/2006",
-    expiration_date: "4/24/2046",
-    density: 0.62,
-    flash_point: 80,
-    octane_rating: 91,
     image: "http://dummyimage.com/149x100.png/ff4444/ffffff"
   },
   {
@@ -6294,11 +4049,6 @@ export const MockData: MockDataType = [
     price: 838.78,
     quantity: 765599,
     supplier: "Zemlak Group",
-    purchase_date: "7/7/2008",
-    expiration_date: "2/22/2041",
-    density: 0.71,
-    flash_point: 109,
-    octane_rating: 90,
     image: "http://dummyimage.com/144x100.png/dddddd/000000"
   },
   {
@@ -6308,11 +4058,6 @@ export const MockData: MockDataType = [
     price: 620.24,
     quantity: 556589,
     supplier: "Senger-Waters",
-    purchase_date: "5/24/2008",
-    expiration_date: "2/9/2030",
-    density: 0.23,
-    flash_point: 132,
-    octane_rating: 89,
     image: "http://dummyimage.com/175x100.png/dddddd/000000"
   },
   {
@@ -6322,11 +4067,6 @@ export const MockData: MockDataType = [
     price: 69.6,
     quantity: 862122,
     supplier: "Gerlach-Pollich",
-    purchase_date: "7/29/2012",
-    expiration_date: "4/24/2024",
-    density: 0.09,
-    flash_point: 139,
-    octane_rating: 87,
     image: "http://dummyimage.com/189x100.png/ff4444/ffffff"
   },
   {
@@ -6336,11 +4076,6 @@ export const MockData: MockDataType = [
     price: 980.45,
     quantity: 929326,
     supplier: "Reynolds, Senger and Runolfsson",
-    purchase_date: "10/4/2013",
-    expiration_date: "9/1/2030",
-    density: 0.9,
-    flash_point: 155,
-    octane_rating: 91,
     image: "http://dummyimage.com/228x100.png/dddddd/000000"
   },
   {
@@ -6350,11 +4085,6 @@ export const MockData: MockDataType = [
     price: 292.97,
     quantity: 177374,
     supplier: "Wilkinson and Sons",
-    purchase_date: "6/24/2012",
-    expiration_date: "1/10/2032",
-    density: 0.15,
-    flash_point: 191,
-    octane_rating: 96,
     image: "http://dummyimage.com/166x100.png/dddddd/000000"
   },
   {
@@ -6364,11 +4094,6 @@ export const MockData: MockDataType = [
     price: 512.76,
     quantity: 168099,
     supplier: "Little-Gusikowski",
-    purchase_date: "11/29/2005",
-    expiration_date: "2/21/2035",
-    density: 0.27,
-    flash_point: 159,
-    octane_rating: 86,
     image: "http://dummyimage.com/166x100.png/cc0000/ffffff"
   },
   {
@@ -6378,11 +4103,6 @@ export const MockData: MockDataType = [
     price: 170.56,
     quantity: 360205,
     supplier: "Huels, Casper and Barton",
-    purchase_date: "4/14/2000",
-    expiration_date: "8/13/2044",
-    density: 0.31,
-    flash_point: 157,
-    octane_rating: 85,
     image: "http://dummyimage.com/160x100.png/dddddd/000000"
   },
   {
@@ -6392,11 +4112,6 @@ export const MockData: MockDataType = [
     price: 724.86,
     quantity: 416268,
     supplier: "Erdman LLC",
-    purchase_date: "8/19/2022",
-    expiration_date: "4/28/2025",
-    density: 0.84,
-    flash_point: 27,
-    octane_rating: 99,
     image: "http://dummyimage.com/207x100.png/5fa2dd/ffffff"
   },
   {
@@ -6406,11 +4121,6 @@ export const MockData: MockDataType = [
     price: 941.55,
     quantity: 124615,
     supplier: "Herman, Jones and Mills",
-    purchase_date: "4/2/2006",
-    expiration_date: "5/26/2029",
-    density: 0.47,
-    flash_point: 138,
-    octane_rating: 90,
     image: "http://dummyimage.com/159x100.png/cc0000/ffffff"
   },
   {
@@ -6420,11 +4130,6 @@ export const MockData: MockDataType = [
     price: 775.34,
     quantity: 99138,
     supplier: "Heaney-Krajcik",
-    purchase_date: "3/5/2017",
-    expiration_date: "4/5/2025",
-    density: 0.46,
-    flash_point: 106,
-    octane_rating: 97,
     image: "http://dummyimage.com/101x100.png/cc0000/ffffff"
   },
   {
@@ -6434,11 +4139,6 @@ export const MockData: MockDataType = [
     price: 157.33,
     quantity: 203853,
     supplier: "Jones, Osinski and Reichel",
-    purchase_date: "10/9/2017",
-    expiration_date: "8/14/2045",
-    density: 0.11,
-    flash_point: 50,
-    octane_rating: 91,
     image: "http://dummyimage.com/214x100.png/cc0000/ffffff"
   },
   {
@@ -6448,11 +4148,6 @@ export const MockData: MockDataType = [
     price: 469.35,
     quantity: 970693,
     supplier: "Crist, Crooks and Cremin",
-    purchase_date: "11/8/2012",
-    expiration_date: "11/28/2035",
-    density: 0.78,
-    flash_point: 173,
-    octane_rating: 95,
     image: "http://dummyimage.com/115x100.png/ff4444/ffffff"
   },
   {
@@ -6462,11 +4157,6 @@ export const MockData: MockDataType = [
     price: 363.39,
     quantity: 431997,
     supplier: "Considine-Champlin",
-    purchase_date: "5/18/2021",
-    expiration_date: "6/25/2045",
-    density: 0.2,
-    flash_point: 198,
-    octane_rating: 98,
     image: "http://dummyimage.com/176x100.png/ff4444/ffffff"
   },
   {
@@ -6476,11 +4166,6 @@ export const MockData: MockDataType = [
     price: 506.97,
     quantity: 174033,
     supplier: "Turner-Ledner",
-    purchase_date: "6/29/2010",
-    expiration_date: "5/21/2024",
-    density: 0.6,
-    flash_point: 161,
-    octane_rating: 90,
     image: "http://dummyimage.com/103x100.png/cc0000/ffffff"
   },
   {
@@ -6490,11 +4175,6 @@ export const MockData: MockDataType = [
     price: 626.46,
     quantity: 773467,
     supplier: "Rohan-Haley",
-    purchase_date: "9/27/2008",
-    expiration_date: "9/15/2038",
-    density: 0.5,
-    flash_point: 39,
-    octane_rating: 87,
     image: "http://dummyimage.com/197x100.png/5fa2dd/ffffff"
   },
   {
@@ -6504,11 +4184,6 @@ export const MockData: MockDataType = [
     price: 653.49,
     quantity: 16245,
     supplier: "Legros, Botsford and Gibson",
-    purchase_date: "6/5/2022",
-    expiration_date: "11/2/2036",
-    density: 0.64,
-    flash_point: -21,
-    octane_rating: 93,
     image: "http://dummyimage.com/205x100.png/dddddd/000000"
   },
   {
@@ -6518,11 +4193,6 @@ export const MockData: MockDataType = [
     price: 534.73,
     quantity: 270380,
     supplier: "Mayer-Keeling",
-    purchase_date: "11/21/2011",
-    expiration_date: "6/16/2033",
-    density: 0.81,
-    flash_point: 97,
-    octane_rating: 92,
     image: "http://dummyimage.com/136x100.png/ff4444/ffffff"
   },
   {
@@ -6532,11 +4202,6 @@ export const MockData: MockDataType = [
     price: 615.43,
     quantity: 27212,
     supplier: "Jakubowski, Glover and Monahan",
-    purchase_date: "6/29/2007",
-    expiration_date: "8/25/2028",
-    density: 0.23,
-    flash_point: 155,
-    octane_rating: 96,
     image: "http://dummyimage.com/156x100.png/5fa2dd/ffffff"
   },
   {
@@ -6546,11 +4211,6 @@ export const MockData: MockDataType = [
     price: 271.9,
     quantity: 121027,
     supplier: "Parker Group",
-    purchase_date: "11/8/2020",
-    expiration_date: "3/4/2045",
-    density: 0.78,
-    flash_point: 198,
-    octane_rating: 97,
     image: "http://dummyimage.com/146x100.png/5fa2dd/ffffff"
   },
   {
@@ -6560,11 +4220,6 @@ export const MockData: MockDataType = [
     price: 377.16,
     quantity: 561659,
     supplier: "Weissnat-Hegmann",
-    purchase_date: "6/14/2017",
-    expiration_date: "1/29/2039",
-    density: 0.03,
-    flash_point: -19,
-    octane_rating: 91,
     image: "http://dummyimage.com/132x100.png/cc0000/ffffff"
   },
   {
@@ -6574,11 +4229,6 @@ export const MockData: MockDataType = [
     price: 205.07,
     quantity: 989098,
     supplier: "Block and Sons",
-    purchase_date: "7/23/2002",
-    expiration_date: "7/10/2036",
-    density: 0.39,
-    flash_point: -36,
-    octane_rating: 98,
     image: "http://dummyimage.com/104x100.png/5fa2dd/ffffff"
   },
   {
@@ -6588,11 +4238,6 @@ export const MockData: MockDataType = [
     price: 912.39,
     quantity: 665211,
     supplier: "Anderson, Dickinson and Bernier",
-    purchase_date: "2/5/2005",
-    expiration_date: "5/13/2041",
-    density: 0.59,
-    flash_point: 91,
-    octane_rating: 91,
     image: "http://dummyimage.com/143x100.png/dddddd/000000"
   },
   {
@@ -6602,11 +4247,6 @@ export const MockData: MockDataType = [
     price: 921.25,
     quantity: 781559,
     supplier: "Metz, Boyle and Funk",
-    purchase_date: "1/5/2007",
-    expiration_date: "5/8/2029",
-    density: 0.42,
-    flash_point: 62,
-    octane_rating: 100,
     image: "http://dummyimage.com/150x100.png/ff4444/ffffff"
   },
   {
@@ -6616,11 +4256,6 @@ export const MockData: MockDataType = [
     price: 975.14,
     quantity: 834332,
     supplier: "Stroman-Bosco",
-    purchase_date: "6/9/2006",
-    expiration_date: "3/8/2030",
-    density: 0.47,
-    flash_point: 18,
-    octane_rating: 93,
     image: "http://dummyimage.com/172x100.png/cc0000/ffffff"
   },
   {
@@ -6630,11 +4265,6 @@ export const MockData: MockDataType = [
     price: 360.58,
     quantity: 520922,
     supplier: "Bergnaum and Sons",
-    purchase_date: "3/15/2002",
-    expiration_date: "8/27/2042",
-    density: 0.89,
-    flash_point: -27,
-    octane_rating: 89,
     image: "http://dummyimage.com/239x100.png/cc0000/ffffff"
   },
   {
@@ -6644,11 +4274,6 @@ export const MockData: MockDataType = [
     price: 464.91,
     quantity: 386775,
     supplier: "Mayert and Sons",
-    purchase_date: "9/15/2012",
-    expiration_date: "3/21/2043",
-    density: 0.66,
-    flash_point: 120,
-    octane_rating: 95,
     image: "http://dummyimage.com/204x100.png/dddddd/000000"
   },
   {
@@ -6658,11 +4283,6 @@ export const MockData: MockDataType = [
     price: 231.48,
     quantity: 393640,
     supplier: "Haley, Mertz and Medhurst",
-    purchase_date: "11/4/2009",
-    expiration_date: "5/27/2037",
-    density: 0.72,
-    flash_point: 69,
-    octane_rating: 91,
     image: "http://dummyimage.com/153x100.png/5fa2dd/ffffff"
   },
   {
@@ -6672,11 +4292,6 @@ export const MockData: MockDataType = [
     price: 597.12,
     quantity: 937981,
     supplier: "Nitzsche-West",
-    purchase_date: "10/21/2000",
-    expiration_date: "11/28/2034",
-    density: 0.77,
-    flash_point: -14,
-    octane_rating: 86,
     image: "http://dummyimage.com/201x100.png/dddddd/000000"
   },
   {
@@ -6686,11 +4301,6 @@ export const MockData: MockDataType = [
     price: 190.89,
     quantity: 993357,
     supplier: "Lemke, Koss and Adams",
-    purchase_date: "11/30/2002",
-    expiration_date: "6/17/2042",
-    density: 0.27,
-    flash_point: 62,
-    octane_rating: 91,
     image: "http://dummyimage.com/177x100.png/dddddd/000000"
   },
   {
@@ -6700,11 +4310,6 @@ export const MockData: MockDataType = [
     price: 223.62,
     quantity: 380196,
     supplier: "Ullrich, Emard and Kautzer",
-    purchase_date: "3/21/2012",
-    expiration_date: "3/5/2037",
-    density: 0.51,
-    flash_point: 19,
-    octane_rating: 88,
     image: "http://dummyimage.com/237x100.png/cc0000/ffffff"
   },
   {
@@ -6714,11 +4319,6 @@ export const MockData: MockDataType = [
     price: 927.43,
     quantity: 29632,
     supplier: "Kilback, Jerde and Zieme",
-    purchase_date: "12/12/2022",
-    expiration_date: "6/23/2027",
-    density: 0.2,
-    flash_point: 151,
-    octane_rating: 98,
     image: "http://dummyimage.com/232x100.png/cc0000/ffffff"
   },
   {
@@ -6728,11 +4328,6 @@ export const MockData: MockDataType = [
     price: 956.49,
     quantity: 867218,
     supplier: "Ebert LLC",
-    purchase_date: "9/3/2003",
-    expiration_date: "1/1/2034",
-    density: 0.01,
-    flash_point: 122,
-    octane_rating: 94,
     image: "http://dummyimage.com/168x100.png/cc0000/ffffff"
   },
   {
@@ -6742,11 +4337,6 @@ export const MockData: MockDataType = [
     price: 672.4,
     quantity: 561507,
     supplier: "Schmitt Inc",
-    purchase_date: "4/3/2022",
-    expiration_date: "1/25/2037",
-    density: 0.23,
-    flash_point: 145,
-    octane_rating: 95,
     image: "http://dummyimage.com/211x100.png/5fa2dd/ffffff"
   },
   {
@@ -6756,11 +4346,6 @@ export const MockData: MockDataType = [
     price: 401.67,
     quantity: 752591,
     supplier: "Green Inc",
-    purchase_date: "9/13/2012",
-    expiration_date: "8/15/2024",
-    density: 0.13,
-    flash_point: -19,
-    octane_rating: 87,
     image: "http://dummyimage.com/169x100.png/dddddd/000000"
   },
   {
@@ -6770,11 +4355,6 @@ export const MockData: MockDataType = [
     price: 272.55,
     quantity: 486821,
     supplier: "Davis Group",
-    purchase_date: "7/9/2000",
-    expiration_date: "9/4/2036",
-    density: 0.63,
-    flash_point: -9,
-    octane_rating: 90,
     image: "http://dummyimage.com/127x100.png/ff4444/ffffff"
   },
   {
@@ -6784,11 +4364,6 @@ export const MockData: MockDataType = [
     price: 29.91,
     quantity: 113198,
     supplier: "Hand-Wyman",
-    purchase_date: "11/6/2021",
-    expiration_date: "7/9/2035",
-    density: 0.37,
-    flash_point: 148,
-    octane_rating: 96,
     image: "http://dummyimage.com/245x100.png/ff4444/ffffff"
   },
   {
@@ -6798,11 +4373,6 @@ export const MockData: MockDataType = [
     price: 428.14,
     quantity: 418675,
     supplier: "Stracke and Sons",
-    purchase_date: "12/31/2015",
-    expiration_date: "3/29/2029",
-    density: 0.17,
-    flash_point: 110,
-    octane_rating: 95,
     image: "http://dummyimage.com/229x100.png/ff4444/ffffff"
   },
   {
@@ -6812,11 +4382,6 @@ export const MockData: MockDataType = [
     price: 989.91,
     quantity: 781000,
     supplier: "Medhurst-Cronin",
-    purchase_date: "7/4/2020",
-    expiration_date: "1/4/2043",
-    density: 0.08,
-    flash_point: 103,
-    octane_rating: 91,
     image: "http://dummyimage.com/150x100.png/ff4444/ffffff"
   },
   {
@@ -6826,11 +4391,6 @@ export const MockData: MockDataType = [
     price: 873.33,
     quantity: 432491,
     supplier: "Heathcote-O'Kon",
-    purchase_date: "3/20/2021",
-    expiration_date: "12/10/2024",
-    density: 0.64,
-    flash_point: 199,
-    octane_rating: 97,
     image: "http://dummyimage.com/150x100.png/ff4444/ffffff"
   },
   {
@@ -6840,11 +4400,6 @@ export const MockData: MockDataType = [
     price: 938.82,
     quantity: 268769,
     supplier: "Von-Ullrich",
-    purchase_date: "8/17/2022",
-    expiration_date: "3/4/2041",
-    density: 0.4,
-    flash_point: 51,
-    octane_rating: 91,
     image: "http://dummyimage.com/119x100.png/cc0000/ffffff"
   },
   {
@@ -6854,11 +4409,6 @@ export const MockData: MockDataType = [
     price: 625.01,
     quantity: 257307,
     supplier: "Rutherford LLC",
-    purchase_date: "3/2/2001",
-    expiration_date: "5/26/2034",
-    density: 0.84,
-    flash_point: 19,
-    octane_rating: 85,
     image: "http://dummyimage.com/169x100.png/5fa2dd/ffffff"
   },
   {
@@ -6868,11 +4418,6 @@ export const MockData: MockDataType = [
     price: 215.24,
     quantity: 470430,
     supplier: "Senger-Howell",
-    purchase_date: "10/15/2005",
-    expiration_date: "5/10/2042",
-    density: 0.1,
-    flash_point: 84,
-    octane_rating: 94,
     image: "http://dummyimage.com/249x100.png/5fa2dd/ffffff"
   },
   {
@@ -6882,11 +4427,6 @@ export const MockData: MockDataType = [
     price: 352.96,
     quantity: 267624,
     supplier: "Schamberger Inc",
-    purchase_date: "1/30/2020",
-    expiration_date: "10/9/2039",
-    density: 0.83,
-    flash_point: -16,
-    octane_rating: 97,
     image: "http://dummyimage.com/207x100.png/ff4444/ffffff"
   },
   {
@@ -6896,11 +4436,6 @@ export const MockData: MockDataType = [
     price: 168.3,
     quantity: 251565,
     supplier: "Crist-Schamberger",
-    purchase_date: "4/12/2016",
-    expiration_date: "2/25/2036",
-    density: 0.47,
-    flash_point: 70,
-    octane_rating: 100,
     image: "http://dummyimage.com/212x100.png/ff4444/ffffff"
   },
   {
@@ -6910,11 +4445,6 @@ export const MockData: MockDataType = [
     price: 360.94,
     quantity: 299483,
     supplier: "Pfannerstill-Gutkowski",
-    purchase_date: "3/14/2010",
-    expiration_date: "7/22/2043",
-    density: 0.06,
-    flash_point: 129,
-    octane_rating: 96,
     image: "http://dummyimage.com/144x100.png/dddddd/000000"
   },
   {
@@ -6924,11 +4454,6 @@ export const MockData: MockDataType = [
     price: 400.12,
     quantity: 761462,
     supplier: "Barton, Crooks and Boyer",
-    purchase_date: "8/30/2015",
-    expiration_date: "8/14/2035",
-    density: 0.29,
-    flash_point: 34,
-    octane_rating: 96,
     image: "http://dummyimage.com/122x100.png/cc0000/ffffff"
   },
   {
@@ -6938,11 +4463,6 @@ export const MockData: MockDataType = [
     price: 630.93,
     quantity: 599338,
     supplier: "Strosin-Padberg",
-    purchase_date: "12/13/2008",
-    expiration_date: "7/1/2046",
-    density: 0.45,
-    flash_point: 34,
-    octane_rating: 86,
     image: "http://dummyimage.com/110x100.png/cc0000/ffffff"
   },
   {
@@ -6952,11 +4472,6 @@ export const MockData: MockDataType = [
     price: 981.19,
     quantity: 752967,
     supplier: "Dickinson, Leannon and Swift",
-    purchase_date: "7/3/2007",
-    expiration_date: "4/11/2034",
-    density: 0.45,
-    flash_point: 71,
-    octane_rating: 87,
     image: "http://dummyimage.com/153x100.png/5fa2dd/ffffff"
   },
   {
@@ -6966,11 +4481,6 @@ export const MockData: MockDataType = [
     price: 453.78,
     quantity: 207445,
     supplier: "Ebert LLC",
-    purchase_date: "2/13/2013",
-    expiration_date: "12/2/2030",
-    density: 0.23,
-    flash_point: 48,
-    octane_rating: 99,
     image: "http://dummyimage.com/142x100.png/5fa2dd/ffffff"
   },
   {
@@ -6980,11 +4490,6 @@ export const MockData: MockDataType = [
     price: 337.15,
     quantity: 351537,
     supplier: "Gerlach Group",
-    purchase_date: "6/1/2000",
-    expiration_date: "10/29/2042",
-    density: 0.55,
-    flash_point: -48,
-    octane_rating: 87,
     image: "http://dummyimage.com/188x100.png/ff4444/ffffff"
   },
   {
@@ -6994,11 +4499,6 @@ export const MockData: MockDataType = [
     price: 308.64,
     quantity: 665259,
     supplier: "Zulauf-Wolf",
-    purchase_date: "8/24/2003",
-    expiration_date: "4/26/2024",
-    density: 0.41,
-    flash_point: 141,
-    octane_rating: 99,
     image: "http://dummyimage.com/171x100.png/5fa2dd/ffffff"
   },
   {
@@ -7008,11 +4508,6 @@ export const MockData: MockDataType = [
     price: 943.66,
     quantity: 462095,
     supplier: "Sauer, Schmeler and Wolf",
-    purchase_date: "10/18/2010",
-    expiration_date: "4/12/2034",
-    density: 0.07,
-    flash_point: -44,
-    octane_rating: 87,
     image: "http://dummyimage.com/151x100.png/dddddd/000000"
   },
   {
@@ -7022,11 +4517,6 @@ export const MockData: MockDataType = [
     price: 348.94,
     quantity: 367480,
     supplier: "Schaefer, Thiel and Borer",
-    purchase_date: "11/4/2021",
-    expiration_date: "6/11/2030",
-    density: 0.45,
-    flash_point: 158,
-    octane_rating: 95,
     image: "http://dummyimage.com/246x100.png/cc0000/ffffff"
   },
   {
@@ -7036,11 +4526,6 @@ export const MockData: MockDataType = [
     price: 826.77,
     quantity: 54203,
     supplier: "Donnelly, MacGyver and Dickinson",
-    purchase_date: "11/1/2017",
-    expiration_date: "11/15/2027",
-    density: 0.45,
-    flash_point: 172,
-    octane_rating: 98,
     image: "http://dummyimage.com/172x100.png/cc0000/ffffff"
   },
   {
@@ -7050,11 +4535,6 @@ export const MockData: MockDataType = [
     price: 325.8,
     quantity: 451026,
     supplier: "Smith Inc",
-    purchase_date: "7/6/2020",
-    expiration_date: "1/21/2024",
-    density: 0.27,
-    flash_point: 8,
-    octane_rating: 98,
     image: "http://dummyimage.com/131x100.png/5fa2dd/ffffff"
   },
   {
@@ -7064,11 +4544,6 @@ export const MockData: MockDataType = [
     price: 745.75,
     quantity: 618744,
     supplier: "Tromp, Hirthe and Howe",
-    purchase_date: "5/1/2008",
-    expiration_date: "12/12/2039",
-    density: 0.69,
-    flash_point: -19,
-    octane_rating: 91,
     image: "http://dummyimage.com/149x100.png/dddddd/000000"
   },
   {
@@ -7078,11 +4553,6 @@ export const MockData: MockDataType = [
     price: 339.32,
     quantity: 899154,
     supplier: "Roberts, Hoeger and Ward",
-    purchase_date: "3/24/2004",
-    expiration_date: "12/2/2023",
-    density: 0.53,
-    flash_point: -42,
-    octane_rating: 92,
     image: "http://dummyimage.com/173x100.png/ff4444/ffffff"
   },
   {
@@ -7092,11 +4562,6 @@ export const MockData: MockDataType = [
     price: 209.04,
     quantity: 653928,
     supplier: "Borer LLC",
-    purchase_date: "4/15/2017",
-    expiration_date: "3/24/2030",
-    density: 0.18,
-    flash_point: -19,
-    octane_rating: 96,
     image: "http://dummyimage.com/228x100.png/dddddd/000000"
   },
   {
@@ -7106,11 +4571,6 @@ export const MockData: MockDataType = [
     price: 835.61,
     quantity: 599727,
     supplier: "Kirlin, Osinski and Bechtelar",
-    purchase_date: "5/3/2014",
-    expiration_date: "4/13/2037",
-    density: 0.17,
-    flash_point: 88,
-    octane_rating: 85,
     image: "http://dummyimage.com/246x100.png/ff4444/ffffff"
   },
   {
@@ -7120,11 +4580,6 @@ export const MockData: MockDataType = [
     price: 346.67,
     quantity: 29089,
     supplier: "Flatley, Ullrich and MacGyver",
-    purchase_date: "6/25/2010",
-    expiration_date: "5/20/2042",
-    density: 0.41,
-    flash_point: 195,
-    octane_rating: 91,
     image: "http://dummyimage.com/201x100.png/cc0000/ffffff"
   },
   {
@@ -7134,11 +4589,6 @@ export const MockData: MockDataType = [
     price: 210.2,
     quantity: 15496,
     supplier: "Johnson and Sons",
-    purchase_date: "3/20/2005",
-    expiration_date: "11/8/2040",
-    density: 0.92,
-    flash_point: 106,
-    octane_rating: 86,
     image: "http://dummyimage.com/232x100.png/cc0000/ffffff"
   },
   {
@@ -7148,11 +4598,6 @@ export const MockData: MockDataType = [
     price: 91.84,
     quantity: 487429,
     supplier: "Abernathy-Stehr",
-    purchase_date: "8/16/2000",
-    expiration_date: "12/28/2033",
-    density: 0.33,
-    flash_point: -18,
-    octane_rating: 96,
     image: "http://dummyimage.com/241x100.png/cc0000/ffffff"
   },
   {
@@ -7162,11 +4607,6 @@ export const MockData: MockDataType = [
     price: 82.02,
     quantity: 850201,
     supplier: "Smitham and Sons",
-    purchase_date: "7/5/2017",
-    expiration_date: "5/11/2041",
-    density: 0.75,
-    flash_point: 54,
-    octane_rating: 95,
     image: "http://dummyimage.com/178x100.png/cc0000/ffffff"
   },
   {
@@ -7176,11 +4616,6 @@ export const MockData: MockDataType = [
     price: 987.73,
     quantity: 438865,
     supplier: "Collins, Johnson and Medhurst",
-    purchase_date: "5/1/2012",
-    expiration_date: "5/11/2026",
-    density: 0.56,
-    flash_point: 24,
-    octane_rating: 85,
     image: "http://dummyimage.com/217x100.png/dddddd/000000"
   },
   {
@@ -7190,11 +4625,6 @@ export const MockData: MockDataType = [
     price: 336.39,
     quantity: 415044,
     supplier: "Senger-Moore",
-    purchase_date: "3/18/2014",
-    expiration_date: "3/15/2032",
-    density: 0.63,
-    flash_point: -45,
-    octane_rating: 85,
     image: "http://dummyimage.com/242x100.png/cc0000/ffffff"
   },
   {
@@ -7204,11 +4634,6 @@ export const MockData: MockDataType = [
     price: 817.9,
     quantity: 186565,
     supplier: "Renner LLC",
-    purchase_date: "7/22/2017",
-    expiration_date: "3/27/2042",
-    density: 0.06,
-    flash_point: 21,
-    octane_rating: 94,
     image: "http://dummyimage.com/189x100.png/5fa2dd/ffffff"
   },
   {
@@ -7218,11 +4643,6 @@ export const MockData: MockDataType = [
     price: 701.08,
     quantity: 46314,
     supplier: "Kerluke, Schneider and Marks",
-    purchase_date: "12/8/2005",
-    expiration_date: "4/18/2030",
-    density: 0.97,
-    flash_point: 82,
-    octane_rating: 97,
     image: "http://dummyimage.com/142x100.png/5fa2dd/ffffff"
   },
   {
@@ -7232,11 +4652,6 @@ export const MockData: MockDataType = [
     price: 161.36,
     quantity: 708549,
     supplier: "Frami-Rippin",
-    purchase_date: "5/15/2016",
-    expiration_date: "7/23/2044",
-    density: 0.84,
-    flash_point: 53,
-    octane_rating: 88,
     image: "http://dummyimage.com/123x100.png/ff4444/ffffff"
   },
   {
@@ -7246,11 +4661,6 @@ export const MockData: MockDataType = [
     price: 48.54,
     quantity: 822033,
     supplier: "Johnson-Crist",
-    purchase_date: "7/30/2007",
-    expiration_date: "10/19/2028",
-    density: 0.86,
-    flash_point: -44,
-    octane_rating: 97,
     image: "http://dummyimage.com/213x100.png/ff4444/ffffff"
   },
   {
@@ -7260,11 +4670,6 @@ export const MockData: MockDataType = [
     price: 959.32,
     quantity: 559778,
     supplier: "Kunze, Stehr and Schultz",
-    purchase_date: "9/9/2000",
-    expiration_date: "5/8/2023",
-    density: 0.54,
-    flash_point: 137,
-    octane_rating: 88,
     image: "http://dummyimage.com/232x100.png/5fa2dd/ffffff"
   },
   {
@@ -7274,11 +4679,6 @@ export const MockData: MockDataType = [
     price: 263.64,
     quantity: 633140,
     supplier: "Pouros, Powlowski and Shanahan",
-    purchase_date: "8/1/2010",
-    expiration_date: "4/4/2045",
-    density: 0.31,
-    flash_point: 91,
-    octane_rating: 87,
     image: "http://dummyimage.com/119x100.png/5fa2dd/ffffff"
   },
   {
@@ -7288,11 +4688,6 @@ export const MockData: MockDataType = [
     price: 532.01,
     quantity: 151353,
     supplier: "Hagenes and Sons",
-    purchase_date: "2/15/2012",
-    expiration_date: "6/18/2040",
-    density: 0.53,
-    flash_point: 0,
-    octane_rating: 91,
     image: "http://dummyimage.com/165x100.png/ff4444/ffffff"
   },
   {
@@ -7302,11 +4697,6 @@ export const MockData: MockDataType = [
     price: 997.49,
     quantity: 454581,
     supplier: "Ruecker Inc",
-    purchase_date: "9/14/2008",
-    expiration_date: "12/2/2037",
-    density: 0.55,
-    flash_point: -10,
-    octane_rating: 97,
     image: "http://dummyimage.com/199x100.png/dddddd/000000"
   },
   {
@@ -7316,11 +4706,6 @@ export const MockData: MockDataType = [
     price: 799.68,
     quantity: 532246,
     supplier: "Baumbach-Deckow",
-    purchase_date: "3/11/2020",
-    expiration_date: "9/6/2023",
-    density: 0.42,
-    flash_point: 89,
-    octane_rating: 100,
     image: "http://dummyimage.com/195x100.png/ff4444/ffffff"
   },
   {
@@ -7330,11 +4715,6 @@ export const MockData: MockDataType = [
     price: 730.79,
     quantity: 809110,
     supplier: "Lemke, Schmidt and Cremin",
-    purchase_date: "10/20/2017",
-    expiration_date: "10/11/2044",
-    density: 0.15,
-    flash_point: -16,
-    octane_rating: 90,
     image: "http://dummyimage.com/105x100.png/cc0000/ffffff"
   },
   {
@@ -7344,11 +4724,6 @@ export const MockData: MockDataType = [
     price: 39.22,
     quantity: 32684,
     supplier: "Bogan, Donnelly and Leuschke",
-    purchase_date: "3/21/2007",
-    expiration_date: "3/12/2044",
-    density: 0.62,
-    flash_point: 67,
-    octane_rating: 95,
     image: "http://dummyimage.com/239x100.png/5fa2dd/ffffff"
   },
   {
@@ -7358,11 +4733,6 @@ export const MockData: MockDataType = [
     price: 206.37,
     quantity: 637721,
     supplier: "Koelpin and Sons",
-    purchase_date: "11/21/2020",
-    expiration_date: "1/24/2029",
-    density: 0.85,
-    flash_point: 172,
-    octane_rating: 93,
     image: "http://dummyimage.com/244x100.png/ff4444/ffffff"
   },
   {
@@ -7372,11 +4742,6 @@ export const MockData: MockDataType = [
     price: 861.1,
     quantity: 351389,
     supplier: "Schowalter LLC",
-    purchase_date: "3/21/2000",
-    expiration_date: "1/6/2045",
-    density: 0.16,
-    flash_point: 43,
-    octane_rating: 87,
     image: "http://dummyimage.com/227x100.png/5fa2dd/ffffff"
   },
   {
@@ -7386,11 +4751,6 @@ export const MockData: MockDataType = [
     price: 543.62,
     quantity: 367769,
     supplier: "Marquardt-Kulas",
-    purchase_date: "4/9/2008",
-    expiration_date: "3/20/2032",
-    density: 0.13,
-    flash_point: -14,
-    octane_rating: 89,
     image: "http://dummyimage.com/106x100.png/ff4444/ffffff"
   },
   {
@@ -7400,11 +4760,6 @@ export const MockData: MockDataType = [
     price: 882.97,
     quantity: 829591,
     supplier: "Toy, King and Daniel",
-    purchase_date: "1/18/2006",
-    expiration_date: "10/28/2028",
-    density: 0.55,
-    flash_point: 65,
-    octane_rating: 89,
     image: "http://dummyimage.com/158x100.png/dddddd/000000"
   },
   {
@@ -7414,11 +4769,6 @@ export const MockData: MockDataType = [
     price: 857.39,
     quantity: 196097,
     supplier: "Bernhard-Hartmann",
-    purchase_date: "6/20/2015",
-    expiration_date: "7/22/2046",
-    density: 0.19,
-    flash_point: 63,
-    octane_rating: 86,
     image: "http://dummyimage.com/194x100.png/5fa2dd/ffffff"
   },
   {
@@ -7428,11 +4778,6 @@ export const MockData: MockDataType = [
     price: 557.86,
     quantity: 597465,
     supplier: "Schroeder-Emard",
-    purchase_date: "7/17/2017",
-    expiration_date: "11/7/2038",
-    density: 0.83,
-    flash_point: 66,
-    octane_rating: 86,
     image: "http://dummyimage.com/205x100.png/5fa2dd/ffffff"
   },
   {
@@ -7442,11 +4787,6 @@ export const MockData: MockDataType = [
     price: 666.84,
     quantity: 190813,
     supplier: "Morar LLC",
-    purchase_date: "10/22/2004",
-    expiration_date: "7/28/2045",
-    density: 0.69,
-    flash_point: 36,
-    octane_rating: 94,
     image: "http://dummyimage.com/221x100.png/cc0000/ffffff"
   },
   {
@@ -7456,11 +4796,6 @@ export const MockData: MockDataType = [
     price: 800.19,
     quantity: 582557,
     supplier: "Jones-Paucek",
-    purchase_date: "7/11/2002",
-    expiration_date: "9/14/2043",
-    density: 0.22,
-    flash_point: 146,
-    octane_rating: 88,
     image: "http://dummyimage.com/199x100.png/ff4444/ffffff"
   },
   {
@@ -7470,11 +4805,6 @@ export const MockData: MockDataType = [
     price: 854.14,
     quantity: 480383,
     supplier: "Jerde, Becker and Larkin",
-    purchase_date: "6/27/2003",
-    expiration_date: "11/2/2033",
-    density: 0.47,
-    flash_point: 165,
-    octane_rating: 93,
     image: "http://dummyimage.com/236x100.png/5fa2dd/ffffff"
   },
   {
@@ -7484,11 +4814,6 @@ export const MockData: MockDataType = [
     price: 934.45,
     quantity: 210615,
     supplier: "Pollich-Waelchi",
-    purchase_date: "4/23/2005",
-    expiration_date: "5/8/2030",
-    density: 0.54,
-    flash_point: 4,
-    octane_rating: 97,
     image: "http://dummyimage.com/231x100.png/5fa2dd/ffffff"
   },
   {
@@ -7498,11 +4823,6 @@ export const MockData: MockDataType = [
     price: 182.58,
     quantity: 991124,
     supplier: "Treutel, Harvey and Bins",
-    purchase_date: "9/13/2020",
-    expiration_date: "7/14/2028",
-    density: 0.72,
-    flash_point: 179,
-    octane_rating: 92,
     image: "http://dummyimage.com/231x100.png/ff4444/ffffff"
   },
   {
@@ -7512,11 +4832,6 @@ export const MockData: MockDataType = [
     price: 61.28,
     quantity: 796397,
     supplier: "Kiehn and Sons",
-    purchase_date: "1/25/2015",
-    expiration_date: "12/15/2039",
-    density: 0.3,
-    flash_point: 53,
-    octane_rating: 96,
     image: "http://dummyimage.com/231x100.png/ff4444/ffffff"
   },
   {
@@ -7526,11 +4841,6 @@ export const MockData: MockDataType = [
     price: 538.41,
     quantity: 48527,
     supplier: "Reinger-Gusikowski",
-    purchase_date: "4/11/2017",
-    expiration_date: "10/31/2041",
-    density: 0.53,
-    flash_point: 170,
-    octane_rating: 94,
     image: "http://dummyimage.com/152x100.png/dddddd/000000"
   },
   {
@@ -7540,11 +4850,6 @@ export const MockData: MockDataType = [
     price: 362.22,
     quantity: 245235,
     supplier: "Kihn, Orn and Hyatt",
-    purchase_date: "5/1/2016",
-    expiration_date: "5/10/2036",
-    density: 0.91,
-    flash_point: -28,
-    octane_rating: 85,
     image: "http://dummyimage.com/211x100.png/dddddd/000000"
   },
   {
@@ -7554,11 +4859,6 @@ export const MockData: MockDataType = [
     price: 846.11,
     quantity: 288073,
     supplier: "Parker-Wintheiser",
-    purchase_date: "4/6/2007",
-    expiration_date: "1/5/2028",
-    density: 0.56,
-    flash_point: -18,
-    octane_rating: 85,
     image: "http://dummyimage.com/139x100.png/5fa2dd/ffffff"
   },
   {
@@ -7568,11 +4868,6 @@ export const MockData: MockDataType = [
     price: 232.02,
     quantity: 78902,
     supplier: "Ortiz-Nikolaus",
-    purchase_date: "5/5/2017",
-    expiration_date: "12/26/2044",
-    density: 0.81,
-    flash_point: -14,
-    octane_rating: 88,
     image: "http://dummyimage.com/116x100.png/cc0000/ffffff"
   },
   {
@@ -7582,11 +4877,6 @@ export const MockData: MockDataType = [
     price: 366.75,
     quantity: 216293,
     supplier: "Bechtelar Inc",
-    purchase_date: "4/29/2021",
-    expiration_date: "4/14/2046",
-    density: 0.45,
-    flash_point: 21,
-    octane_rating: 90,
     image: "http://dummyimage.com/139x100.png/cc0000/ffffff"
   },
   {
@@ -7596,11 +4886,6 @@ export const MockData: MockDataType = [
     price: 891.37,
     quantity: 525457,
     supplier: "Mitchell-Kub",
-    purchase_date: "2/7/2019",
-    expiration_date: "8/11/2038",
-    density: 0.89,
-    flash_point: 69,
-    octane_rating: 90,
     image: "http://dummyimage.com/104x100.png/dddddd/000000"
   },
   {
@@ -7610,11 +4895,6 @@ export const MockData: MockDataType = [
     price: 958.31,
     quantity: 373745,
     supplier: "Little, Murray and Abbott",
-    purchase_date: "10/29/2014",
-    expiration_date: "4/23/2028",
-    density: 0.58,
-    flash_point: -5,
-    octane_rating: 93,
     image: "http://dummyimage.com/166x100.png/dddddd/000000"
   },
   {
@@ -7624,11 +4904,6 @@ export const MockData: MockDataType = [
     price: 126.8,
     quantity: 684969,
     supplier: "Connelly, Ankunding and Medhurst",
-    purchase_date: "9/6/2003",
-    expiration_date: "7/18/2030",
-    density: 0.64,
-    flash_point: -5,
-    octane_rating: 91,
     image: "http://dummyimage.com/141x100.png/cc0000/ffffff"
   },
   {
@@ -7638,11 +4913,6 @@ export const MockData: MockDataType = [
     price: 240.79,
     quantity: 131863,
     supplier: "Pagac LLC",
-    purchase_date: "12/25/2003",
-    expiration_date: "7/4/2041",
-    density: 0.9,
-    flash_point: 28,
-    octane_rating: 99,
     image: "http://dummyimage.com/145x100.png/dddddd/000000"
   },
   {
@@ -7652,11 +4922,6 @@ export const MockData: MockDataType = [
     price: 180.9,
     quantity: 360901,
     supplier: "Franecki, Jerde and Feeney",
-    purchase_date: "12/3/2004",
-    expiration_date: "12/9/2039",
-    density: 0.36,
-    flash_point: 52,
-    octane_rating: 86,
     image: "http://dummyimage.com/154x100.png/dddddd/000000"
   },
   {
@@ -7666,11 +4931,6 @@ export const MockData: MockDataType = [
     price: 922.71,
     quantity: 737822,
     supplier: "Boyle-Upton",
-    purchase_date: "6/22/2018",
-    expiration_date: "10/22/2040",
-    density: 0.23,
-    flash_point: 58,
-    octane_rating: 85,
     image: "http://dummyimage.com/163x100.png/dddddd/000000"
   },
   {
@@ -7680,11 +4940,6 @@ export const MockData: MockDataType = [
     price: 351.37,
     quantity: 937619,
     supplier: "Anderson, Kunde and Zemlak",
-    purchase_date: "2/14/2021",
-    expiration_date: "9/19/2041",
-    density: 0.82,
-    flash_point: 190,
-    octane_rating: 94,
     image: "http://dummyimage.com/102x100.png/dddddd/000000"
   },
   {
@@ -7694,11 +4949,6 @@ export const MockData: MockDataType = [
     price: 13.54,
     quantity: 648006,
     supplier: "Wunsch, Nolan and Mills",
-    purchase_date: "3/6/2013",
-    expiration_date: "2/19/2038",
-    density: 0.84,
-    flash_point: 125,
-    octane_rating: 96,
     image: "http://dummyimage.com/147x100.png/cc0000/ffffff"
   },
   {
@@ -7708,11 +4958,6 @@ export const MockData: MockDataType = [
     price: 837.14,
     quantity: 796605,
     supplier: "VonRueden-Cruickshank",
-    purchase_date: "12/25/2006",
-    expiration_date: "12/18/2039",
-    density: 0.47,
-    flash_point: -44,
-    octane_rating: 89,
     image: "http://dummyimage.com/118x100.png/5fa2dd/ffffff"
   },
   {
@@ -7722,11 +4967,6 @@ export const MockData: MockDataType = [
     price: 675.93,
     quantity: 53352,
     supplier: "Tillman and Sons",
-    purchase_date: "12/15/2006",
-    expiration_date: "8/4/2031",
-    density: 0.2,
-    flash_point: 167,
-    octane_rating: 88,
     image: "http://dummyimage.com/206x100.png/5fa2dd/ffffff"
   },
   {
@@ -7736,11 +4976,6 @@ export const MockData: MockDataType = [
     price: 193.45,
     quantity: 533823,
     supplier: "Flatley-Padberg",
-    purchase_date: "3/2/2011",
-    expiration_date: "11/25/2030",
-    density: 0.77,
-    flash_point: 134,
-    octane_rating: 86,
     image: "http://dummyimage.com/124x100.png/5fa2dd/ffffff"
   },
   {
@@ -7750,11 +4985,6 @@ export const MockData: MockDataType = [
     price: 956.84,
     quantity: 626885,
     supplier: "Bergnaum-Towne",
-    purchase_date: "8/21/2001",
-    expiration_date: "12/12/2038",
-    density: 0.77,
-    flash_point: 139,
-    octane_rating: 96,
     image: "http://dummyimage.com/237x100.png/ff4444/ffffff"
   },
   {
@@ -7764,11 +4994,6 @@ export const MockData: MockDataType = [
     price: 389.5,
     quantity: 708527,
     supplier: "Satterfield and Sons",
-    purchase_date: "11/12/2000",
-    expiration_date: "4/1/2024",
-    density: 0.85,
-    flash_point: 124,
-    octane_rating: 86,
     image: "http://dummyimage.com/208x100.png/cc0000/ffffff"
   },
   {
@@ -7778,11 +5003,6 @@ export const MockData: MockDataType = [
     price: 764.2,
     quantity: 630191,
     supplier: "Adams, Tillman and Gleichner",
-    purchase_date: "6/17/2006",
-    expiration_date: "9/8/2033",
-    density: 0.95,
-    flash_point: -39,
-    octane_rating: 88,
     image: "http://dummyimage.com/177x100.png/cc0000/ffffff"
   },
   {
@@ -7792,11 +5012,6 @@ export const MockData: MockDataType = [
     price: 480.44,
     quantity: 128408,
     supplier: "Carter Inc",
-    purchase_date: "8/15/2001",
-    expiration_date: "9/6/2029",
-    density: 0.59,
-    flash_point: 81,
-    octane_rating: 90,
     image: "http://dummyimage.com/192x100.png/cc0000/ffffff"
   },
   {
@@ -7806,11 +5021,6 @@ export const MockData: MockDataType = [
     price: 24.59,
     quantity: 216493,
     supplier: "Okuneva, Fritsch and Heaney",
-    purchase_date: "4/26/2017",
-    expiration_date: "6/17/2044",
-    density: 0.46,
-    flash_point: 194,
-    octane_rating: 89,
     image: "http://dummyimage.com/224x100.png/cc0000/ffffff"
   },
   {
@@ -7820,11 +5030,6 @@ export const MockData: MockDataType = [
     price: 846.82,
     quantity: 831257,
     supplier: "MacGyver, Johnson and Ritchie",
-    purchase_date: "8/15/2015",
-    expiration_date: "12/1/2036",
-    density: 0.56,
-    flash_point: 0,
-    octane_rating: 92,
     image: "http://dummyimage.com/180x100.png/ff4444/ffffff"
   },
   {
@@ -7834,11 +5039,6 @@ export const MockData: MockDataType = [
     price: 553.44,
     quantity: 725985,
     supplier: "Brakus, Gulgowski and Huel",
-    purchase_date: "5/29/2007",
-    expiration_date: "8/15/2043",
-    density: 0.1,
-    flash_point: 37,
-    octane_rating: 93,
     image: "http://dummyimage.com/149x100.png/ff4444/ffffff"
   },
   {
@@ -7848,11 +5048,6 @@ export const MockData: MockDataType = [
     price: 786.25,
     quantity: 335314,
     supplier: "Nolan-O'Connell",
-    purchase_date: "9/5/2002",
-    expiration_date: "10/16/2024",
-    density: 0.07,
-    flash_point: -49,
-    octane_rating: 88,
     image: "http://dummyimage.com/212x100.png/ff4444/ffffff"
   },
   {
@@ -7862,11 +5057,6 @@ export const MockData: MockDataType = [
     price: 369.31,
     quantity: 85711,
     supplier: "Kreiger, Hudson and Greenfelder",
-    purchase_date: "7/29/2011",
-    expiration_date: "4/4/2025",
-    density: 0.31,
-    flash_point: 97,
-    octane_rating: 92,
     image: "http://dummyimage.com/201x100.png/dddddd/000000"
   },
   {
@@ -7876,11 +5066,6 @@ export const MockData: MockDataType = [
     price: 494.61,
     quantity: 944154,
     supplier: "Sipes, Weber and Torphy",
-    purchase_date: "9/24/2011",
-    expiration_date: "12/28/2030",
-    density: 0.75,
-    flash_point: 183,
-    octane_rating: 95,
     image: "http://dummyimage.com/176x100.png/cc0000/ffffff"
   },
   {
@@ -7890,11 +5075,6 @@ export const MockData: MockDataType = [
     price: 834.22,
     quantity: 78959,
     supplier: "Hirthe Inc",
-    purchase_date: "10/29/2001",
-    expiration_date: "1/27/2037",
-    density: 0.3,
-    flash_point: 163,
-    octane_rating: 86,
     image: "http://dummyimage.com/220x100.png/dddddd/000000"
   },
   {
@@ -7904,11 +5084,6 @@ export const MockData: MockDataType = [
     price: 593.6,
     quantity: 998835,
     supplier: "Feil, Abernathy and Koepp",
-    purchase_date: "1/18/2016",
-    expiration_date: "11/21/2029",
-    density: 0.09,
-    flash_point: 138,
-    octane_rating: 87,
     image: "http://dummyimage.com/153x100.png/ff4444/ffffff"
   },
   {
@@ -7918,11 +5093,6 @@ export const MockData: MockDataType = [
     price: 295.23,
     quantity: 272379,
     supplier: "Schimmel and Sons",
-    purchase_date: "2/21/2004",
-    expiration_date: "8/9/2043",
-    density: 0.91,
-    flash_point: 76,
-    octane_rating: 94,
     image: "http://dummyimage.com/245x100.png/cc0000/ffffff"
   },
   {
@@ -7932,11 +5102,6 @@ export const MockData: MockDataType = [
     price: 724.71,
     quantity: 461327,
     supplier: "Dietrich, Bradtke and Reynolds",
-    purchase_date: "6/26/2004",
-    expiration_date: "12/12/2028",
-    density: 0.13,
-    flash_point: 14,
-    octane_rating: 89,
     image: "http://dummyimage.com/190x100.png/dddddd/000000"
   },
   {
@@ -7946,11 +5111,6 @@ export const MockData: MockDataType = [
     price: 897.47,
     quantity: 315481,
     supplier: "Fritsch-Weimann",
-    purchase_date: "11/30/2001",
-    expiration_date: "6/16/2044",
-    density: 0.83,
-    flash_point: 121,
-    octane_rating: 96,
     image: "http://dummyimage.com/221x100.png/dddddd/000000"
   },
   {
@@ -7960,11 +5120,6 @@ export const MockData: MockDataType = [
     price: 530.63,
     quantity: 22800,
     supplier: "Nikolaus and Sons",
-    purchase_date: "7/12/2013",
-    expiration_date: "6/17/2029",
-    density: 0.97,
-    flash_point: 180,
-    octane_rating: 85,
     image: "http://dummyimage.com/219x100.png/ff4444/ffffff"
   },
   {
@@ -7974,11 +5129,6 @@ export const MockData: MockDataType = [
     price: 754.12,
     quantity: 542225,
     supplier: "Braun Group",
-    purchase_date: "2/27/2011",
-    expiration_date: "6/16/2023",
-    density: 0.51,
-    flash_point: 5,
-    octane_rating: 90,
     image: "http://dummyimage.com/141x100.png/5fa2dd/ffffff"
   },
   {
@@ -7988,11 +5138,6 @@ export const MockData: MockDataType = [
     price: 444.47,
     quantity: 434650,
     supplier: "Steuber, Christiansen and Corwin",
-    purchase_date: "10/8/2017",
-    expiration_date: "11/10/2026",
-    density: 0.02,
-    flash_point: 149,
-    octane_rating: 99,
     image: "http://dummyimage.com/144x100.png/cc0000/ffffff"
   },
   {
@@ -8002,11 +5147,6 @@ export const MockData: MockDataType = [
     price: 768.14,
     quantity: 213731,
     supplier: "Sanford, Boyer and Christiansen",
-    purchase_date: "5/9/2012",
-    expiration_date: "3/21/2040",
-    density: 0.25,
-    flash_point: 147,
-    octane_rating: 93,
     image: "http://dummyimage.com/124x100.png/cc0000/ffffff"
   },
   {
@@ -8016,11 +5156,6 @@ export const MockData: MockDataType = [
     price: 389.19,
     quantity: 7798,
     supplier: "Becker-Simonis",
-    purchase_date: "2/27/2010",
-    expiration_date: "5/6/2040",
-    density: 0.89,
-    flash_point: 156,
-    octane_rating: 94,
     image: "http://dummyimage.com/230x100.png/5fa2dd/ffffff"
   },
   {
@@ -8030,11 +5165,6 @@ export const MockData: MockDataType = [
     price: 516.43,
     quantity: 584906,
     supplier: "Braun-Wyman",
-    purchase_date: "9/21/2015",
-    expiration_date: "12/7/2039",
-    density: 0.08,
-    flash_point: 5,
-    octane_rating: 94,
     image: "http://dummyimage.com/160x100.png/5fa2dd/ffffff"
   },
   {
@@ -8044,11 +5174,6 @@ export const MockData: MockDataType = [
     price: 333.19,
     quantity: 416188,
     supplier: "Tromp-Mueller",
-    purchase_date: "11/19/2020",
-    expiration_date: "9/15/2039",
-    density: 0.11,
-    flash_point: 84,
-    octane_rating: 99,
     image: "http://dummyimage.com/131x100.png/5fa2dd/ffffff"
   },
   {
@@ -8058,11 +5183,6 @@ export const MockData: MockDataType = [
     price: 710.39,
     quantity: 455134,
     supplier: "Waelchi LLC",
-    purchase_date: "6/1/2000",
-    expiration_date: "6/13/2029",
-    density: 0.53,
-    flash_point: 94,
-    octane_rating: 86,
     image: "http://dummyimage.com/104x100.png/5fa2dd/ffffff"
   },
   {
@@ -8072,11 +5192,6 @@ export const MockData: MockDataType = [
     price: 207.53,
     quantity: 153949,
     supplier: "Schuppe-Murphy",
-    purchase_date: "6/3/2000",
-    expiration_date: "11/12/2044",
-    density: 0.32,
-    flash_point: 199,
-    octane_rating: 86,
     image: "http://dummyimage.com/182x100.png/5fa2dd/ffffff"
   },
   {
@@ -8086,11 +5201,6 @@ export const MockData: MockDataType = [
     price: 705.47,
     quantity: 875720,
     supplier: "Rutherford Group",
-    purchase_date: "9/6/2016",
-    expiration_date: "11/1/2035",
-    density: 0.2,
-    flash_point: 110,
-    octane_rating: 99,
     image: "http://dummyimage.com/134x100.png/cc0000/ffffff"
   },
   {
@@ -8100,11 +5210,6 @@ export const MockData: MockDataType = [
     price: 211.06,
     quantity: 200304,
     supplier: "Wolf-Wiegand",
-    purchase_date: "12/16/2014",
-    expiration_date: "11/4/2031",
-    density: 0.2,
-    flash_point: 196,
-    octane_rating: 90,
     image: "http://dummyimage.com/127x100.png/dddddd/000000"
   },
   {
@@ -8114,11 +5219,6 @@ export const MockData: MockDataType = [
     price: 798.42,
     quantity: 170164,
     supplier: "Bergstrom LLC",
-    purchase_date: "5/17/2005",
-    expiration_date: "12/4/2024",
-    density: 0.38,
-    flash_point: 53,
-    octane_rating: 85,
     image: "http://dummyimage.com/189x100.png/cc0000/ffffff"
   },
   {
@@ -8128,11 +5228,6 @@ export const MockData: MockDataType = [
     price: 430.32,
     quantity: 136289,
     supplier: "Koelpin, Mante and Luettgen",
-    purchase_date: "10/19/2018",
-    expiration_date: "4/27/2045",
-    density: 0.04,
-    flash_point: 107,
-    octane_rating: 89,
     image: "http://dummyimage.com/247x100.png/ff4444/ffffff"
   },
   {
@@ -8142,11 +5237,6 @@ export const MockData: MockDataType = [
     price: 608.96,
     quantity: 982256,
     supplier: "Reichert Inc",
-    purchase_date: "11/4/2021",
-    expiration_date: "8/25/2039",
-    density: 0.73,
-    flash_point: -9,
-    octane_rating: 98,
     image: "http://dummyimage.com/246x100.png/cc0000/ffffff"
   },
   {
@@ -8156,11 +5246,6 @@ export const MockData: MockDataType = [
     price: 149.9,
     quantity: 227198,
     supplier: "Marks Group",
-    purchase_date: "5/24/2019",
-    expiration_date: "5/30/2038",
-    density: 0.25,
-    flash_point: 126,
-    octane_rating: 92,
     image: "http://dummyimage.com/164x100.png/ff4444/ffffff"
   },
   {
@@ -8170,11 +5255,6 @@ export const MockData: MockDataType = [
     price: 763.64,
     quantity: 150007,
     supplier: "Stanton-Towne",
-    purchase_date: "12/21/2009",
-    expiration_date: "11/23/2024",
-    density: 0.26,
-    flash_point: 139,
-    octane_rating: 96,
     image: "http://dummyimage.com/219x100.png/ff4444/ffffff"
   },
   {
@@ -8184,11 +5264,6 @@ export const MockData: MockDataType = [
     price: 306.33,
     quantity: 906178,
     supplier: "Turcotte, West and Koss",
-    purchase_date: "9/13/2004",
-    expiration_date: "4/19/2025",
-    density: 0.39,
-    flash_point: 196,
-    octane_rating: 88,
     image: "http://dummyimage.com/161x100.png/dddddd/000000"
   },
   {
@@ -8198,11 +5273,6 @@ export const MockData: MockDataType = [
     price: 924.85,
     quantity: 315000,
     supplier: "Hamill, Deckow and Ebert",
-    purchase_date: "5/19/2002",
-    expiration_date: "3/12/2041",
-    density: 0.47,
-    flash_point: -17,
-    octane_rating: 98,
     image: "http://dummyimage.com/198x100.png/ff4444/ffffff"
   },
   {
@@ -8212,11 +5282,6 @@ export const MockData: MockDataType = [
     price: 937.97,
     quantity: 854709,
     supplier: "Considine, Balistreri and Morissette",
-    purchase_date: "5/30/2017",
-    expiration_date: "9/20/2027",
-    density: 0.71,
-    flash_point: 76,
-    octane_rating: 88,
     image: "http://dummyimage.com/167x100.png/5fa2dd/ffffff"
   },
   {
@@ -8226,11 +5291,6 @@ export const MockData: MockDataType = [
     price: 716.6,
     quantity: 89092,
     supplier: "Boehm-Weber",
-    purchase_date: "1/18/2010",
-    expiration_date: "2/23/2033",
-    density: 0.03,
-    flash_point: 37,
-    octane_rating: 100,
     image: "http://dummyimage.com/154x100.png/dddddd/000000"
   },
   {
@@ -8240,11 +5300,6 @@ export const MockData: MockDataType = [
     price: 517.76,
     quantity: 859166,
     supplier: "Dare-Cormier",
-    purchase_date: "1/7/2013",
-    expiration_date: "8/18/2043",
-    density: 0.49,
-    flash_point: 165,
-    octane_rating: 91,
     image: "http://dummyimage.com/246x100.png/cc0000/ffffff"
   },
   {
@@ -8254,11 +5309,6 @@ export const MockData: MockDataType = [
     price: 191.88,
     quantity: 747879,
     supplier: "Witting, Barton and Jones",
-    purchase_date: "1/25/2012",
-    expiration_date: "1/29/2038",
-    density: 0.35,
-    flash_point: 95,
-    octane_rating: 97,
     image: "http://dummyimage.com/236x100.png/dddddd/000000"
   },
   {
@@ -8268,11 +5318,6 @@ export const MockData: MockDataType = [
     price: 252.74,
     quantity: 255815,
     supplier: "O'Keefe LLC",
-    purchase_date: "11/2/2017",
-    expiration_date: "11/15/2040",
-    density: 0.62,
-    flash_point: -43,
-    octane_rating: 99,
     image: "http://dummyimage.com/129x100.png/cc0000/ffffff"
   },
   {
@@ -8282,11 +5327,6 @@ export const MockData: MockDataType = [
     price: 381.32,
     quantity: 688444,
     supplier: "Kilback and Sons",
-    purchase_date: "4/20/2017",
-    expiration_date: "3/3/2027",
-    density: 0.19,
-    flash_point: -9,
-    octane_rating: 94,
     image: "http://dummyimage.com/175x100.png/5fa2dd/ffffff"
   },
   {
@@ -8296,11 +5336,6 @@ export const MockData: MockDataType = [
     price: 377.82,
     quantity: 834865,
     supplier: "Ullrich-Armstrong",
-    purchase_date: "11/17/2003",
-    expiration_date: "8/16/2043",
-    density: 0.65,
-    flash_point: 146,
-    octane_rating: 93,
     image: "http://dummyimage.com/207x100.png/dddddd/000000"
   },
   {
@@ -8310,11 +5345,6 @@ export const MockData: MockDataType = [
     price: 79.95,
     quantity: 639800,
     supplier: "Kohler Group",
-    purchase_date: "3/26/2022",
-    expiration_date: "12/13/2026",
-    density: 0.91,
-    flash_point: 146,
-    octane_rating: 91,
     image: "http://dummyimage.com/227x100.png/dddddd/000000"
   },
   {
@@ -8324,11 +5354,6 @@ export const MockData: MockDataType = [
     price: 441.71,
     quantity: 5531,
     supplier: "Wolf-Schiller",
-    purchase_date: "9/15/2013",
-    expiration_date: "12/4/2041",
-    density: 0.48,
-    flash_point: 88,
-    octane_rating: 95,
     image: "http://dummyimage.com/180x100.png/5fa2dd/ffffff"
   },
   {
@@ -8338,11 +5363,6 @@ export const MockData: MockDataType = [
     price: 560.58,
     quantity: 855911,
     supplier: "Smitham Inc",
-    purchase_date: "2/22/2007",
-    expiration_date: "6/3/2040",
-    density: 0.36,
-    flash_point: 75,
-    octane_rating: 96,
     image: "http://dummyimage.com/128x100.png/cc0000/ffffff"
   },
   {
@@ -8352,11 +5372,6 @@ export const MockData: MockDataType = [
     price: 909.77,
     quantity: 69464,
     supplier: "Kuhn, Veum and O'Reilly",
-    purchase_date: "3/24/2013",
-    expiration_date: "8/2/2037",
-    density: 0.13,
-    flash_point: 87,
-    octane_rating: 93,
     image: "http://dummyimage.com/237x100.png/cc0000/ffffff"
   },
   {
@@ -8366,11 +5381,6 @@ export const MockData: MockDataType = [
     price: 335.09,
     quantity: 39588,
     supplier: "Howe, Trantow and Bosco",
-    purchase_date: "3/22/2013",
-    expiration_date: "3/28/2025",
-    density: 0.1,
-    flash_point: 115,
-    octane_rating: 99,
     image: "http://dummyimage.com/123x100.png/ff4444/ffffff"
   },
   {
@@ -8380,11 +5390,6 @@ export const MockData: MockDataType = [
     price: 993.32,
     quantity: 237830,
     supplier: "Ward-Heaney",
-    purchase_date: "6/26/2000",
-    expiration_date: "7/31/2029",
-    density: 0.6,
-    flash_point: 34,
-    octane_rating: 99,
     image: "http://dummyimage.com/180x100.png/cc0000/ffffff"
   },
   {
@@ -8394,11 +5399,6 @@ export const MockData: MockDataType = [
     price: 863.58,
     quantity: 991289,
     supplier: "Reilly-Jacobi",
-    purchase_date: "8/28/2013",
-    expiration_date: "5/28/2039",
-    density: 0.93,
-    flash_point: 127,
-    octane_rating: 85,
     image: "http://dummyimage.com/186x100.png/5fa2dd/ffffff"
   },
   {
@@ -8408,11 +5408,6 @@ export const MockData: MockDataType = [
     price: 707.03,
     quantity: 231507,
     supplier: "Runte, Wolf and Watsica",
-    purchase_date: "5/23/2017",
-    expiration_date: "6/4/2023",
-    density: 0.17,
-    flash_point: -35,
-    octane_rating: 93,
     image: "http://dummyimage.com/231x100.png/dddddd/000000"
   },
   {
@@ -8422,11 +5417,6 @@ export const MockData: MockDataType = [
     price: 796.48,
     quantity: 629411,
     supplier: "Cartwright-McDermott",
-    purchase_date: "2/12/2012",
-    expiration_date: "8/25/2023",
-    density: 0.43,
-    flash_point: 141,
-    octane_rating: 91,
     image: "http://dummyimage.com/200x100.png/dddddd/000000"
   },
   {
@@ -8436,11 +5426,6 @@ export const MockData: MockDataType = [
     price: 579.77,
     quantity: 72197,
     supplier: "Dooley-Auer",
-    purchase_date: "12/20/2001",
-    expiration_date: "5/5/2039",
-    density: 0.76,
-    flash_point: 155,
-    octane_rating: 94,
     image: "http://dummyimage.com/224x100.png/cc0000/ffffff"
   },
   {
@@ -8450,11 +5435,6 @@ export const MockData: MockDataType = [
     price: 910.22,
     quantity: 601127,
     supplier: "Heidenreich LLC",
-    purchase_date: "8/9/2021",
-    expiration_date: "12/25/2032",
-    density: 0.1,
-    flash_point: 13,
-    octane_rating: 90,
     image: "http://dummyimage.com/206x100.png/5fa2dd/ffffff"
   },
   {
@@ -8464,11 +5444,6 @@ export const MockData: MockDataType = [
     price: 767.36,
     quantity: 506583,
     supplier: "Kub-Price",
-    purchase_date: "6/20/2016",
-    expiration_date: "6/21/2025",
-    density: 0.87,
-    flash_point: -45,
-    octane_rating: 99,
     image: "http://dummyimage.com/171x100.png/cc0000/ffffff"
   },
   {
@@ -8478,11 +5453,6 @@ export const MockData: MockDataType = [
     price: 371.99,
     quantity: 165644,
     supplier: "Leannon Group",
-    purchase_date: "7/16/2004",
-    expiration_date: "8/5/2041",
-    density: 0.01,
-    flash_point: -11,
-    octane_rating: 99,
     image: "http://dummyimage.com/161x100.png/cc0000/ffffff"
   },
   {
@@ -8492,11 +5462,6 @@ export const MockData: MockDataType = [
     price: 173.58,
     quantity: 647038,
     supplier: "Heathcote-Brakus",
-    purchase_date: "7/11/2017",
-    expiration_date: "9/17/2045",
-    density: 0.33,
-    flash_point: 154,
-    octane_rating: 85,
     image: "http://dummyimage.com/227x100.png/cc0000/ffffff"
   },
   {
@@ -8506,11 +5471,6 @@ export const MockData: MockDataType = [
     price: 967.67,
     quantity: 225955,
     supplier: "Sporer-Bergstrom",
-    purchase_date: "9/28/2019",
-    expiration_date: "3/14/2040",
-    density: 0.18,
-    flash_point: 16,
-    octane_rating: 89,
     image: "http://dummyimage.com/174x100.png/5fa2dd/ffffff"
   },
   {
@@ -8520,11 +5480,6 @@ export const MockData: MockDataType = [
     price: 413.38,
     quantity: 823722,
     supplier: "Kemmer LLC",
-    purchase_date: "10/18/2020",
-    expiration_date: "4/29/2032",
-    density: 0.32,
-    flash_point: 87,
-    octane_rating: 97,
     image: "http://dummyimage.com/158x100.png/ff4444/ffffff"
   },
   {
@@ -8534,11 +5489,6 @@ export const MockData: MockDataType = [
     price: 673.92,
     quantity: 534262,
     supplier: "Paucek, Purdy and Gorczany",
-    purchase_date: "9/3/2000",
-    expiration_date: "4/5/2027",
-    density: 0.39,
-    flash_point: -5,
-    octane_rating: 87,
     image: "http://dummyimage.com/131x100.png/cc0000/ffffff"
   },
   {
@@ -8548,11 +5498,6 @@ export const MockData: MockDataType = [
     price: 623.62,
     quantity: 47022,
     supplier: "Davis-Schinner",
-    purchase_date: "11/12/2022",
-    expiration_date: "7/7/2023",
-    density: 0.4,
-    flash_point: 148,
-    octane_rating: 85,
     image: "http://dummyimage.com/105x100.png/dddddd/000000"
   },
   {
@@ -8562,11 +5507,6 @@ export const MockData: MockDataType = [
     price: 470.74,
     quantity: 965644,
     supplier: "Bernier, Graham and Feeney",
-    purchase_date: "6/26/2012",
-    expiration_date: "4/27/2045",
-    density: 0.98,
-    flash_point: 68,
-    octane_rating: 92,
     image: "http://dummyimage.com/174x100.png/5fa2dd/ffffff"
   },
   {
@@ -8576,11 +5516,6 @@ export const MockData: MockDataType = [
     price: 670.1,
     quantity: 411168,
     supplier: "Walter, Leannon and Will",
-    purchase_date: "9/6/2020",
-    expiration_date: "4/16/2023",
-    density: 0.63,
-    flash_point: 69,
-    octane_rating: 86,
     image: "http://dummyimage.com/216x100.png/cc0000/ffffff"
   },
   {
@@ -8590,11 +5525,6 @@ export const MockData: MockDataType = [
     price: 685.99,
     quantity: 508096,
     supplier: "Gottlieb LLC",
-    purchase_date: "2/20/2007",
-    expiration_date: "3/26/2025",
-    density: 0.45,
-    flash_point: 0,
-    octane_rating: 91,
     image: "http://dummyimage.com/111x100.png/cc0000/ffffff"
   },
   {
@@ -8604,11 +5534,6 @@ export const MockData: MockDataType = [
     price: 276.77,
     quantity: 58814,
     supplier: "Strosin-Dicki",
-    purchase_date: "11/26/2018",
-    expiration_date: "10/25/2025",
-    density: 0.17,
-    flash_point: -16,
-    octane_rating: 91,
     image: "http://dummyimage.com/235x100.png/5fa2dd/ffffff"
   },
   {
@@ -8618,11 +5543,6 @@ export const MockData: MockDataType = [
     price: 135.04,
     quantity: 257015,
     supplier: "Labadie, Parisian and Swift",
-    purchase_date: "10/25/2008",
-    expiration_date: "3/18/2025",
-    density: 0.23,
-    flash_point: -42,
-    octane_rating: 90,
     image: "http://dummyimage.com/155x100.png/cc0000/ffffff"
   },
   {
@@ -8632,11 +5552,6 @@ export const MockData: MockDataType = [
     price: 253.4,
     quantity: 587820,
     supplier: "Turner-Barrows",
-    purchase_date: "12/29/2001",
-    expiration_date: "5/1/2038",
-    density: 0.5,
-    flash_point: 42,
-    octane_rating: 89,
     image: "http://dummyimage.com/209x100.png/5fa2dd/ffffff"
   },
   {
@@ -8646,11 +5561,6 @@ export const MockData: MockDataType = [
     price: 234.75,
     quantity: 240188,
     supplier: "Langosh-Boyer",
-    purchase_date: "11/1/2000",
-    expiration_date: "3/11/2028",
-    density: 0.42,
-    flash_point: 7,
-    octane_rating: 96,
     image: "http://dummyimage.com/152x100.png/dddddd/000000"
   },
   {
@@ -8660,11 +5570,6 @@ export const MockData: MockDataType = [
     price: 465.8,
     quantity: 213160,
     supplier: "O'Reilly LLC",
-    purchase_date: "12/19/2018",
-    expiration_date: "10/27/2029",
-    density: 0.2,
-    flash_point: 145,
-    octane_rating: 92,
     image: "http://dummyimage.com/198x100.png/ff4444/ffffff"
   },
   {
@@ -8674,11 +5579,6 @@ export const MockData: MockDataType = [
     price: 577.79,
     quantity: 51740,
     supplier: "Blanda-Conroy",
-    purchase_date: "7/28/2010",
-    expiration_date: "4/1/2032",
-    density: 0.73,
-    flash_point: 48,
-    octane_rating: 100,
     image: "http://dummyimage.com/121x100.png/5fa2dd/ffffff"
   },
   {
@@ -8688,11 +5588,6 @@ export const MockData: MockDataType = [
     price: 450.01,
     quantity: 41754,
     supplier: "Becker, Satterfield and Boyer",
-    purchase_date: "10/13/2018",
-    expiration_date: "2/22/2040",
-    density: 0.34,
-    flash_point: 173,
-    octane_rating: 96,
     image: "http://dummyimage.com/109x100.png/dddddd/000000"
   },
   {
@@ -8702,11 +5597,6 @@ export const MockData: MockDataType = [
     price: 627.84,
     quantity: 830818,
     supplier: "Konopelski and Sons",
-    purchase_date: "5/2/2020",
-    expiration_date: "10/16/2041",
-    density: 0.9,
-    flash_point: 169,
-    octane_rating: 98,
     image: "http://dummyimage.com/184x100.png/cc0000/ffffff"
   },
   {
@@ -8716,11 +5606,6 @@ export const MockData: MockDataType = [
     price: 408.24,
     quantity: 200267,
     supplier: "O'Connell-Veum",
-    purchase_date: "12/19/2006",
-    expiration_date: "12/31/2026",
-    density: 0.57,
-    flash_point: 192,
-    octane_rating: 100,
     image: "http://dummyimage.com/127x100.png/ff4444/ffffff"
   },
   {
@@ -8730,11 +5615,6 @@ export const MockData: MockDataType = [
     price: 437.43,
     quantity: 51791,
     supplier: "Stokes-Kessler",
-    purchase_date: "6/29/2022",
-    expiration_date: "3/5/2029",
-    density: 0.12,
-    flash_point: 52,
-    octane_rating: 86,
     image: "http://dummyimage.com/235x100.png/5fa2dd/ffffff"
   },
   {
@@ -8744,11 +5624,6 @@ export const MockData: MockDataType = [
     price: 907.51,
     quantity: 270386,
     supplier: "Schulist, Hermiston and Crona",
-    purchase_date: "4/6/2014",
-    expiration_date: "9/11/2038",
-    density: 0.11,
-    flash_point: 166,
-    octane_rating: 99,
     image: "http://dummyimage.com/116x100.png/cc0000/ffffff"
   },
   {
@@ -8758,11 +5633,6 @@ export const MockData: MockDataType = [
     price: 609.35,
     quantity: 617003,
     supplier: "Schowalter-Turner",
-    purchase_date: "4/26/2018",
-    expiration_date: "8/16/2041",
-    density: 0.52,
-    flash_point: -5,
-    octane_rating: 95,
     image: "http://dummyimage.com/213x100.png/cc0000/ffffff"
   },
   {
@@ -8772,11 +5642,6 @@ export const MockData: MockDataType = [
     price: 992.98,
     quantity: 139376,
     supplier: "Rohan LLC",
-    purchase_date: "9/23/2008",
-    expiration_date: "7/4/2042",
-    density: 0.01,
-    flash_point: 167,
-    octane_rating: 95,
     image: "http://dummyimage.com/109x100.png/cc0000/ffffff"
   },
   {
@@ -8786,11 +5651,6 @@ export const MockData: MockDataType = [
     price: 674.98,
     quantity: 400342,
     supplier: "Marquardt-Williamson",
-    purchase_date: "3/9/2016",
-    expiration_date: "12/14/2023",
-    density: 0.84,
-    flash_point: 170,
-    octane_rating: 100,
     image: "http://dummyimage.com/230x100.png/dddddd/000000"
   },
   {
@@ -8800,11 +5660,6 @@ export const MockData: MockDataType = [
     price: 191,
     quantity: 542544,
     supplier: "Beahan, Lind and Nikolaus",
-    purchase_date: "6/15/2003",
-    expiration_date: "12/27/2046",
-    density: 0.19,
-    flash_point: -19,
-    octane_rating: 95,
     image: "http://dummyimage.com/144x100.png/5fa2dd/ffffff"
   },
   {
@@ -8814,11 +5669,6 @@ export const MockData: MockDataType = [
     price: 206.64,
     quantity: 464387,
     supplier: "Stark-Cruickshank",
-    purchase_date: "11/16/2009",
-    expiration_date: "4/11/2032",
-    density: 0.59,
-    flash_point: 145,
-    octane_rating: 96,
     image: "http://dummyimage.com/219x100.png/dddddd/000000"
   },
   {
@@ -8828,11 +5678,6 @@ export const MockData: MockDataType = [
     price: 120.03,
     quantity: 950627,
     supplier: "Senger-Russel",
-    purchase_date: "4/4/2005",
-    expiration_date: "9/4/2035",
-    density: 0.85,
-    flash_point: 103,
-    octane_rating: 93,
     image: "http://dummyimage.com/176x100.png/ff4444/ffffff"
   },
   {
@@ -8842,11 +5687,6 @@ export const MockData: MockDataType = [
     price: 731.95,
     quantity: 870499,
     supplier: "Kling, Herman and Schimmel",
-    purchase_date: "10/10/2022",
-    expiration_date: "4/30/2032",
-    density: 0.31,
-    flash_point: 159,
-    octane_rating: 87,
     image: "http://dummyimage.com/162x100.png/5fa2dd/ffffff"
   },
   {
@@ -8856,11 +5696,6 @@ export const MockData: MockDataType = [
     price: 719.93,
     quantity: 683182,
     supplier: "Medhurst-Heaney",
-    purchase_date: "10/25/2022",
-    expiration_date: "6/17/2026",
-    density: 0.62,
-    flash_point: 193,
-    octane_rating: 96,
     image: "http://dummyimage.com/214x100.png/ff4444/ffffff"
   },
   {
@@ -8870,11 +5705,6 @@ export const MockData: MockDataType = [
     price: 299.34,
     quantity: 395004,
     supplier: "Turner-Schiller",
-    purchase_date: "1/20/2015",
-    expiration_date: "8/6/2039",
-    density: 0.35,
-    flash_point: 155,
-    octane_rating: 98,
     image: "http://dummyimage.com/106x100.png/5fa2dd/ffffff"
   },
   {
@@ -8884,11 +5714,6 @@ export const MockData: MockDataType = [
     price: 409.57,
     quantity: 722437,
     supplier: "Parisian and Sons",
-    purchase_date: "2/3/2013",
-    expiration_date: "7/8/2042",
-    density: 0.94,
-    flash_point: 131,
-    octane_rating: 88,
     image: "http://dummyimage.com/112x100.png/5fa2dd/ffffff"
   },
   {
@@ -8898,11 +5723,6 @@ export const MockData: MockDataType = [
     price: 516.69,
     quantity: 358814,
     supplier: "Hauck-Rogahn",
-    purchase_date: "4/1/2001",
-    expiration_date: "6/5/2036",
-    density: 0.54,
-    flash_point: 100,
-    octane_rating: 100,
     image: "http://dummyimage.com/114x100.png/ff4444/ffffff"
   },
   {
@@ -8912,11 +5732,6 @@ export const MockData: MockDataType = [
     price: 226.21,
     quantity: 853539,
     supplier: "Altenwerth, Shanahan and Block",
-    purchase_date: "1/4/2000",
-    expiration_date: "5/29/2028",
-    density: 0.15,
-    flash_point: 3,
-    octane_rating: 97,
     image: "http://dummyimage.com/145x100.png/dddddd/000000"
   },
   {
@@ -8926,11 +5741,6 @@ export const MockData: MockDataType = [
     price: 910.29,
     quantity: 320416,
     supplier: "Corwin, Schroeder and Conn",
-    purchase_date: "8/4/2022",
-    expiration_date: "3/6/2025",
-    density: 0.83,
-    flash_point: -7,
-    octane_rating: 95,
     image: "http://dummyimage.com/157x100.png/ff4444/ffffff"
   },
   {
@@ -8940,11 +5750,6 @@ export const MockData: MockDataType = [
     price: 790.09,
     quantity: 7592,
     supplier: "Marquardt-Marks",
-    purchase_date: "6/1/2009",
-    expiration_date: "10/21/2041",
-    density: 0.21,
-    flash_point: 36,
-    octane_rating: 85,
     image: "http://dummyimage.com/248x100.png/5fa2dd/ffffff"
   },
   {
@@ -8954,11 +5759,6 @@ export const MockData: MockDataType = [
     price: 211.91,
     quantity: 478182,
     supplier: "Weimann, Metz and Lindgren",
-    purchase_date: "3/31/2008",
-    expiration_date: "5/7/2036",
-    density: 0.51,
-    flash_point: 138,
-    octane_rating: 100,
     image: "http://dummyimage.com/200x100.png/dddddd/000000"
   },
   {
@@ -8968,11 +5768,6 @@ export const MockData: MockDataType = [
     price: 653.52,
     quantity: 415227,
     supplier: "Mann-Cummings",
-    purchase_date: "9/22/2017",
-    expiration_date: "8/22/2039",
-    density: 0.85,
-    flash_point: -16,
-    octane_rating: 95,
     image: "http://dummyimage.com/144x100.png/ff4444/ffffff"
   },
   {
@@ -8982,11 +5777,6 @@ export const MockData: MockDataType = [
     price: 115.33,
     quantity: 259457,
     supplier: "Waters, Ruecker and Little",
-    purchase_date: "7/25/2022",
-    expiration_date: "7/5/2046",
-    density: 0.14,
-    flash_point: -48,
-    octane_rating: 96,
     image: "http://dummyimage.com/182x100.png/cc0000/ffffff"
   },
   {
@@ -8996,11 +5786,6 @@ export const MockData: MockDataType = [
     price: 415.8,
     quantity: 295976,
     supplier: "Funk-Stehr",
-    purchase_date: "1/21/2014",
-    expiration_date: "7/15/2038",
-    density: 0.13,
-    flash_point: -7,
-    octane_rating: 100,
     image: "http://dummyimage.com/123x100.png/dddddd/000000"
   },
   {
@@ -9010,11 +5795,6 @@ export const MockData: MockDataType = [
     price: 365.96,
     quantity: 905399,
     supplier: "Herman, Muller and Satterfield",
-    purchase_date: "10/21/2006",
-    expiration_date: "12/4/2042",
-    density: 0.67,
-    flash_point: 180,
-    octane_rating: 90,
     image: "http://dummyimage.com/116x100.png/dddddd/000000"
   },
   {
@@ -9024,11 +5804,6 @@ export const MockData: MockDataType = [
     price: 247.15,
     quantity: 666874,
     supplier: "Cummings-Kutch",
-    purchase_date: "4/18/2002",
-    expiration_date: "4/27/2042",
-    density: 0.24,
-    flash_point: -32,
-    octane_rating: 89,
     image: "http://dummyimage.com/184x100.png/ff4444/ffffff"
   },
   {
@@ -9038,11 +5813,6 @@ export const MockData: MockDataType = [
     price: 61.89,
     quantity: 528649,
     supplier: "Goldner-Hodkiewicz",
-    purchase_date: "6/7/2011",
-    expiration_date: "12/26/2026",
-    density: 0.72,
-    flash_point: 178,
-    octane_rating: 98,
     image: "http://dummyimage.com/174x100.png/ff4444/ffffff"
   },
   {
@@ -9052,11 +5822,6 @@ export const MockData: MockDataType = [
     price: 883.74,
     quantity: 343514,
     supplier: "Bauch-Torp",
-    purchase_date: "1/20/2010",
-    expiration_date: "8/29/2035",
-    density: 0.86,
-    flash_point: -27,
-    octane_rating: 86,
     image: "http://dummyimage.com/104x100.png/5fa2dd/ffffff"
   },
   {
@@ -9066,11 +5831,6 @@ export const MockData: MockDataType = [
     price: 526.65,
     quantity: 912680,
     supplier: "Thompson-Paucek",
-    purchase_date: "8/21/2019",
-    expiration_date: "9/7/2034",
-    density: 0.38,
-    flash_point: 189,
-    octane_rating: 90,
     image: "http://dummyimage.com/118x100.png/5fa2dd/ffffff"
   },
   {
@@ -9080,11 +5840,6 @@ export const MockData: MockDataType = [
     price: 331.69,
     quantity: 407303,
     supplier: "Moen, Ritchie and Goldner",
-    purchase_date: "12/11/2011",
-    expiration_date: "12/2/2045",
-    density: 0.94,
-    flash_point: 119,
-    octane_rating: 92,
     image: "http://dummyimage.com/205x100.png/dddddd/000000"
   },
   {
@@ -9094,11 +5849,6 @@ export const MockData: MockDataType = [
     price: 889.29,
     quantity: 945293,
     supplier: "Adams-Reichel",
-    purchase_date: "9/18/2000",
-    expiration_date: "12/13/2024",
-    density: 0.81,
-    flash_point: 65,
-    octane_rating: 93,
     image: "http://dummyimage.com/206x100.png/5fa2dd/ffffff"
   },
   {
@@ -9108,11 +5858,6 @@ export const MockData: MockDataType = [
     price: 521.55,
     quantity: 976728,
     supplier: "Cartwright and Sons",
-    purchase_date: "2/25/2015",
-    expiration_date: "5/31/2031",
-    density: 0.37,
-    flash_point: 141,
-    octane_rating: 94,
     image: "http://dummyimage.com/208x100.png/5fa2dd/ffffff"
   },
   {
@@ -9122,11 +5867,6 @@ export const MockData: MockDataType = [
     price: 186.34,
     quantity: 411768,
     supplier: "Dickinson Inc",
-    purchase_date: "5/3/2021",
-    expiration_date: "9/9/2037",
-    density: 0.93,
-    flash_point: -20,
-    octane_rating: 85,
     image: "http://dummyimage.com/214x100.png/dddddd/000000"
   },
   {
@@ -9136,11 +5876,6 @@ export const MockData: MockDataType = [
     price: 680.86,
     quantity: 491129,
     supplier: "Hills-Bergstrom",
-    purchase_date: "10/17/2000",
-    expiration_date: "12/20/2028",
-    density: 0.97,
-    flash_point: -37,
-    octane_rating: 86,
     image: "http://dummyimage.com/151x100.png/5fa2dd/ffffff"
   },
   {
@@ -9150,11 +5885,6 @@ export const MockData: MockDataType = [
     price: 293.12,
     quantity: 624484,
     supplier: "D'Amore Inc",
-    purchase_date: "7/5/2019",
-    expiration_date: "9/28/2030",
-    density: 0.45,
-    flash_point: 46,
-    octane_rating: 95,
     image: "http://dummyimage.com/229x100.png/5fa2dd/ffffff"
   },
   {
@@ -9164,11 +5894,6 @@ export const MockData: MockDataType = [
     price: 709.83,
     quantity: 744959,
     supplier: "Hudson and Sons",
-    purchase_date: "10/16/2002",
-    expiration_date: "10/4/2031",
-    density: 0.87,
-    flash_point: 194,
-    octane_rating: 88,
     image: "http://dummyimage.com/247x100.png/cc0000/ffffff"
   },
   {
@@ -9178,11 +5903,6 @@ export const MockData: MockDataType = [
     price: 301.06,
     quantity: 301037,
     supplier: "Herzog Group",
-    purchase_date: "2/1/2017",
-    expiration_date: "7/22/2031",
-    density: 0.5,
-    flash_point: -34,
-    octane_rating: 87,
     image: "http://dummyimage.com/226x100.png/cc0000/ffffff"
   },
   {
@@ -9192,11 +5912,6 @@ export const MockData: MockDataType = [
     price: 476.56,
     quantity: 26650,
     supplier: "Windler and Sons",
-    purchase_date: "2/23/2021",
-    expiration_date: "6/1/2036",
-    density: 0.36,
-    flash_point: -3,
-    octane_rating: 89,
     image: "http://dummyimage.com/182x100.png/dddddd/000000"
   },
   {
@@ -9206,11 +5921,6 @@ export const MockData: MockDataType = [
     price: 930.9,
     quantity: 887567,
     supplier: "White, MacGyver and Williamson",
-    purchase_date: "8/11/2013",
-    expiration_date: "8/30/2037",
-    density: 0.88,
-    flash_point: 117,
-    octane_rating: 98,
     image: "http://dummyimage.com/189x100.png/dddddd/000000"
   },
   {
@@ -9220,11 +5930,6 @@ export const MockData: MockDataType = [
     price: 490.45,
     quantity: 563648,
     supplier: "Luettgen, Stroman and Treutel",
-    purchase_date: "10/11/2016",
-    expiration_date: "5/16/2041",
-    density: 0.21,
-    flash_point: 187,
-    octane_rating: 90,
     image: "http://dummyimage.com/204x100.png/cc0000/ffffff"
   },
   {
@@ -9234,11 +5939,6 @@ export const MockData: MockDataType = [
     price: 456.37,
     quantity: 639355,
     supplier: "D'Amore, Hoppe and Hudson",
-    purchase_date: "3/27/2008",
-    expiration_date: "4/14/2025",
-    density: 0.59,
-    flash_point: -29,
-    octane_rating: 94,
     image: "http://dummyimage.com/159x100.png/cc0000/ffffff"
   },
   {
@@ -9248,11 +5948,6 @@ export const MockData: MockDataType = [
     price: 25.99,
     quantity: 430031,
     supplier: "Toy, Pagac and Considine",
-    purchase_date: "6/1/2021",
-    expiration_date: "5/26/2030",
-    density: 0.54,
-    flash_point: 157,
-    octane_rating: 95,
     image: "http://dummyimage.com/112x100.png/5fa2dd/ffffff"
   },
   {
@@ -9262,11 +5957,6 @@ export const MockData: MockDataType = [
     price: 439.32,
     quantity: 574077,
     supplier: "Skiles-Pfannerstill",
-    purchase_date: "4/15/2015",
-    expiration_date: "2/14/2045",
-    density: 0.89,
-    flash_point: 61,
-    octane_rating: 85,
     image: "http://dummyimage.com/221x100.png/cc0000/ffffff"
   },
   {
@@ -9276,11 +5966,6 @@ export const MockData: MockDataType = [
     price: 348.32,
     quantity: 226363,
     supplier: "Becker-Macejkovic",
-    purchase_date: "1/21/2003",
-    expiration_date: "3/15/2029",
-    density: 0.84,
-    flash_point: 174,
-    octane_rating: 98,
     image: "http://dummyimage.com/105x100.png/cc0000/ffffff"
   },
   {
@@ -9290,11 +5975,6 @@ export const MockData: MockDataType = [
     price: 788.83,
     quantity: 477394,
     supplier: "Nicolas, Green and Parisian",
-    purchase_date: "2/23/2009",
-    expiration_date: "12/13/2025",
-    density: 0.78,
-    flash_point: 142,
-    octane_rating: 100,
     image: "http://dummyimage.com/189x100.png/cc0000/ffffff"
   },
   {
@@ -9304,11 +5984,6 @@ export const MockData: MockDataType = [
     price: 198.02,
     quantity: 600556,
     supplier: "Flatley, Hayes and Langworth",
-    purchase_date: "2/3/2004",
-    expiration_date: "5/22/2038",
-    density: 0.89,
-    flash_point: -45,
-    octane_rating: 85,
     image: "http://dummyimage.com/124x100.png/dddddd/000000"
   },
   {
@@ -9318,11 +5993,6 @@ export const MockData: MockDataType = [
     price: 579.46,
     quantity: 814456,
     supplier: "Brakus, Jast and Bins",
-    purchase_date: "6/21/2011",
-    expiration_date: "3/26/2032",
-    density: 0.24,
-    flash_point: -34,
-    octane_rating: 98,
     image: "http://dummyimage.com/204x100.png/cc0000/ffffff"
   },
   {
@@ -9332,11 +6002,6 @@ export const MockData: MockDataType = [
     price: 802.61,
     quantity: 102891,
     supplier: "Howell-Mann",
-    purchase_date: "7/19/2022",
-    expiration_date: "1/18/2027",
-    density: 0.35,
-    flash_point: 65,
-    octane_rating: 95,
     image: "http://dummyimage.com/249x100.png/5fa2dd/ffffff"
   },
   {
@@ -9346,11 +6011,6 @@ export const MockData: MockDataType = [
     price: 149.26,
     quantity: 43970,
     supplier: "Rohan and Sons",
-    purchase_date: "1/6/2008",
-    expiration_date: "10/26/2031",
-    density: 0.86,
-    flash_point: 188,
-    octane_rating: 86,
     image: "http://dummyimage.com/250x100.png/dddddd/000000"
   },
   {
@@ -9360,11 +6020,6 @@ export const MockData: MockDataType = [
     price: 114.2,
     quantity: 969916,
     supplier: "Denesik Group",
-    purchase_date: "1/1/2017",
-    expiration_date: "12/2/2041",
-    density: 0.72,
-    flash_point: 197,
-    octane_rating: 91,
     image: "http://dummyimage.com/104x100.png/dddddd/000000"
   },
   {
@@ -9374,11 +6029,6 @@ export const MockData: MockDataType = [
     price: 26.47,
     quantity: 355988,
     supplier: "Veum LLC",
-    purchase_date: "8/14/2008",
-    expiration_date: "9/10/2023",
-    density: 0.8,
-    flash_point: 1,
-    octane_rating: 94,
     image: "http://dummyimage.com/120x100.png/cc0000/ffffff"
   },
   {
@@ -9388,11 +6038,6 @@ export const MockData: MockDataType = [
     price: 333.27,
     quantity: 905265,
     supplier: "Kirlin-O'Keefe",
-    purchase_date: "1/31/2021",
-    expiration_date: "5/19/2027",
-    density: 0.57,
-    flash_point: -47,
-    octane_rating: 98,
     image: "http://dummyimage.com/193x100.png/cc0000/ffffff"
   },
   {
@@ -9402,11 +6047,6 @@ export const MockData: MockDataType = [
     price: 116.28,
     quantity: 369187,
     supplier: "Muller, Carter and Labadie",
-    purchase_date: "6/6/2019",
-    expiration_date: "11/7/2040",
-    density: 0.64,
-    flash_point: 63,
-    octane_rating: 94,
     image: "http://dummyimage.com/188x100.png/dddddd/000000"
   },
   {
@@ -9416,11 +6056,6 @@ export const MockData: MockDataType = [
     price: 751.09,
     quantity: 521713,
     supplier: "Corwin and Sons",
-    purchase_date: "6/8/2008",
-    expiration_date: "11/30/2029",
-    density: 0.39,
-    flash_point: 134,
-    octane_rating: 94,
     image: "http://dummyimage.com/150x100.png/cc0000/ffffff"
   },
   {
@@ -9430,11 +6065,6 @@ export const MockData: MockDataType = [
     price: 257.98,
     quantity: 871512,
     supplier: "Beer-Weber",
-    purchase_date: "11/11/2003",
-    expiration_date: "10/18/2030",
-    density: 0.17,
-    flash_point: 24,
-    octane_rating: 96,
     image: "http://dummyimage.com/216x100.png/cc0000/ffffff"
   },
   {
@@ -9444,11 +6074,6 @@ export const MockData: MockDataType = [
     price: 233.88,
     quantity: 350985,
     supplier: "Wunsch, Thompson and Collier",
-    purchase_date: "5/23/2022",
-    expiration_date: "3/25/2034",
-    density: 0.44,
-    flash_point: 106,
-    octane_rating: 94,
     image: "http://dummyimage.com/241x100.png/dddddd/000000"
   },
   {
@@ -9458,11 +6083,6 @@ export const MockData: MockDataType = [
     price: 475.61,
     quantity: 484041,
     supplier: "Paucek Group",
-    purchase_date: "5/13/2015",
-    expiration_date: "4/4/2040",
-    density: 0.14,
-    flash_point: 55,
-    octane_rating: 98,
     image: "http://dummyimage.com/105x100.png/cc0000/ffffff"
   },
   {
@@ -9472,11 +6092,6 @@ export const MockData: MockDataType = [
     price: 375.35,
     quantity: 781857,
     supplier: "Bauch LLC",
-    purchase_date: "10/30/2000",
-    expiration_date: "1/7/2043",
-    density: 0.71,
-    flash_point: 11,
-    octane_rating: 95,
     image: "http://dummyimage.com/163x100.png/5fa2dd/ffffff"
   },
   {
@@ -9486,11 +6101,6 @@ export const MockData: MockDataType = [
     price: 458.75,
     quantity: 59383,
     supplier: "Casper and Sons",
-    purchase_date: "10/30/2013",
-    expiration_date: "11/10/2033",
-    density: 0.39,
-    flash_point: 27,
-    octane_rating: 95,
     image: "http://dummyimage.com/242x100.png/5fa2dd/ffffff"
   },
   {
@@ -9500,11 +6110,6 @@ export const MockData: MockDataType = [
     price: 315.72,
     quantity: 2290,
     supplier: "Vandervort, Fisher and Schmitt",
-    purchase_date: "9/3/2003",
-    expiration_date: "12/15/2044",
-    density: 0.6,
-    flash_point: 139,
-    octane_rating: 91,
     image: "http://dummyimage.com/108x100.png/cc0000/ffffff"
   },
   {
@@ -9514,11 +6119,6 @@ export const MockData: MockDataType = [
     price: 845.29,
     quantity: 597649,
     supplier: "Fisher-O'Connell",
-    purchase_date: "7/13/2013",
-    expiration_date: "3/15/2028",
-    density: 0.76,
-    flash_point: 154,
-    octane_rating: 94,
     image: "http://dummyimage.com/221x100.png/dddddd/000000"
   },
   {
@@ -9528,11 +6128,6 @@ export const MockData: MockDataType = [
     price: 583.57,
     quantity: 682609,
     supplier: "Barton, Breitenberg and McCullough",
-    purchase_date: "3/25/2009",
-    expiration_date: "7/24/2028",
-    density: 0.49,
-    flash_point: 6,
-    octane_rating: 96,
     image: "http://dummyimage.com/138x100.png/ff4444/ffffff"
   },
   {
@@ -9542,11 +6137,6 @@ export const MockData: MockDataType = [
     price: 585.91,
     quantity: 916647,
     supplier: "Hilpert, Wiegand and Simonis",
-    purchase_date: "11/25/2019",
-    expiration_date: "10/11/2036",
-    density: 0.4,
-    flash_point: 100,
-    octane_rating: 95,
     image: "http://dummyimage.com/240x100.png/cc0000/ffffff"
   },
   {
@@ -9556,11 +6146,6 @@ export const MockData: MockDataType = [
     price: 670.64,
     quantity: 114891,
     supplier: "Quitzon and Sons",
-    purchase_date: "12/13/2003",
-    expiration_date: "1/12/2044",
-    density: 0.99,
-    flash_point: 93,
-    octane_rating: 89,
     image: "http://dummyimage.com/169x100.png/ff4444/ffffff"
   },
   {
@@ -9570,11 +6155,6 @@ export const MockData: MockDataType = [
     price: 718.02,
     quantity: 341862,
     supplier: "Dickens, Roob and Renner",
-    purchase_date: "8/2/2018",
-    expiration_date: "8/10/2044",
-    density: 0.73,
-    flash_point: 158,
-    octane_rating: 86,
     image: "http://dummyimage.com/209x100.png/cc0000/ffffff"
   },
   {
@@ -9584,11 +6164,6 @@ export const MockData: MockDataType = [
     price: 795.76,
     quantity: 280576,
     supplier: "Jenkins, Medhurst and Franecki",
-    purchase_date: "3/11/2016",
-    expiration_date: "12/23/2030",
-    density: 0.45,
-    flash_point: 145,
-    octane_rating: 91,
     image: "http://dummyimage.com/213x100.png/5fa2dd/ffffff"
   },
   {
@@ -9598,11 +6173,6 @@ export const MockData: MockDataType = [
     price: 309.68,
     quantity: 239470,
     supplier: "Will Inc",
-    purchase_date: "3/25/2020",
-    expiration_date: "5/3/2041",
-    density: 0.86,
-    flash_point: 155,
-    octane_rating: 100,
     image: "http://dummyimage.com/171x100.png/dddddd/000000"
   },
   {
@@ -9612,11 +6182,6 @@ export const MockData: MockDataType = [
     price: 342.45,
     quantity: 215943,
     supplier: "Daugherty, Hickle and Mitchell",
-    purchase_date: "9/26/2011",
-    expiration_date: "1/25/2037",
-    density: 0.29,
-    flash_point: 170,
-    octane_rating: 97,
     image: "http://dummyimage.com/217x100.png/cc0000/ffffff"
   },
   {
@@ -9626,11 +6191,6 @@ export const MockData: MockDataType = [
     price: 770.75,
     quantity: 443916,
     supplier: "Ernser-Bosco",
-    purchase_date: "8/10/2021",
-    expiration_date: "2/20/2030",
-    density: 0.14,
-    flash_point: 127,
-    octane_rating: 86,
     image: "http://dummyimage.com/128x100.png/cc0000/ffffff"
   },
   {
@@ -9640,11 +6200,6 @@ export const MockData: MockDataType = [
     price: 865.47,
     quantity: 583580,
     supplier: "Abbott-McKenzie",
-    purchase_date: "9/22/2005",
-    expiration_date: "6/13/2034",
-    density: 0.32,
-    flash_point: 128,
-    octane_rating: 88,
     image: "http://dummyimage.com/127x100.png/cc0000/ffffff"
   },
   {
@@ -9654,11 +6209,6 @@ export const MockData: MockDataType = [
     price: 673.73,
     quantity: 639147,
     supplier: "Keebler-Hilll",
-    purchase_date: "7/18/2001",
-    expiration_date: "12/31/2035",
-    density: 0.39,
-    flash_point: 44,
-    octane_rating: 89,
     image: "http://dummyimage.com/240x100.png/dddddd/000000"
   },
   {
@@ -9668,11 +6218,6 @@ export const MockData: MockDataType = [
     price: 877.75,
     quantity: 619406,
     supplier: "Harris-Reilly",
-    purchase_date: "11/11/2008",
-    expiration_date: "9/19/2044",
-    density: 0.63,
-    flash_point: 21,
-    octane_rating: 85,
     image: "http://dummyimage.com/215x100.png/cc0000/ffffff"
   },
   {
@@ -9682,11 +6227,6 @@ export const MockData: MockDataType = [
     price: 33.79,
     quantity: 696832,
     supplier: "Hilll and Sons",
-    purchase_date: "3/30/2003",
-    expiration_date: "10/15/2029",
-    density: 0.24,
-    flash_point: -3,
-    octane_rating: 99,
     image: "http://dummyimage.com/105x100.png/5fa2dd/ffffff"
   },
   {
@@ -9696,11 +6236,6 @@ export const MockData: MockDataType = [
     price: 144.53,
     quantity: 199849,
     supplier: "Kessler, Tremblay and Yost",
-    purchase_date: "11/17/2006",
-    expiration_date: "8/31/2046",
-    density: 0.2,
-    flash_point: 163,
-    octane_rating: 99,
     image: "http://dummyimage.com/101x100.png/dddddd/000000"
   },
   {
@@ -9710,11 +6245,6 @@ export const MockData: MockDataType = [
     price: 652.34,
     quantity: 145605,
     supplier: "Nikolaus Group",
-    purchase_date: "11/15/2009",
-    expiration_date: "7/23/2031",
-    density: 0.04,
-    flash_point: -42,
-    octane_rating: 91,
     image: "http://dummyimage.com/107x100.png/cc0000/ffffff"
   },
   {
@@ -9724,11 +6254,6 @@ export const MockData: MockDataType = [
     price: 890.91,
     quantity: 259728,
     supplier: "Toy-Gulgowski",
-    purchase_date: "11/15/2019",
-    expiration_date: "10/12/2031",
-    density: 0.02,
-    flash_point: 85,
-    octane_rating: 94,
     image: "http://dummyimage.com/222x100.png/5fa2dd/ffffff"
   },
   {
@@ -9738,11 +6263,6 @@ export const MockData: MockDataType = [
     price: 337.52,
     quantity: 138167,
     supplier: "Douglas Inc",
-    purchase_date: "11/28/2002",
-    expiration_date: "12/14/2033",
-    density: 0.16,
-    flash_point: 126,
-    octane_rating: 100,
     image: "http://dummyimage.com/217x100.png/ff4444/ffffff"
   },
   {
@@ -9752,11 +6272,6 @@ export const MockData: MockDataType = [
     price: 696.83,
     quantity: 313433,
     supplier: "Macejkovic, Lubowitz and Farrell",
-    purchase_date: "4/5/2013",
-    expiration_date: "5/12/2036",
-    density: 0.68,
-    flash_point: 68,
-    octane_rating: 90,
     image: "http://dummyimage.com/109x100.png/5fa2dd/ffffff"
   },
   {
@@ -9766,11 +6281,6 @@ export const MockData: MockDataType = [
     price: 949.08,
     quantity: 696497,
     supplier: "Leannon-Gottlieb",
-    purchase_date: "10/30/2007",
-    expiration_date: "1/14/2032",
-    density: 0.94,
-    flash_point: 42,
-    octane_rating: 89,
     image: "http://dummyimage.com/137x100.png/ff4444/ffffff"
   },
   {
@@ -9780,11 +6290,6 @@ export const MockData: MockDataType = [
     price: 15.76,
     quantity: 773338,
     supplier: "Schowalter Group",
-    purchase_date: "5/14/2014",
-    expiration_date: "11/16/2037",
-    density: 0.84,
-    flash_point: -6,
-    octane_rating: 93,
     image: "http://dummyimage.com/241x100.png/dddddd/000000"
   },
   {
@@ -9794,11 +6299,6 @@ export const MockData: MockDataType = [
     price: 906.43,
     quantity: 631169,
     supplier: "Gerlach Inc",
-    purchase_date: "8/29/2000",
-    expiration_date: "9/10/2030",
-    density: 0.1,
-    flash_point: 33,
-    octane_rating: 90,
     image: "http://dummyimage.com/241x100.png/5fa2dd/ffffff"
   },
   {
@@ -9808,11 +6308,6 @@ export const MockData: MockDataType = [
     price: 412.97,
     quantity: 274321,
     supplier: "Abbott LLC",
-    purchase_date: "4/4/2001",
-    expiration_date: "4/11/2023",
-    density: 0.42,
-    flash_point: 111,
-    octane_rating: 90,
     image: "http://dummyimage.com/112x100.png/dddddd/000000"
   },
   {
@@ -9822,11 +6317,6 @@ export const MockData: MockDataType = [
     price: 374.49,
     quantity: 183056,
     supplier: "Buckridge LLC",
-    purchase_date: "4/18/2001",
-    expiration_date: "7/3/2038",
-    density: 0.44,
-    flash_point: 153,
-    octane_rating: 97,
     image: "http://dummyimage.com/224x100.png/5fa2dd/ffffff"
   },
   {
@@ -9836,11 +6326,6 @@ export const MockData: MockDataType = [
     price: 440.71,
     quantity: 616617,
     supplier: "Bergstrom-Jones",
-    purchase_date: "10/16/2003",
-    expiration_date: "12/30/2032",
-    density: 0.92,
-    flash_point: 64,
-    octane_rating: 90,
     image: "http://dummyimage.com/231x100.png/cc0000/ffffff"
   },
   {
@@ -9850,11 +6335,6 @@ export const MockData: MockDataType = [
     price: 970.04,
     quantity: 579482,
     supplier: "Sawayn Group",
-    purchase_date: "12/11/2010",
-    expiration_date: "11/28/2036",
-    density: 0.23,
-    flash_point: -37,
-    octane_rating: 100,
     image: "http://dummyimage.com/140x100.png/ff4444/ffffff"
   },
   {
@@ -9864,11 +6344,6 @@ export const MockData: MockDataType = [
     price: 957.37,
     quantity: 796901,
     supplier: "Tillman, Ortiz and Goyette",
-    purchase_date: "11/27/2012",
-    expiration_date: "5/19/2045",
-    density: 0.8,
-    flash_point: 89,
-    octane_rating: 93,
     image: "http://dummyimage.com/237x100.png/5fa2dd/ffffff"
   },
   {
@@ -9878,11 +6353,6 @@ export const MockData: MockDataType = [
     price: 759.78,
     quantity: 735669,
     supplier: "Bartell, Fay and Schimmel",
-    purchase_date: "11/26/2004",
-    expiration_date: "1/19/2029",
-    density: 0.72,
-    flash_point: 52,
-    octane_rating: 87,
     image: "http://dummyimage.com/170x100.png/ff4444/ffffff"
   },
   {
@@ -9892,11 +6362,6 @@ export const MockData: MockDataType = [
     price: 850.97,
     quantity: 426064,
     supplier: "Erdman Group",
-    purchase_date: "3/2/2007",
-    expiration_date: "12/16/2024",
-    density: 0.26,
-    flash_point: 175,
-    octane_rating: 97,
     image: "http://dummyimage.com/120x100.png/ff4444/ffffff"
   },
   {
@@ -9906,11 +6371,6 @@ export const MockData: MockDataType = [
     price: 136.45,
     quantity: 761701,
     supplier: "Dietrich, Kirlin and Torp",
-    purchase_date: "1/6/2022",
-    expiration_date: "6/4/2027",
-    density: 0.42,
-    flash_point: 43,
-    octane_rating: 91,
     image: "http://dummyimage.com/167x100.png/5fa2dd/ffffff"
   },
   {
@@ -9920,11 +6380,6 @@ export const MockData: MockDataType = [
     price: 208.04,
     quantity: 632855,
     supplier: "Ankunding-Parisian",
-    purchase_date: "9/3/2020",
-    expiration_date: "2/13/2037",
-    density: 0.14,
-    flash_point: 101,
-    octane_rating: 100,
     image: "http://dummyimage.com/135x100.png/cc0000/ffffff"
   },
   {
@@ -9934,11 +6389,6 @@ export const MockData: MockDataType = [
     price: 430.47,
     quantity: 36259,
     supplier: "Koss LLC",
-    purchase_date: "7/19/2021",
-    expiration_date: "6/25/2035",
-    density: 0.57,
-    flash_point: 113,
-    octane_rating: 98,
     image: "http://dummyimage.com/195x100.png/5fa2dd/ffffff"
   },
   {
@@ -9948,11 +6398,6 @@ export const MockData: MockDataType = [
     price: 613.38,
     quantity: 845953,
     supplier: "MacGyver LLC",
-    purchase_date: "4/15/2018",
-    expiration_date: "9/6/2032",
-    density: 0.87,
-    flash_point: 174,
-    octane_rating: 88,
     image: "http://dummyimage.com/212x100.png/ff4444/ffffff"
   },
   {
@@ -9962,11 +6407,6 @@ export const MockData: MockDataType = [
     price: 472.59,
     quantity: 285753,
     supplier: "Bergnaum LLC",
-    purchase_date: "3/20/2004",
-    expiration_date: "9/16/2035",
-    density: 1,
-    flash_point: 151,
-    octane_rating: 100,
     image: "http://dummyimage.com/218x100.png/dddddd/000000"
   },
   {
@@ -9976,11 +6416,6 @@ export const MockData: MockDataType = [
     price: 361.49,
     quantity: 957755,
     supplier: "Denesik-Johns",
-    purchase_date: "4/30/2017",
-    expiration_date: "10/16/2036",
-    density: 0.96,
-    flash_point: 62,
-    octane_rating: 99,
     image: "http://dummyimage.com/247x100.png/dddddd/000000"
   },
   {
@@ -9990,11 +6425,6 @@ export const MockData: MockDataType = [
     price: 854.43,
     quantity: 78689,
     supplier: "Frami-Lockman",
-    purchase_date: "9/18/2020",
-    expiration_date: "3/15/2023",
-    density: 0.15,
-    flash_point: 144,
-    octane_rating: 90,
     image: "http://dummyimage.com/235x100.png/5fa2dd/ffffff"
   },
   {
@@ -10004,11 +6434,6 @@ export const MockData: MockDataType = [
     price: 0.52,
     quantity: 449990,
     supplier: "Simonis-Grady",
-    purchase_date: "4/10/2017",
-    expiration_date: "9/23/2027",
-    density: 0.33,
-    flash_point: -23,
-    octane_rating: 93,
     image: "http://dummyimage.com/108x100.png/dddddd/000000"
   },
   {
@@ -10018,11 +6443,6 @@ export const MockData: MockDataType = [
     price: 975.46,
     quantity: 600448,
     supplier: "Weber Group",
-    purchase_date: "7/3/2011",
-    expiration_date: "10/20/2043",
-    density: 0.07,
-    flash_point: 160,
-    octane_rating: 90,
     image: "http://dummyimage.com/180x100.png/cc0000/ffffff"
   },
   {
@@ -10032,11 +6452,6 @@ export const MockData: MockDataType = [
     price: 25.44,
     quantity: 328990,
     supplier: "Weber, Legros and Harris",
-    purchase_date: "11/20/2020",
-    expiration_date: "9/26/2043",
-    density: 0,
-    flash_point: 152,
-    octane_rating: 92,
     image: "http://dummyimage.com/173x100.png/dddddd/000000"
   },
   {
@@ -10046,11 +6461,6 @@ export const MockData: MockDataType = [
     price: 769.77,
     quantity: 519960,
     supplier: "Bergstrom-Paucek",
-    purchase_date: "5/16/2017",
-    expiration_date: "4/3/2023",
-    density: 0.41,
-    flash_point: 174,
-    octane_rating: 87,
     image: "http://dummyimage.com/156x100.png/5fa2dd/ffffff"
   },
   {
@@ -10060,11 +6470,6 @@ export const MockData: MockDataType = [
     price: 664.22,
     quantity: 784565,
     supplier: "Heaney-Volkman",
-    purchase_date: "11/29/2009",
-    expiration_date: "3/18/2023",
-    density: 0.65,
-    flash_point: 35,
-    octane_rating: 95,
     image: "http://dummyimage.com/194x100.png/5fa2dd/ffffff"
   },
   {
@@ -10074,11 +6479,6 @@ export const MockData: MockDataType = [
     price: 373.21,
     quantity: 827018,
     supplier: "Corwin Inc",
-    purchase_date: "1/6/2000",
-    expiration_date: "7/11/2045",
-    density: 0.29,
-    flash_point: -50,
-    octane_rating: 93,
     image: "http://dummyimage.com/134x100.png/ff4444/ffffff"
   },
   {
@@ -10088,11 +6488,6 @@ export const MockData: MockDataType = [
     price: 114.88,
     quantity: 651143,
     supplier: "Herman, Ankunding and O'Hara",
-    purchase_date: "11/7/2008",
-    expiration_date: "5/5/2043",
-    density: 0.64,
-    flash_point: 29,
-    octane_rating: 89,
     image: "http://dummyimage.com/130x100.png/dddddd/000000"
   },
   {
@@ -10102,11 +6497,6 @@ export const MockData: MockDataType = [
     price: 575.52,
     quantity: 466584,
     supplier: "Olson LLC",
-    purchase_date: "7/9/2007",
-    expiration_date: "9/26/2037",
-    density: 0.34,
-    flash_point: 186,
-    octane_rating: 92,
     image: "http://dummyimage.com/208x100.png/ff4444/ffffff"
   },
   {
@@ -10116,11 +6506,6 @@ export const MockData: MockDataType = [
     price: 271.25,
     quantity: 886465,
     supplier: "O'Reilly, Keeling and Satterfield",
-    purchase_date: "3/5/2010",
-    expiration_date: "10/18/2024",
-    density: 0.62,
-    flash_point: 156,
-    octane_rating: 96,
     image: "http://dummyimage.com/204x100.png/5fa2dd/ffffff"
   },
   {
@@ -10130,11 +6515,6 @@ export const MockData: MockDataType = [
     price: 468.78,
     quantity: 24429,
     supplier: "Carroll Inc",
-    purchase_date: "4/16/2020",
-    expiration_date: "1/22/2044",
-    density: 0.63,
-    flash_point: 150,
-    octane_rating: 92,
     image: "http://dummyimage.com/197x100.png/cc0000/ffffff"
   },
   {
@@ -10144,11 +6524,6 @@ export const MockData: MockDataType = [
     price: 594.32,
     quantity: 329478,
     supplier: "Schuster, Wolf and Bayer",
-    purchase_date: "12/7/2018",
-    expiration_date: "3/8/2037",
-    density: 0.63,
-    flash_point: 141,
-    octane_rating: 89,
     image: "http://dummyimage.com/128x100.png/ff4444/ffffff"
   },
   {
@@ -10158,11 +6533,6 @@ export const MockData: MockDataType = [
     price: 469.24,
     quantity: 95821,
     supplier: "Bruen, Nolan and O'Keefe",
-    purchase_date: "12/3/2020",
-    expiration_date: "4/26/2045",
-    density: 0.56,
-    flash_point: -48,
-    octane_rating: 85,
     image: "http://dummyimage.com/102x100.png/5fa2dd/ffffff"
   },
   {
@@ -10172,11 +6542,6 @@ export const MockData: MockDataType = [
     price: 194.31,
     quantity: 429000,
     supplier: "Kozey-Prohaska",
-    purchase_date: "8/8/2003",
-    expiration_date: "1/5/2046",
-    density: 0.62,
-    flash_point: 128,
-    octane_rating: 99,
     image: "http://dummyimage.com/112x100.png/ff4444/ffffff"
   },
   {
@@ -10186,11 +6551,6 @@ export const MockData: MockDataType = [
     price: 414.12,
     quantity: 385377,
     supplier: "Kutch and Sons",
-    purchase_date: "5/16/2021",
-    expiration_date: "9/22/2025",
-    density: 0.13,
-    flash_point: 93,
-    octane_rating: 91,
     image: "http://dummyimage.com/141x100.png/cc0000/ffffff"
   },
   {
@@ -10200,11 +6560,6 @@ export const MockData: MockDataType = [
     price: 197.94,
     quantity: 476684,
     supplier: "Parisian and Sons",
-    purchase_date: "5/20/2011",
-    expiration_date: "11/7/2041",
-    density: 0.99,
-    flash_point: 13,
-    octane_rating: 100,
     image: "http://dummyimage.com/146x100.png/cc0000/ffffff"
   },
   {
@@ -10214,11 +6569,6 @@ export const MockData: MockDataType = [
     price: 353.36,
     quantity: 459580,
     supplier: "Christiansen, Hettinger and Brakus",
-    purchase_date: "8/27/2017",
-    expiration_date: "10/23/2034",
-    density: 0.54,
-    flash_point: 68,
-    octane_rating: 90,
     image: "http://dummyimage.com/162x100.png/cc0000/ffffff"
   },
   {
@@ -10228,11 +6578,6 @@ export const MockData: MockDataType = [
     price: 647.56,
     quantity: 921784,
     supplier: "O'Keefe-Bradtke",
-    purchase_date: "11/18/2007",
-    expiration_date: "3/28/2032",
-    density: 0.02,
-    flash_point: 34,
-    octane_rating: 97,
     image: "http://dummyimage.com/215x100.png/5fa2dd/ffffff"
   },
   {
@@ -10242,11 +6587,6 @@ export const MockData: MockDataType = [
     price: 697.94,
     quantity: 837001,
     supplier: "Torp Inc",
-    purchase_date: "8/14/2012",
-    expiration_date: "5/5/2044",
-    density: 0.3,
-    flash_point: 64,
-    octane_rating: 100,
     image: "http://dummyimage.com/212x100.png/dddddd/000000"
   },
   {
@@ -10256,11 +6596,6 @@ export const MockData: MockDataType = [
     price: 618.88,
     quantity: 809338,
     supplier: "Hartmann, Koelpin and West",
-    purchase_date: "4/1/2003",
-    expiration_date: "3/1/2023",
-    density: 0.21,
-    flash_point: 143,
-    octane_rating: 91,
     image: "http://dummyimage.com/234x100.png/5fa2dd/ffffff"
   },
   {
@@ -10270,11 +6605,6 @@ export const MockData: MockDataType = [
     price: 108.55,
     quantity: 72312,
     supplier: "Keebler-Gleichner",
-    purchase_date: "7/16/2010",
-    expiration_date: "1/6/2024",
-    density: 1,
-    flash_point: 81,
-    octane_rating: 92,
     image: "http://dummyimage.com/140x100.png/dddddd/000000"
   },
   {
@@ -10284,11 +6614,6 @@ export const MockData: MockDataType = [
     price: 620.13,
     quantity: 322063,
     supplier: "Berge LLC",
-    purchase_date: "11/1/2012",
-    expiration_date: "12/1/2028",
-    density: 0.1,
-    flash_point: 31,
-    octane_rating: 97,
     image: "http://dummyimage.com/139x100.png/5fa2dd/ffffff"
   },
   {
@@ -10298,11 +6623,6 @@ export const MockData: MockDataType = [
     price: 982.97,
     quantity: 36066,
     supplier: "O'Hara, Green and McLaughlin",
-    purchase_date: "4/6/2018",
-    expiration_date: "8/3/2031",
-    density: 0.68,
-    flash_point: 120,
-    octane_rating: 89,
     image: "http://dummyimage.com/110x100.png/ff4444/ffffff"
   },
   {
@@ -10312,11 +6632,6 @@ export const MockData: MockDataType = [
     price: 329.08,
     quantity: 986890,
     supplier: "Borer-Weber",
-    purchase_date: "12/11/2013",
-    expiration_date: "3/16/2027",
-    density: 0.26,
-    flash_point: 105,
-    octane_rating: 92,
     image: "http://dummyimage.com/105x100.png/dddddd/000000"
   },
   {
@@ -10326,11 +6641,6 @@ export const MockData: MockDataType = [
     price: 494.91,
     quantity: 154464,
     supplier: "Kovacek, Roob and Beahan",
-    purchase_date: "6/2/2007",
-    expiration_date: "4/2/2045",
-    density: 0.4,
-    flash_point: 194,
-    octane_rating: 94,
     image: "http://dummyimage.com/250x100.png/dddddd/000000"
   },
   {
@@ -10340,11 +6650,6 @@ export const MockData: MockDataType = [
     price: 478.99,
     quantity: 650891,
     supplier: "Hegmann-Franecki",
-    purchase_date: "8/20/2017",
-    expiration_date: "5/9/2045",
-    density: 0.41,
-    flash_point: -17,
-    octane_rating: 89,
     image: "http://dummyimage.com/183x100.png/5fa2dd/ffffff"
   },
   {
@@ -10354,11 +6659,6 @@ export const MockData: MockDataType = [
     price: 847.8,
     quantity: 845150,
     supplier: "Brown and Sons",
-    purchase_date: "6/11/2001",
-    expiration_date: "10/14/2028",
-    density: 0.2,
-    flash_point: 54,
-    octane_rating: 85,
     image: "http://dummyimage.com/209x100.png/ff4444/ffffff"
   },
   {
@@ -10368,11 +6668,6 @@ export const MockData: MockDataType = [
     price: 531.31,
     quantity: 899878,
     supplier: "Lesch, Schaden and Mueller",
-    purchase_date: "1/27/2001",
-    expiration_date: "2/15/2034",
-    density: 0.21,
-    flash_point: 155,
-    octane_rating: 92,
     image: "http://dummyimage.com/138x100.png/5fa2dd/ffffff"
   },
   {
@@ -10382,11 +6677,6 @@ export const MockData: MockDataType = [
     price: 229.62,
     quantity: 525968,
     supplier: "O'Connell, McLaughlin and Glover",
-    purchase_date: "1/20/2004",
-    expiration_date: "3/1/2035",
-    density: 0.82,
-    flash_point: -34,
-    octane_rating: 89,
     image: "http://dummyimage.com/156x100.png/dddddd/000000"
   },
   {
@@ -10396,11 +6686,6 @@ export const MockData: MockDataType = [
     price: 587.59,
     quantity: 528099,
     supplier: "Weber Inc",
-    purchase_date: "11/11/2013",
-    expiration_date: "9/8/2028",
-    density: 0.17,
-    flash_point: 41,
-    octane_rating: 100,
     image: "http://dummyimage.com/185x100.png/dddddd/000000"
   },
   {
@@ -10410,11 +6695,6 @@ export const MockData: MockDataType = [
     price: 989.96,
     quantity: 10969,
     supplier: "Kub Group",
-    purchase_date: "11/28/2003",
-    expiration_date: "5/3/2027",
-    density: 0.72,
-    flash_point: 84,
-    octane_rating: 85,
     image: "http://dummyimage.com/214x100.png/dddddd/000000"
   },
   {
@@ -10424,11 +6704,6 @@ export const MockData: MockDataType = [
     price: 505.47,
     quantity: 441962,
     supplier: "Weimann, Blanda and Rolfson",
-    purchase_date: "4/10/2021",
-    expiration_date: "8/16/2030",
-    density: 0.65,
-    flash_point: 88,
-    octane_rating: 94,
     image: "http://dummyimage.com/173x100.png/cc0000/ffffff"
   },
   {
@@ -10438,11 +6713,6 @@ export const MockData: MockDataType = [
     price: 121.13,
     quantity: 732852,
     supplier: "Jakubowski-Macejkovic",
-    purchase_date: "7/17/2001",
-    expiration_date: "5/1/2035",
-    density: 0.17,
-    flash_point: -17,
-    octane_rating: 90,
     image: "http://dummyimage.com/202x100.png/dddddd/000000"
   },
   {
@@ -10452,11 +6722,6 @@ export const MockData: MockDataType = [
     price: 517.65,
     quantity: 817706,
     supplier: "Braun, Wintheiser and Koelpin",
-    purchase_date: "11/19/2008",
-    expiration_date: "12/8/2041",
-    density: 0.5,
-    flash_point: 161,
-    octane_rating: 99,
     image: "http://dummyimage.com/247x100.png/ff4444/ffffff"
   },
   {
@@ -10466,11 +6731,6 @@ export const MockData: MockDataType = [
     price: 748.48,
     quantity: 757516,
     supplier: "Gislason, Heidenreich and Bechtelar",
-    purchase_date: "4/10/2019",
-    expiration_date: "5/13/2042",
-    density: 0.35,
-    flash_point: 165,
-    octane_rating: 88,
     image: "http://dummyimage.com/131x100.png/cc0000/ffffff"
   },
   {
@@ -10480,11 +6740,6 @@ export const MockData: MockDataType = [
     price: 992.27,
     quantity: 373122,
     supplier: "Huel, Bosco and O'Reilly",
-    purchase_date: "1/21/2022",
-    expiration_date: "9/17/2040",
-    density: 0.04,
-    flash_point: 21,
-    octane_rating: 88,
     image: "http://dummyimage.com/125x100.png/ff4444/ffffff"
   },
   {
@@ -10494,11 +6749,6 @@ export const MockData: MockDataType = [
     price: 488.6,
     quantity: 659668,
     supplier: "Gibson-Gibson",
-    purchase_date: "5/21/2018",
-    expiration_date: "7/31/2033",
-    density: 0.61,
-    flash_point: 106,
-    octane_rating: 93,
     image: "http://dummyimage.com/146x100.png/ff4444/ffffff"
   },
   {
@@ -10508,11 +6758,6 @@ export const MockData: MockDataType = [
     price: 627.04,
     quantity: 369231,
     supplier: "Renner-Yost",
-    purchase_date: "11/6/2015",
-    expiration_date: "7/24/2031",
-    density: 0.28,
-    flash_point: -30,
-    octane_rating: 91,
     image: "http://dummyimage.com/114x100.png/ff4444/ffffff"
   },
   {
@@ -10522,11 +6767,6 @@ export const MockData: MockDataType = [
     price: 642.14,
     quantity: 528737,
     supplier: "Gerlach, Cronin and Sawayn",
-    purchase_date: "6/14/2016",
-    expiration_date: "2/16/2041",
-    density: 0.94,
-    flash_point: 110,
-    octane_rating: 93,
     image: "http://dummyimage.com/150x100.png/cc0000/ffffff"
   },
   {
@@ -10536,11 +6776,6 @@ export const MockData: MockDataType = [
     price: 857.11,
     quantity: 176772,
     supplier: "Ondricka-McDermott",
-    purchase_date: "6/2/2020",
-    expiration_date: "2/4/2045",
-    density: 0.7,
-    flash_point: 6,
-    octane_rating: 85,
     image: "http://dummyimage.com/143x100.png/ff4444/ffffff"
   },
   {
@@ -10550,11 +6785,6 @@ export const MockData: MockDataType = [
     price: 885.51,
     quantity: 249044,
     supplier: "Leffler Group",
-    purchase_date: "3/22/2020",
-    expiration_date: "12/22/2031",
-    density: 0.51,
-    flash_point: 124,
-    octane_rating: 94,
     image: "http://dummyimage.com/204x100.png/5fa2dd/ffffff"
   },
   {
@@ -10564,11 +6794,6 @@ export const MockData: MockDataType = [
     price: 187.86,
     quantity: 692894,
     supplier: "Bruen, Harris and Jones",
-    purchase_date: "4/17/2020",
-    expiration_date: "7/10/2043",
-    density: 0.72,
-    flash_point: -24,
-    octane_rating: 93,
     image: "http://dummyimage.com/189x100.png/5fa2dd/ffffff"
   },
   {
@@ -10578,11 +6803,6 @@ export const MockData: MockDataType = [
     price: 196.7,
     quantity: 701692,
     supplier: "Bogisich LLC",
-    purchase_date: "1/19/2012",
-    expiration_date: "8/23/2038",
-    density: 0.94,
-    flash_point: 118,
-    octane_rating: 87,
     image: "http://dummyimage.com/111x100.png/5fa2dd/ffffff"
   },
   {
@@ -10592,11 +6812,6 @@ export const MockData: MockDataType = [
     price: 215.9,
     quantity: 283049,
     supplier: "Kertzmann, Pagac and Cummings",
-    purchase_date: "12/18/2015",
-    expiration_date: "5/29/2028",
-    density: 0.57,
-    flash_point: 12,
-    octane_rating: 86,
     image: "http://dummyimage.com/215x100.png/ff4444/ffffff"
   },
   {
@@ -10606,11 +6821,6 @@ export const MockData: MockDataType = [
     price: 681.95,
     quantity: 521881,
     supplier: "Cole Group",
-    purchase_date: "1/20/2004",
-    expiration_date: "2/12/2036",
-    density: 0.38,
-    flash_point: 190,
-    octane_rating: 93,
     image: "http://dummyimage.com/155x100.png/5fa2dd/ffffff"
   },
   {
@@ -10620,11 +6830,6 @@ export const MockData: MockDataType = [
     price: 207.56,
     quantity: 376202,
     supplier: "Okuneva-Graham",
-    purchase_date: "3/17/2008",
-    expiration_date: "11/17/2035",
-    density: 0.8,
-    flash_point: 180,
-    octane_rating: 93,
     image: "http://dummyimage.com/198x100.png/dddddd/000000"
   },
   {
@@ -10634,11 +6839,6 @@ export const MockData: MockDataType = [
     price: 75.56,
     quantity: 92952,
     supplier: "Rodriguez and Sons",
-    purchase_date: "6/23/2019",
-    expiration_date: "7/8/2025",
-    density: 0.86,
-    flash_point: 169,
-    octane_rating: 93,
     image: "http://dummyimage.com/222x100.png/5fa2dd/ffffff"
   },
   {
@@ -10648,11 +6848,6 @@ export const MockData: MockDataType = [
     price: 361.5,
     quantity: 895962,
     supplier: "Breitenberg, Wiegand and Leuschke",
-    purchase_date: "9/12/2000",
-    expiration_date: "3/27/2025",
-    density: 0.46,
-    flash_point: 15,
-    octane_rating: 88,
     image: "http://dummyimage.com/171x100.png/ff4444/ffffff"
   },
   {
@@ -10662,11 +6857,6 @@ export const MockData: MockDataType = [
     price: 547.84,
     quantity: 809721,
     supplier: "Robel-Lesch",
-    purchase_date: "11/5/2011",
-    expiration_date: "4/17/2035",
-    density: 0.6,
-    flash_point: 150,
-    octane_rating: 88,
     image: "http://dummyimage.com/136x100.png/dddddd/000000"
   },
   {
@@ -10676,11 +6866,6 @@ export const MockData: MockDataType = [
     price: 410.14,
     quantity: 658747,
     supplier: "Upton Group",
-    purchase_date: "3/28/2003",
-    expiration_date: "9/25/2028",
-    density: 0.42,
-    flash_point: 98,
-    octane_rating: 85,
     image: "http://dummyimage.com/144x100.png/cc0000/ffffff"
   },
   {
@@ -10690,11 +6875,6 @@ export const MockData: MockDataType = [
     price: 48.16,
     quantity: 185617,
     supplier: "Goldner, Wintheiser and Bogan",
-    purchase_date: "10/28/2000",
-    expiration_date: "10/1/2030",
-    density: 0.45,
-    flash_point: 6,
-    octane_rating: 88,
     image: "http://dummyimage.com/137x100.png/ff4444/ffffff"
   },
   {
@@ -10704,11 +6884,6 @@ export const MockData: MockDataType = [
     price: 739.01,
     quantity: 633979,
     supplier: "Waelchi-Boyle",
-    purchase_date: "4/12/2008",
-    expiration_date: "4/7/2046",
-    density: 0.7,
-    flash_point: 91,
-    octane_rating: 90,
     image: "http://dummyimage.com/233x100.png/5fa2dd/ffffff"
   },
   {
@@ -10718,11 +6893,6 @@ export const MockData: MockDataType = [
     price: 332.97,
     quantity: 144294,
     supplier: "Padberg-Mann",
-    purchase_date: "5/30/2010",
-    expiration_date: "1/10/2024",
-    density: 0.14,
-    flash_point: -26,
-    octane_rating: 85,
     image: "http://dummyimage.com/135x100.png/5fa2dd/ffffff"
   },
   {
@@ -10732,11 +6902,6 @@ export const MockData: MockDataType = [
     price: 3.67,
     quantity: 740371,
     supplier: "Willms Group",
-    purchase_date: "6/15/2022",
-    expiration_date: "10/26/2045",
-    density: 0.81,
-    flash_point: 189,
-    octane_rating: 88,
     image: "http://dummyimage.com/203x100.png/dddddd/000000"
   },
   {
@@ -10746,11 +6911,6 @@ export const MockData: MockDataType = [
     price: 204.79,
     quantity: 573306,
     supplier: "Harvey Inc",
-    purchase_date: "1/7/2022",
-    expiration_date: "1/30/2030",
-    density: 0.99,
-    flash_point: 101,
-    octane_rating: 96,
     image: "http://dummyimage.com/110x100.png/dddddd/000000"
   },
   {
@@ -10760,11 +6920,6 @@ export const MockData: MockDataType = [
     price: 15.25,
     quantity: 466589,
     supplier: "Ebert-Grady",
-    purchase_date: "11/9/2000",
-    expiration_date: "6/5/2040",
-    density: 0.78,
-    flash_point: -16,
-    octane_rating: 89,
     image: "http://dummyimage.com/206x100.png/ff4444/ffffff"
   },
   {
@@ -10774,11 +6929,6 @@ export const MockData: MockDataType = [
     price: 384.96,
     quantity: 262776,
     supplier: "Goldner-Parisian",
-    purchase_date: "6/29/2004",
-    expiration_date: "1/28/2034",
-    density: 0.64,
-    flash_point: 34,
-    octane_rating: 99,
     image: "http://dummyimage.com/204x100.png/5fa2dd/ffffff"
   },
   {
@@ -10788,11 +6938,6 @@ export const MockData: MockDataType = [
     price: 872.3,
     quantity: 72007,
     supplier: "Steuber-Mills",
-    purchase_date: "1/26/2009",
-    expiration_date: "8/20/2039",
-    density: 0.5,
-    flash_point: 21,
-    octane_rating: 100,
     image: "http://dummyimage.com/157x100.png/5fa2dd/ffffff"
   },
   {
@@ -10802,11 +6947,6 @@ export const MockData: MockDataType = [
     price: 486.63,
     quantity: 540306,
     supplier: "Heidenreich, Block and Littel",
-    purchase_date: "6/6/2017",
-    expiration_date: "4/13/2033",
-    density: 0.35,
-    flash_point: 194,
-    octane_rating: 87,
     image: "http://dummyimage.com/243x100.png/cc0000/ffffff"
   },
   {
@@ -10816,11 +6956,6 @@ export const MockData: MockDataType = [
     price: 222.89,
     quantity: 728237,
     supplier: "Rippin, Moen and Marquardt",
-    purchase_date: "6/1/2008",
-    expiration_date: "8/13/2038",
-    density: 0.82,
-    flash_point: 36,
-    octane_rating: 99,
     image: "http://dummyimage.com/176x100.png/dddddd/000000"
   },
   {
@@ -10830,11 +6965,6 @@ export const MockData: MockDataType = [
     price: 999.78,
     quantity: 673129,
     supplier: "Bashirian-Bauch",
-    purchase_date: "8/21/2017",
-    expiration_date: "12/20/2032",
-    density: 1,
-    flash_point: 130,
-    octane_rating: 92,
     image: "http://dummyimage.com/249x100.png/cc0000/ffffff"
   },
   {
@@ -10844,11 +6974,6 @@ export const MockData: MockDataType = [
     price: 921.21,
     quantity: 237314,
     supplier: "Moen Inc",
-    purchase_date: "11/21/2013",
-    expiration_date: "11/9/2025",
-    density: 0.26,
-    flash_point: 138,
-    octane_rating: 88,
     image: "http://dummyimage.com/218x100.png/5fa2dd/ffffff"
   },
   {
@@ -10858,11 +6983,6 @@ export const MockData: MockDataType = [
     price: 455.25,
     quantity: 289967,
     supplier: "Moore, Cruickshank and Altenwerth",
-    purchase_date: "12/24/2018",
-    expiration_date: "5/26/2023",
-    density: 0.08,
-    flash_point: 157,
-    octane_rating: 99,
     image: "http://dummyimage.com/117x100.png/ff4444/ffffff"
   },
   {
@@ -10872,11 +6992,6 @@ export const MockData: MockDataType = [
     price: 253.87,
     quantity: 887860,
     supplier: "Lehner Inc",
-    purchase_date: "11/10/2020",
-    expiration_date: "2/10/2032",
-    density: 0.03,
-    flash_point: 176,
-    octane_rating: 92,
     image: "http://dummyimage.com/113x100.png/ff4444/ffffff"
   },
   {
@@ -10886,11 +7001,6 @@ export const MockData: MockDataType = [
     price: 999.39,
     quantity: 947469,
     supplier: "Lindgren, Klocko and Pfannerstill",
-    purchase_date: "4/20/2012",
-    expiration_date: "3/26/2036",
-    density: 0.45,
-    flash_point: -1,
-    octane_rating: 96,
     image: "http://dummyimage.com/145x100.png/ff4444/ffffff"
   },
   {
@@ -10900,11 +7010,6 @@ export const MockData: MockDataType = [
     price: 482.45,
     quantity: 400403,
     supplier: "Koch Group",
-    purchase_date: "10/5/2004",
-    expiration_date: "7/18/2039",
-    density: 0.01,
-    flash_point: 123,
-    octane_rating: 99,
     image: "http://dummyimage.com/213x100.png/dddddd/000000"
   },
   {
@@ -10914,11 +7019,6 @@ export const MockData: MockDataType = [
     price: 852.35,
     quantity: 340801,
     supplier: "Dickinson, Hermann and Mueller",
-    purchase_date: "12/14/2022",
-    expiration_date: "3/6/2042",
-    density: 0.51,
-    flash_point: 20,
-    octane_rating: 100,
     image: "http://dummyimage.com/152x100.png/cc0000/ffffff"
   },
   {
@@ -10928,11 +7028,6 @@ export const MockData: MockDataType = [
     price: 170.93,
     quantity: 171825,
     supplier: "Toy Inc",
-    purchase_date: "2/5/2021",
-    expiration_date: "9/29/2029",
-    density: 0.54,
-    flash_point: 59,
-    octane_rating: 90,
     image: "http://dummyimage.com/172x100.png/ff4444/ffffff"
   },
   {
@@ -10942,11 +7037,6 @@ export const MockData: MockDataType = [
     price: 35.04,
     quantity: 581408,
     supplier: "Wehner-Gulgowski",
-    purchase_date: "4/14/2000",
-    expiration_date: "10/5/2028",
-    density: 1,
-    flash_point: 115,
-    octane_rating: 99,
     image: "http://dummyimage.com/170x100.png/cc0000/ffffff"
   },
   {
@@ -10956,11 +7046,6 @@ export const MockData: MockDataType = [
     price: 59,
     quantity: 516756,
     supplier: "Heller Inc",
-    purchase_date: "10/15/2014",
-    expiration_date: "4/20/2044",
-    density: 0.54,
-    flash_point: 98,
-    octane_rating: 85,
     image: "http://dummyimage.com/164x100.png/cc0000/ffffff"
   },
   {
@@ -10970,11 +7055,6 @@ export const MockData: MockDataType = [
     price: 950.64,
     quantity: 13088,
     supplier: "Johns-Veum",
-    purchase_date: "10/17/2005",
-    expiration_date: "7/31/2033",
-    density: 0.62,
-    flash_point: 140,
-    octane_rating: 86,
     image: "http://dummyimage.com/123x100.png/ff4444/ffffff"
   },
   {
@@ -10984,11 +7064,6 @@ export const MockData: MockDataType = [
     price: 12.72,
     quantity: 54496,
     supplier: "Konopelski, Heaney and Wilderman",
-    purchase_date: "1/10/2020",
-    expiration_date: "12/11/2041",
-    density: 0.76,
-    flash_point: 29,
-    octane_rating: 86,
     image: "http://dummyimage.com/189x100.png/dddddd/000000"
   },
   {
@@ -10998,11 +7073,6 @@ export const MockData: MockDataType = [
     price: 220.64,
     quantity: 878195,
     supplier: "Bayer-Mosciski",
-    purchase_date: "2/9/2016",
-    expiration_date: "4/12/2027",
-    density: 0.44,
-    flash_point: 129,
-    octane_rating: 92,
     image: "http://dummyimage.com/229x100.png/5fa2dd/ffffff"
   },
   {
@@ -11012,11 +7082,6 @@ export const MockData: MockDataType = [
     price: 381.04,
     quantity: 779832,
     supplier: "White Inc",
-    purchase_date: "8/18/2009",
-    expiration_date: "2/1/2040",
-    density: 0.36,
-    flash_point: 85,
-    octane_rating: 90,
     image: "http://dummyimage.com/173x100.png/cc0000/ffffff"
   },
   {
@@ -11026,11 +7091,6 @@ export const MockData: MockDataType = [
     price: 329.28,
     quantity: 683608,
     supplier: "Reichert, Ziemann and Kuphal",
-    purchase_date: "8/23/2001",
-    expiration_date: "1/19/2036",
-    density: 0.46,
-    flash_point: -1,
-    octane_rating: 92,
     image: "http://dummyimage.com/126x100.png/5fa2dd/ffffff"
   },
   {
@@ -11040,11 +7100,6 @@ export const MockData: MockDataType = [
     price: 733.34,
     quantity: 394731,
     supplier: "Bernier-Keebler",
-    purchase_date: "4/3/2015",
-    expiration_date: "3/25/2034",
-    density: 0.97,
-    flash_point: 124,
-    octane_rating: 89,
     image: "http://dummyimage.com/129x100.png/5fa2dd/ffffff"
   },
   {
@@ -11054,11 +7109,6 @@ export const MockData: MockDataType = [
     price: 281.64,
     quantity: 648026,
     supplier: "Von, Homenick and Pfannerstill",
-    purchase_date: "9/27/2020",
-    expiration_date: "10/28/2027",
-    density: 0.63,
-    flash_point: 58,
-    octane_rating: 99,
     image: "http://dummyimage.com/136x100.png/dddddd/000000"
   },
   {
@@ -11068,11 +7118,6 @@ export const MockData: MockDataType = [
     price: 868.66,
     quantity: 139754,
     supplier: "Cruickshank LLC",
-    purchase_date: "11/26/2003",
-    expiration_date: "9/22/2029",
-    density: 0.5,
-    flash_point: 100,
-    octane_rating: 97,
     image: "http://dummyimage.com/226x100.png/dddddd/000000"
   },
   {
@@ -11082,11 +7127,6 @@ export const MockData: MockDataType = [
     price: 656.04,
     quantity: 751615,
     supplier: "Schoen, Brekke and Cole",
-    purchase_date: "1/19/2012",
-    expiration_date: "9/17/2032",
-    density: 0.55,
-    flash_point: 75,
-    octane_rating: 96,
     image: "http://dummyimage.com/169x100.png/dddddd/000000"
   },
   {
@@ -11096,11 +7136,6 @@ export const MockData: MockDataType = [
     price: 608.28,
     quantity: 86326,
     supplier: "Simonis, Runolfsdottir and Pfannerstill",
-    purchase_date: "12/29/2022",
-    expiration_date: "7/2/2046",
-    density: 0.16,
-    flash_point: 132,
-    octane_rating: 87,
     image: "http://dummyimage.com/107x100.png/cc0000/ffffff"
   },
   {
@@ -11110,11 +7145,6 @@ export const MockData: MockDataType = [
     price: 352.71,
     quantity: 630722,
     supplier: "Ruecker Inc",
-    purchase_date: "2/4/2002",
-    expiration_date: "2/7/2034",
-    density: 0.39,
-    flash_point: 160,
-    octane_rating: 85,
     image: "http://dummyimage.com/209x100.png/cc0000/ffffff"
   },
   {
@@ -11124,11 +7154,6 @@ export const MockData: MockDataType = [
     price: 517.87,
     quantity: 207132,
     supplier: "Pollich, Gleason and Spencer",
-    purchase_date: "3/18/2008",
-    expiration_date: "1/1/2030",
-    density: 0.68,
-    flash_point: 93,
-    octane_rating: 91,
     image: "http://dummyimage.com/154x100.png/ff4444/ffffff"
   },
   {
@@ -11138,11 +7163,6 @@ export const MockData: MockDataType = [
     price: 680.82,
     quantity: 515373,
     supplier: "Wehner, Pollich and Corkery",
-    purchase_date: "3/21/2019",
-    expiration_date: "2/24/2040",
-    density: 0.8,
-    flash_point: 82,
-    octane_rating: 91,
     image: "http://dummyimage.com/123x100.png/5fa2dd/ffffff"
   },
   {
@@ -11152,11 +7172,6 @@ export const MockData: MockDataType = [
     price: 307.36,
     quantity: 206915,
     supplier: "Bailey and Sons",
-    purchase_date: "10/29/2014",
-    expiration_date: "10/18/2030",
-    density: 0.26,
-    flash_point: 102,
-    octane_rating: 93,
     image: "http://dummyimage.com/174x100.png/5fa2dd/ffffff"
   },
   {
@@ -11166,11 +7181,6 @@ export const MockData: MockDataType = [
     price: 436.1,
     quantity: 178374,
     supplier: "Rosenbaum, Tillman and Hermann",
-    purchase_date: "4/13/2002",
-    expiration_date: "11/23/2026",
-    density: 0.32,
-    flash_point: 136,
-    octane_rating: 93,
     image: "http://dummyimage.com/154x100.png/5fa2dd/ffffff"
   },
   {
@@ -11180,11 +7190,6 @@ export const MockData: MockDataType = [
     price: 390,
     quantity: 789633,
     supplier: "Reichert Group",
-    purchase_date: "6/6/2019",
-    expiration_date: "2/5/2041",
-    density: 0.48,
-    flash_point: 197,
-    octane_rating: 96,
     image: "http://dummyimage.com/243x100.png/dddddd/000000"
   },
   {
@@ -11194,11 +7199,6 @@ export const MockData: MockDataType = [
     price: 980.6,
     quantity: 832564,
     supplier: "Hodkiewicz-Kulas",
-    purchase_date: "8/17/2017",
-    expiration_date: "1/13/2046",
-    density: 0.13,
-    flash_point: 73,
-    octane_rating: 97,
     image: "http://dummyimage.com/134x100.png/dddddd/000000"
   },
   {
@@ -11208,11 +7208,6 @@ export const MockData: MockDataType = [
     price: 370.79,
     quantity: 212834,
     supplier: "Gusikowski-Crooks",
-    purchase_date: "6/3/2011",
-    expiration_date: "3/5/2028",
-    density: 0.1,
-    flash_point: 192,
-    octane_rating: 91,
     image: "http://dummyimage.com/243x100.png/5fa2dd/ffffff"
   },
   {
@@ -11222,11 +7217,6 @@ export const MockData: MockDataType = [
     price: 551.28,
     quantity: 940278,
     supplier: "Prosacco Group",
-    purchase_date: "6/8/2004",
-    expiration_date: "2/18/2034",
-    density: 0.83,
-    flash_point: 47,
-    octane_rating: 97,
     image: "http://dummyimage.com/237x100.png/ff4444/ffffff"
   },
   {
@@ -11236,11 +7226,6 @@ export const MockData: MockDataType = [
     price: 573.21,
     quantity: 181136,
     supplier: "Jenkins-Herman",
-    purchase_date: "12/3/2012",
-    expiration_date: "12/31/2026",
-    density: 0.83,
-    flash_point: 127,
-    octane_rating: 93,
     image: "http://dummyimage.com/144x100.png/ff4444/ffffff"
   },
   {
@@ -11250,11 +7235,6 @@ export const MockData: MockDataType = [
     price: 26.19,
     quantity: 512625,
     supplier: "Pfannerstill Group",
-    purchase_date: "6/8/2011",
-    expiration_date: "1/28/2026",
-    density: 0.94,
-    flash_point: 147,
-    octane_rating: 86,
     image: "http://dummyimage.com/152x100.png/ff4444/ffffff"
   },
   {
@@ -11264,11 +7244,6 @@ export const MockData: MockDataType = [
     price: 33.26,
     quantity: 228089,
     supplier: "Bernier-Konopelski",
-    purchase_date: "8/19/2011",
-    expiration_date: "2/6/2045",
-    density: 0.73,
-    flash_point: 171,
-    octane_rating: 90,
     image: "http://dummyimage.com/172x100.png/cc0000/ffffff"
   },
   {
@@ -11278,11 +7253,6 @@ export const MockData: MockDataType = [
     price: 293.23,
     quantity: 412787,
     supplier: "Lowe, Beier and Yundt",
-    purchase_date: "6/23/2010",
-    expiration_date: "5/29/2029",
-    density: 0.35,
-    flash_point: 40,
-    octane_rating: 92,
     image: "http://dummyimage.com/231x100.png/5fa2dd/ffffff"
   },
   {
@@ -11292,11 +7262,6 @@ export const MockData: MockDataType = [
     price: 277.6,
     quantity: 413348,
     supplier: "Vandervort-Tillman",
-    purchase_date: "3/9/2001",
-    expiration_date: "6/18/2039",
-    density: 0.46,
-    flash_point: -7,
-    octane_rating: 99,
     image: "http://dummyimage.com/111x100.png/dddddd/000000"
   },
   {
@@ -11306,11 +7271,6 @@ export const MockData: MockDataType = [
     price: 361.4,
     quantity: 237900,
     supplier: "Emmerich and Sons",
-    purchase_date: "4/15/2021",
-    expiration_date: "1/7/2027",
-    density: 0.4,
-    flash_point: 154,
-    octane_rating: 98,
     image: "http://dummyimage.com/213x100.png/5fa2dd/ffffff"
   },
   {
@@ -11320,11 +7280,6 @@ export const MockData: MockDataType = [
     price: 777.67,
     quantity: 565528,
     supplier: "Reynolds-Wilderman",
-    purchase_date: "11/19/2019",
-    expiration_date: "9/23/2037",
-    density: 0.9,
-    flash_point: 188,
-    octane_rating: 97,
     image: "http://dummyimage.com/103x100.png/cc0000/ffffff"
   },
   {
@@ -11334,11 +7289,6 @@ export const MockData: MockDataType = [
     price: 527.21,
     quantity: 268892,
     supplier: "Carter Inc",
-    purchase_date: "8/28/2015",
-    expiration_date: "8/31/2027",
-    density: 0.86,
-    flash_point: -17,
-    octane_rating: 90,
     image: "http://dummyimage.com/233x100.png/cc0000/ffffff"
   },
   {
@@ -11348,11 +7298,6 @@ export const MockData: MockDataType = [
     price: 28.93,
     quantity: 315940,
     supplier: "Schaden-Gerlach",
-    purchase_date: "5/2/2008",
-    expiration_date: "9/18/2034",
-    density: 0.85,
-    flash_point: -6,
-    octane_rating: 98,
     image: "http://dummyimage.com/150x100.png/dddddd/000000"
   },
   {
@@ -11362,11 +7307,6 @@ export const MockData: MockDataType = [
     price: 175.13,
     quantity: 675164,
     supplier: "Fahey-Gottlieb",
-    purchase_date: "3/9/2015",
-    expiration_date: "3/11/2032",
-    density: 0.28,
-    flash_point: 33,
-    octane_rating: 93,
     image: "http://dummyimage.com/171x100.png/5fa2dd/ffffff"
   },
   {
@@ -11376,11 +7316,6 @@ export const MockData: MockDataType = [
     price: 436.77,
     quantity: 473328,
     supplier: "Hahn, Dibbert and Haag",
-    purchase_date: "4/10/2001",
-    expiration_date: "6/27/2044",
-    density: 0.34,
-    flash_point: 26,
-    octane_rating: 94,
     image: "http://dummyimage.com/244x100.png/cc0000/ffffff"
   },
   {
@@ -11390,11 +7325,6 @@ export const MockData: MockDataType = [
     price: 512.38,
     quantity: 241270,
     supplier: "Veum-West",
-    purchase_date: "4/4/2013",
-    expiration_date: "12/4/2041",
-    density: 0.53,
-    flash_point: -17,
-    octane_rating: 97,
     image: "http://dummyimage.com/147x100.png/cc0000/ffffff"
   },
   {
@@ -11404,11 +7334,6 @@ export const MockData: MockDataType = [
     price: 800.69,
     quantity: 733371,
     supplier: "Lindgren, Johnston and Greenfelder",
-    purchase_date: "11/11/2003",
-    expiration_date: "10/7/2035",
-    density: 0.21,
-    flash_point: 83,
-    octane_rating: 85,
     image: "http://dummyimage.com/187x100.png/5fa2dd/ffffff"
   },
   {
@@ -11418,11 +7343,6 @@ export const MockData: MockDataType = [
     price: 747.7,
     quantity: 387545,
     supplier: "Sipes, Cremin and Metz",
-    purchase_date: "9/20/2005",
-    expiration_date: "8/12/2027",
-    density: 0.54,
-    flash_point: 80,
-    octane_rating: 87,
     image: "http://dummyimage.com/182x100.png/cc0000/ffffff"
   },
   {
@@ -11432,11 +7352,6 @@ export const MockData: MockDataType = [
     price: 636.55,
     quantity: 318071,
     supplier: "Rodriguez-Haag",
-    purchase_date: "12/14/2000",
-    expiration_date: "7/8/2029",
-    density: 0.51,
-    flash_point: 111,
-    octane_rating: 86,
     image: "http://dummyimage.com/239x100.png/ff4444/ffffff"
   },
   {
@@ -11446,11 +7361,6 @@ export const MockData: MockDataType = [
     price: 799.97,
     quantity: 495740,
     supplier: "O'Keefe, Lang and Abshire",
-    purchase_date: "5/30/2006",
-    expiration_date: "7/10/2036",
-    density: 0.05,
-    flash_point: 101,
-    octane_rating: 94,
     image: "http://dummyimage.com/135x100.png/ff4444/ffffff"
   },
   {
@@ -11460,11 +7370,6 @@ export const MockData: MockDataType = [
     price: 989.89,
     quantity: 623124,
     supplier: "Satterfield, Heathcote and Osinski",
-    purchase_date: "12/30/2000",
-    expiration_date: "10/23/2040",
-    density: 0.06,
-    flash_point: 196,
-    octane_rating: 95,
     image: "http://dummyimage.com/184x100.png/cc0000/ffffff"
   },
   {
@@ -11474,11 +7379,6 @@ export const MockData: MockDataType = [
     price: 709.83,
     quantity: 325387,
     supplier: "Emard-Anderson",
-    purchase_date: "8/11/2003",
-    expiration_date: "12/10/2035",
-    density: 0.87,
-    flash_point: 167,
-    octane_rating: 98,
     image: "http://dummyimage.com/178x100.png/cc0000/ffffff"
   },
   {
@@ -11488,11 +7388,6 @@ export const MockData: MockDataType = [
     price: 666.56,
     quantity: 149463,
     supplier: "Blanda-Marvin",
-    purchase_date: "7/1/2001",
-    expiration_date: "8/1/2027",
-    density: 0.44,
-    flash_point: 171,
-    octane_rating: 94,
     image: "http://dummyimage.com/163x100.png/5fa2dd/ffffff"
   },
   {
@@ -11502,11 +7397,6 @@ export const MockData: MockDataType = [
     price: 599.3,
     quantity: 589556,
     supplier: "Dietrich, Armstrong and Brekke",
-    purchase_date: "7/6/2015",
-    expiration_date: "7/28/2027",
-    density: 0.38,
-    flash_point: 14,
-    octane_rating: 96,
     image: "http://dummyimage.com/191x100.png/cc0000/ffffff"
   },
   {
@@ -11516,11 +7406,6 @@ export const MockData: MockDataType = [
     price: 435.65,
     quantity: 640780,
     supplier: "Osinski-Bailey",
-    purchase_date: "10/1/2022",
-    expiration_date: "9/27/2046",
-    density: 0.81,
-    flash_point: -39,
-    octane_rating: 97,
     image: "http://dummyimage.com/173x100.png/5fa2dd/ffffff"
   },
   {
@@ -11530,11 +7415,6 @@ export const MockData: MockDataType = [
     price: 939.89,
     quantity: 711495,
     supplier: "Abbott LLC",
-    purchase_date: "8/29/2009",
-    expiration_date: "12/14/2041",
-    density: 0.76,
-    flash_point: 12,
-    octane_rating: 97,
     image: "http://dummyimage.com/250x100.png/ff4444/ffffff"
   },
   {
@@ -11544,11 +7424,6 @@ export const MockData: MockDataType = [
     price: 926.75,
     quantity: 125289,
     supplier: "Murray, DuBuque and Jones",
-    purchase_date: "10/17/2003",
-    expiration_date: "11/16/2029",
-    density: 0.14,
-    flash_point: 108,
-    octane_rating: 94,
     image: "http://dummyimage.com/145x100.png/ff4444/ffffff"
   },
   {
@@ -11558,11 +7433,6 @@ export const MockData: MockDataType = [
     price: 126.01,
     quantity: 960497,
     supplier: "Ortiz, Oberbrunner and Weimann",
-    purchase_date: "3/7/2021",
-    expiration_date: "10/18/2045",
-    density: 0.38,
-    flash_point: 70,
-    octane_rating: 98,
     image: "http://dummyimage.com/100x100.png/dddddd/000000"
   },
   {
@@ -11572,11 +7442,6 @@ export const MockData: MockDataType = [
     price: 165.86,
     quantity: 837503,
     supplier: "Schuster and Sons",
-    purchase_date: "5/26/2000",
-    expiration_date: "5/12/2035",
-    density: 0.69,
-    flash_point: 200,
-    octane_rating: 91,
     image: "http://dummyimage.com/235x100.png/cc0000/ffffff"
   },
   {
@@ -11586,11 +7451,6 @@ export const MockData: MockDataType = [
     price: 256.69,
     quantity: 661093,
     supplier: "Christiansen-Tromp",
-    purchase_date: "9/7/2012",
-    expiration_date: "3/8/2027",
-    density: 0.96,
-    flash_point: 145,
-    octane_rating: 86,
     image: "http://dummyimage.com/100x100.png/cc0000/ffffff"
   },
   {
@@ -11600,11 +7460,6 @@ export const MockData: MockDataType = [
     price: 48.52,
     quantity: 450243,
     supplier: "Schuppe-King",
-    purchase_date: "8/16/2019",
-    expiration_date: "1/3/2046",
-    density: 0.43,
-    flash_point: 157,
-    octane_rating: 97,
     image: "http://dummyimage.com/231x100.png/cc0000/ffffff"
   },
   {
@@ -11614,11 +7469,6 @@ export const MockData: MockDataType = [
     price: 921.09,
     quantity: 873591,
     supplier: "Aufderhar and Sons",
-    purchase_date: "9/30/2015",
-    expiration_date: "5/8/2037",
-    density: 0.97,
-    flash_point: 71,
-    octane_rating: 94,
     image: "http://dummyimage.com/142x100.png/dddddd/000000"
   },
   {
@@ -11628,11 +7478,6 @@ export const MockData: MockDataType = [
     price: 700.23,
     quantity: 761289,
     supplier: "Johns-Walter",
-    purchase_date: "11/6/2011",
-    expiration_date: "5/30/2046",
-    density: 0.26,
-    flash_point: -6,
-    octane_rating: 95,
     image: "http://dummyimage.com/151x100.png/dddddd/000000"
   },
   {
@@ -11642,11 +7487,6 @@ export const MockData: MockDataType = [
     price: 431.35,
     quantity: 53325,
     supplier: "Rodriguez-Bechtelar",
-    purchase_date: "12/28/2018",
-    expiration_date: "8/15/2033",
-    density: 0.81,
-    flash_point: 147,
-    octane_rating: 100,
     image: "http://dummyimage.com/187x100.png/ff4444/ffffff"
   },
   {
@@ -11656,11 +7496,6 @@ export const MockData: MockDataType = [
     price: 446.91,
     quantity: 301664,
     supplier: "Weber, Carroll and Beier",
-    purchase_date: "11/16/2022",
-    expiration_date: "5/22/2030",
-    density: 0.4,
-    flash_point: 99,
-    octane_rating: 86,
     image: "http://dummyimage.com/207x100.png/dddddd/000000"
   },
   {
@@ -11670,11 +7505,6 @@ export const MockData: MockDataType = [
     price: 916.23,
     quantity: 158771,
     supplier: "Legros, Frami and Herman",
-    purchase_date: "4/28/2019",
-    expiration_date: "11/23/2035",
-    density: 0.48,
-    flash_point: 87,
-    octane_rating: 97,
     image: "http://dummyimage.com/224x100.png/cc0000/ffffff"
   },
   {
@@ -11684,11 +7514,6 @@ export const MockData: MockDataType = [
     price: 340.06,
     quantity: 843920,
     supplier: "Ferry-Vandervort",
-    purchase_date: "12/2/2016",
-    expiration_date: "10/28/2046",
-    density: 0.17,
-    flash_point: 177,
-    octane_rating: 92,
     image: "http://dummyimage.com/151x100.png/cc0000/ffffff"
   },
   {
@@ -11698,11 +7523,6 @@ export const MockData: MockDataType = [
     price: 750.34,
     quantity: 69753,
     supplier: "Abbott Inc",
-    purchase_date: "4/17/2001",
-    expiration_date: "4/1/2030",
-    density: 0.22,
-    flash_point: 0,
-    octane_rating: 88,
     image: "http://dummyimage.com/118x100.png/ff4444/ffffff"
   },
   {
@@ -11712,11 +7532,6 @@ export const MockData: MockDataType = [
     price: 588.97,
     quantity: 760862,
     supplier: "Barrows-Ruecker",
-    purchase_date: "12/9/2008",
-    expiration_date: "4/16/2040",
-    density: 0.08,
-    flash_point: 145,
-    octane_rating: 91,
     image: "http://dummyimage.com/204x100.png/5fa2dd/ffffff"
   },
   {
@@ -11726,11 +7541,6 @@ export const MockData: MockDataType = [
     price: 391.76,
     quantity: 632931,
     supplier: "Davis, Bechtelar and Lynch",
-    purchase_date: "11/3/2019",
-    expiration_date: "5/2/2033",
-    density: 0.7,
-    flash_point: 177,
-    octane_rating: 97,
     image: "http://dummyimage.com/185x100.png/ff4444/ffffff"
   },
   {
@@ -11740,11 +7550,6 @@ export const MockData: MockDataType = [
     price: 881.26,
     quantity: 305347,
     supplier: "Fisher, Heaney and Braun",
-    purchase_date: "7/17/2012",
-    expiration_date: "9/6/2026",
-    density: 0.35,
-    flash_point: 62,
-    octane_rating: 100,
     image: "http://dummyimage.com/189x100.png/cc0000/ffffff"
   },
   {
@@ -11754,11 +7559,6 @@ export const MockData: MockDataType = [
     price: 219.13,
     quantity: 697713,
     supplier: "Klein Inc",
-    purchase_date: "2/12/2017",
-    expiration_date: "9/30/2042",
-    density: 0.33,
-    flash_point: 38,
-    octane_rating: 96,
     image: "http://dummyimage.com/143x100.png/cc0000/ffffff"
   },
   {
@@ -11768,11 +7568,6 @@ export const MockData: MockDataType = [
     price: 82.18,
     quantity: 246998,
     supplier: "Batz Inc",
-    purchase_date: "6/27/2014",
-    expiration_date: "2/28/2044",
-    density: 0.77,
-    flash_point: 145,
-    octane_rating: 90,
     image: "http://dummyimage.com/180x100.png/dddddd/000000"
   },
   {
@@ -11782,11 +7577,6 @@ export const MockData: MockDataType = [
     price: 452.73,
     quantity: 538200,
     supplier: "Okuneva, Fisher and Feeney",
-    purchase_date: "1/9/2000",
-    expiration_date: "1/10/2039",
-    density: 0.27,
-    flash_point: 131,
-    octane_rating: 92,
     image: "http://dummyimage.com/155x100.png/dddddd/000000"
   },
   {
@@ -11796,11 +7586,6 @@ export const MockData: MockDataType = [
     price: 496.27,
     quantity: 372810,
     supplier: "Beer, Hilll and Grimes",
-    purchase_date: "4/4/2022",
-    expiration_date: "6/20/2024",
-    density: 0.38,
-    flash_point: -44,
-    octane_rating: 92,
     image: "http://dummyimage.com/184x100.png/cc0000/ffffff"
   },
   {
@@ -11810,11 +7595,6 @@ export const MockData: MockDataType = [
     price: 226.73,
     quantity: 290467,
     supplier: "Kihn and Sons",
-    purchase_date: "1/8/2010",
-    expiration_date: "10/5/2034",
-    density: 0.44,
-    flash_point: 78,
-    octane_rating: 96,
     image: "http://dummyimage.com/203x100.png/5fa2dd/ffffff"
   },
   {
@@ -11824,11 +7604,6 @@ export const MockData: MockDataType = [
     price: 182.48,
     quantity: 317255,
     supplier: "Waters, Mertz and O'Conner",
-    purchase_date: "10/30/2004",
-    expiration_date: "1/25/2030",
-    density: 0.08,
-    flash_point: 96,
-    octane_rating: 88,
     image: "http://dummyimage.com/200x100.png/cc0000/ffffff"
   },
   {
@@ -11838,11 +7613,6 @@ export const MockData: MockDataType = [
     price: 527.3,
     quantity: 944829,
     supplier: "McLaughlin-Emard",
-    purchase_date: "10/7/2012",
-    expiration_date: "6/14/2041",
-    density: 0.42,
-    flash_point: 18,
-    octane_rating: 87,
     image: "http://dummyimage.com/127x100.png/ff4444/ffffff"
   },
   {
@@ -11852,11 +7622,6 @@ export const MockData: MockDataType = [
     price: 955.38,
     quantity: 393350,
     supplier: "Gusikowski, O'Keefe and Friesen",
-    purchase_date: "2/16/2021",
-    expiration_date: "4/28/2038",
-    density: 0.86,
-    flash_point: 104,
-    octane_rating: 100,
     image: "http://dummyimage.com/215x100.png/5fa2dd/ffffff"
   },
   {
@@ -11866,11 +7631,6 @@ export const MockData: MockDataType = [
     price: 857.41,
     quantity: 125858,
     supplier: "Ryan and Sons",
-    purchase_date: "12/23/2022",
-    expiration_date: "10/24/2043",
-    density: 0.31,
-    flash_point: 17,
-    octane_rating: 97,
     image: "http://dummyimage.com/111x100.png/dddddd/000000"
   },
   {
@@ -11880,11 +7640,6 @@ export const MockData: MockDataType = [
     price: 187.55,
     quantity: 263662,
     supplier: "Jenkins-Crona",
-    purchase_date: "12/23/2009",
-    expiration_date: "5/29/2037",
-    density: 0.05,
-    flash_point: 130,
-    octane_rating: 99,
     image: "http://dummyimage.com/229x100.png/cc0000/ffffff"
   },
   {
@@ -11894,11 +7649,6 @@ export const MockData: MockDataType = [
     price: 814.11,
     quantity: 749230,
     supplier: "Schuster and Sons",
-    purchase_date: "6/16/2013",
-    expiration_date: "11/11/2030",
-    density: 0.99,
-    flash_point: 156,
-    octane_rating: 85,
     image: "http://dummyimage.com/100x100.png/cc0000/ffffff"
   },
   {
@@ -11908,11 +7658,6 @@ export const MockData: MockDataType = [
     price: 842.7,
     quantity: 529102,
     supplier: "Mosciski LLC",
-    purchase_date: "10/25/2019",
-    expiration_date: "6/30/2026",
-    density: 0.64,
-    flash_point: 148,
-    octane_rating: 87,
     image: "http://dummyimage.com/153x100.png/ff4444/ffffff"
   },
   {
@@ -11922,11 +7667,6 @@ export const MockData: MockDataType = [
     price: 579.9,
     quantity: 622236,
     supplier: "Roberts-Kutch",
-    purchase_date: "2/26/2005",
-    expiration_date: "7/1/2031",
-    density: 0.28,
-    flash_point: 11,
-    octane_rating: 93,
     image: "http://dummyimage.com/131x100.png/cc0000/ffffff"
   },
   {
@@ -11936,11 +7676,6 @@ export const MockData: MockDataType = [
     price: 742.08,
     quantity: 128378,
     supplier: "Miller LLC",
-    purchase_date: "12/8/2000",
-    expiration_date: "10/26/2036",
-    density: 0.14,
-    flash_point: 93,
-    octane_rating: 93,
     image: "http://dummyimage.com/249x100.png/dddddd/000000"
   },
   {
@@ -11950,11 +7685,6 @@ export const MockData: MockDataType = [
     price: 363.22,
     quantity: 346159,
     supplier: "Koepp Group",
-    purchase_date: "1/20/2003",
-    expiration_date: "3/10/2036",
-    density: 0.56,
-    flash_point: 67,
-    octane_rating: 88,
     image: "http://dummyimage.com/129x100.png/ff4444/ffffff"
   },
   {
@@ -11964,11 +7694,6 @@ export const MockData: MockDataType = [
     price: 764.23,
     quantity: 425513,
     supplier: "O'Kon-Grimes",
-    purchase_date: "12/1/2010",
-    expiration_date: "10/14/2040",
-    density: 0.5,
-    flash_point: 10,
-    octane_rating: 98,
     image: "http://dummyimage.com/136x100.png/ff4444/ffffff"
   },
   {
@@ -11978,11 +7703,6 @@ export const MockData: MockDataType = [
     price: 283.81,
     quantity: 297906,
     supplier: "Aufderhar, Ondricka and Stoltenberg",
-    purchase_date: "7/10/2001",
-    expiration_date: "8/24/2041",
-    density: 0.9,
-    flash_point: 115,
-    octane_rating: 96,
     image: "http://dummyimage.com/103x100.png/dddddd/000000"
   },
   {
@@ -11992,11 +7712,6 @@ export const MockData: MockDataType = [
     price: 279.21,
     quantity: 253403,
     supplier: "Bednar-Schulist",
-    purchase_date: "2/13/2019",
-    expiration_date: "5/27/2042",
-    density: 0.66,
-    flash_point: 71,
-    octane_rating: 100,
     image: "http://dummyimage.com/163x100.png/ff4444/ffffff"
   },
   {
@@ -12006,11 +7721,6 @@ export const MockData: MockDataType = [
     price: 330.55,
     quantity: 700397,
     supplier: "Breitenberg-Gusikowski",
-    purchase_date: "9/19/2014",
-    expiration_date: "12/16/2027",
-    density: 0.59,
-    flash_point: 65,
-    octane_rating: 100,
     image: "http://dummyimage.com/161x100.png/ff4444/ffffff"
   },
   {
@@ -12020,11 +7730,6 @@ export const MockData: MockDataType = [
     price: 924.39,
     quantity: 143678,
     supplier: "Wisozk-Cassin",
-    purchase_date: "10/26/2020",
-    expiration_date: "10/21/2037",
-    density: 0.34,
-    flash_point: 92,
-    octane_rating: 85,
     image: "http://dummyimage.com/131x100.png/5fa2dd/ffffff"
   },
   {
@@ -12034,11 +7739,6 @@ export const MockData: MockDataType = [
     price: 291.41,
     quantity: 239061,
     supplier: "Ward-Kemmer",
-    purchase_date: "2/26/2000",
-    expiration_date: "1/13/2046",
-    density: 0.51,
-    flash_point: 148,
-    octane_rating: 100,
     image: "http://dummyimage.com/241x100.png/dddddd/000000"
   },
   {
@@ -12048,11 +7748,6 @@ export const MockData: MockDataType = [
     price: 849.62,
     quantity: 357877,
     supplier: "Hahn-Botsford",
-    purchase_date: "1/27/2016",
-    expiration_date: "5/13/2041",
-    density: 0.89,
-    flash_point: -49,
-    octane_rating: 95,
     image: "http://dummyimage.com/174x100.png/ff4444/ffffff"
   },
   {
@@ -12062,11 +7757,6 @@ export const MockData: MockDataType = [
     price: 75.85,
     quantity: 499196,
     supplier: "McClure Inc",
-    purchase_date: "1/18/2004",
-    expiration_date: "3/14/2039",
-    density: 0.07,
-    flash_point: 49,
-    octane_rating: 91,
     image: "http://dummyimage.com/120x100.png/ff4444/ffffff"
   },
   {
@@ -12076,11 +7766,6 @@ export const MockData: MockDataType = [
     price: 802.11,
     quantity: 353167,
     supplier: "Sipes, Gutkowski and Graham",
-    purchase_date: "4/5/2012",
-    expiration_date: "12/16/2028",
-    density: 0.17,
-    flash_point: 167,
-    octane_rating: 94,
     image: "http://dummyimage.com/118x100.png/dddddd/000000"
   },
   {
@@ -12090,11 +7775,6 @@ export const MockData: MockDataType = [
     price: 118.98,
     quantity: 588835,
     supplier: "Farrell-Hansen",
-    purchase_date: "6/10/2005",
-    expiration_date: "3/18/2024",
-    density: 0.75,
-    flash_point: 150,
-    octane_rating: 87,
     image: "http://dummyimage.com/223x100.png/dddddd/000000"
   },
   {
@@ -12104,11 +7784,6 @@ export const MockData: MockDataType = [
     price: 428.1,
     quantity: 790073,
     supplier: "Stokes-Hermann",
-    purchase_date: "6/1/2009",
-    expiration_date: "7/10/2045",
-    density: 0.9,
-    flash_point: 32,
-    octane_rating: 91,
     image: "http://dummyimage.com/204x100.png/cc0000/ffffff"
   },
   {
@@ -12118,11 +7793,6 @@ export const MockData: MockDataType = [
     price: 71.55,
     quantity: 403778,
     supplier: "Leannon-Aufderhar",
-    purchase_date: "8/27/2011",
-    expiration_date: "1/12/2044",
-    density: 0.15,
-    flash_point: -22,
-    octane_rating: 90,
     image: "http://dummyimage.com/139x100.png/cc0000/ffffff"
   },
   {
@@ -12132,11 +7802,6 @@ export const MockData: MockDataType = [
     price: 518.42,
     quantity: 849493,
     supplier: "Stamm, Feest and Rodriguez",
-    purchase_date: "1/11/2008",
-    expiration_date: "7/22/2027",
-    density: 0.09,
-    flash_point: -46,
-    octane_rating: 89,
     image: "http://dummyimage.com/103x100.png/ff4444/ffffff"
   },
   {
@@ -12146,11 +7811,6 @@ export const MockData: MockDataType = [
     price: 337.81,
     quantity: 726520,
     supplier: "Osinski-Marquardt",
-    purchase_date: "9/3/2020",
-    expiration_date: "2/6/2025",
-    density: 0.29,
-    flash_point: 108,
-    octane_rating: 97,
     image: "http://dummyimage.com/176x100.png/cc0000/ffffff"
   },
   {
@@ -12160,11 +7820,6 @@ export const MockData: MockDataType = [
     price: 927.03,
     quantity: 953463,
     supplier: "Yost LLC",
-    purchase_date: "6/26/2008",
-    expiration_date: "7/26/2026",
-    density: 0.69,
-    flash_point: 127,
-    octane_rating: 91,
     image: "http://dummyimage.com/103x100.png/dddddd/000000"
   },
   {
@@ -12174,11 +7829,6 @@ export const MockData: MockDataType = [
     price: 569.04,
     quantity: 818808,
     supplier: "Cartwright, Douglas and Greenfelder",
-    purchase_date: "5/3/2012",
-    expiration_date: "6/22/2036",
-    density: 0.05,
-    flash_point: 75,
-    octane_rating: 86,
     image: "http://dummyimage.com/231x100.png/dddddd/000000"
   },
   {
@@ -12188,11 +7838,6 @@ export const MockData: MockDataType = [
     price: 227.48,
     quantity: 922054,
     supplier: "Murazik, Hand and Dickens",
-    purchase_date: "10/27/2021",
-    expiration_date: "3/14/2025",
-    density: 0.76,
-    flash_point: 117,
-    octane_rating: 98,
     image: "http://dummyimage.com/171x100.png/cc0000/ffffff"
   },
   {
@@ -12202,11 +7847,6 @@ export const MockData: MockDataType = [
     price: 641.81,
     quantity: 249680,
     supplier: "Bartoletti, Simonis and Rolfson",
-    purchase_date: "7/29/2011",
-    expiration_date: "9/1/2024",
-    density: 0.53,
-    flash_point: 134,
-    octane_rating: 94,
     image: "http://dummyimage.com/118x100.png/cc0000/ffffff"
   },
   {
@@ -12216,11 +7856,6 @@ export const MockData: MockDataType = [
     price: 994.62,
     quantity: 543136,
     supplier: "Beatty and Sons",
-    purchase_date: "7/13/2007",
-    expiration_date: "4/10/2024",
-    density: 0.19,
-    flash_point: -14,
-    octane_rating: 92,
     image: "http://dummyimage.com/238x100.png/cc0000/ffffff"
   },
   {
@@ -12230,11 +7865,6 @@ export const MockData: MockDataType = [
     price: 426.14,
     quantity: 956611,
     supplier: "Glover LLC",
-    purchase_date: "7/27/2016",
-    expiration_date: "5/9/2023",
-    density: 0.35,
-    flash_point: 93,
-    octane_rating: 96,
     image: "http://dummyimage.com/161x100.png/dddddd/000000"
   },
   {
@@ -12244,11 +7874,6 @@ export const MockData: MockDataType = [
     price: 851.89,
     quantity: 858933,
     supplier: "Harvey, Keebler and Bashirian",
-    purchase_date: "3/6/2001",
-    expiration_date: "5/19/2037",
-    density: 0.27,
-    flash_point: 68,
-    octane_rating: 94,
     image: "http://dummyimage.com/205x100.png/ff4444/ffffff"
   },
   {
@@ -12258,11 +7883,6 @@ export const MockData: MockDataType = [
     price: 431.43,
     quantity: 130589,
     supplier: "Prosacco, Koch and Marks",
-    purchase_date: "10/3/2022",
-    expiration_date: "9/11/2042",
-    density: 0.08,
-    flash_point: 170,
-    octane_rating: 95,
     image: "http://dummyimage.com/200x100.png/dddddd/000000"
   },
   {
@@ -12272,11 +7892,6 @@ export const MockData: MockDataType = [
     price: 773.6,
     quantity: 906723,
     supplier: "Lind Group",
-    purchase_date: "5/21/2021",
-    expiration_date: "4/1/2032",
-    density: 0.1,
-    flash_point: 108,
-    octane_rating: 95,
     image: "http://dummyimage.com/111x100.png/ff4444/ffffff"
   },
   {
@@ -12286,11 +7901,6 @@ export const MockData: MockDataType = [
     price: 335.41,
     quantity: 195052,
     supplier: "Bode Group",
-    purchase_date: "1/23/2014",
-    expiration_date: "11/11/2034",
-    density: 0.31,
-    flash_point: -14,
-    octane_rating: 89,
     image: "http://dummyimage.com/220x100.png/cc0000/ffffff"
   },
   {
@@ -12300,11 +7910,6 @@ export const MockData: MockDataType = [
     price: 818.8,
     quantity: 539477,
     supplier: "Cassin-Moen",
-    purchase_date: "5/15/2018",
-    expiration_date: "4/30/2045",
-    density: 0.29,
-    flash_point: -46,
-    octane_rating: 92,
     image: "http://dummyimage.com/110x100.png/5fa2dd/ffffff"
   },
   {
@@ -12314,11 +7919,6 @@ export const MockData: MockDataType = [
     price: 129.66,
     quantity: 578695,
     supplier: "Osinski-Lehner",
-    purchase_date: "2/18/2022",
-    expiration_date: "3/15/2045",
-    density: 0.23,
-    flash_point: 86,
-    octane_rating: 93,
     image: "http://dummyimage.com/122x100.png/5fa2dd/ffffff"
   },
   {
@@ -12328,11 +7928,6 @@ export const MockData: MockDataType = [
     price: 848.08,
     quantity: 32334,
     supplier: "Roberts LLC",
-    purchase_date: "11/25/2000",
-    expiration_date: "8/13/2025",
-    density: 0.75,
-    flash_point: 67,
-    octane_rating: 90,
     image: "http://dummyimage.com/172x100.png/dddddd/000000"
   },
   {
@@ -12342,11 +7937,6 @@ export const MockData: MockDataType = [
     price: 932.91,
     quantity: 3189,
     supplier: "Kris Group",
-    purchase_date: "9/8/2007",
-    expiration_date: "4/8/2023",
-    density: 0.65,
-    flash_point: 75,
-    octane_rating: 89,
     image: "http://dummyimage.com/164x100.png/dddddd/000000"
   },
   {
@@ -12356,11 +7946,6 @@ export const MockData: MockDataType = [
     price: 532.25,
     quantity: 63264,
     supplier: "Brakus-Heidenreich",
-    purchase_date: "10/15/2001",
-    expiration_date: "11/23/2043",
-    density: 0.41,
-    flash_point: -7,
-    octane_rating: 97,
     image: "http://dummyimage.com/193x100.png/dddddd/000000"
   },
   {
@@ -12370,11 +7955,6 @@ export const MockData: MockDataType = [
     price: 281.23,
     quantity: 30732,
     supplier: "Kohler-Frami",
-    purchase_date: "7/13/2006",
-    expiration_date: "1/11/2037",
-    density: 0.46,
-    flash_point: 164,
-    octane_rating: 97,
     image: "http://dummyimage.com/231x100.png/5fa2dd/ffffff"
   },
   {
@@ -12384,11 +7964,6 @@ export const MockData: MockDataType = [
     price: 650.47,
     quantity: 958773,
     supplier: "Heidenreich, Bogisich and Crona",
-    purchase_date: "9/13/2022",
-    expiration_date: "8/30/2031",
-    density: 0.6,
-    flash_point: 183,
-    octane_rating: 99,
     image: "http://dummyimage.com/169x100.png/cc0000/ffffff"
   },
   {
@@ -12398,11 +7973,6 @@ export const MockData: MockDataType = [
     price: 188.68,
     quantity: 139208,
     supplier: "Leffler-Emmerich",
-    purchase_date: "4/15/2022",
-    expiration_date: "2/21/2031",
-    density: 0.97,
-    flash_point: -15,
-    octane_rating: 92,
     image: "http://dummyimage.com/180x100.png/cc0000/ffffff"
   },
   {
@@ -12412,11 +7982,6 @@ export const MockData: MockDataType = [
     price: 194.1,
     quantity: 680802,
     supplier: "Kling, Yundt and Doyle",
-    purchase_date: "3/26/2019",
-    expiration_date: "3/27/2023",
-    density: 0.41,
-    flash_point: -40,
-    octane_rating: 98,
     image: "http://dummyimage.com/249x100.png/dddddd/000000"
   },
   {
@@ -12426,11 +7991,6 @@ export const MockData: MockDataType = [
     price: 748.66,
     quantity: 380192,
     supplier: "Bernhard-Morar",
-    purchase_date: "2/9/2008",
-    expiration_date: "3/18/2046",
-    density: 0.79,
-    flash_point: 32,
-    octane_rating: 85,
     image: "http://dummyimage.com/157x100.png/cc0000/ffffff"
   },
   {
@@ -12440,11 +8000,6 @@ export const MockData: MockDataType = [
     price: 403.01,
     quantity: 616475,
     supplier: "Kreiger-Nolan",
-    purchase_date: "1/11/2022",
-    expiration_date: "11/26/2042",
-    density: 0.15,
-    flash_point: 110,
-    octane_rating: 90,
     image: "http://dummyimage.com/102x100.png/cc0000/ffffff"
   },
   {
@@ -12454,11 +8009,6 @@ export const MockData: MockDataType = [
     price: 175.6,
     quantity: 895751,
     supplier: "Boyle-Romaguera",
-    purchase_date: "8/27/2012",
-    expiration_date: "10/26/2032",
-    density: 0.51,
-    flash_point: 121,
-    octane_rating: 87,
     image: "http://dummyimage.com/210x100.png/5fa2dd/ffffff"
   },
   {
@@ -12468,11 +8018,6 @@ export const MockData: MockDataType = [
     price: 757.55,
     quantity: 518068,
     supplier: "Bechtelar, Witting and Klein",
-    purchase_date: "12/5/2007",
-    expiration_date: "9/15/2023",
-    density: 0.35,
-    flash_point: 183,
-    octane_rating: 97,
     image: "http://dummyimage.com/200x100.png/5fa2dd/ffffff"
   },
   {
@@ -12482,11 +8027,6 @@ export const MockData: MockDataType = [
     price: 84.37,
     quantity: 593076,
     supplier: "Mueller-Krajcik",
-    purchase_date: "1/16/2012",
-    expiration_date: "7/30/2043",
-    density: 0.88,
-    flash_point: 120,
-    octane_rating: 91,
     image: "http://dummyimage.com/103x100.png/dddddd/000000"
   },
   {
@@ -12496,11 +8036,6 @@ export const MockData: MockDataType = [
     price: 654.63,
     quantity: 982663,
     supplier: "Rohan-Muller",
-    purchase_date: "8/25/2011",
-    expiration_date: "1/5/2045",
-    density: 0.34,
-    flash_point: 17,
-    octane_rating: 87,
     image: "http://dummyimage.com/217x100.png/cc0000/ffffff"
   },
   {
@@ -12510,11 +8045,6 @@ export const MockData: MockDataType = [
     price: 491.2,
     quantity: 135557,
     supplier: "O'Keefe-Howe",
-    purchase_date: "9/22/2020",
-    expiration_date: "10/25/2023",
-    density: 0.66,
-    flash_point: 49,
-    octane_rating: 91,
     image: "http://dummyimage.com/209x100.png/dddddd/000000"
   },
   {
@@ -12524,11 +8054,6 @@ export const MockData: MockDataType = [
     price: 57.82,
     quantity: 596997,
     supplier: "Swaniawski-Emard",
-    purchase_date: "10/25/2012",
-    expiration_date: "8/14/2035",
-    density: 0.81,
-    flash_point: -32,
-    octane_rating: 91,
     image: "http://dummyimage.com/243x100.png/ff4444/ffffff"
   },
   {
@@ -12538,11 +8063,6 @@ export const MockData: MockDataType = [
     price: 762.09,
     quantity: 751151,
     supplier: "Kuhn Inc",
-    purchase_date: "12/17/2010",
-    expiration_date: "7/22/2027",
-    density: 0.27,
-    flash_point: 67,
-    octane_rating: 88,
     image: "http://dummyimage.com/123x100.png/dddddd/000000"
   },
   {
@@ -12552,11 +8072,6 @@ export const MockData: MockDataType = [
     price: 811.02,
     quantity: 61776,
     supplier: "Davis-O'Connell",
-    purchase_date: "5/10/2007",
-    expiration_date: "2/16/2023",
-    density: 0.64,
-    flash_point: -12,
-    octane_rating: 86,
     image: "http://dummyimage.com/144x100.png/cc0000/ffffff"
   },
   {
@@ -12566,11 +8081,6 @@ export const MockData: MockDataType = [
     price: 723.41,
     quantity: 34865,
     supplier: "Watsica LLC",
-    purchase_date: "7/6/2020",
-    expiration_date: "5/6/2023",
-    density: 0.95,
-    flash_point: 122,
-    octane_rating: 94,
     image: "http://dummyimage.com/102x100.png/cc0000/ffffff"
   },
   {
@@ -12580,11 +8090,6 @@ export const MockData: MockDataType = [
     price: 773.01,
     quantity: 59775,
     supplier: "Gorczany-Wehner",
-    purchase_date: "4/12/2012",
-    expiration_date: "2/18/2042",
-    density: 0.44,
-    flash_point: 104,
-    octane_rating: 96,
     image: "http://dummyimage.com/237x100.png/ff4444/ffffff"
   },
   {
@@ -12594,11 +8099,6 @@ export const MockData: MockDataType = [
     price: 440.03,
     quantity: 624160,
     supplier: "Feeney-Breitenberg",
-    purchase_date: "6/11/2007",
-    expiration_date: "2/10/2030",
-    density: 0.71,
-    flash_point: 165,
-    octane_rating: 93,
     image: "http://dummyimage.com/209x100.png/dddddd/000000"
   },
   {
@@ -12608,11 +8108,6 @@ export const MockData: MockDataType = [
     price: 59.92,
     quantity: 617139,
     supplier: "Lueilwitz-Fritsch",
-    purchase_date: "3/1/2000",
-    expiration_date: "6/20/2026",
-    density: 0.09,
-    flash_point: -21,
-    octane_rating: 91,
     image: "http://dummyimage.com/235x100.png/ff4444/ffffff"
   },
   {
@@ -12622,11 +8117,6 @@ export const MockData: MockDataType = [
     price: 501.59,
     quantity: 657190,
     supplier: "Cummings and Sons",
-    purchase_date: "8/8/2002",
-    expiration_date: "9/5/2044",
-    density: 0.16,
-    flash_point: -35,
-    octane_rating: 92,
     image: "http://dummyimage.com/171x100.png/ff4444/ffffff"
   },
   {
@@ -12636,11 +8126,6 @@ export const MockData: MockDataType = [
     price: 275.74,
     quantity: 539017,
     supplier: "Mertz and Sons",
-    purchase_date: "4/26/2012",
-    expiration_date: "11/27/2032",
-    density: 0.61,
-    flash_point: 94,
-    octane_rating: 95,
     image: "http://dummyimage.com/148x100.png/cc0000/ffffff"
   },
   {
@@ -12650,11 +8135,6 @@ export const MockData: MockDataType = [
     price: 310.06,
     quantity: 430557,
     supplier: "Mraz-Johnson",
-    purchase_date: "10/24/2003",
-    expiration_date: "10/23/2038",
-    density: 0.26,
-    flash_point: 126,
-    octane_rating: 96,
     image: "http://dummyimage.com/218x100.png/ff4444/ffffff"
   },
   {
@@ -12664,11 +8144,6 @@ export const MockData: MockDataType = [
     price: 219.62,
     quantity: 438261,
     supplier: "Torp-Tillman",
-    purchase_date: "9/21/2004",
-    expiration_date: "2/13/2036",
-    density: 0.69,
-    flash_point: 66,
-    octane_rating: 91,
     image: "http://dummyimage.com/204x100.png/dddddd/000000"
   },
   {
@@ -12678,11 +8153,6 @@ export const MockData: MockDataType = [
     price: 263.44,
     quantity: 18954,
     supplier: "Schumm-Sanford",
-    purchase_date: "12/27/2010",
-    expiration_date: "7/30/2025",
-    density: 0.18,
-    flash_point: 67,
-    octane_rating: 91,
     image: "http://dummyimage.com/158x100.png/ff4444/ffffff"
   },
   {
@@ -12692,11 +8162,6 @@ export const MockData: MockDataType = [
     price: 506.14,
     quantity: 239404,
     supplier: "Veum-Halvorson",
-    purchase_date: "9/3/2017",
-    expiration_date: "12/15/2031",
-    density: 0.73,
-    flash_point: 185,
-    octane_rating: 97,
     image: "http://dummyimage.com/148x100.png/cc0000/ffffff"
   },
   {
@@ -12706,11 +8171,6 @@ export const MockData: MockDataType = [
     price: 80.91,
     quantity: 752591,
     supplier: "Carter, Bartoletti and Rempel",
-    purchase_date: "7/4/2002",
-    expiration_date: "2/10/2040",
-    density: 0.58,
-    flash_point: -3,
-    octane_rating: 90,
     image: "http://dummyimage.com/168x100.png/ff4444/ffffff"
   },
   {
@@ -12720,11 +8180,6 @@ export const MockData: MockDataType = [
     price: 483.44,
     quantity: 869711,
     supplier: "Lowe, Johnson and Waelchi",
-    purchase_date: "11/19/2002",
-    expiration_date: "5/2/2029",
-    density: 0.29,
-    flash_point: 116,
-    octane_rating: 99,
     image: "http://dummyimage.com/145x100.png/ff4444/ffffff"
   },
   {
@@ -12734,11 +8189,6 @@ export const MockData: MockDataType = [
     price: 130.84,
     quantity: 346797,
     supplier: "Rowe-Swaniawski",
-    purchase_date: "6/14/2020",
-    expiration_date: "11/25/2040",
-    density: 0.58,
-    flash_point: 84,
-    octane_rating: 88,
     image: "http://dummyimage.com/232x100.png/cc0000/ffffff"
   },
   {
@@ -12748,11 +8198,6 @@ export const MockData: MockDataType = [
     price: 72.93,
     quantity: 76511,
     supplier: "Bradtke, Dickinson and Runolfsdottir",
-    purchase_date: "9/29/2022",
-    expiration_date: "7/25/2032",
-    density: 0.93,
-    flash_point: 163,
-    octane_rating: 91,
     image: "http://dummyimage.com/194x100.png/ff4444/ffffff"
   },
   {
@@ -12762,11 +8207,6 @@ export const MockData: MockDataType = [
     price: 275.65,
     quantity: 110030,
     supplier: "Feil, Stokes and Watsica",
-    purchase_date: "5/17/2012",
-    expiration_date: "8/9/2028",
-    density: 0.13,
-    flash_point: 85,
-    octane_rating: 98,
     image: "http://dummyimage.com/204x100.png/cc0000/ffffff"
   },
   {
@@ -12776,11 +8216,6 @@ export const MockData: MockDataType = [
     price: 699.15,
     quantity: 36788,
     supplier: "Douglas, Wilderman and Kuhlman",
-    purchase_date: "8/14/2011",
-    expiration_date: "1/11/2045",
-    density: 0.79,
-    flash_point: 87,
-    octane_rating: 96,
     image: "http://dummyimage.com/115x100.png/5fa2dd/ffffff"
   },
   {
@@ -12790,11 +8225,6 @@ export const MockData: MockDataType = [
     price: 384.02,
     quantity: 941993,
     supplier: "Will Inc",
-    purchase_date: "6/1/2007",
-    expiration_date: "7/31/2034",
-    density: 0.05,
-    flash_point: 37,
-    octane_rating: 87,
     image: "http://dummyimage.com/147x100.png/dddddd/000000"
   },
   {
@@ -12804,11 +8234,6 @@ export const MockData: MockDataType = [
     price: 19.84,
     quantity: 584168,
     supplier: "Roob Inc",
-    purchase_date: "3/10/2013",
-    expiration_date: "3/13/2034",
-    density: 0.35,
-    flash_point: 161,
-    octane_rating: 93,
     image: "http://dummyimage.com/132x100.png/cc0000/ffffff"
   },
   {
@@ -12818,11 +8243,6 @@ export const MockData: MockDataType = [
     price: 507.15,
     quantity: 956946,
     supplier: "Mann-Gottlieb",
-    purchase_date: "5/29/2013",
-    expiration_date: "10/14/2024",
-    density: 0.76,
-    flash_point: -24,
-    octane_rating: 92,
     image: "http://dummyimage.com/157x100.png/ff4444/ffffff"
   },
   {
@@ -12832,11 +8252,6 @@ export const MockData: MockDataType = [
     price: 445.84,
     quantity: 855747,
     supplier: "Carroll and Sons",
-    purchase_date: "8/10/2003",
-    expiration_date: "10/6/2037",
-    density: 0.52,
-    flash_point: 168,
-    octane_rating: 89,
     image: "http://dummyimage.com/123x100.png/ff4444/ffffff"
   },
   {
@@ -12846,11 +8261,6 @@ export const MockData: MockDataType = [
     price: 467.33,
     quantity: 603942,
     supplier: "Douglas, McDermott and Hickle",
-    purchase_date: "2/13/2017",
-    expiration_date: "9/2/2027",
-    density: 0.83,
-    flash_point: 77,
-    octane_rating: 98,
     image: "http://dummyimage.com/215x100.png/5fa2dd/ffffff"
   },
   {
@@ -12860,11 +8270,6 @@ export const MockData: MockDataType = [
     price: 463.08,
     quantity: 580683,
     supplier: "Braun-Brown",
-    purchase_date: "3/22/2016",
-    expiration_date: "5/18/2044",
-    density: 0.33,
-    flash_point: 38,
-    octane_rating: 96,
     image: "http://dummyimage.com/142x100.png/5fa2dd/ffffff"
   },
   {
@@ -12874,11 +8279,6 @@ export const MockData: MockDataType = [
     price: 391.43,
     quantity: 358835,
     supplier: "Simonis, Rowe and Greenholt",
-    purchase_date: "7/30/2007",
-    expiration_date: "7/25/2026",
-    density: 0.98,
-    flash_point: -8,
-    octane_rating: 89,
     image: "http://dummyimage.com/243x100.png/dddddd/000000"
   },
   {
@@ -12888,11 +8288,6 @@ export const MockData: MockDataType = [
     price: 952.6,
     quantity: 336074,
     supplier: "Gleichner, Murazik and Schumm",
-    purchase_date: "3/16/2014",
-    expiration_date: "6/22/2030",
-    density: 0.8,
-    flash_point: 81,
-    octane_rating: 91,
     image: "http://dummyimage.com/220x100.png/5fa2dd/ffffff"
   },
   {
@@ -12902,11 +8297,6 @@ export const MockData: MockDataType = [
     price: 738.33,
     quantity: 6607,
     supplier: "Witting and Sons",
-    purchase_date: "4/9/2005",
-    expiration_date: "6/4/2035",
-    density: 0.54,
-    flash_point: 14,
-    octane_rating: 94,
     image: "http://dummyimage.com/114x100.png/dddddd/000000"
   },
   {
@@ -12916,11 +8306,6 @@ export const MockData: MockDataType = [
     price: 597.82,
     quantity: 867179,
     supplier: "Paucek, Kautzer and Feeney",
-    purchase_date: "10/5/2009",
-    expiration_date: "2/20/2034",
-    density: 0.19,
-    flash_point: -9,
-    octane_rating: 86,
     image: "http://dummyimage.com/108x100.png/cc0000/ffffff"
   },
   {
@@ -12930,11 +8315,6 @@ export const MockData: MockDataType = [
     price: 578.62,
     quantity: 358622,
     supplier: "Lakin and Sons",
-    purchase_date: "7/20/2021",
-    expiration_date: "11/5/2044",
-    density: 0.51,
-    flash_point: 44,
-    octane_rating: 98,
     image: "http://dummyimage.com/114x100.png/cc0000/ffffff"
   },
   {
@@ -12944,11 +8324,6 @@ export const MockData: MockDataType = [
     price: 16.07,
     quantity: 882558,
     supplier: "Marvin Inc",
-    purchase_date: "10/3/2015",
-    expiration_date: "8/26/2040",
-    density: 0.71,
-    flash_point: 157,
-    octane_rating: 92,
     image: "http://dummyimage.com/247x100.png/cc0000/ffffff"
   },
   {
@@ -12958,11 +8333,6 @@ export const MockData: MockDataType = [
     price: 626.03,
     quantity: 786268,
     supplier: "Buckridge, Hessel and Shields",
-    purchase_date: "6/24/2012",
-    expiration_date: "4/10/2029",
-    density: 0.98,
-    flash_point: 198,
-    octane_rating: 92,
     image: "http://dummyimage.com/244x100.png/dddddd/000000"
   },
   {
@@ -12972,11 +8342,6 @@ export const MockData: MockDataType = [
     price: 376.71,
     quantity: 158530,
     supplier: "Dare, Gorczany and Mayer",
-    purchase_date: "4/19/2019",
-    expiration_date: "6/30/2039",
-    density: 0.42,
-    flash_point: -35,
-    octane_rating: 98,
     image: "http://dummyimage.com/223x100.png/ff4444/ffffff"
   },
   {
@@ -12986,11 +8351,6 @@ export const MockData: MockDataType = [
     price: 388.81,
     quantity: 984096,
     supplier: "Ondricka-Huel",
-    purchase_date: "6/7/2017",
-    expiration_date: "7/22/2031",
-    density: 0.4,
-    flash_point: 22,
-    octane_rating: 99,
     image: "http://dummyimage.com/148x100.png/dddddd/000000"
   },
   {
@@ -13000,11 +8360,6 @@ export const MockData: MockDataType = [
     price: 338.19,
     quantity: 381478,
     supplier: "Brakus, Daniel and Brakus",
-    purchase_date: "1/12/2018",
-    expiration_date: "9/10/2025",
-    density: 0.73,
-    flash_point: 90,
-    octane_rating: 98,
     image: "http://dummyimage.com/133x100.png/5fa2dd/ffffff"
   },
   {
@@ -13014,11 +8369,6 @@ export const MockData: MockDataType = [
     price: 119.78,
     quantity: 401430,
     supplier: "Connelly-Keeling",
-    purchase_date: "10/23/2005",
-    expiration_date: "12/23/2045",
-    density: 0.58,
-    flash_point: 195,
-    octane_rating: 88,
     image: "http://dummyimage.com/178x100.png/5fa2dd/ffffff"
   },
   {
@@ -13028,11 +8378,6 @@ export const MockData: MockDataType = [
     price: 220.6,
     quantity: 261977,
     supplier: "Kunze, Stoltenberg and Hettinger",
-    purchase_date: "7/24/2002",
-    expiration_date: "8/26/2030",
-    density: 0.65,
-    flash_point: 23,
-    octane_rating: 88,
     image: "http://dummyimage.com/189x100.png/cc0000/ffffff"
   },
   {
@@ -13042,11 +8387,6 @@ export const MockData: MockDataType = [
     price: 481.51,
     quantity: 191150,
     supplier: "Mills LLC",
-    purchase_date: "4/28/2014",
-    expiration_date: "4/23/2032",
-    density: 0.13,
-    flash_point: 128,
-    octane_rating: 96,
     image: "http://dummyimage.com/243x100.png/5fa2dd/ffffff"
   },
   {
@@ -13056,11 +8396,6 @@ export const MockData: MockDataType = [
     price: 878.94,
     quantity: 288905,
     supplier: "Koss, O'Conner and Kuphal",
-    purchase_date: "8/23/2022",
-    expiration_date: "11/9/2037",
-    density: 0.44,
-    flash_point: 60,
-    octane_rating: 93,
     image: "http://dummyimage.com/133x100.png/5fa2dd/ffffff"
   },
   {
@@ -13070,11 +8405,6 @@ export const MockData: MockDataType = [
     price: 815.46,
     quantity: 18066,
     supplier: "Fadel Inc",
-    purchase_date: "4/16/2011",
-    expiration_date: "8/24/2046",
-    density: 0.13,
-    flash_point: 68,
-    octane_rating: 90,
     image: "http://dummyimage.com/103x100.png/5fa2dd/ffffff"
   },
   {
@@ -13084,11 +8414,6 @@ export const MockData: MockDataType = [
     price: 568.56,
     quantity: 797659,
     supplier: "Shields, Hammes and Kling",
-    purchase_date: "7/8/2013",
-    expiration_date: "9/1/2037",
-    density: 0.23,
-    flash_point: 31,
-    octane_rating: 91,
     image: "http://dummyimage.com/229x100.png/ff4444/ffffff"
   },
   {
@@ -13098,11 +8423,6 @@ export const MockData: MockDataType = [
     price: 449.44,
     quantity: 776564,
     supplier: "Yundt-Walsh",
-    purchase_date: "8/16/2014",
-    expiration_date: "10/22/2034",
-    density: 0.27,
-    flash_point: 160,
-    octane_rating: 90,
     image: "http://dummyimage.com/148x100.png/cc0000/ffffff"
   },
   {
@@ -13112,11 +8432,6 @@ export const MockData: MockDataType = [
     price: 155.51,
     quantity: 389709,
     supplier: "Upton, Conroy and Oberbrunner",
-    purchase_date: "7/31/2020",
-    expiration_date: "5/7/2043",
-    density: 0.55,
-    flash_point: 161,
-    octane_rating: 98,
     image: "http://dummyimage.com/250x100.png/5fa2dd/ffffff"
   },
   {
@@ -13126,11 +8441,6 @@ export const MockData: MockDataType = [
     price: 961.52,
     quantity: 531328,
     supplier: "Prohaska-Wiza",
-    purchase_date: "9/21/2010",
-    expiration_date: "10/30/2035",
-    density: 0.93,
-    flash_point: 180,
-    octane_rating: 97,
     image: "http://dummyimage.com/127x100.png/dddddd/000000"
   },
   {
@@ -13140,11 +8450,6 @@ export const MockData: MockDataType = [
     price: 580.07,
     quantity: 83635,
     supplier: "Trantow, Prohaska and Lehner",
-    purchase_date: "1/20/2021",
-    expiration_date: "6/13/2029",
-    density: 0.33,
-    flash_point: 88,
-    octane_rating: 92,
     image: "http://dummyimage.com/191x100.png/cc0000/ffffff"
   },
   {
@@ -13154,11 +8459,6 @@ export const MockData: MockDataType = [
     price: 790.57,
     quantity: 445993,
     supplier: "Stamm, Parisian and Ortiz",
-    purchase_date: "3/14/2001",
-    expiration_date: "9/2/2039",
-    density: 0.83,
-    flash_point: 136,
-    octane_rating: 93,
     image: "http://dummyimage.com/203x100.png/cc0000/ffffff"
   },
   {
@@ -13168,11 +8468,6 @@ export const MockData: MockDataType = [
     price: 814.37,
     quantity: 225254,
     supplier: "Leuschke, Murphy and Spencer",
-    purchase_date: "5/29/2014",
-    expiration_date: "8/16/2041",
-    density: 0.06,
-    flash_point: -29,
-    octane_rating: 94,
     image: "http://dummyimage.com/145x100.png/cc0000/ffffff"
   },
   {
@@ -13182,11 +8477,6 @@ export const MockData: MockDataType = [
     price: 514.62,
     quantity: 938211,
     supplier: "Keeling Inc",
-    purchase_date: "1/22/2016",
-    expiration_date: "3/19/2025",
-    density: 0.36,
-    flash_point: 18,
-    octane_rating: 88,
     image: "http://dummyimage.com/223x100.png/ff4444/ffffff"
   },
   {
@@ -13196,11 +8486,6 @@ export const MockData: MockDataType = [
     price: 629.97,
     quantity: 912504,
     supplier: "Ankunding-Schinner",
-    purchase_date: "3/18/2006",
-    expiration_date: "12/15/2034",
-    density: 0.86,
-    flash_point: -38,
-    octane_rating: 87,
     image: "http://dummyimage.com/216x100.png/cc0000/ffffff"
   },
   {
@@ -13210,11 +8495,6 @@ export const MockData: MockDataType = [
     price: 166.97,
     quantity: 444387,
     supplier: "Greenfelder LLC",
-    purchase_date: "10/2/2001",
-    expiration_date: "6/4/2042",
-    density: 0.39,
-    flash_point: -25,
-    octane_rating: 97,
     image: "http://dummyimage.com/163x100.png/5fa2dd/ffffff"
   },
   {
@@ -13224,11 +8504,6 @@ export const MockData: MockDataType = [
     price: 527.05,
     quantity: 912085,
     supplier: "Price-Huel",
-    purchase_date: "11/3/2011",
-    expiration_date: "7/2/2034",
-    density: 0.88,
-    flash_point: 10,
-    octane_rating: 91,
     image: "http://dummyimage.com/158x100.png/cc0000/ffffff"
   },
   {
@@ -13238,11 +8513,6 @@ export const MockData: MockDataType = [
     price: 378.78,
     quantity: 552907,
     supplier: "Bradtke, Funk and Kunze",
-    purchase_date: "1/19/2018",
-    expiration_date: "5/3/2038",
-    density: 0.2,
-    flash_point: -43,
-    octane_rating: 90,
     image: "http://dummyimage.com/244x100.png/5fa2dd/ffffff"
   },
   {
@@ -13252,11 +8522,6 @@ export const MockData: MockDataType = [
     price: 315.32,
     quantity: 98267,
     supplier: "Greenholt and Sons",
-    purchase_date: "9/13/2004",
-    expiration_date: "12/27/2025",
-    density: 0.76,
-    flash_point: 147,
-    octane_rating: 87,
     image: "http://dummyimage.com/125x100.png/cc0000/ffffff"
   },
   {
@@ -13266,11 +8531,6 @@ export const MockData: MockDataType = [
     price: 339.06,
     quantity: 461089,
     supplier: "Reinger LLC",
-    purchase_date: "2/27/2005",
-    expiration_date: "7/2/2046",
-    density: 0.81,
-    flash_point: 193,
-    octane_rating: 100,
     image: "http://dummyimage.com/127x100.png/cc0000/ffffff"
   },
   {
@@ -13280,11 +8540,6 @@ export const MockData: MockDataType = [
     price: 451.46,
     quantity: 200301,
     supplier: "Schulist-Corwin",
-    purchase_date: "11/6/2002",
-    expiration_date: "7/20/2038",
-    density: 0.78,
-    flash_point: 122,
-    octane_rating: 96,
     image: "http://dummyimage.com/219x100.png/cc0000/ffffff"
   },
   {
@@ -13294,11 +8549,6 @@ export const MockData: MockDataType = [
     price: 391.83,
     quantity: 822283,
     supplier: "Effertz-Hudson",
-    purchase_date: "9/26/2022",
-    expiration_date: "3/15/2032",
-    density: 0.58,
-    flash_point: 185,
-    octane_rating: 99,
     image: "http://dummyimage.com/153x100.png/5fa2dd/ffffff"
   },
   {
@@ -13308,11 +8558,6 @@ export const MockData: MockDataType = [
     price: 145.49,
     quantity: 608405,
     supplier: "Lynch-Rowe",
-    purchase_date: "11/4/2012",
-    expiration_date: "10/14/2034",
-    density: 0.48,
-    flash_point: -33,
-    octane_rating: 98,
     image: "http://dummyimage.com/240x100.png/cc0000/ffffff"
   },
   {
@@ -13322,11 +8567,6 @@ export const MockData: MockDataType = [
     price: 145.91,
     quantity: 564709,
     supplier: "Cassin-McCullough",
-    purchase_date: "10/26/2016",
-    expiration_date: "3/1/2032",
-    density: 0.75,
-    flash_point: 113,
-    octane_rating: 92,
     image: "http://dummyimage.com/193x100.png/ff4444/ffffff"
   },
   {
@@ -13336,11 +8576,6 @@ export const MockData: MockDataType = [
     price: 514.22,
     quantity: 227972,
     supplier: "Ebert-Kohler",
-    purchase_date: "1/2/2019",
-    expiration_date: "10/15/2024",
-    density: 0.68,
-    flash_point: 26,
-    octane_rating: 96,
     image: "http://dummyimage.com/187x100.png/5fa2dd/ffffff"
   },
   {
@@ -13350,11 +8585,6 @@ export const MockData: MockDataType = [
     price: 122.28,
     quantity: 714077,
     supplier: "Hauck-Murray",
-    purchase_date: "4/11/2001",
-    expiration_date: "1/14/2042",
-    density: 0.76,
-    flash_point: 200,
-    octane_rating: 96,
     image: "http://dummyimage.com/249x100.png/ff4444/ffffff"
   },
   {
@@ -13364,11 +8594,6 @@ export const MockData: MockDataType = [
     price: 823.27,
     quantity: 528195,
     supplier: "Hermiston Inc",
-    purchase_date: "4/13/2017",
-    expiration_date: "11/23/2038",
-    density: 0.33,
-    flash_point: 22,
-    octane_rating: 85,
     image: "http://dummyimage.com/152x100.png/5fa2dd/ffffff"
   },
   {
@@ -13378,11 +8603,6 @@ export const MockData: MockDataType = [
     price: 726.1,
     quantity: 21526,
     supplier: "Leannon-Mayer",
-    purchase_date: "5/1/2010",
-    expiration_date: "6/24/2033",
-    density: 0.38,
-    flash_point: 187,
-    octane_rating: 98,
     image: "http://dummyimage.com/113x100.png/ff4444/ffffff"
   },
   {
@@ -13392,11 +8612,6 @@ export const MockData: MockDataType = [
     price: 99.29,
     quantity: 506601,
     supplier: "Bernier Inc",
-    purchase_date: "5/31/2003",
-    expiration_date: "8/10/2025",
-    density: 0.75,
-    flash_point: 199,
-    octane_rating: 88,
     image: "http://dummyimage.com/236x100.png/cc0000/ffffff"
   },
   {
@@ -13406,11 +8621,6 @@ export const MockData: MockDataType = [
     price: 528.38,
     quantity: 154519,
     supplier: "Pollich Group",
-    purchase_date: "6/5/2009",
-    expiration_date: "9/25/2036",
-    density: 0.18,
-    flash_point: 158,
-    octane_rating: 100,
     image: "http://dummyimage.com/214x100.png/dddddd/000000"
   },
   {
@@ -13420,11 +8630,6 @@ export const MockData: MockDataType = [
     price: 482.18,
     quantity: 147618,
     supplier: "D'Amore Inc",
-    purchase_date: "3/8/2015",
-    expiration_date: "7/2/2029",
-    density: 0.58,
-    flash_point: 181,
-    octane_rating: 94,
     image: "http://dummyimage.com/156x100.png/cc0000/ffffff"
   },
   {
@@ -13434,11 +8639,6 @@ export const MockData: MockDataType = [
     price: 695.37,
     quantity: 448040,
     supplier: "Kihn-Kutch",
-    purchase_date: "1/18/2020",
-    expiration_date: "9/27/2028",
-    density: 0.41,
-    flash_point: 21,
-    octane_rating: 90,
     image: "http://dummyimage.com/214x100.png/dddddd/000000"
   },
   {
@@ -13448,11 +8648,6 @@ export const MockData: MockDataType = [
     price: 724.96,
     quantity: 668925,
     supplier: "Franecki LLC",
-    purchase_date: "1/26/2019",
-    expiration_date: "5/10/2046",
-    density: 0.95,
-    flash_point: 64,
-    octane_rating: 94,
     image: "http://dummyimage.com/209x100.png/cc0000/ffffff"
   },
   {
@@ -13462,11 +8657,6 @@ export const MockData: MockDataType = [
     price: 695.13,
     quantity: 379368,
     supplier: "Dickens-Bailey",
-    purchase_date: "2/15/2008",
-    expiration_date: "3/11/2029",
-    density: 0.14,
-    flash_point: -6,
-    octane_rating: 86,
     image: "http://dummyimage.com/131x100.png/5fa2dd/ffffff"
   },
   {
@@ -13476,11 +8666,6 @@ export const MockData: MockDataType = [
     price: 609.99,
     quantity: 954154,
     supplier: "Bechtelar and Sons",
-    purchase_date: "10/20/2003",
-    expiration_date: "3/5/2030",
-    density: 0.88,
-    flash_point: 5,
-    octane_rating: 93,
     image: "http://dummyimage.com/209x100.png/5fa2dd/ffffff"
   },
   {
@@ -13490,11 +8675,6 @@ export const MockData: MockDataType = [
     price: 140.11,
     quantity: 750425,
     supplier: "Schulist Group",
-    purchase_date: "1/11/2021",
-    expiration_date: "3/15/2032",
-    density: 0.72,
-    flash_point: -40,
-    octane_rating: 97,
     image: "http://dummyimage.com/148x100.png/dddddd/000000"
   },
   {
@@ -13504,11 +8684,6 @@ export const MockData: MockDataType = [
     price: 679.99,
     quantity: 843826,
     supplier: "Haley-Anderson",
-    purchase_date: "2/25/2017",
-    expiration_date: "9/25/2039",
-    density: 0.62,
-    flash_point: 45,
-    octane_rating: 94,
     image: "http://dummyimage.com/172x100.png/dddddd/000000"
   },
   {
@@ -13518,11 +8693,6 @@ export const MockData: MockDataType = [
     price: 859.95,
     quantity: 47631,
     supplier: "Emard-King",
-    purchase_date: "12/4/2020",
-    expiration_date: "9/30/2033",
-    density: 0.07,
-    flash_point: 115,
-    octane_rating: 90,
     image: "http://dummyimage.com/176x100.png/5fa2dd/ffffff"
   },
   {
@@ -13532,11 +8702,6 @@ export const MockData: MockDataType = [
     price: 887.02,
     quantity: 439702,
     supplier: "Olson and Sons",
-    purchase_date: "7/31/2006",
-    expiration_date: "4/9/2032",
-    density: 0.46,
-    flash_point: 153,
-    octane_rating: 92,
     image: "http://dummyimage.com/196x100.png/dddddd/000000"
   },
   {
@@ -13546,11 +8711,6 @@ export const MockData: MockDataType = [
     price: 702.72,
     quantity: 730416,
     supplier: "Ledner-Pouros",
-    purchase_date: "1/16/2015",
-    expiration_date: "8/23/2044",
-    density: 0.57,
-    flash_point: -28,
-    octane_rating: 97,
     image: "http://dummyimage.com/163x100.png/cc0000/ffffff"
   },
   {
@@ -13560,11 +8720,6 @@ export const MockData: MockDataType = [
     price: 119.77,
     quantity: 383414,
     supplier: "Wilkinson, Watsica and Robel",
-    purchase_date: "8/12/2022",
-    expiration_date: "12/28/2041",
-    density: 0.85,
-    flash_point: 9,
-    octane_rating: 100,
     image: "http://dummyimage.com/190x100.png/5fa2dd/ffffff"
   },
   {
@@ -13574,11 +8729,6 @@ export const MockData: MockDataType = [
     price: 613.06,
     quantity: 149044,
     supplier: "Emmerich and Sons",
-    purchase_date: "2/13/2019",
-    expiration_date: "6/8/2037",
-    density: 0.47,
-    flash_point: 27,
-    octane_rating: 87,
     image: "http://dummyimage.com/207x100.png/5fa2dd/ffffff"
   },
   {
@@ -13588,11 +8738,6 @@ export const MockData: MockDataType = [
     price: 52.17,
     quantity: 338283,
     supplier: "Runolfsson-Bradtke",
-    purchase_date: "2/5/2014",
-    expiration_date: "8/8/2033",
-    density: 0.81,
-    flash_point: 55,
-    octane_rating: 91,
     image: "http://dummyimage.com/129x100.png/cc0000/ffffff"
   },
   {
@@ -13602,11 +8747,6 @@ export const MockData: MockDataType = [
     price: 840.11,
     quantity: 898359,
     supplier: "Murphy-Jones",
-    purchase_date: "3/10/2014",
-    expiration_date: "6/26/2032",
-    density: 0.94,
-    flash_point: 16,
-    octane_rating: 93,
     image: "http://dummyimage.com/122x100.png/dddddd/000000"
   },
   {
@@ -13616,11 +8756,6 @@ export const MockData: MockDataType = [
     price: 915.18,
     quantity: 639104,
     supplier: "Lockman-Donnelly",
-    purchase_date: "8/10/2009",
-    expiration_date: "7/4/2046",
-    density: 0.22,
-    flash_point: 78,
-    octane_rating: 97,
     image: "http://dummyimage.com/248x100.png/cc0000/ffffff"
   },
   {
@@ -13630,11 +8765,6 @@ export const MockData: MockDataType = [
     price: 407.99,
     quantity: 144925,
     supplier: "Bosco, Auer and Brakus",
-    purchase_date: "5/16/2004",
-    expiration_date: "10/24/2025",
-    density: 0.79,
-    flash_point: 26,
-    octane_rating: 99,
     image: "http://dummyimage.com/144x100.png/dddddd/000000"
   },
   {
@@ -13644,11 +8774,6 @@ export const MockData: MockDataType = [
     price: 233.82,
     quantity: 267244,
     supplier: "Herman-Strosin",
-    purchase_date: "4/21/2006",
-    expiration_date: "12/7/2028",
-    density: 0.29,
-    flash_point: 60,
-    octane_rating: 87,
     image: "http://dummyimage.com/162x100.png/cc0000/ffffff"
   },
   {
@@ -13658,11 +8783,6 @@ export const MockData: MockDataType = [
     price: 201.1,
     quantity: 388037,
     supplier: "Morar, Cruickshank and Gislason",
-    purchase_date: "3/8/2004",
-    expiration_date: "6/6/2038",
-    density: 0.77,
-    flash_point: -35,
-    octane_rating: 86,
     image: "http://dummyimage.com/235x100.png/dddddd/000000"
   },
   {
@@ -13672,11 +8792,6 @@ export const MockData: MockDataType = [
     price: 245.23,
     quantity: 554862,
     supplier: "Morar Inc",
-    purchase_date: "5/8/2006",
-    expiration_date: "10/22/2035",
-    density: 0.05,
-    flash_point: -27,
-    octane_rating: 99,
     image: "http://dummyimage.com/242x100.png/ff4444/ffffff"
   },
   {
@@ -13686,11 +8801,6 @@ export const MockData: MockDataType = [
     price: 538.61,
     quantity: 517919,
     supplier: "Hilll-Purdy",
-    purchase_date: "3/3/2007",
-    expiration_date: "11/3/2045",
-    density: 0.1,
-    flash_point: 129,
-    octane_rating: 91,
     image: "http://dummyimage.com/237x100.png/cc0000/ffffff"
   },
   {
@@ -13700,11 +8810,6 @@ export const MockData: MockDataType = [
     price: 597.45,
     quantity: 815861,
     supplier: "Emard LLC",
-    purchase_date: "12/6/2017",
-    expiration_date: "11/27/2041",
-    density: 0.14,
-    flash_point: 131,
-    octane_rating: 89,
     image: "http://dummyimage.com/120x100.png/cc0000/ffffff"
   },
   {
@@ -13714,11 +8819,6 @@ export const MockData: MockDataType = [
     price: 692.8,
     quantity: 708222,
     supplier: "Kuphal, Graham and Orn",
-    purchase_date: "7/7/2016",
-    expiration_date: "5/4/2033",
-    density: 0.25,
-    flash_point: -37,
-    octane_rating: 88,
     image: "http://dummyimage.com/241x100.png/ff4444/ffffff"
   },
   {
@@ -13728,11 +8828,6 @@ export const MockData: MockDataType = [
     price: 80.78,
     quantity: 408213,
     supplier: "Leannon, Okuneva and Kuvalis",
-    purchase_date: "12/29/2001",
-    expiration_date: "4/15/2041",
-    density: 0.88,
-    flash_point: 142,
-    octane_rating: 91,
     image: "http://dummyimage.com/124x100.png/cc0000/ffffff"
   },
   {
@@ -13742,11 +8837,6 @@ export const MockData: MockDataType = [
     price: 835.7,
     quantity: 521435,
     supplier: "Treutel Group",
-    purchase_date: "3/12/2005",
-    expiration_date: "4/7/2036",
-    density: 0.96,
-    flash_point: 191,
-    octane_rating: 85,
     image: "http://dummyimage.com/212x100.png/ff4444/ffffff"
   },
   {
@@ -13756,11 +8846,6 @@ export const MockData: MockDataType = [
     price: 622.74,
     quantity: 546022,
     supplier: "Thiel-Kozey",
-    purchase_date: "11/23/2014",
-    expiration_date: "11/17/2044",
-    density: 0.55,
-    flash_point: 182,
-    octane_rating: 89,
     image: "http://dummyimage.com/107x100.png/ff4444/ffffff"
   },
   {
@@ -13770,11 +8855,6 @@ export const MockData: MockDataType = [
     price: 487.79,
     quantity: 581463,
     supplier: "Cormier LLC",
-    purchase_date: "1/1/2015",
-    expiration_date: "1/17/2033",
-    density: 0.89,
-    flash_point: 133,
-    octane_rating: 97,
     image: "http://dummyimage.com/217x100.png/cc0000/ffffff"
   },
   {
@@ -13784,11 +8864,6 @@ export const MockData: MockDataType = [
     price: 677.2,
     quantity: 893253,
     supplier: "Yost Inc",
-    purchase_date: "3/6/2003",
-    expiration_date: "2/20/2031",
-    density: 0.56,
-    flash_point: 33,
-    octane_rating: 87,
     image: "http://dummyimage.com/214x100.png/5fa2dd/ffffff"
   },
   {
@@ -13798,11 +8873,6 @@ export const MockData: MockDataType = [
     price: 71.96,
     quantity: 383314,
     supplier: "Crona-Walsh",
-    purchase_date: "7/10/2014",
-    expiration_date: "8/25/2046",
-    density: 0.49,
-    flash_point: 10,
-    octane_rating: 92,
     image: "http://dummyimage.com/122x100.png/cc0000/ffffff"
   },
   {
@@ -13812,11 +8882,6 @@ export const MockData: MockDataType = [
     price: 296.26,
     quantity: 939753,
     supplier: "Macejkovic, Parker and Jast",
-    purchase_date: "6/12/2010",
-    expiration_date: "12/10/2035",
-    density: 0.27,
-    flash_point: -35,
-    octane_rating: 96,
     image: "http://dummyimage.com/225x100.png/ff4444/ffffff"
   },
   {
@@ -13826,11 +8891,6 @@ export const MockData: MockDataType = [
     price: 993.34,
     quantity: 249526,
     supplier: "O'Keefe Inc",
-    purchase_date: "6/22/2008",
-    expiration_date: "10/7/2028",
-    density: 0.72,
-    flash_point: 50,
-    octane_rating: 94,
     image: "http://dummyimage.com/196x100.png/cc0000/ffffff"
   },
   {
@@ -13840,11 +8900,6 @@ export const MockData: MockDataType = [
     price: 521.06,
     quantity: 698268,
     supplier: "Abbott, Casper and Cartwright",
-    purchase_date: "5/17/2005",
-    expiration_date: "8/17/2026",
-    density: 0.87,
-    flash_point: 34,
-    octane_rating: 97,
     image: "http://dummyimage.com/228x100.png/dddddd/000000"
   },
   {
@@ -13854,11 +8909,6 @@ export const MockData: MockDataType = [
     price: 692,
     quantity: 82215,
     supplier: "Mann-Zemlak",
-    purchase_date: "1/1/2021",
-    expiration_date: "1/13/2040",
-    density: 0.76,
-    flash_point: -41,
-    octane_rating: 98,
     image: "http://dummyimage.com/106x100.png/ff4444/ffffff"
   },
   {
@@ -13868,11 +8918,6 @@ export const MockData: MockDataType = [
     price: 511.86,
     quantity: 695081,
     supplier: "Hilpert Inc",
-    purchase_date: "7/21/2000",
-    expiration_date: "2/17/2035",
-    density: 0.34,
-    flash_point: 155,
-    octane_rating: 88,
     image: "http://dummyimage.com/106x100.png/dddddd/000000"
   },
   {
@@ -13882,11 +8927,6 @@ export const MockData: MockDataType = [
     price: 163.1,
     quantity: 829011,
     supplier: "Feeney LLC",
-    purchase_date: "6/9/2013",
-    expiration_date: "3/12/2028",
-    density: 0.08,
-    flash_point: 77,
-    octane_rating: 99,
     image: "http://dummyimage.com/115x100.png/dddddd/000000"
   },
   {
@@ -13896,11 +8936,6 @@ export const MockData: MockDataType = [
     price: 567.81,
     quantity: 426471,
     supplier: "Erdman, Weber and Collier",
-    purchase_date: "10/30/2021",
-    expiration_date: "11/21/2023",
-    density: 0.45,
-    flash_point: 176,
-    octane_rating: 96,
     image: "http://dummyimage.com/220x100.png/cc0000/ffffff"
   },
   {
@@ -13910,11 +8945,6 @@ export const MockData: MockDataType = [
     price: 513.77,
     quantity: 567392,
     supplier: "Kshlerin Group",
-    purchase_date: "2/6/2004",
-    expiration_date: "10/6/2038",
-    density: 0.01,
-    flash_point: 98,
-    octane_rating: 100,
     image: "http://dummyimage.com/139x100.png/5fa2dd/ffffff"
   },
   {
@@ -13924,11 +8954,6 @@ export const MockData: MockDataType = [
     price: 11.02,
     quantity: 80855,
     supplier: "Champlin-Ziemann",
-    purchase_date: "5/22/2018",
-    expiration_date: "5/26/2027",
-    density: 0.12,
-    flash_point: -48,
-    octane_rating: 100,
     image: "http://dummyimage.com/213x100.png/ff4444/ffffff"
   },
   {
@@ -13938,11 +8963,6 @@ export const MockData: MockDataType = [
     price: 49.24,
     quantity: 380278,
     supplier: "O'Kon-Abbott",
-    purchase_date: "7/20/2012",
-    expiration_date: "9/29/2043",
-    density: 0.1,
-    flash_point: 45,
-    octane_rating: 89,
     image: "http://dummyimage.com/206x100.png/cc0000/ffffff"
   },
   {
@@ -13952,11 +8972,6 @@ export const MockData: MockDataType = [
     price: 103.01,
     quantity: 581889,
     supplier: "Olson-Goyette",
-    purchase_date: "12/3/2001",
-    expiration_date: "11/27/2032",
-    density: 0.61,
-    flash_point: 142,
-    octane_rating: 87,
     image: "http://dummyimage.com/183x100.png/dddddd/000000"
   },
   {
@@ -13966,11 +8981,6 @@ export const MockData: MockDataType = [
     price: 665.37,
     quantity: 55824,
     supplier: "Jaskolski-Haley",
-    purchase_date: "2/9/2009",
-    expiration_date: "10/13/2026",
-    density: 0.22,
-    flash_point: 106,
-    octane_rating: 85,
     image: "http://dummyimage.com/154x100.png/cc0000/ffffff"
   },
   {
@@ -13980,11 +8990,6 @@ export const MockData: MockDataType = [
     price: 258.49,
     quantity: 755608,
     supplier: "Marvin-Beier",
-    purchase_date: "5/15/2013",
-    expiration_date: "3/12/2030",
-    density: 0.79,
-    flash_point: 136,
-    octane_rating: 97,
     image: "http://dummyimage.com/130x100.png/dddddd/000000"
   },
   {
@@ -13994,11 +8999,6 @@ export const MockData: MockDataType = [
     price: 64.58,
     quantity: 891326,
     supplier: "Skiles LLC",
-    purchase_date: "5/8/2020",
-    expiration_date: "10/1/2044",
-    density: 0.72,
-    flash_point: 48,
-    octane_rating: 100,
     image: "http://dummyimage.com/229x100.png/ff4444/ffffff"
   }
 ] satisfies MockDataType;

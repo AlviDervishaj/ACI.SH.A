@@ -1,5 +1,4 @@
-export const CheckIcon = (props: any) =>
-(
+export const CheckIcon = (props: any) => (
   <svg
     aria-hidden="true"
     fill="none"
@@ -16,4 +15,3 @@ export const CheckIcon = (props: any) =>
     <polyline points="20 6 9 17 4 12" />
   </svg>
 );
-

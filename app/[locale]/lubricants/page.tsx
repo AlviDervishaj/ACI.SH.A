@@ -1,161 +1,134 @@
 "use client";
-import { Filters } from "@/components/lubricants/Filters";
-import { LubricantItem } from "@/components/lubricants/LubricantItem";
+import { CircularProgress, Pagination, Selection } from "@nextui-org/react";
+import { useIsomorphicLayoutEffect } from "usehooks-ts";
+import { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { title } from "@/components/primitives";
 import { Link, usePathname, useRouter } from "@/config/routing";
 import { MockData } from "@/mock_data";
-import { MockDataType } from "@/types";
-import { Pagination, Selection } from "@nextui-org/react";
-import { useSearchParams } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
-import { useIsomorphicLayoutEffect } from "usehooks-ts";
+import { filterPriceHighestToLowest, filterPriceLowestToHighest, getXItemsFromArray, handlePageChange } from "@/lib/utils";
+import dynamic from "next/dynamic";
+const Filters = dynamic(() => import('@/components/lubricants/Filters'))
+const LubricantItem = dynamic(() => import('@/components/lubricants/LubricantItem'))
 
 export default function LubricantsPage() {
   // if 16 pages then get number of items per page
   const itemsPerPage: number = 15;
-  const totalPages: number = MockData.length / itemsPerPage;
+  const totalPages: number = Math.ceil(MockData.length / itemsPerPage);
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [fullData] = useState<typeof MockData>(MockData);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isActionLoading, setIsActionLoading] = useState<boolean>(false);
   const [items, setItems] = useState<typeof MockData>(MockData);
-  const [selectedKeys, setSelectedKeys] = useState<Selection>(new Set(["Sort By"]));
+  const [selectedKeys, setSelectedKeys] = useState<Selection>(
+    new Set(["Sort By"]),
+  );
   const selectedValue = useMemo(
     () => Array.from(selectedKeys).join(", ").replaceAll("_", " "),
-    [selectedKeys]
+    [selectedKeys],
   );
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
+
   useIsomorphicLayoutEffect(() => {
-    const searchParamsCurrentPage = Number(searchParams.get('page')) || 1;
-    setCurrentPage(searchParamsCurrentPage)
-    setIsLoading(false);
+    const searchParamsCurrentPage = Number(searchParams.get("page")) || 1;
+    setCurrentPage(searchParamsCurrentPage);
+    setIsActionLoading(false);
+    setTimeout(() => setIsLoading(false), 1000)
   }, [searchParams]);
 
-
-  function handlePageChange(page: number) {
-    setCurrentPage(page);
-    // set page url
-    if (page >= 1) {
-      createPageURL(page);
-      return;
-    }
-    else return;
-  }
-
-  const createPageURL = (pageNumber: number | string) => {
-    const params = new URLSearchParams(searchParams);
-    params.set('page', pageNumber.toString());
-    router.replace(`${pathname}?${params.toString()}`);
-  };
-
-  function getXItemsFromArray(size: number, itemsToSkip: number, arr?: MockDataType) {
-    setIsLoading(true);
-    const results = [];
-    const array = arr ? arr : fullData
-    console.log({ arr });
-    if (itemsToSkip >= array.length || size > array.length) {
-      setIsLoading(false);
-      return [];
-    };
-
-    for (let i = itemsToSkip; i <= size + itemsToSkip - 1; i++) {
-      const _dummy = array[i] ?? null;
-      results.push(_dummy);
-    }
-    setIsLoading(true);
-    return results;
-  }
-
-  function filterPriceHighestToLowest() {
-    const rawData = fullData.toSorted((a, b) => {
-      if (b.price < a.price) {
-        return -1;
-      }
-      if (b.price > a.price) {
-        return 1;
-      }
-      return 0;
-    });
-    return rawData;
-  }
-
-  function filterPriceLowestToHighest() {
-    const rawData = fullData.toSorted((a, b) => {
-      if (a.price < b.price) {
-        return -1;
-      }
-      if (a.price > b.price) {
-        return 1;
-      }
-      return 0;
-    });
-    return rawData;
-  }
-
   useEffect(() => {
-    setIsLoading(true);
-    let rawData = fullData;
+    setIsActionLoading(true);
+    let rawData = MockData;
+
     if (selectedValue === "default") {
-      rawData = fullData;
+      rawData = MockData;
     }
-    if (selectedValue === "newest") { }
-    else if (selectedValue === "price-high-low") {
+    if (selectedValue === "newest") {
+    } else if (selectedValue === "price-high-low") {
       rawData = filterPriceHighestToLowest();
-    }
-    else if (selectedValue === "price-low-high") {
+    } else if (selectedValue === "price-low-high") {
       rawData = filterPriceLowestToHighest();
     }
     // sort items
-    const results = getXItemsFromArray(itemsPerPage, (currentPage - 1) * itemsPerPage, rawData);
+    const results = getXItemsFromArray(
+      itemsPerPage,
+      (currentPage - 1) * itemsPerPage,
+      rawData,
+    );
+
     setItems(results);
-    setIsLoading(false);
+    setIsActionLoading(false);
   }, [currentPage, selectedValue]);
+
+  if (isLoading) {
+    return (
+      <div className="w-full h-[30rem] flex flex-col items-center content-center justify-between">
+        <h1 className={title()}>Lubricants</h1>
+        <div className="py-2 md:py-8 grid place-items-center h-full w-full">
+          <CircularProgress aria-label="Loading..." color={"primary"} size={"lg"} />
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="w-full h-full flex flex-col items-center content-center justify-between">
       <h1 className={title()}>Lubricants</h1>
       <Pagination
-        total={Math.ceil(totalPages)}
-        variant="flat"
-        radius="full"
-        showShadow
         isCompact
-        page={currentPage}
-        onChange={(page: number) => handlePageChange(page)}
+        showControls
+        showShadow
         className="lg:hidden block mt-3"
         color="warning"
-        showControls
+        page={currentPage}
+        radius="full"
+        total={totalPages}
+        variant="flat"
+        onChange={(page: number) => handlePageChange(page, setCurrentPage, searchParams, router, pathname)}
       />
       <div className="self-end pt-2 md:p-0">
-        <Filters isLoading={isLoading} selectedValue={selectedValue} selectedKeys={selectedKeys} setSelectedKeys={setSelectedKeys} />
+        <Filters
+          isLoading={isActionLoading}
+          selectedKeys={selectedKeys}
+          selectedValue={selectedValue}
+          setSelectedKeys={setSelectedKeys}
+        />
       </div>
       <div className="py-2 md:py-8">
-        {items.length >= 1 ?
+        {items.length >= 1 ? (
           <div className="w-full h-full grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-            {items.map((item) => item ? <LubricantItem {...item} /> : null)}
+            {items.map((item) =>
+              item ? <LubricantItem {...item} key={item.id} /> : null,
+            )}
           </div>
-          :
+        ) : (
           <section className="w-full h-full p-2 grid place-items-center gap-3">
             <h2 className="text-4xl">No items are available at this time. </h2>
             <p className="text-3xl">Please try again later. </p>
-            <small className="text-lg">If you think this is an bug / issue then contact {' '}
-              <Link className="text-sky-500" href="mailto://alvidervishaj9@gmail.com">Support Team</Link>
+            <small className="text-lg">
+              If you think this is an bug / issue then contact{" "}
+              <Link
+                className="text-sky-500"
+                href="mailto://alvidervishaj9@gmail.com"
+              >
+                Support Team
+              </Link>
             </small>
           </section>
-        }
+        )}
       </div>
       <Pagination
-        total={Math.floor(totalPages)}
-        variant="flat"
-        radius="full"
-        showShadow
         isCompact
-        page={currentPage}
-        onChange={(page: number) => handlePageChange(page)}
+        showControls
+        showShadow
         className="hidden lg:block"
         color="warning"
-        showControls
+        page={currentPage}
+        radius="full"
+        total={totalPages}
+        variant="flat"
+        onChange={(page: number) => handlePageChange(page, setCurrentPage, searchParams, router, pathname)}
       />
     </div>
   );
