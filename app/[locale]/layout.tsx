@@ -46,6 +46,7 @@ export default async function RootLayout({
 
   return (
     <html
+      suppressHydrationWarning
       className="w-[100dvw] min-h-[100dvh] overflow-x-hidden relative"
       lang={locale}
     >
