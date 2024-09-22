@@ -1,11 +1,5 @@
-import { type ClassValue, clsx } from "clsx"
-import { twMerge } from "tailwind-merge"
-
-export const STAGGER_DELAY = 0.3; //0.3 seconds or 300 milliseconds
-
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
-}
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
 
 export function convertSecondsToMilliseconds(seconds: number) {
   return seconds * 1000;
@@ -13,4 +7,8 @@ export function convertSecondsToMilliseconds(seconds: number) {
 
 export function convertMillisecondsToSeconds(milliseconds: number) {
   return milliseconds / 1000;
+}
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
 }

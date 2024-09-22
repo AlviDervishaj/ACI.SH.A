@@ -1,72 +1,120 @@
-"use client";
+import dynamic from "next/dynamic";
+
 import { title } from "@/components/primitives";
-import { usePathname, useRouter } from "@/config/routing";
-import { MockData } from "@/mock_data";
-import { Pagination } from "@nextui-org/react";
-import { useSearchParams } from "next/navigation";
-import { useState } from "react";
-import { useIsomorphicLayoutEffect } from "usehooks-ts";
-// if 10 pages then get number of items per page
-const itemsPerPage = MockData.length / 10;
+import { Link } from "@/config/routing";
+import { Item } from "@/types";
+// const Filters = dynamic(() => import("@/components/lubricants/Filters"));
+const LubricantItem = dynamic(
+  () => import("@/components/lubricants/LubricantItem"),
+);
 
-export default function LubricantsPage() {
-  const [currentPage, setCurrentPage] = useState<number>(1);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const pathname = usePathname();
-  const router = useRouter();
-  const { replace } = router;
-  const searchParams = useSearchParams();
+async function getItems() {
+  /**
+   *{
+    id: "0",
+    stock: 100,
+    discount: "0",
+    sku_code: "sku_code",
+    buy_price: "20",
+    main_image: "/images/gallery/2.png",
+    sell_price: "35",
+    description: "Description Here",
+    has_discount: false,
+  } */
+  return [
+    {
+      id: "0",
+      stock: 100,
+      discount: "0",
+      sku_code: "sku_code",
+      buy_price: "70",
+      main_image: "/images/oils/galp-oil-1.png",
+      sell_price: "90",
+      description: "Description Here",
+      has_discount: false,
+      name: "Item 0",
+    },
+    {
+      id: "1",
+      stock: 100,
+      discount: "0",
+      sku_code: "sku_code",
+      buy_price: "30",
+      main_image: "/images/oils/galp-oil-2.png",
+      sell_price: "50",
+      description: "Description Here",
+      has_discount: false,
+      name: "Item 1",
+    },
+    {
+      id: "2",
+      stock: 100,
+      discount: "0",
+      sku_code: "sku_code",
+      buy_price: "20",
+      main_image: "/images/oils/galp-oil-3.png",
+      sell_price: "35",
+      description: "Description Here",
+      has_discount: false,
+      name: "Item 2",
+    },
+    {
+      id: "3",
+      stock: 100,
+      discount: "0",
+      sku_code: "sku_code",
+      buy_price: "35",
+      main_image: "/images/oils/galp-oil-4.png",
+      sell_price: "40",
+      description: "Description Here",
+      has_discount: false,
+      name: "Item 3",
+    },
+    {
+      id: "4",
+      stock: 100,
+      discount: "0",
+      sku_code: "sku_code",
+      buy_price: "22",
+      main_image: "/images/oils/galp-oil-5.png",
+      sell_price: "39",
+      description: "Description Here",
+      has_discount: false,
+      name: "Item 4",
+    },
+  ] as Item[];
+}
 
-  useIsomorphicLayoutEffect(() => {
-    const searchParamsCurrentPage = Number(searchParams.get('page')) || 1;
-    setCurrentPage(searchParamsCurrentPage)
-  }, [searchParams])
-
-  const createPageURL = (pageNumber: number | string) => {
-    const params = new URLSearchParams(searchParams);
-    params.set('page', pageNumber.toString());
-    return `${pathname}?${params.toString()}`;
-  };
-
-  function getXItemsFromArray(size: number, itemsToSkip?: number) {
-    setIsLoading(true);
-    const results = [];
-    if (itemsToSkip) {
-      if (itemsToSkip >= MockData.length) {
-        setIsLoading(false);
-        return [];
-      };
-      for (let i = itemsToSkip; i <= size; i++) {
-        results.push(MockData[i]);
-      }
-      setIsLoading(true);
-      console.log({ ITSresults: results });
-      return results;
-    }
-
-    for (let i = 0; i <= size; i++) {
-      results.push(MockData[i]);
-    }
-    setIsLoading(true);
-    console.log({ results });
-    return results;
-  }
+export default async function LubricantsPage() {
+  const items = await getItems();
 
   return (
-    <div>
+    <div className="w-full h-full flex flex-col items-center content-center justify-between">
       <h1 className={title()}>Lubricants</h1>
-      <div className="w-full h-fit p-2"></div>
-      <Pagination
-        total={10}
-        variant="flat"
-        radius="full"
-        showShadow
-        isCompact
-        page={currentPage}
-        onChange={setCurrentPage}
-        color="warning"
-        showControls
-      />
+      <div className="self-end pt-2 md:p-0">{/*Filters Here*/}</div>
+      <div className="py-2 md:py-8 w-full">
+        {items.length >= 1 ? (
+          <div className="w-full h-full grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 place-items-center">
+            {items.map((item) =>
+              item ? <LubricantItem {...item} key={item.id} /> : null,
+            )}
+          </div>
+        ) : (
+          <section className="w-full h-full p-2 grid place-items-center gap-3">
+            <h2 className="text-4xl">No items are available at this time. </h2>
+            <p className="text-3xl">Please try again later. </p>
+            <small className="text-lg">
+              If you think this is an bug / issue then contact{" "}
+              <Link
+                className="text-sky-500"
+                href="mailto://alvidervishaj9@gmail.com"
+              >
+                Support Team
+              </Link>
+            </small>
+          </section>
+        )}
+      </div>
     </div>
   );
 }
