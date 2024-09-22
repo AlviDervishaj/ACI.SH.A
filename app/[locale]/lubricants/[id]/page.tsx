@@ -25,8 +25,8 @@ export async function generateStaticParams() {
 
 export default async function Page({ params }: { params: { id: any } }) {
   const id = String(params.id);
-  let post = await fetch(`https://api.vercel.app/blog/${id}`).then(
-    (res) => res.json(),
+  let post = await fetch(`https://api.vercel.app/blog/${id}`).then((res) =>
+    res.json(),
   );
 
   return (

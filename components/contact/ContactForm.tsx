@@ -1,15 +1,22 @@
 "use client";
-import { handleFormSubmit } from "@/hooks/actions";
-import { Textarea } from "@nextui-org/react";
 import { useFormState } from "react-dom";
 import dynamic from "next/dynamic";
+
+import { handleFormSubmit } from "@/hooks/actions";
 
 const initialState = {
   error: "",
   message: "",
 };
-const Input = dynamic(() => import('@/components/custom/Input'), { ssr: false })
-const FormButton = dynamic(() => import('@/components/contact/FormButton'), { ssr: false })
+const Textarea = dynamic(() => import("@/components/custom/Textarea"), {
+  ssr: false,
+});
+const Input = dynamic(() => import("@/components/custom/Input"), {
+  ssr: false,
+});
+const FormButton = dynamic(() => import("@/components/contact/FormButton"), {
+  ssr: false,
+});
 
 export default function ContactForm() {
   const [state, formAction] = useFormState(handleFormSubmit, initialState);
@@ -19,17 +26,10 @@ export default function ContactForm() {
       action={formAction}
       className="w-full h-full space-y-4 max-w-sm mx-auto flex flex-col items-center content-center justify-center"
     >
-      <Input label="First Name" name="first_name" />
-      <Input label="Last Name" name="last_name" />
-      <Input label="Email" name="email" />
-      <Textarea
-        className="max-w-sm text-base"
-        classNames={{ input: "text-base", label: "text-base" }}
-        label="Message"
-        maxRows={5}
-        name="message"
-        placeholder="Enter your message here. &#128515; "
-      />
+      <Input name="first_name" placeholder="First Name" />
+      <Input name="last_name" placeholder="Last Name" />
+      <Input name="email" placeholder="Email" />
+      <Textarea />
       {state?.error ? (
         <div aria-live="polite" className="w-full h-fit p-2 text-center">
           <p

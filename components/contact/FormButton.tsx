@@ -1,14 +1,14 @@
 "use client";
-import { Button } from "@nextui-org/react";
 import { useFormStatus } from "react-dom";
+
+import { Button } from "@/components/ui/button";
 
 export default function FormButton() {
   const { pending } = useFormStatus();
 
   return (
-    <Button fullWidth color="primary" isLoading={pending} type="submit">
+    <Button className="w-full" color="primary" disabled={pending} type="submit">
       {pending ? "Sending message..." : "Send message"}
     </Button>
   );
 }
-

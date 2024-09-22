@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { EmblaCarouselType } from "embla-carousel";
-import { Button, ButtonProps } from "@nextui-org/button";
+
+import { Button, ButtonProps } from "../ui/button";
 
 type UsePrevNextButtonsType = {
   prevBtnDisabled: boolean;

@@ -1,9 +1,8 @@
-
 import dynamic from "next/dynamic";
-const AboutUsDescription = dynamic(() => import('@/components/about/AboutUsDescription'))
-export default function AboutPage() {
+const AboutUsDescription = dynamic(
+  () => import("@/components/about/AboutUsDescription"),
+);
 
-  return (
-    <AboutUsDescription />
-  );
+export default function AboutPage() {
+  return <AboutUsDescription />;
 }

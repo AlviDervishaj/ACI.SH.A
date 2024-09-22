@@ -1,6 +1,5 @@
 "use client";
 import {
-  Button,
   Modal,
   ModalBody,
   ModalContent,
@@ -22,6 +21,8 @@ import G8 from "../../../public/images/gallery/8.jpg";
 import G9 from "../../../public/images/gallery/9.jpg";
 import G10 from "../../../public/images/gallery/10.jpg";
 import G11 from "../../../public/images/gallery/11.jpg";
+
+import { Button } from "@/components/ui/button";
 
 export default function GalleryHomePage() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -45,11 +46,7 @@ export default function GalleryHomePage() {
         />
       ))}
       <Modal
-        backdrop={"blur"}
-        classNames={{
-          backdrop:
-            "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20",
-        }}
+        className="bg-foreground dark:bg-background"
         isOpen={isOpen}
         size="full"
         onClose={onClose}
@@ -57,7 +54,7 @@ export default function GalleryHomePage() {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">
+              <ModalHeader className="flex flex-col gap-1 text-base md:text-lg lg:text-xl text-background dark:text-foreground">
                 AÇI SH.A Photo
               </ModalHeader>
               <ModalBody className="flex flex-row items-center content-center justify-center w-full h-full">
@@ -71,7 +68,11 @@ export default function GalleryHomePage() {
                 ) : null}
               </ModalBody>
               <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
+                <Button
+                  className="bg-red-500 dark:bg-red-500 dark:text-white text-base"
+                  color="red"
+                  onClick={onClose}
+                >
                   Close
                 </Button>
               </ModalFooter>

@@ -1,7 +1,7 @@
 "use client";
-import { Card, CardHeader } from "@nextui-org/card";
-import { Image } from "@nextui-org/image";
+import Image from "next/image";
 
+import { Card, CardHeader } from "@/components/ui/card";
 import { Link } from "@/config/routing";
 
 type OilProps = {
@@ -15,9 +15,9 @@ type OilProps = {
 export function OilCard({ item }: OilProps) {
   return (
     <Link className="w-fit h-fit" href={`/oil/${item.title.toLowerCase()}/`}>
-      <Card className="w-[7.856rem] lg:w-[12rem] h-fit group">
-        <CardHeader className="absolute z-10 flex-col items-start">
-          <p className="text-tiny text-white/60 uppercase font-bold">
+      <Card className="p-0 w-[7.856rem] lg:w-[12rem] h-fit group overflow-hidden">
+        <CardHeader className="p-0 absolute z-10 flex-col items-start">
+          <p className="pl-3 text-tiny text-white/60 uppercase font-bold">
             {item.description}
           </p>
           <h4 className="text-white font-bold tracking-wide text-2xl group-hover:text-yellow-500 transition-colors duration-300 ease-in-out">
@@ -25,13 +25,13 @@ export function OilCard({ item }: OilProps) {
           </h4>
         </CardHeader>
         <Image
-          removeWrapper
           alt="Card example background"
           className={
-            "w-full object-cover w-[140px] h-[140px] md:h-48 md:w-48 transition-transform duration-500 ease-in-out group-hover:scale-110 z-0"
+            "object-cover w-[140px] h-[140px] md:h-48 md:w-48 transition-transform duration-500 ease-in-out group-hover:scale-110 z-0"
           }
-          radius={"lg"}
+          height={200}
           src={item.image}
+          width={200}
         />
       </Card>
     </Link>

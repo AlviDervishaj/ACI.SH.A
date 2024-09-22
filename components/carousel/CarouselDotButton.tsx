@@ -1,6 +1,8 @@
-import { ComponentPropsWithRef, useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { EmblaCarouselType } from "embla-carousel";
 import clsx from "clsx";
+
+import { Button, ButtonProps } from "../ui/button";
 
 type UseDotButtonType = {
   selectedIndex: number;
@@ -45,15 +47,15 @@ export const useDotButton = (
   };
 };
 
-type PropType = ComponentPropsWithRef<"button">;
-
-export const DotButton: React.FC<PropType> = (props) => {
-  const { className, ...restProps } = props;
+export const DotButton: React.FC<ButtonProps> = (props) => {
+  const { children, className, ...restProps } = props;
 
   return (
-    <button
+    <Button
       className={clsx("rounded-full w-4 h-4 md:w-6 md:h-6", className)}
       {...restProps}
-    />
+    >
+      {children}
+    </Button>
   );
 };

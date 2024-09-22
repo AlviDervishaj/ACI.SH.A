@@ -3,12 +3,19 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
+import dynamic from "next/dynamic";
 
-import { Navigation } from "@/components/_layout/Navigation";
 import { Providers } from "@/components/_layout/providers";
-import { Footer } from "@/components/_layout/Footer";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
+
+const Footer = dynamic(
+  () => import("@/components/_layout/Footer").then((mod) => mod.Footer),
+  { ssr: false },
+);
+const Navigation = dynamic(() => import("@/components/_layout/Navigation/"), {
+  ssr: false,
+});
 
 export const metadata: Metadata = {
   title: {
@@ -36,6 +43,7 @@ export default async function RootLayout({
   params: { locale: string };
 }) {
   const messages = await getMessages();
+
   return (
     <html
       className="w-[100dvw] min-h-[100dvh] overflow-x-hidden relative"
@@ -44,16 +52,13 @@ export default async function RootLayout({
       <head />
       <body
         className={clsx(
-          "w-full min-h-dvh font-sans antialiased",
+          "w-full min-h-dvh font-sans antialiased relative",
           fontSans.variable,
         )}
       >
         <NextIntlClientProvider messages={messages}>
-          <Providers
-            locale={locale}
-            themeProps={{ attribute: "class", defaultTheme: "light" }}
-          >
-            <div className="relative flex flex-col min-h-dvh">
+          <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
+            <div className="relative flex flex-col min-h-dvh overflow-y-auto">
               <Navigation />
               <main className="container mx-auto max-w-7xl flex-grow">
                 {children}

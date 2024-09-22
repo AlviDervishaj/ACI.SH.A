@@ -5,37 +5,14 @@ export type IconSvgProps = SVGProps<SVGSVGElement> & {
 };
 
 export type Item = {
-  title: string;
-  image: string;
-  price: number;
-  description?: string;
-  id: number;
+  id: string;
+  sku_code: string;
+  buy_price: string;
+  sell_price: string;
+  description: string;
+  main_image: string;
+  stock: number;
+  discount: string;
+  has_discount: boolean;
+  name: string;
 };
-
-export type SearchResultsType = Array<{
-  group: string;
-  title: string;
-  keywords: Array<string>;
-  href: string;
-  image?: string;
-}>;
-
-export type MockDataSingleType = {
-  id: number;
-  product_name: string;
-  product_type: string;
-  price: number;
-  quantity: number;
-  supplier: string;
-  image: string;
-};
-
-export type MockDataType = Array<{
-  id: number;
-  product_name: string;
-  product_type: string;
-  price: number;
-  quantity: number;
-  supplier: string;
-  image: string;
-}>;

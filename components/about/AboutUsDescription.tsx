@@ -1,8 +1,10 @@
 import { useTranslations } from "next-intl";
+
 import { title } from "@/components/primitives";
 
 export default function AboutUsDescription() {
   const t = useTranslations("About_Us");
+
   return (
     <section className="space-y-9 py-6">
       <h1 className={title()}>

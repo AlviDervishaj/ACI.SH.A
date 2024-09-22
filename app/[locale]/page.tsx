@@ -1,8 +1,12 @@
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
 
-const AvailableLubricants = dynamic(() => import('@/components/home/AvailableLubricants'))
-const MainHeaderBackground = dynamic(() => import('@/components/home/MainHeaderBackground'))
-const BestSellers = dynamic(() => import('@/components/oil/BestSellers'))
+const AvailableLubricants = dynamic(
+  () => import("@/components/home/AvailableLubricants"),
+);
+const MainHeaderBackground = dynamic(
+  () => import("@/components/home/MainHeaderBackground"),
+);
+const BestSellers = dynamic(() => import("@/components/oil/BestSellers"));
 
 export default function Home() {
   return (
