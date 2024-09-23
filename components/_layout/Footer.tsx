@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <footer
       className={
-        "w-full h-full relative flex flex-col md:flex-row p-4 gap-2 items-start content-center justify-evenly border-t-2 border-default-400"
+        "w-full h-full relative flex flex-col md:flex-row p-4 gap-2 items-start content-center justify-evenly border-t-2 border-slate-400"
       }
     >
       <div>

@@ -62,7 +62,7 @@ export function Carousel<T>(props: PropType<T>) {
                 className={
                   index === selectedIndex
                     ? "dark:bg-orange-400 bg-orange-500"
-                    : "bg-default-300"
+                    : "bg-slate-400"
                 }
                 onClick={() => onDotButtonClick(index)}
               />

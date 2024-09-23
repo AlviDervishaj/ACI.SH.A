@@ -52,7 +52,10 @@ export const DotButton: React.FC<ButtonProps> = (props) => {
 
   return (
     <Button
-      className={clsx("rounded-full w-4 h-4 md:w-6 md:h-6", className)}
+      className={clsx(
+        "rounded-full w-4 h-4 md:w-6 md:h-6 p-0 m-0 hover:bg-orange-400",
+        className,
+      )}
       {...restProps}
     >
       {children}
