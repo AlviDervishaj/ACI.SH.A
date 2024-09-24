@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { Analytics } from "@vercel/analytics/react";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
 import dynamic from "next/dynamic";
@@ -66,6 +67,7 @@ export default async function RootLayout({
               </main>
               <Footer />
             </div>
+            {<Analytics />}
           </Providers>
         </NextIntlClientProvider>
       </body>
