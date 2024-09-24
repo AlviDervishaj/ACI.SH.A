@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
@@ -68,6 +69,7 @@ export default async function RootLayout({
               <Footer />
             </div>
             {<Analytics />}
+            {<SpeedInsights />}
           </Providers>
         </NextIntlClientProvider>
       </body>
