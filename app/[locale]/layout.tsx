@@ -68,8 +68,8 @@ export default async function RootLayout({
               </main>
               <Footer />
             </div>
-            {<Analytics />}
-            {<SpeedInsights />}
+            <Analytics />
+            <SpeedInsights />
           </Providers>
         </NextIntlClientProvider>
       </body>
