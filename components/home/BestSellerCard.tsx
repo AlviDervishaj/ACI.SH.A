@@ -22,7 +22,7 @@ export function BestSellerCard({ item }: { item: Item }) {
         className="w-[7.856rem] lg:w-[12rem] select-none h-fit group"
         onClick={() => router.push(`/oil/${item.id}`)}
       >
-        <CardContent className="p-0 group">
+        <CardContent className="flex flex-row items-center content-center justify-center p-0 group">
           <Image
             alt={item.name}
             className="object-cover w-[100px] h-[100px] md:h-48 md:w-48 transition-transform duration-500 ease-in-out group-hover:scale-90"

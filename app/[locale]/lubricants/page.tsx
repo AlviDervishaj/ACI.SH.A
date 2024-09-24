@@ -3,24 +3,12 @@ import dynamic from "next/dynamic";
 import { title } from "@/components/primitives";
 import { Link } from "@/config/routing";
 import { Item } from "@/types";
-// const Filters = dynamic(() => import("@/components/lubricants/Filters"));
+const Filters = dynamic(() => import("@/components/lubricants/Filters"));
 const LubricantItem = dynamic(
   () => import("@/components/lubricants/LubricantItem"),
 );
 
 async function getItems() {
-  /**
-   *{
-    id: "0",
-    stock: 100,
-    discount: "0",
-    sku_code: "sku_code",
-    buy_price: "20",
-    main_image: "/images/gallery/2.png",
-    sell_price: "35",
-    description: "Description Here",
-    has_discount: false,
-  } */
   return [
     {
       id: "0",
@@ -91,7 +79,9 @@ export default async function LubricantsPage() {
   return (
     <div className="w-full h-full flex flex-col items-center content-center justify-between">
       <h1 className={title()}>Lubricants</h1>
-      <div className="self-end pt-2 md:p-0">{/*Filters Here*/}</div>
+      <div className="self-end pt-2 md:p-0">
+        <Filters />
+      </div>
       <div className="py-2 md:py-8 w-full">
         {items.length >= 1 ? (
           <div className="w-full h-full grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 place-items-center">

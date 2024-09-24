@@ -17,10 +17,10 @@ export function OilCard({ item }: OilProps) {
     <Link className="w-fit h-fit" href={`/oil/${item.title.toLowerCase()}/`}>
       <Card className="p-0 w-[7.856rem] lg:w-[12rem] h-fit group overflow-hidden">
         <CardHeader className="p-0 absolute z-10 flex-col items-start">
-          <p className="pl-3 text-tiny text-white/60 uppercase font-bold">
+          <p className="p-1 text-tiny text-white/60 uppercase font-bold">
             {item.description}
           </p>
-          <h4 className="text-white font-bold tracking-wide text-2xl group-hover:text-yellow-500 transition-colors duration-300 ease-in-out">
+          <h4 className="pl-3 text-white font-bold tracking-wide text-2xl group-hover:text-yellow-500 transition-colors duration-300 ease-in-out">
             {item.title}
           </h4>
         </CardHeader>
@@ -30,6 +30,8 @@ export function OilCard({ item }: OilProps) {
             "object-cover w-[140px] h-[140px] md:h-48 md:w-48 transition-transform duration-500 ease-in-out group-hover:scale-110 z-0"
           }
           height={200}
+          loading="lazy"
+          quality={100}
           src={item.image}
           width={200}
         />

@@ -75,16 +75,7 @@ export default function BestSellers() {
         has_discount: false,
         name: "Item 4",
       },
-    ].sort((a, b) => {
-      const aPrice = parseFloat(a.buy_price);
-      const bPrice = parseFloat(b.buy_price);
-
-      if (aPrice > bPrice) {
-        return -1;
-      } else if (aPrice < bPrice) {
-        return 1;
-      } else return 0;
-    });
+    ];
 
     setSortedItems(bestSellers);
   }, []);
