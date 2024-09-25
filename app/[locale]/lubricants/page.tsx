@@ -85,7 +85,7 @@ export default async function LubricantsPage() {
       <div className="py-2 md:py-8 w-full">
         {items.length >= 1 ? (
           <div className="w-full h-full grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 place-items-center">
-            {items.map((item) =>
+            {[...items, ...items, ...items].map((item) =>
               item ? <LubricantItem {...item} key={item.id} /> : null,
             )}
           </div>

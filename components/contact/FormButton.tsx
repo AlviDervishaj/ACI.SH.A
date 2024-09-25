@@ -7,7 +7,13 @@ export default function FormButton() {
   const { pending } = useFormStatus();
 
   return (
-    <Button className="w-full" color="primary" disabled={pending} type="submit">
+    <Button
+      className="w-full"
+      color="primary"
+      disabled={pending}
+      type="submit"
+      variant={"secondary"}
+    >
       {pending ? "Sending message..." : "Send message"}
     </Button>
   );

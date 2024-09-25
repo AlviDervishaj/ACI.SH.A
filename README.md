@@ -9,12 +9,18 @@
 - [x] Search.
 - [x] Search Indexing.
 - [x] Dark Mode Logo & Light Mode Logo
-- [x] Lubricants Heading too long on small screen. 
-- [ ] Fetching data. 
+- [x] Lubricants Heading too long on small screen.
+- [X] Fetching data.
 - [x] Components Reusable !!!
 - [x] Best Selling sorted base on price.
-- [x] Remove re-renders in best sellers filtering based on price. 
-- [ ] FocusScope.tsx:724 Uncaught TypeError: Failed to execute 'createTreeWalker' on 'Document': parameter 1 is not of type 'Node'. => Search Component Current Router navigation ??
+- [x] Remove re-renders in best sellers filtering based on price.
+- [x] FocusScope.tsx:724 Uncaught TypeError: Failed to execute 'createTreeWalker' on 'Document': parameter 1 is not of type 'Node'. => Search Component Current Router navigation ??
+- [ ] Desgin ?
+- [ ] Fetch from API
+- [ ] Custom Domain ?
+- [ ] Stripe
+- [ ] Admin
+- [ ] Dashboard
 
 ## Technologies Used
 

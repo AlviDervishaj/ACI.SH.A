@@ -55,15 +55,15 @@ export default async function RootLayout({
       <head />
       <body
         className={clsx(
-          "w-full min-h-dvh font-sans antialiased relative",
+          "w-full min-h-dvh font-sans antialiased relative overflow-y-auto overflow-x-hidden",
           fontSans.variable,
         )}
       >
         <NextIntlClientProvider messages={messages}>
           <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-            <div className="relative flex flex-col min-h-dvh overflow-y-auto">
+            <div className="flex flex-col min-h-dvh overflow-y-auto">
               <Navigation />
-              <main className="container mx-auto max-w-7xl flex-grow">
+              <main className="container mx-auto max-w-7xl flex-grow overflow-y-visible">
                 {children}
               </main>
               <Footer />

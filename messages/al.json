@@ -4,7 +4,7 @@
     "description": "Lubrifikante per Automjete e Industri - Bateri Automjetesh - Vaj Motorri per makina. Distributor ekskluziv i produkteve <distributor>GALP</distributor> nga kompania <parent>PETROGAL</parent>",
     "brands": "Brandet",
     "lubricants_header": "Lubrifikantet <component>PETROGAL</component>.",
-    "header_description": "Distributor zyrtar i <distributor>GULP</distributor>.",
+    "header_description": "Distributor zyrtar i <distributor>GALP</distributor>.",
     "best_sellers": "Me te shiturat",
     "view_all": "Shiko te gjitha"
   },
@@ -20,7 +20,7 @@
     "lubricants": "Lubrifikantet",
     "contact": "Kontakto",
     "search_text": "Kerko...",
-    "gallery": "Galeria"    
+    "gallery": "Galeria"
   },
   "LocaleSwitcher": {
     "label": "Ndrysho gjuhen",

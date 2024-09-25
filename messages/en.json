@@ -4,7 +4,7 @@
     "description": "Exclusive distributor of <distributor>GALP</distributor> products from <parent>PETROGAL</parent>",
     "brands": "Brands",
     "lubricants_header": "<component>PETROGAL</component> Lubricants.",
-    "header_description": "Official Distributor of <distributor>GULP</distributor> products.",
+    "header_description": "Official Distributor of <distributor>GALP</distributor> products.",
     "best_sellers": "Best Sellers",
     "view_all": "View all"
   },
@@ -20,7 +20,7 @@
     "lubricants": "Lubricants",
     "contact": "Contact",
     "search_text": "Search...",
-    "gallery": "Gallery"    
+    "gallery": "Gallery"
   },
   "LocaleSwitcher": {
     "label": "Change language",

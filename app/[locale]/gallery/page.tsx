@@ -6,7 +6,7 @@ import {
   ModalFooter,
   ModalHeader,
   useDisclosure,
-} from "@nextui-org/react";
+} from "@nextui-org/modal";
 import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 
@@ -70,7 +70,7 @@ export default function GalleryHomePage() {
               <ModalFooter>
                 <Button
                   className="bg-red-500 dark:bg-red-500 dark:text-white text-base"
-                  color="red"
+                  variant={"destructive"}
                   onClick={onClose}
                 >
                   Close
