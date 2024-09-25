@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
 
 import { title } from "@/components/primitives";
-import { Link } from "@/config/routing";
 import { Item } from "@/types";
+import { TryAgainLater } from "@/components/_layout/TryAgainLater";
 const Filters = dynamic(() => import("@/components/lubricants/Filters"));
 const LubricantItem = dynamic(
   () => import("@/components/lubricants/LubricantItem"),
@@ -85,24 +85,12 @@ export default async function LubricantsPage() {
       <div className="py-2 md:py-8 w-full">
         {items.length >= 1 ? (
           <div className="w-full h-full grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 place-items-center">
-            {[...items, ...items, ...items].map((item) =>
+            {items.map((item) =>
               item ? <LubricantItem {...item} key={item.id} /> : null,
             )}
           </div>
         ) : (
-          <section className="w-full h-full p-2 grid place-items-center gap-3">
-            <h2 className="text-4xl">No items are available at this time. </h2>
-            <p className="text-3xl">Please try again later. </p>
-            <small className="text-lg">
-              If you think this is an bug / issue then contact{" "}
-              <Link
-                className="text-sky-500"
-                href="mailto://alvidervishaj9@gmail.com"
-              >
-                Support Team
-              </Link>
-            </small>
-          </section>
+          <TryAgainLater />
         )}
       </div>
     </div>
