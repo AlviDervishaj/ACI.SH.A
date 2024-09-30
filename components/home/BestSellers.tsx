@@ -51,6 +51,7 @@ export default function BestSellers() {
           className={
             "tracking-wide inline font-bold text-center text-2xl lg:text-3xl leading-9 pl-0"
           }
+          id="bestSellers"
         >
           {t("best_sellers")}
         </h2>
