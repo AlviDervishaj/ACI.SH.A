@@ -63,7 +63,7 @@ export default async function RootLayout({
           <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
             <div className="flex flex-col min-h-dvh overflow-y-auto">
               <Navigation />
-              <main className="container mx-auto max-w-7xl flex-grow overflow-y-visible">
+              <main className="container mx-auto max-w-7xl flex-grow overflow-y-visible pt-16">
                 {children}
               </main>
               <Footer />

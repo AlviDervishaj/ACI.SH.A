@@ -34,21 +34,21 @@ export function LocaleSwitcherSelect({ children, defaultValue, label }: Props) {
   return (
     <label
       className={clsx(
-        "relative text-gray-400",
+        "relative text-gray-400 h-fit w-fit bg-slate-100 p-2 rounded-lg justify-center flex flex-row items-center content-center dark:bg-slate-700",
         isPending && "transition-opacity [&:disabled]:opacity-30",
       )}
     >
       <p className="sr-only">{label}</p>
       <select
-        className="inline-flex appearance-none bg-transparent py-3 pl-2 pr-6"
+        className="h-full rounded-md border-0 p-0 bg-slate-100 dark:bg-slate-700 bg-none text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
         defaultValue={defaultValue}
         disabled={isPending}
         onChange={onSelectChange}
       >
         {children}
       </select>
-      <span className="pointer-events-none absolute right-2 bottom-[12px]">
-        <ChevronDown />
+      <span className="pointer-events-none w-fit h-fit">
+        <ChevronDown size={24} />
       </span>
     </label>
   );
