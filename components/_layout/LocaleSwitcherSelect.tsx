@@ -6,10 +6,9 @@ import { useRouter, usePathname } from "@/config/routing";
 type Props = {
   children: ReactNode;
   defaultValue: string;
-  label: string;
 };
 
-export function LocaleSwitcherSelect({ children, defaultValue, label }: Props) {
+export function LocaleSwitcherSelect({ children, defaultValue }: Props) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();

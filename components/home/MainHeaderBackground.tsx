@@ -17,7 +17,6 @@ export default function MainHeaderBackground() {
   const { scrollYProgress } = useScroll({
     layoutEffect: false,
     axis: "y",
-    smooth: 10,
     target: container,
     offset: ["start end", "end start"],
   });
@@ -66,7 +65,7 @@ export default function MainHeaderBackground() {
 }
 
 function AnimatedArrow() {
-  const scrolltoHash = function (element_id: string) {
+  const scrolltoHash = function(element_id: string) {
     const element = document.getElementById(element_id);
 
     element?.scrollIntoView({
