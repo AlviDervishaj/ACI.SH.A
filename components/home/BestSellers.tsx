@@ -56,7 +56,7 @@ export default function BestSellers() {
           {t("best_sellers")}
         </h2>
         <Link
-          className="border-b-2 hover:border-b-default-600 border-b-transparent transition-colors duration-300 ease-in-out"
+          className="border-b-2 hover:border-b-slate-600 dark:hover:border-b-slate-400 border-b-transparent transition-colors duration-300 ease-in-out"
           href="/lubricants"
         >
           {t("view_all")}

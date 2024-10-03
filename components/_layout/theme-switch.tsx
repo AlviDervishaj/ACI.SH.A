@@ -12,7 +12,7 @@ export function ThemeSwitch() {
     <>
       {theme === "dark" ? (
         <Button
-          className="min-w-10"
+          className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-800 dark:text-gray-200 dark:hover:text-slate-900 dark:hover:bg-slate-300 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
           id="SUN_ICON"
           size="icon"
           variant="ghost"
@@ -26,7 +26,7 @@ export function ThemeSwitch() {
         </Button>
       ) : (
         <Button
-          className="min-w-10"
+          className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-800 dark:text-gray-200 dark:hover:text-slate-900 dark:hover:bg-slate-300 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
           id="MOON_ICON"
           size="icon"
           variant="ghost"

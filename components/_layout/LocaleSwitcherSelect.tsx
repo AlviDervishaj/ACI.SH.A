@@ -1,7 +1,5 @@
-import clsx from "clsx";
 import { useParams } from "next/navigation";
 import { ChangeEvent, ReactNode, useTransition } from "react";
-import { ChevronDown } from "lucide-react";
 
 import { useRouter, usePathname } from "@/config/routing";
 
@@ -32,24 +30,13 @@ export function LocaleSwitcherSelect({ children, defaultValue, label }: Props) {
   }
 
   return (
-    <label
-      className={clsx(
-        "relative text-gray-400 h-fit w-fit bg-slate-100 p-2 rounded-lg justify-center flex flex-row items-center content-center dark:bg-slate-700",
-        isPending && "transition-opacity [&:disabled]:opacity-30",
-      )}
+    <select
+      className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block min-w-28 md:w-28 lg:w-36 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      defaultValue={defaultValue}
+      disabled={isPending}
+      onChange={onSelectChange}
     >
-      <p className="sr-only">{label}</p>
-      <select
-        className="h-full rounded-md border-0 p-0 bg-slate-100 dark:bg-slate-700 bg-none text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
-        defaultValue={defaultValue}
-        disabled={isPending}
-        onChange={onSelectChange}
-      >
-        {children}
-      </select>
-      <span className="pointer-events-none w-fit h-fit">
-        <ChevronDown size={24} />
-      </span>
-    </label>
+      {children}
+    </select>
   );
 }
