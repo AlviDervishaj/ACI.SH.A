@@ -65,7 +65,7 @@ export default function MainHeaderBackground() {
 }
 
 function AnimatedArrow() {
-  const scrolltoHash = function(element_id: string) {
+  const scrolltoHash = function (element_id: string) {
     const element = document.getElementById(element_id);
 
     element?.scrollIntoView({
@@ -74,12 +74,14 @@ function AnimatedArrow() {
   };
 
   return (
-    <Button
-      className="absolute bottom-10 animate-bounce left-1/2 translate-x-1/2 z-10"
-      variant={"outline"}
-      onClick={() => scrolltoHash("bestSellers")}
-    >
-      <ArrowDown />
-    </Button>
+    <div className="w-full h-fit bottom-0 pb-4 p-1 flex flex-row items-center content-center justify-center absolute">
+      <Button
+        className="animate-bounce dark:hover:bg-slate-700 z-10"
+        variant={"outline"}
+        onClick={() => scrolltoHash("bestSellers")}
+      >
+        <ArrowDown />
+      </Button>
+    </div>
   );
 }

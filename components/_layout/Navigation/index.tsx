@@ -32,7 +32,7 @@ export default function NavigationUI() {
       className="bg-background/80 border-b border-b-slate-700/50 dark:border-b-foreground/50 shadow-lg shadow-foreground/10 backdrop-blur z-50 p-0 m-0 fixed top-0 left-0 w-full h-fit"
     >
       {/* On Large Hide. Show on smaller screens. ( SMALL NAVBAR ) */}
-      <div className="mx-auto w-full px-2 md:px-3">
+      <div className="mx-auto w-full px-2 md:px-2 lg:px-6 xl:px-10">
         <div className="relative flex h-16 items-center justify-between w-full">
           <div className="flex flex-1 items-center justify-between lg:items-stretch lg:justify-start">
             <div className="flex flex-shrink-0 items-center justify-self-center self-center">
