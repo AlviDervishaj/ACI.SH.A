@@ -26,5 +26,7 @@ export async function handleFormSubmit(_: any, formData: FormData) {
     rawFormData.message.toString().trim() === ""
   ) {
     return { error: "Please provide a message.", message: "" };
-  } else return { error: "", message: "Message sent successfully." };
+  }
+  // SEND MESSAGE HERE
+  else return { error: "", message: "Message sent successfully." };
 }

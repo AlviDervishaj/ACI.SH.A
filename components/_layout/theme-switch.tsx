@@ -12,24 +12,30 @@ export function ThemeSwitch() {
     <>
       {theme === "dark" ? (
         <Button
-          className="min-w-10"
+          className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-800 dark:text-gray-200 dark:hover:text-slate-900 dark:hover:bg-slate-300 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
           id="SUN_ICON"
           size="icon"
-          variant="outline"
+          variant="ghost"
           onClick={() => setTheme("light")}
         >
-          <Sun className="h-[1.2rem] w-[1.2rem] dark:rotate-0 dark:scale-100 transition-all -rotate-90 scale-0" />
+          <Sun
+            className="dark:rotate-0 dark:scale-100 transition-all -rotate-90 scale-0"
+            size={24}
+          />
           <span className="sr-only">Set theme to light mode.</span>
         </Button>
       ) : (
         <Button
-          className="min-w-10"
+          className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-800 dark:text-gray-200 dark:hover:text-slate-900 dark:hover:bg-slate-300 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
           id="MOON_ICON"
           size="icon"
-          variant="outline"
+          variant="ghost"
           onClick={() => setTheme("dark")}
         >
-          <Moon className="absolute h-[1.2rem] w-[1.2rem] dark:rotate-90 dark:scale-0 transition-all rotate-0 scale-100" />
+          <Moon
+            className="dark:rotate-90 dark:scale-0 transition-all rotate-0 scale-100"
+            size={24}
+          />
           <span className="sr-only">Set theme to dark mode.</span>
         </Button>
       )}

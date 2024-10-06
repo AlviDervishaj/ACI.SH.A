@@ -1,8 +1,7 @@
-import { Carousel } from "../carousel/Carousel";
+import { TryAgainLater } from "@/components/_layout/TryAgainLater";
+import { Carousel } from "@/components/carousel/Carousel";
+import { OilCard } from "@/components/oil/OilCard";
 
-import { OilCard } from "./OilCard";
-
-import { Link } from "@/config/routing";
 export function RenderOilCompanies() {
   type OilCardProps = { image: string; title: string; id: number };
 
@@ -33,19 +32,7 @@ export function RenderOilCompanies() {
           slides={items}
         />
       ) : (
-        <section className="w-full h-full p-2 grid place-items-center gap-3">
-          <h2 className="text-4xl">No items are available at this time. </h2>
-          <p className="text-3xl">Please try again later. </p>
-          <small className="text-lg">
-            If you think this is an bug / issue then contact{" "}
-            <Link
-              className="text-sky-500"
-              href="mailto://alvidervishaj9@gmail.com"
-            >
-              Support Team
-            </Link>
-          </small>
-        </section>
+        <TryAgainLater />
       )}
     </div>
   );

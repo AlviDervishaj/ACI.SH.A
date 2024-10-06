@@ -8,11 +8,10 @@ export default function FormButton() {
 
   return (
     <Button
-      className="w-full"
-      color="primary"
+      className="w-full text-foreground dark:bg-gray-700"
       disabled={pending}
       type="submit"
-      variant={"secondary"}
+      variant="outline"
     >
       {pending ? "Sending message..." : "Send message"}
     </Button>

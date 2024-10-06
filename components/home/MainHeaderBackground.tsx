@@ -3,6 +3,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef } from "react";
+import { ArrowDown } from "lucide-react";
+
+import { Button } from "../ui/button";
 
 import { FadeInHeader } from "@/components/home/FadeInHeader";
 import { convertMillisecondsToSeconds } from "@/lib/utils";
@@ -14,14 +17,13 @@ export default function MainHeaderBackground() {
   const { scrollYProgress } = useScroll({
     layoutEffect: false,
     axis: "y",
-    smooth: 10,
     target: container,
     offset: ["start end", "end start"],
   });
   const sm = useTransform(scrollYProgress, [0, 2], [0, -500]);
 
   return (
-    <section className="w-screen h-[100dvh] relative flex items-center content-center">
+    <section className="w-screen h-[78dvh] relative flex items-center content-center">
       <motion.div
         animate={{ opacity: 1 }}
         className={"absolute w-full h-full"}
@@ -56,7 +58,30 @@ export default function MainHeaderBackground() {
             </div>
           </FadeInHeader>
         </motion.section>
+        <AnimatedArrow />
       </div>
     </section>
+  );
+}
+
+function AnimatedArrow() {
+  const scrolltoHash = function (element_id: string) {
+    const element = document.getElementById(element_id);
+
+    element?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  return (
+    <div className="w-full h-fit bottom-0 pb-4 p-1 flex flex-row items-center content-center justify-center absolute">
+      <Button
+        className="animate-bounce dark:hover:bg-slate-700 z-10"
+        variant={"outline"}
+        onClick={() => scrolltoHash("bestSellers")}
+      >
+        <ArrowDown />
+      </Button>
+    </div>
   );
 }

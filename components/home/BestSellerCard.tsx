@@ -19,7 +19,7 @@ export function BestSellerCard({ item }: { item: Item }) {
     <Link href={`/oil/${item.id}`}>
       <Card
         key={item.id}
-        className="w-[7.856rem] lg:w-[12rem] select-none h-fit group"
+        className="w-[7.856rem] lg:w-[12rem] select-none h-fit group dark:bg-slate-800"
         onClick={() => router.push(`/oil/${item.id}`)}
       >
         <CardContent className="flex flex-row items-center content-center justify-center p-0 group">
@@ -31,7 +31,7 @@ export function BestSellerCard({ item }: { item: Item }) {
             width={200}
           />
         </CardContent>
-        <CardFooter className="p-3 text-small flex flex-row justify-between items-center content-center">
+        <CardFooter className="p-3 text-small flex flex-col justify-center gap-1 items-center content-center">
           <h3 className="font-bold text-left text-xs truncate w-full md:text-sm">
             {item.name}
           </h3>
