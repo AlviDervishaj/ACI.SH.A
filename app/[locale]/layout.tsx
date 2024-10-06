@@ -67,7 +67,7 @@ export default async function RootLayout({
           property="og:description"
         />
         <meta
-          content="https://acilub.vercel.app/public/images/aci-log-dark-demo.jpeg"
+          content="https://acilub.vercel.app/images/aci-logo-dark-demo.jpg"
           property="og:image"
         />
         <meta content="summary_large_image" property="twitter:card" />
@@ -78,7 +78,7 @@ export default async function RootLayout({
           property="twitter:description"
         />
         <meta
-          content="https://acilub.vercel.app/public/images/aci-log-dark-demo.jpeg"
+          content="https://acilub.vercel.app/images/aci-logo-dark-demo.jpg"
           property="twitter:image"
         />
       </head>
