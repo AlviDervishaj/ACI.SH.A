@@ -52,7 +52,36 @@ export default async function RootLayout({
       className="w-[100dvw] min-h-[100dvh] overflow-x-hidden relative"
       lang={locale}
     >
-      <head />
+      <head>
+        <title>AÇI SH.A</title>
+        <meta content="AÇI SH.A" name="title" />
+        <meta
+          content="Distributor ekskluziv i Galp në Ballkan. Lubrifikante per Automjete e Industri - Vaj Motorri per makina"
+          name="description"
+        />
+        <meta content="website" property="og:type" />
+        <meta content="https://acilub.vercel.app/" property="og:url" />
+        <meta content="AÇI SH.A" property="og:title" />
+        <meta
+          content="Distributor ekskluziv i Galp në Ballkan. Lubrifikante per Automjete e Industri - Vaj Motorri per makina"
+          property="og:description"
+        />
+        <meta
+          content="https://acilub.vercel.app/public/images/aci-log-dark-demo.jpeg"
+          property="og:image"
+        />
+        <meta content="summary_large_image" property="twitter:card" />
+        <meta content="https://acilub.vercel.app/" property="twitter:url" />
+        <meta content="AÇI SH.A" property="twitter:title" />
+        <meta
+          content="Distributor ekskluziv i Galp në Ballkan. Lubrifikante per Automjete e Industri - Vaj Motorri per makina"
+          property="twitter:description"
+        />
+        <meta
+          content="https://acilub.vercel.app/public/images/aci-log-dark-demo.jpeg"
+          property="twitter:image"
+        />
+      </head>
       <body
         className={clsx(
           "w-full min-h-dvh font-sans antialiased relative overflow-y-auto overflow-x-hidden",
