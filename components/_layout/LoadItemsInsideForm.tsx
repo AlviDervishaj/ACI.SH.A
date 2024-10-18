@@ -1,8 +1,8 @@
 "use client";
 import { LoaderCircle } from "lucide-react";
 import { useFormStatus } from "react-dom";
-import { Button } from "@nextui-org/react";
 
+import { Button } from "@/components/ui/button";
 import { Item } from "@/types";
 
 export function LoadItemsInsideForm({ items }: { items: Item[] }) {
@@ -26,7 +26,6 @@ export function LoadItemsInsideForm({ items }: { items: Item[] }) {
               key={item.id}
               className="w-full"
               id={`${item.id} ${item.name}`}
-              variant="light"
             >
               {item.name}
             </Button>

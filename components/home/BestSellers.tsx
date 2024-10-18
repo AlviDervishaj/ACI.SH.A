@@ -4,8 +4,8 @@ import type { Item } from "@/types";
 import { useTranslations } from "next-intl";
 import { TriangleAlert } from "lucide-react";
 import useSWR from "swr";
-import { CircularProgress } from "@nextui-org/progress";
 
+import { Loading } from "@/components/_layout/Loading";
 import { TryAgainLater } from "@/components/_layout/TryAgainLater";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Carousel } from "@/components/carousel/Carousel";
@@ -33,11 +33,7 @@ export default function BestSellers() {
       )}
       {isLoading && (
         <div className="py-2 md:py-8 grid place-items-center h-full w-full">
-          <CircularProgress
-            aria-label="Loading..."
-            color={"primary"}
-            size={"lg"}
-          />
+          <Loading />
         </div>
       )}
       <div className="w-full h-fit p-0 m-0 flex flex-row items-center content-center justify-between">
