@@ -41,7 +41,7 @@ export default function ContactForm() {
         placeholder="Enter your message here. &#128515; "
         rows={5}
       />
-      {state?.error ? (
+      {state?.error && (
         <div aria-live="polite" className="w-full h-fit p-2 text-center">
           <p
             aria-live="polite"
@@ -50,8 +50,8 @@ export default function ContactForm() {
             {state.error}
           </p>
         </div>
-      ) : null}
-      {state?.message ? (
+      )}
+      {state?.message && (
         <div aria-live="polite" className="w-full h-fit p-2 text-center">
           <p
             aria-live="polite"
@@ -60,7 +60,7 @@ export default function ContactForm() {
             {state.message}
           </p>
         </div>
-      ) : null}
+      )}
       <FormButton />
     </form>
   );

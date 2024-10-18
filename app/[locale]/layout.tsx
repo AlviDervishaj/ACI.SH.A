@@ -54,6 +54,10 @@ export default async function RootLayout({
     >
       <head>
         <title>AÇI SH.A</title>
+        <meta
+          content="hMECQvVGV3rwsQXLIq_URy0kEhB586JR1fXHpcj8oF4"
+          name="google-site-verification"
+        />
         <meta content="AÇI SH.A" name="title" />
         <meta
           content="Distributor ekskluziv i Galp në Ballkan. Lubrifikante per Automjete e Industri - Vaj Motorri per makina"

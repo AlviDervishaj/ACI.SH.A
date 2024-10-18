@@ -20,32 +20,26 @@ export default function BestSellers() {
     fetcher,
   );
 
-  if (isLoading) {
-    return (
-      <div className="py-2 md:py-8 grid place-items-center h-full w-full">
-        <CircularProgress
-          aria-label="Loading..."
-          color={"primary"}
-          size={"lg"}
-        />
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <Alert variant="destructive">
-        <TriangleAlert className="h-4 w-4" />
-        <AlertTitle>Error</AlertTitle>
-        <AlertDescription>
-          Your session has expired. Please log in again.
-        </AlertDescription>
-      </Alert>
-    );
-  }
-
   return (
-    <div className="py-8 lg:w-[850px]">
+    <div className="py-8 md:w-full lg:w-[53rem]">
+      {error && (
+        <Alert variant="destructive">
+          <TriangleAlert className="h-4 w-4" />
+          <AlertTitle>Error</AlertTitle>
+          <AlertDescription>
+            Your session has expired. Please log in again.
+          </AlertDescription>
+        </Alert>
+      )}
+      {isLoading && (
+        <div className="py-2 md:py-8 grid place-items-center h-full w-full">
+          <CircularProgress
+            aria-label="Loading..."
+            color={"primary"}
+            size={"lg"}
+          />
+        </div>
+      )}
       <div className="w-full h-fit p-0 m-0 flex flex-row items-center content-center justify-between">
         <h2
           className={

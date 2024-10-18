@@ -1,19 +1,24 @@
 import Image from "next/image";
 import { useFormatter } from "next-intl";
 import { useIsomorphicLayoutEffect } from "usehooks-ts";
+import { memo } from "react";
 
 import { Link } from "@/config/routing";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Item } from "@/types";
 import { useRouter } from "@/config/routing";
 
-export function BestSellerCard({ item }: { item: Item }) {
+export const BestSellerCard = memo(function BestSellerCard({
+  item,
+}: {
+  item: Item;
+}) {
   const numberF = useFormatter();
   const router = useRouter();
 
   useIsomorphicLayoutEffect(() => {
     router.prefetch(`/oil/${item.id}`);
-  }, []);
+  }, [item.id]);
 
   return (
     <Link href={`/oil/${item.id}`}>
@@ -45,4 +50,4 @@ export function BestSellerCard({ item }: { item: Item }) {
       </Card>
     </Link>
   );
-}
+});

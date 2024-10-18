@@ -13,7 +13,7 @@ const RenderOilCompanies = dynamic(() =>
 
 export default function AvailableLubricants() {
   return (
-    <div className="lg:py-8 lg:w-[850px]">
+    <div className="py-8 md:w-full lg:w-[53rem]">
       <OilCompaniesHeader />
       <RenderOilCompanies />
     </div>
