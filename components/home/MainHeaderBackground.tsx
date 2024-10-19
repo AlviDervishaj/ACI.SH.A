@@ -7,11 +7,9 @@ import { ArrowDown } from "lucide-react";
 
 import { Button } from "../ui/button";
 
-import { FadeInHeader } from "@/components/home/FadeInHeader";
-import { convertMillisecondsToSeconds } from "@/lib/utils";
 import { title } from "@/components/primitives";
 
-export default function MainHeaderBackground() {
+export function MainHeaderBackground() {
   const t = useTranslations("Home");
   const container = useRef<HTMLElement | null>(null);
   const { scrollYProgress } = useScroll({
@@ -40,23 +38,21 @@ export default function MainHeaderBackground() {
       </motion.div>
       <div className="w-full h-full backdrop-blur-sm bg-black/50">
         <motion.section
-          className="absolute w-full flex inset-0 flex-col gap-10 items-center justify-center"
+          className="absolute text-center w-full flex inset-0 flex-col gap-10 items-center justify-center"
           style={{ y: sm }}
         >
-          <FadeInHeader delay={convertMillisecondsToSeconds(500)}>
-            <p className={title({ size: "lg" })}>{t("title")}</p>
-          </FadeInHeader>
-          <FadeInHeader delay={convertMillisecondsToSeconds(700)}>
-            <div className={title({ size: "md" })}>
-              {t.rich("header_description", {
-                distributor: (chunk) => (
-                  <p className={title({ size: "lg", color: "orange" })}>
-                    &nbsp;{chunk}&nbsp;
-                  </p>
-                ),
-              })}
-            </div>
-          </FadeInHeader>
+          <p className="text-4xl lg:text-7xl font-bold text-slate-200">
+            {t("title")}
+          </p>
+          <div className="w-fit text-[2.3rem] lg:text-5xl leading-9 font-medium text-slate-200">
+            {t.rich("header_description", {
+              distributor: (chunk) => (
+                <p className={title({ size: "lg", color: "orange" })}>
+                  &nbsp;{chunk}&nbsp;
+                </p>
+              ),
+            })}
+          </div>
         </motion.section>
         <AnimatedArrow />
       </div>

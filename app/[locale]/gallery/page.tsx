@@ -49,12 +49,12 @@ export default function GalleryHomePage() {
   }, [currentImageIndex]);
 
   return (
-    <section className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-6 w-full h-full">
+    <section className="grid place-items-center grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 my-6 md:mt-6 lg:mt-0 p-1 md:p-4 lg:p-6 w-full h-full">
       {images.map((_img) => (
         <Image
           key={_img.src}
           alt={_img.src}
-          className="cursor-pointer object-contain aspect-square hover:scale-105 transition-transform duration-300 ease-in-out"
+          className="cursor-pointer w-full h-full object-contain aspect-square"
           src={_img}
           onClick={() => handleOnOpen(_img)}
         />

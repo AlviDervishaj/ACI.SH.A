@@ -5,17 +5,15 @@ const OilCompaniesHeader = dynamic(() =>
     (mod) => mod.OilCompaniesHeader,
   ),
 );
-const RenderOilCompanies = dynamic(() =>
-  import("@/components/oil/RenderOilCompanies").then(
-    (mod) => mod.RenderOilCompanies,
-  ),
+const OilCompanies = dynamic(() =>
+  import("@/components/oil/OilCompanies").then((mod) => mod.OilCompanies),
 );
 
-export default function AvailableLubricants() {
+export function AvailableLubricants() {
   return (
-    <div className="py-8 md:w-full lg:w-[53rem]">
+    <div className="py-8 w-full md:w-full lg:w-[53rem]">
       <OilCompaniesHeader />
-      <RenderOilCompanies />
+      <OilCompanies />
     </div>
   );
 }
