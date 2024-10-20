@@ -22,7 +22,7 @@ export const BestSellerCard = memo(function BestSellerCard({
         <CardContent className="w-full h-full flex flex-row items-center content-center justify-center p-0 group">
           <Image
             alt={item.name}
-            className="object-cover w-24 h-24 transition-transform duration-500 ease-in-out group-hover:scale-90"
+            className="object-cover w-36 h-36 transition-transform duration-500 ease-in-out group-hover:scale-90"
             height={150}
             quality={100}
             src={item.main_image}

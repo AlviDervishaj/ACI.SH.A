@@ -10,11 +10,18 @@ import { TryAgainLater } from "@/components/_layout/TryAgainLater";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { CarouselWrapper } from "@/components/carousel/Carousel";
 import { Link } from "@/config/routing";
+import { fetcher } from "@/lib/utils";
 
 export default function BestSellers() {
   const t = useTranslations("Home");
   const { data, isLoading, error } = useSWR<Item[]>(
     "https://my.api.mockaroo.com/oils.json?key=2411cd00",
+    fetcher,
+    {
+      revalidateIfStale: false,
+      revalidateOnFocus: false,
+      shouldRetryOnError: false,
+    },
   );
 
   return (
