@@ -3,7 +3,7 @@ import Image from "next/image";
 import { memo } from "react";
 
 import { Card, CardHeader } from "@/components/ui/card";
-import { Link } from "@/config/routing";
+import { Link } from "@/i18n/routing";
 
 type OilProps = {
   item: {

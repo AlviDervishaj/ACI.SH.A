@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useFormatter } from "next-intl";
 import { memo } from "react";
 
-import { Link } from "@/config/routing";
+import { Link } from "@/i18n/routing";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Item } from "@/types";
 

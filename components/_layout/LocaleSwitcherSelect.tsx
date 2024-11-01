@@ -1,7 +1,7 @@
 import { useParams } from "next/navigation";
 import { ChangeEvent, ReactNode, useTransition } from "react";
 
-import { useRouter, usePathname } from "@/config/routing";
+import { useRouter, usePathname } from "@/i18n/routing";
 
 type Props = {
   children: ReactNode;

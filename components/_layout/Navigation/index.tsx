@@ -20,9 +20,9 @@ import Search from "./Search";
 import ShoppingCart from "./ShoppingCart";
 
 import { siteConfig } from "@/config/site";
-import { usePathname, Link } from "@/config/routing";
+import { usePathname, Link } from "@/i18n/routing";
 
-export default function NavigationUI() {
+export const NavigationUI = () => {
   const t = useTranslations("Navigation");
   const pathname = usePathname();
 
@@ -133,7 +133,7 @@ export default function NavigationUI() {
       </DisclosurePanel>
     </Disclosure>
   );
-}
+};
 
 export function ProfileDropdown() {
   return (

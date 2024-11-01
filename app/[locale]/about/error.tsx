@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-import { useRouter } from "@/config/routing";
+import { useRouter } from "@/i18n/routing";
 
 export default function Error({
   error,

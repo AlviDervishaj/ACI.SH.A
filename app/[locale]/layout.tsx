@@ -1,23 +1,29 @@
 import "@/styles/globals.css";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
 import { Metadata, Viewport } from "next";
-import clsx from "clsx";
 import dynamic from "next/dynamic";
+import clsx from "clsx";
 
 import { Providers } from "@/components/_layout/providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
+import { routing } from "@/i18n/routing";
 
 const Footer = dynamic(
   () => import("@/components/_layout/Footer").then((mod) => mod.Footer),
   { ssr: false },
 );
-const Navigation = dynamic(() => import("@/components/_layout/Navigation/"), {
-  ssr: false,
-});
+const Navigation = dynamic(
+  () =>
+    import("@/components/_layout/Navigation/").then((mod) => mod.NavigationUI),
+  {
+    ssr: false,
+  },
+);
 
 export const metadata: Metadata = {
   title: {
@@ -44,6 +50,13 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  // Ensure that the incoming `locale` is valid
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
+  // Providing all messages to the client
+  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (

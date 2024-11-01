@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useFormatter } from "next-intl";
 
 import { Button } from "@/components/ui/button";
-import { Link } from "@/config/routing";
+import { Link } from "@/i18n/routing";
 import { Item } from "@/types";
 
 export default function LubricantItem(item: Item) {

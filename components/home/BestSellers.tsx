@@ -9,7 +9,7 @@ import { Loading } from "@/components/_layout/Loading";
 import { TryAgainLater } from "@/components/_layout/TryAgainLater";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { CarouselWrapper } from "@/components/carousel/Carousel";
-import { Link } from "@/config/routing";
+import { Link } from "@/i18n/routing";
 import { fetcher } from "@/lib/utils";
 
 export default function BestSellers() {
