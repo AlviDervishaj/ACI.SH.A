@@ -11,10 +11,7 @@ const initialState = {
   message: "",
 };
 
-const FormButton = dynamic(() => import("@/components/contact/FormButton"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+const FormButton = dynamic(() => import("@/components/contact/FormButton"));
 
 export default function ContactForm() {
   const [state, formAction] = useFormState(handleFormSubmit, initialState);

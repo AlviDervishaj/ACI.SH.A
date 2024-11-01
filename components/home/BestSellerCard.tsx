@@ -17,7 +17,7 @@ export const BestSellerCard = memo(function BestSellerCard({
     <Link href={`/oil/${item.id}`}>
       <Card
         key={item.id}
-        className="w-[7.856rem] lg:w-[12rem] select-none md:h-48 lg:h-56 group dark:bg-slate-800 flex flex-col items-center content-between overflow-x-hidden justify-center"
+        className="w-[7.856rem] lg:w-[12rem] select-none md:w-52 md:h-52 lg:h-60 group dark:bg-slate-800 flex flex-col items-center content-between overflow-x-hidden justify-center"
       >
         <CardContent className="w-full h-full flex flex-row items-center content-center justify-center p-0 group">
           <Image

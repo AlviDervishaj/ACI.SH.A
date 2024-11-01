@@ -5,10 +5,11 @@ import useSWR from "swr";
 import { useTranslations } from "next-intl";
 import { TriangleAlert } from "lucide-react";
 
+import { BestSellerCard } from "./BestSellerCard";
+
 import { Loading } from "@/components/_layout/Loading";
 import { TryAgainLater } from "@/components/_layout/TryAgainLater";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { CarouselWrapper } from "@/components/carousel/Carousel";
 import { Link } from "@/i18n/routing";
 import { fetcher } from "@/lib/utils";
 
@@ -45,7 +46,7 @@ export default function BestSellers() {
           {t("best_sellers")}
         </h2>
         <Link
-          className="border-b-2 hover:border-b-slate-600 dark:hover:border-b-slate-400 border-b-transparent transition-colors duration-300 ease-in-out"
+          className="border-b-2 hover:border-b-slate-600 dark:hover:border-b-slate-400 border-b-transparent transition-colors duration-300 ease-in-out pb-12"
           href="/lubricants"
         >
           {t("view_all")}
@@ -57,7 +58,13 @@ export default function BestSellers() {
         </div>
       )}
       {data && data.length >= 1 ? (
-        <CarouselWrapper items={data.slice(0, 6)} />
+        <section className="flex flex-row items-center content-center justify-start px-3 md:justify-evenly gap-4 p-4 overflow-y-auto">
+          {data
+            ? data
+                .slice(0, 3)
+                .map((item) => <BestSellerCard key={item.id} item={item} />)
+            : null}
+        </section>
       ) : (
         <TryAgainLater />
       )}

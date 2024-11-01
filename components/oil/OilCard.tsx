@@ -28,7 +28,7 @@ export const OilCard = memo(
           </CardHeader>
           <Image
             alt="Card example background"
-            className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110 bg-transparent z-0"
+            className="object-cover aspect-square w-auto transition-transform duration-500 ease-in-out group-hover:scale-110 bg-transparent z-0"
             height={200}
             loading="lazy"
             quality={100}

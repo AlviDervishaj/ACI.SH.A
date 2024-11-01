@@ -13,16 +13,11 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { routing } from "@/i18n/routing";
 
-const Footer = dynamic(
-  () => import("@/components/_layout/Footer").then((mod) => mod.Footer),
-  { ssr: false },
+const Footer = dynamic(() =>
+  import("@/components/_layout/Footer").then((mod) => mod.Footer),
 );
-const Navigation = dynamic(
-  () =>
-    import("@/components/_layout/Navigation/").then((mod) => mod.NavigationUI),
-  {
-    ssr: false,
-  },
+const Navigation = dynamic(() =>
+  import("@/components/_layout/Navigation/").then((mod) => mod.NavigationUI),
 );
 
 export const metadata: Metadata = {
@@ -43,13 +38,16 @@ export const viewport: Viewport = {
   ],
 };
 
-export default async function RootLayout({
-  children,
-  params: { locale },
-}: {
+export default async function RootLayout(props: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const params = await props.params;
+
+  const { locale } = params;
+
+  const { children } = props;
+
   // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale as any)) {
     notFound();

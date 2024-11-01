@@ -20,10 +20,11 @@ export const CarouselWrapper = memo(
   function CarouselGeneric({ items }: PropType) {
     return (
       <Carousel
-        className="md:w-9/12 mx-auto pb-4"
+        className="w-[24rem] md:w-9/12 mx-auto pb-4 pt-3"
         opts={{
           align: "start",
           loop: true,
+          axis: "x",
         }}
       >
         <CarouselContent className="-ml-1">
