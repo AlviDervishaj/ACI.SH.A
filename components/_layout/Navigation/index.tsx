@@ -9,18 +9,24 @@ import {
   MenuItems,
 } from "@headlessui/react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { Menu as MIcon, X } from "lucide-react";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 
 import { LocaleSwitcher } from "../LocaleSwitcher";
-import { ThemeSwitch } from "../theme-switch";
 
 import Search from "./Search";
 import ShoppingCart from "./ShoppingCart";
 
 import { siteConfig } from "@/config/site";
 import { usePathname, Link } from "@/i18n/routing";
+
+const ThemeSwitch = dynamic(
+  () =>
+    import("@/components/_layout/theme-switch").then((mod) => mod.ThemeSwitch),
+  { ssr: false },
+);
 
 export const NavigationUI = () => {
   const t = useTranslations("Navigation");
