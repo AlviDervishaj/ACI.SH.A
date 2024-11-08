@@ -1,6 +1,6 @@
-"use client";
-import { useFormState } from "react-dom";
-import dynamic from "next/dynamic";
+import { useActionState } from "react";
+
+import FormButton from "./FormButton";
 
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -11,10 +11,8 @@ const initialState = {
   message: "",
 };
 
-const FormButton = dynamic(() => import("@/components/contact/FormButton"));
-
 export default function ContactForm() {
-  const [state, formAction] = useFormState(handleFormSubmit, initialState);
+  const [state, formAction] = useActionState(handleFormSubmit, initialState);
 
   return (
     <form

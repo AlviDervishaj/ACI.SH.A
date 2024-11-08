@@ -1,6 +1,6 @@
 "use client";
-import dynamic from "next/dynamic";
-const ContactForm = dynamic(() => import("@/components/contact/ContactForm"));
+
+import ContactForm from "@/components/contact/ContactForm";
 
 export default function ContactPage() {
   return (

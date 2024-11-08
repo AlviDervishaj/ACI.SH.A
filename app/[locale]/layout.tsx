@@ -1,24 +1,18 @@
-import "@/styles/globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Metadata, Viewport } from "next";
-import dynamic from "next/dynamic";
 import clsx from "clsx";
 
-import { Providers } from "@/components/_layout/providers";
+import { Providers } from "@/providers/providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { routing } from "@/i18n/routing";
-
-const Footer = dynamic(() =>
-  import("@/components/_layout/Footer").then((mod) => mod.Footer),
-);
-const Navigation = dynamic(() =>
-  import("@/components/_layout/Navigation/").then((mod) => mod.NavigationUI),
-);
+import "@/styles/globals.css";
+import { Footer } from "@/components/_layout/Footer";
+import { NavigationUI as Navigation } from "@/components/_layout/Navigation";
 
 export const metadata: Metadata = {
   title: {
@@ -104,7 +98,7 @@ export default async function RootLayout(props: {
         )}
       >
         <NextIntlClientProvider messages={messages}>
-          <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
+          <Providers>
             <div className="flex flex-col min-h-dvh overflow-y-auto">
               <Navigation />
               <main className="container mx-auto max-w-7xl flex-grow overflow-y-visible pt-16">

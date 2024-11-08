@@ -3,13 +3,11 @@ import type { Item } from "@/types";
 
 import useSWR from "swr";
 import { useTranslations } from "next-intl";
-import { TriangleAlert } from "lucide-react";
 
 import { BestSellerCard } from "./BestSellerCard";
 
 import { Loading } from "@/components/_layout/Loading";
 import { TryAgainLater } from "@/components/_layout/TryAgainLater";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Link } from "@/i18n/routing";
 import { fetcher } from "@/lib/utils";
 
@@ -27,15 +25,7 @@ export default function BestSellers() {
 
   return (
     <div className="py-8 w-full md:w-full lg:w-[53rem]">
-      {error && (
-        <Alert variant="destructive">
-          <TriangleAlert className="h-4 w-4" />
-          <AlertTitle>Error</AlertTitle>
-          <AlertDescription>
-            Your session has expired. Please log in again.
-          </AlertDescription>
-        </Alert>
-      )}
+      {error && <TryAgainLater />}
       <div className="w-full h-fit p-0 m-0 flex flex-row items-center content-center justify-between">
         <h2
           className={
@@ -46,7 +36,7 @@ export default function BestSellers() {
           {t("best_sellers")}
         </h2>
         <Link
-          className="border-b-2 hover:border-b-slate-600 dark:hover:border-b-slate-400 border-b-transparent transition-colors duration-300 ease-in-out pb-12"
+          className="border-b-2 hover:border-b-slate-600 dark:hover:border-b-slate-400 border-b-transparent transition-colors duration-300 ease-in-out"
           href="/lubricants"
         >
           {t("view_all")}
@@ -58,11 +48,11 @@ export default function BestSellers() {
         </div>
       )}
       {data && data.length >= 1 ? (
-        <section className="flex flex-row items-center content-center justify-start px-3 md:justify-evenly gap-4 p-4 overflow-y-auto">
+        <section className="flex flex-col md:flex-row items-center content-center justify-start px-3 md:justify-evenly gap-4 p-4 overflow-y-auto">
           {data
             ? data
-                .slice(0, 3)
-                .map((item) => <BestSellerCard key={item.id} item={item} />)
+              .slice(0, 3)
+              .map((item) => <BestSellerCard key={item.id} item={item} />)
             : null}
         </section>
       ) : (

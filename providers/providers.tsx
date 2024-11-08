@@ -6,10 +6,9 @@ import Lenis from "@studio-freight/lenis";
 
 export interface ProvidersProps {
   children?: ReactNode;
-  themeProps?: { attribute: "class"; defaultTheme: "light" };
 }
 
-export function Providers({ children, themeProps }: ProvidersProps) {
+export function Providers({ children }: ProvidersProps) {
   useEffect(() => {
     const lenis = new Lenis();
     const raf = (time: number) => {
@@ -22,7 +21,14 @@ export function Providers({ children, themeProps }: ProvidersProps) {
 
   return (
     <ParallaxProvider>
-      <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
+      <NextThemesProvider
+        disableTransitionOnChange
+        enableSystem
+        attribute="class"
+        defaultTheme="system"
+      >
+        {children}
+      </NextThemesProvider>
     </ParallaxProvider>
   );
 }
