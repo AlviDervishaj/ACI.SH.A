@@ -3,9 +3,9 @@ import { useFormatter } from "next-intl";
 
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
-import { Item } from "@/types";
+import { Product } from "@/types";
 
-export default function LubricantItem(item: Item) {
+export default function LubricantItem(item: Product) {
   const numberF = useFormatter();
 
   return (

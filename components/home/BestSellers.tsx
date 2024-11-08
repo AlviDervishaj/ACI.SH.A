@@ -1,5 +1,5 @@
 "use client";
-import type { Item } from "@/types";
+import type { Product } from "@/types";
 
 import useSWR from "swr";
 import { useTranslations } from "next-intl";
@@ -13,7 +13,7 @@ import { fetcher } from "@/lib/utils";
 
 export default function BestSellers() {
   const t = useTranslations("Home");
-  const { data, isLoading, error } = useSWR<Item[]>(
+  const { data, isLoading, error } = useSWR<Product[]>(
     "https://my.api.mockaroo.com/oils.json?key=2411cd00",
     fetcher,
     {

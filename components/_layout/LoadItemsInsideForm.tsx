@@ -3,9 +3,9 @@ import { LoaderCircle } from "lucide-react";
 import { useFormStatus } from "react-dom";
 
 import { Button } from "@/components/ui/button";
-import { Item } from "@/types";
+import { Product } from "@/types";
 
-export function LoadItemsInsideForm({ items }: { items: Item[] }) {
+export function LoadItemsInsideForm({ items }: { items: Product[] }) {
   const { pending } = useFormStatus();
 
   return (

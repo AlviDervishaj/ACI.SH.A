@@ -1,5 +1,5 @@
 "use client";
-import type { Item } from "@/types";
+import type { Product } from "@/types";
 
 import { memo } from "react";
 
@@ -13,7 +13,7 @@ import {
 } from "../ui/carousel";
 
 type PropType = {
-  items: Item[];
+  items: Product[];
 };
 
 export const CarouselWrapper = memo(

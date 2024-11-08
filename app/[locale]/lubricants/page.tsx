@@ -1,16 +1,6 @@
-import dynamic from "next/dynamic";
-
 import { title } from "@/components/primitives";
-const Filters = dynamic(() => import("@/components/lubricants/Filters"));
-const LubricantItems = dynamic(
-  () =>
-    import("@/components/lubricants/LubricantItems").then(
-      (mod) => mod.LubricantItems,
-    ),
-  {
-    loading: () => <p>Loading...</p>,
-  },
-);
+import Filters from "@/components/lubricants/Filters";
+import { LubricantItems } from "@/components/lubricants/LubricantItems";
 
 export default async function LubricantsPage() {
   return (

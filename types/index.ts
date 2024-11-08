@@ -4,7 +4,7 @@ export type IconSvgProps = SVGProps<SVGSVGElement> & {
   size?: number;
 };
 
-export type Item = {
+export type Product = {
   id: string;
   sku_code: string;
   buy_price: string;

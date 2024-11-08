@@ -4,7 +4,7 @@ export function TryAgainLater() {
   return (
     <section className="w-full h-full p-2 my-2 grid place-items-center gap-3 text-center">
       <h2 className="text-2xl md:text-3xl lg:text-4xl">
-        No items are available at this time.
+        No products are available at this time.
       </h2>
       <p className="text-xl md:text-2xl lg:text-3xl">Please try again later.</p>
       <small className="text-base lg:text-lg">

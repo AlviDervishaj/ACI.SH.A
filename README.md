@@ -15,23 +15,15 @@
 - [x] Best Selling sorted base on price.
 - [x] Remove re-renders in best sellers filtering based on price.
 - [x] FocusScope.tsx:724 Uncaught TypeError: Failed to execute 'createTreeWalker' on 'Document': parameter 1 is not of type 'Node'. => Search Component Current Router navigation ??
-- [ ] Desgin ?
+- [ ] Cart
 - [ ] Fetch from API
 - [ ] Custom Domain ?
 - [ ] Stripe
 - [ ] Admin
 - [ ] Dashboard
-
-## Technologies Used
-
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [NextUI v2](https://nextui.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
-
+# Lubricants Page
+    - [ ] Category Filters
+    - [ ] Design
 
 ## License
 

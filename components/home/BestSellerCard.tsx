@@ -4,10 +4,10 @@ import { memo } from "react";
 
 import { Link } from "@/i18n/routing";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Item } from "@/types";
+import { Product } from "@/types";
 
 export const BestSellerCard = memo(
-  function BestSellerCard({ item }: { item: Item }) {
+  function BestSellerCard({ item }: { item: Product }) {
     const numberF = useFormatter();
 
     return (
