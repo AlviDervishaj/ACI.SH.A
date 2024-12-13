@@ -51,8 +51,8 @@ export default function BestSellers() {
         <section className="flex flex-col md:flex-row items-center content-center justify-start px-3 md:justify-evenly gap-4 p-4 overflow-y-auto">
           {data
             ? data
-              .slice(0, 3)
-              .map((item) => <BestSellerCard key={item.id} item={item} />)
+                .slice(0, 3)
+                .map((item) => <BestSellerCard key={item.id} item={item} />)
             : null}
         </section>
       ) : (

@@ -5,6 +5,7 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
+
 import { Providers } from "@/providers/providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
@@ -13,7 +14,6 @@ import { Footer } from "@/components/_layout/Footer";
 import { NavigationUI as Navigation } from "@/components/_layout/Navigation";
 import "@/styles/globals.css";
 import { Toaster } from "@/components/ui/sonner";
-
 
 export const metadata: Metadata = {
   title: {

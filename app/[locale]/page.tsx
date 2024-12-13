@@ -1,10 +1,10 @@
 import dynamic from "next/dynamic";
 
-const AvailableLubricants = dynamic(() =>
-  import("@/components/home/AvailableLubricants")
+const AvailableLubricants = dynamic(
+  () => import("@/components/home/AvailableLubricants"),
 );
-const MainHeaderBackground = dynamic(() =>
-  import("@/components/home/MainHeaderBackground")
+const MainHeaderBackground = dynamic(
+  () => import("@/components/home/MainHeaderBackground"),
 );
 const BestSellers = dynamic(() => import("@/components/home/BestSellers"));
 

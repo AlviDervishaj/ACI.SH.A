@@ -14,7 +14,6 @@ const initialState = {
 export default function ContactForm() {
   const [state, formAction] = useActionState(handleFormSubmit, initialState);
 
-
   return (
     <form
       action={formAction}

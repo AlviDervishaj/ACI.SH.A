@@ -1,11 +1,9 @@
 import dynamic from "next/dynamic";
 
-const OilCompaniesHeader = dynamic(() =>
-  import("@/components/oil/OilCompaniesHeader")
+const OilCompaniesHeader = dynamic(
+  () => import("@/components/oil/OilCompaniesHeader"),
 );
-const OilCompanies = dynamic(() =>
-  import("@/components/oil/OilCompanies"),
-);
+const OilCompanies = dynamic(() => import("@/components/oil/OilCompanies"));
 
 export default function AvailableLubricants() {
   return (

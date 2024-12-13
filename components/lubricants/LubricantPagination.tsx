@@ -10,7 +10,7 @@ type LubricanPaginationProps = {
   totalPages: number;
   isNextPageAvailable: boolean;
   isPreviousPageAvailable: boolean;
-}
+};
 export const LubricanPagination = ({
   page,
   totalPages,
