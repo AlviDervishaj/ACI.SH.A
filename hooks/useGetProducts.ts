@@ -1,73 +1,17 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
 
-import { Product } from "@/types";
+import { ListProducts } from "@/types/Api";
 
-const _products: Product[] = [
-  {
-    id: "0",
-    stock: 100,
-    discount: "0",
-    sku_code: "sku_code",
-    buy_price: "70",
-    main_image: "/images/oils/galp-oil-1.png",
-    sell_price: "90",
-    description: "Description Here",
-    has_discount: false,
-    name: "Item 0",
-  },
-  {
-    id: "1",
-    stock: 100,
-    discount: "0",
-    sku_code: "sku_code",
-    buy_price: "30",
-    main_image: "/images/oils/galp-oil-2.png",
-    sell_price: "50",
-    description: "Description Here",
-    has_discount: false,
-    name: "Item 1",
-  },
-  {
-    id: "2",
-    stock: 100,
-    discount: "0",
-    sku_code: "sku_code",
-    buy_price: "20",
-    main_image: "/images/oils/galp-oil-3.png",
-    sell_price: "35",
-    description: "Description Here",
-    has_discount: false,
-    name: "Item 2",
-  },
-  {
-    id: "3",
-    stock: 100,
-    discount: "0",
-    sku_code: "sku_code",
-    buy_price: "35",
-    main_image: "/images/oils/galp-oil-4.png",
-    sell_price: "40",
-    description: "Description Here",
-    has_discount: false,
-    name: "Item 3",
-  },
-  {
-    id: "4",
-    stock: 100,
-    discount: "0",
-    sku_code: "sku_code",
-    buy_price: "22",
-    main_image: "/images/oils/galp-oil-5.png",
-    sell_price: "39",
-    description: "Description Here",
-    has_discount: false,
-    name: "Item 4",
-  },
-];
+const apiEndpoint = process.env.NEXT_PUBLIC_ACI_ENDPOINT;
+
+const _initialState: ListProducts = {
+  data: [],
+  pagination: { next: "", count: 0, previous: "" },
+};
 
 export const useGetProducts = () => {
-  const [products, setProducts] = useState<Product[]>([]);
+  const [products, setProducts] = useState<ListProducts>(_initialState);
   const [error, setError] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
@@ -75,13 +19,14 @@ export const useGetProducts = () => {
     setError("");
     setIsLoading(true);
     try {
-      const response = await fetch("/api/products");
-      const data = (await response.json()) as Product[];
+      const response = await fetch(`${apiEndpoint as string}/product/list`);
+
+      const data = (await response.json()) as ListProducts;
 
       setProducts(data);
     } catch (error) {
       console.log({ error });
-      setProducts(_products);
+      setProducts(_initialState);
       // An error occurred while fetching products.
       setError("");
     } finally {

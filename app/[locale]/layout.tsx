@@ -5,14 +5,15 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
-
 import { Providers } from "@/providers/providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { routing } from "@/i18n/routing";
-import "@/styles/globals.css";
 import { Footer } from "@/components/_layout/Footer";
 import { NavigationUI as Navigation } from "@/components/_layout/Navigation";
+import "@/styles/globals.css";
+import { Toaster } from "@/components/ui/sonner";
+
 
 export const metadata: Metadata = {
   title: {
@@ -101,11 +102,12 @@ export default async function RootLayout(props: {
           <Providers>
             <div className="flex flex-col min-h-dvh overflow-y-auto">
               <Navigation />
-              <main className="container mx-auto max-w-7xl flex-grow overflow-y-visible pt-16">
+              <main className="container mx-auto max-w-7xl grow overflow-y-visible pt-16">
                 {children}
               </main>
               <Footer />
             </div>
+            <Toaster />
             <Analytics />
             <SpeedInsights />
           </Providers>

@@ -17,7 +17,7 @@ export const NavigationBigScreen = () => {
     <div className="mx-auto w-full px-2 md:px-2 lg:px-6 xl:px-10">
       <div className="relative flex h-16 items-center justify-between w-full">
         <div className="flex flex-1 items-center justify-between lg:items-stretch lg:justify-start">
-          <div className="flex flex-shrink-0 items-center justify-self-center self-center">
+          <div className="flex shrink-0 items-center justify-self-center self-center">
             <Link
               className="flex justify-start items-center gap-1 justify-self-start"
               href="/"
@@ -40,17 +40,17 @@ export const NavigationBigScreen = () => {
             <ShoppingCart />
             <div className="flex items-center lg:hidden">
               {/* Mobile menu button*/}
-              <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-hidden focus:ring-2 focus:ring-inset focus:ring-white">
                 <span className="absolute -inset-0.5" />
                 <span className="sr-only">Open main menu</span>
                 <MIcon
                   aria-hidden="true"
-                  className="group-data-[open]:hidden dark:stroke-slate-300 stroke-slate-800 group-hover:stroke-slate-300"
+                  className="group-data-open:hidden dark:stroke-slate-300 stroke-slate-800 group-hover:stroke-slate-300"
                   size={24}
                 />
                 <X
                   aria-hidden="true"
-                  className="hidden dark:stroke-slate-300 stroke-slate-800 group-hover:stroke-slate-300 group-data-[open]:block"
+                  className="hidden dark:stroke-slate-300 stroke-slate-800 group-hover:stroke-slate-300 group-data-open:block"
                   size={24}
                 />
               </DisclosureButton>

@@ -9,7 +9,7 @@ import { Button } from "../ui/button";
 
 import { title } from "@/components/primitives";
 
-export function MainHeaderBackground() {
+export default function MainHeaderBackground() {
   const t = useTranslations("Home");
   const container = useRef<HTMLElement | null>(null);
   const { scrollYProgress } = useScroll({
@@ -36,7 +36,7 @@ export function MainHeaderBackground() {
           src={"/images/oil-pouring.jpg"}
         />
       </motion.div>
-      <div className="w-full h-full backdrop-blur-sm bg-black/50">
+      <div className="w-full h-full backdrop-blur-xs bg-black/50">
         <motion.section
           className="absolute text-center w-full flex inset-0 flex-col gap-10 items-center justify-center"
           style={{ y: sm }}

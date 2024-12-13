@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-export function OilCompaniesHeader() {
+export default function OilCompaniesHeader() {
   const t = useTranslations("Home");
 
   return (

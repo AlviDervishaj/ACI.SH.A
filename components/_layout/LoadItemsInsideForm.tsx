@@ -20,7 +20,7 @@ export function LoadItemsInsideForm({ items }: { items: Product[] }) {
           </button>
         </div>
       ) : items.length >= 1 ? (
-        <div className="absolute mt-1 rounded-md p-1 z-50 left-0 w-full h-fit !max-h-[25rem] bg-default-200 flex flex-col items-center content-center justify-center overflow-y-visible">
+        <div className="absolute mt-1 rounded-md p-1 z-50 left-0 w-full h-fit max-h-[25rem]! bg-default-200 flex flex-col items-center content-center justify-center overflow-y-visible">
           {items.map((item) => (
             <Button
               key={item.id}

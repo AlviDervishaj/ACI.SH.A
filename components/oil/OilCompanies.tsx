@@ -19,7 +19,7 @@ const items: Array<OilCardProps> = [
   },
 ];
 
-export function OilCompanies() {
+export default function OilCompanies() {
   return (
     <div className="w-full h-fit py-3 mx-auto flex flex-col md:flex-row items-center content-center justify-evenly gap-4">
       {items.length >= 1 ? (

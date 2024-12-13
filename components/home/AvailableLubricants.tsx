@@ -1,15 +1,13 @@
 import dynamic from "next/dynamic";
 
 const OilCompaniesHeader = dynamic(() =>
-  import("@/components/oil/OilCompaniesHeader").then(
-    (mod) => mod.OilCompaniesHeader,
-  ),
+  import("@/components/oil/OilCompaniesHeader")
 );
 const OilCompanies = dynamic(() =>
-  import("@/components/oil/OilCompanies").then((mod) => mod.OilCompanies),
+  import("@/components/oil/OilCompanies"),
 );
 
-export function AvailableLubricants() {
+export default function AvailableLubricants() {
   return (
     <div className="py-8 w-full md:w-full lg:w-[53rem]">
       <OilCompaniesHeader />

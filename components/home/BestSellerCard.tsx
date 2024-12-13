@@ -19,7 +19,7 @@ export const BestSellerCard = memo(
           <CardContent className="w-full h-full flex flex-row items-center content-center justify-center p-0 group">
             <Image
               alt={item.name}
-              className="object-cover !w-42 !h-42 !aspect-square"
+              className="object-cover !w-42 !h-42"
               height={150}
               quality={100}
               src={item.main_image}
