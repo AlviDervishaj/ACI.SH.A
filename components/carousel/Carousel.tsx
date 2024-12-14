@@ -3,7 +3,6 @@ import type { Product } from "@/types/Product";
 
 import { memo } from "react";
 
-import { BestSellerCard } from "../home/BestSellerCard";
 import {
   Carousel,
   CarouselContent,
@@ -11,6 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel";
+import LubricantItem from "../lubricants/LubricantItem";
 
 type PropType = {
   items: Product[];
@@ -30,7 +30,7 @@ export const CarouselWrapper = memo(
         <CarouselContent className="-ml-1">
           {items.map((item) => (
             <CarouselItem key={item.id} className="pl-1 basis-1/2 lg:basis-1/3">
-              <BestSellerCard item={item} />
+              <LubricantItem {...item} />
             </CarouselItem>
           ))}
         </CarouselContent>
