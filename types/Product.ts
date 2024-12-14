@@ -1,4 +1,4 @@
-export interface Product {
+export type Product = {
   id: number;
   name: string;
   category: Category;
@@ -11,9 +11,9 @@ export interface Product {
   main_image: string | null;
   total_discount: number;
   product_images: string[];
-}
+};
 
-export interface Category {
+export type Category = {
   name: string;
   description: string;
-}
+};

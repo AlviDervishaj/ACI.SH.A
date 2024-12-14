@@ -3,7 +3,7 @@ import { DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 
-import Search from "./Search";
+// import Search from "./Search";
 
 import { Link, usePathname } from "@/i18n/routing";
 import { siteConfig } from "@/config/site";
@@ -16,9 +16,9 @@ export const NavigationSmallScreen = () => {
     <DisclosurePanel className="lg:hidden w-full">
       <div className="space-y-1 px-2 pb-3 pt-2">
         {/* Search */}
-        <div className="w-full h-full p-0 m-0 inset-y-0">
+        {/* <div className="w-full h-full p-0 m-0 inset-y-0">
           <Search />
-        </div>
+        </div> */}
         {siteConfig.navItems.map((item) => (
           <DisclosureButton
             key={item.href}

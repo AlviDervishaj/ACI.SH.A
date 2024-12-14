@@ -1,5 +1,5 @@
 "use client";
-import type { Product } from "@/types";
+import type { Product } from "@/types/Product";
 
 import { memo } from "react";
 

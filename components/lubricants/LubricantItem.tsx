@@ -15,7 +15,7 @@ export default function LubricantItem(item: Product) {
         className="min-w-32 w-full h-full transition-colors-opacity
       duration-500 ease-in-out group relative flex flex-col
       items-center content-center rounded-lg md:w-[12.25rem]
-        md:h-fit p-0 m-0 dark:bg-slate-800 transition-transform hover:scale-110"
+        md:h-fit p-0 m-0 dark:bg-slate-800 transition-colors hover:bg-orange-500/30"
         variant="outline"
       >
         <Image

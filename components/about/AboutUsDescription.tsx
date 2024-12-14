@@ -16,7 +16,7 @@ export default function AboutUsDescription() {
           ),
         })}
       </h1>
-      <div className="text-base lg:text-lg xl:text-xl tracking-wide">
+      <div className="text-base pt-4 lg:text-lg xl:text-xl tracking-wide">
         {t.rich("mainDescription", {
           distributor: (chunk) => (
             <p className={title({ size: "base", color: "orange" })}>{chunk}</p>

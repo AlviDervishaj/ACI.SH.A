@@ -23,7 +23,7 @@ export const LubricanPagination = ({
   const handlePreviousPage = () => router.push(`/lubricants?page=${page - 1}`);
 
   return (
-    <section className="w-fit mx-auto p-2 flex items-center content-center justify-center gap-4">
+    <section className="w-fit mx-auto p-2 flex items-center content-center justify-center gap-4 mb-auto">
       <Button
         disabled={!isPreviousPageAvailable}
         variant="ghost"

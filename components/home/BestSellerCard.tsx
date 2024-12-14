@@ -4,7 +4,7 @@ import { memo } from "react";
 
 import { Link } from "@/i18n/routing";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Product } from "@/types";
+import { Product } from "@/types/Product";
 
 export const BestSellerCard = memo(
   function BestSellerCard({ item }: { item: Product }) {

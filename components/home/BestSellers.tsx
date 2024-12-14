@@ -1,31 +1,26 @@
 "use client";
-import type { Product } from "@/types";
 
 import useSWR from "swr";
 import { useTranslations } from "next-intl";
 
-import { BestSellerCard } from "./BestSellerCard";
+import LubricantItem from "../lubricants/LubricantItem";
 
 import { Loading } from "@/components/_layout/Loading";
 import { TryAgainLater } from "@/components/_layout/TryAgainLater";
 import { Link } from "@/i18n/routing";
 import { fetcher } from "@/lib/utils";
+import { PRODUCTS_API } from "@/config/api";
+import { ListProducts } from "@/types/Api";
 
 export default function BestSellers() {
   const t = useTranslations("Home");
-  const { data, isLoading, error } = useSWR<Product[]>(
-    "https://my.api.mockaroo.com/oils.json?key=2411cd00",
+  const { data, isLoading, error } = useSWR<ListProducts>(
+    PRODUCTS_API.GET,
     fetcher,
-    {
-      revalidateIfStale: false,
-      revalidateOnFocus: false,
-      shouldRetryOnError: false,
-    },
   );
 
   return (
     <div className="py-8 w-full md:w-full lg:w-[53rem]">
-      {error && <TryAgainLater />}
       <div className="w-full h-fit p-0 m-0 flex flex-row items-center content-center justify-between">
         <h2
           className={
@@ -42,21 +37,18 @@ export default function BestSellers() {
           {t("view_all")}
         </Link>
       </div>
+      {error && <TryAgainLater />}
       {isLoading && (
         <div className="py-2 md:py-8 grid place-items-center h-1/2 w-full">
           <Loading />
         </div>
       )}
-      {data && data.length >= 1 ? (
+      {data && data.data.length >= 1 && (
         <section className="flex flex-col md:flex-row items-center content-center justify-start px-3 md:justify-evenly gap-4 p-4 overflow-y-auto">
-          {data
-            ? data
-                .slice(0, 3)
-                .map((item) => <BestSellerCard key={item.id} item={item} />)
-            : null}
+          {data.data.slice(0, 3).map((item) => (
+            <LubricantItem key={item.id} {...item} />
+          ))}
         </section>
-      ) : (
-        <TryAgainLater />
       )}
     </div>
   );
