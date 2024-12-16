@@ -37,5 +37,12 @@
     "subscribe": "Rregjistrohu",
     "help": "Ndihma",
     "which_is_better": "Cili lubrifikant eshte me optimal ?"
+  },
+  "Errors": {
+    "bad_action": "Dicka shkoi keq.",
+    "try_again_later": "Ju lutem provoni përsëri më vonë.",
+    "not_found": "Faqja nuk u gjet.",
+    "no_products": "Asnjë produkt nuk është i disponueshëm për momentin.",
+    "contact_support_team": "Nëse mendoni se ka një problem, kontaktoni <supportTeamEmail>Support Team</supportTeamEmail>"
   }
 }

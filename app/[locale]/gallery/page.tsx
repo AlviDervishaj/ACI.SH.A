@@ -3,6 +3,9 @@
 import Image, { StaticImageData } from "next/image";
 import { useCallback, useMemo, useState } from "react";
 
+import { Button } from "@/components/ui/button";
+import { useDialog } from "@/hooks/useDialog";
+
 import G1 from "../../../public/images/gallery/1.jpeg";
 import G2 from "../../../public/images/gallery/2.jpg";
 import G3 from "../../../public/images/gallery/3.jpg";
@@ -14,9 +17,6 @@ import G8 from "../../../public/images/gallery/8.jpg";
 import G9 from "../../../public/images/gallery/9.jpg";
 import G10 from "../../../public/images/gallery/10.jpg";
 import G11 from "../../../public/images/gallery/11.jpg";
-
-import { Button } from "@/components/ui/button";
-import { useDialog } from "@/hooks/useDialog";
 
 const images = [G1, G2, G3, G4, G5, G6, G7, G8, G9, G10, G11];
 
@@ -61,7 +61,7 @@ export default function GalleryHomePage() {
       ))}
       <dialog
         ref={ref}
-        className="w-dvw h-dvh lg:w-4/12 backdrop:bg-slate-200/70 dark:backdrop:bg-slate-800/70"
+        className="w-dvw h-dvh lg:w-6/12 mx-auto backdrop:bg-slate-200/70 dark:backdrop:bg-slate-800/70"
       >
         {isOpened && (
           <section className="w-full h-full p-4 m-0 flex flex-col items-center content-between">

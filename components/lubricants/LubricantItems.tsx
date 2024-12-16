@@ -1,9 +1,12 @@
+import clsx from "clsx";
+
+import { getAllProducts } from "@/actions/getAllProducts";
+import Filters from "@/components/lubricants/Filters";
+
 import { TryAgainLater } from "../_layout/TryAgainLater";
 
 import LubricantItem from "./LubricantItem";
 import { LubricanPagination } from "./LubricantPagination";
-
-import { getAllProducts } from "@/actions/getAllProducts";
 
 type LubricantItemsProps = {
   page: number;
@@ -12,8 +15,6 @@ type LubricantItemsProps = {
 export const LubricantItems = async ({ page }: LubricantItemsProps) => {
   const { products, error } = await getAllProducts(page);
 
-  if (!products || !products.data || products.data.length === 0)
-    return <TryAgainLater />;
   const totalPages = products.pagination.next
     ? Math.ceil(products.pagination.count / products.data.length)
     : page;
@@ -22,32 +23,40 @@ export const LubricantItems = async ({ page }: LubricantItemsProps) => {
 
   return (
     <>
-      <div className="py-2 md:py-8 w-full">
-        {error && <TryAgainLater />}
-        {products.data.length >= 1 ? (
-          <div className="w-full h-full grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 place-items-center">
-            {products.data.map(
-              (product) =>
-                product && <LubricantItem {...product} key={product.id} />,
-            )}
+      <div
+        className={clsx(
+          "w-full !h-full block",
+          (error || !products || products.data.length === 0) && ":pt-12",
+        )}
+      >
+        {(error || !products || products.data.length === 0) && (
+          <div className="abcde" id="error">
+            <TryAgainLater />
           </div>
-        ) : (
-          <div className="w-full h-full flex flex-col items-center content-center justify-center">
-            <p className="text-base dark:text-gray-300 text-gray-700 font-bold">
-              No products found.
-            </p>
-            <p className="text-base dark:text-gray-300 text-gray-700 font-bold">
-              Please try again later.
-            </p>
+        )}
+        {products.data.length >= 1 && (
+          <div className="flex h-full flex-col items-stretch content-center justify-center gap-3">
+            <div className="self-end pt-6 md:p-0">
+              <Filters />
+            </div>
+
+            <div className="w-full h-full grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 place-items-center">
+              {products.data.map(
+                (product) =>
+                  product && <LubricantItem {...product} key={product.id} />,
+              )}
+            </div>
+            <section className="justify-self-end">
+              <LubricanPagination
+                isNextPageAvailable={isNextPageAvailable}
+                isPreviousPageAvailable={isPreviousPageAvailable}
+                page={page}
+                totalPages={totalPages}
+              />
+            </section>
           </div>
         )}
       </div>
-      <LubricanPagination
-        isNextPageAvailable={isNextPageAvailable}
-        isPreviousPageAvailable={isPreviousPageAvailable}
-        page={page}
-        totalPages={totalPages}
-      />
     </>
   );
 };

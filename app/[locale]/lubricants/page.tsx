@@ -1,7 +1,6 @@
 import { getTranslations } from "next-intl/server";
 
 import { title } from "@/components/primitives";
-import Filters from "@/components/lubricants/Filters";
 import { LubricantItems } from "@/components/lubricants/LubricantItems";
 
 export default async function LubricantsPage(props: {
@@ -11,12 +10,9 @@ export default async function LubricantsPage(props: {
   const { page } = await props.searchParams;
 
   return (
-    <>
+    <main className="pt-6 lg:pt-10 w-full h-full">
       <h1 className={title()}>{t("lubricants")}</h1>
-      <div className="self-end pt-6 md:p-0">
-        <Filters />
-      </div>
       <LubricantItems page={parseInt(page || "1")} />
-    </>
+    </main>
   );
 }

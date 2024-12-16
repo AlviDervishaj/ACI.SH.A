@@ -2,15 +2,15 @@ import Image from "next/image";
 import { DisclosureButton } from "@headlessui/react";
 import { Menu as MIcon, X } from "lucide-react";
 
+import { Link } from "@/i18n/routing";
+import { siteConfig } from "@/config/site";
+
 import { ThemeSwitch } from "../ThemeSwitcher";
 import { LocaleSwitcher } from "../LocaleSwitcher";
 
 // import Search from "./Search";
 import ShoppingCart from "./ShoppingCart";
 import { NavigationBigScreenLinks } from "./NavigationLink";
-
-import { Link } from "@/i18n/routing";
-import { siteConfig } from "@/config/site";
 
 export const NavigationBigScreen = () => {
   return (
@@ -25,7 +25,9 @@ export const NavigationBigScreen = () => {
               <Image
                 priority
                 alt={"ACI LOGO "}
-                className={"object-scale-down aspect-square bg-white p-1"}
+                className={
+                  "object-scale-down aspect-square bg-white p-1 rounded-lg"
+                }
                 height={60}
                 src={"/images/aci-logo-light.png"}
                 width={60}

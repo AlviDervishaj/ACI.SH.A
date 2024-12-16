@@ -1,7 +1,7 @@
-import { ListProducts } from "../types/Api";
-
-import { PRODUCTS_API } from "@/config/api";
 import "server-only";
+import { PRODUCTS_API } from "@/config/api";
+
+import { ListProducts } from "../types/Api";
 
 export const getAllProducts = async (
   page?: number,

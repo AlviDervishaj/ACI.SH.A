@@ -16,3 +16,6 @@ export const PRODUCTS_API = {
     POST: `${API_BASE_URL}/order/create`,
   },
 };
+export const SUPPORT_TEAM = {
+  general_email: "alvidervishaj9@gmail.com",
+} as const;

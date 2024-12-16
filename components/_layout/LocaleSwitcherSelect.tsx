@@ -1,10 +1,19 @@
 import { useParams } from "next/navigation";
-import { ChangeEvent, ReactNode, useTransition } from "react";
+import {
+  MouseEvent,
+  ReactElement,
+  useMemo,
+  useState,
+  useTransition,
+} from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 import { useRouter, usePathname } from "@/i18n/routing";
 
+import { Button } from "../ui/button";
+
 type Props = {
-  children: ReactNode;
+  children: ReactElement[];
   defaultValue: string;
 };
 
@@ -13,9 +22,12 @@ export function LocaleSwitcherSelect({ children, defaultValue }: Props) {
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
   const params = useParams();
+  const [isActive, setIsActive] = useState<boolean>(false);
 
-  function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
-    const nextLocale = event.target.value;
+  function onSelectChange(event: MouseEvent<HTMLButtonElement>) {
+    const nextLocale = event.currentTarget.value;
+
+    console.log("nextLocale", nextLocale);
 
     startTransition(() => {
       router.replace(
@@ -28,14 +40,49 @@ export function LocaleSwitcherSelect({ children, defaultValue }: Props) {
     });
   }
 
+  const handleLocaleChange = (event: MouseEvent<HTMLButtonElement>) => {
+    setIsActive(false);
+    onSelectChange(event);
+  };
+
+  const currentChild = useMemo(
+    () =>
+      children.find((child) => {
+        if (child) {
+          return child.props.value === defaultValue;
+        }
+
+        return null;
+      }),
+    [children.length, defaultValue],
+  );
+
   return (
-    <select
-      className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block min-w-28 md:w-28 lg:w-36 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-      defaultValue={defaultValue}
-      disabled={isPending}
-      onChange={onSelectChange}
-    >
-      {children}
-    </select>
+    <section className="relative p-0 m-0">
+      <Button
+        defaultValue={defaultValue}
+        disabled={isPending}
+        variant="outline"
+        onClick={() => setIsActive((prev) => !prev)}
+      >
+        {currentChild}{" "}
+        {!isActive ? <ChevronDown size={16} /> : <ChevronUp size={16} />}
+      </Button>
+      {isActive && (
+        <div className="absolute top-auto right-0 bg-background rounded-lg border-2 border-card">
+          {children.map((child, index) => (
+            <Button
+              key={index}
+              className="w-full h-fit py-1 border-b border-slate-700/60 last:border-0 rounded-b-none"
+              value={child.props.value}
+              variant="ghost"
+              onClick={handleLocaleChange}
+            >
+              {child}
+            </Button>
+          ))}
+        </div>
+      )}
+    </section>
   );
 }

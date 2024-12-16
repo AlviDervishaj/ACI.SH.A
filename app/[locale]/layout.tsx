@@ -100,7 +100,7 @@ export default async function RootLayout(props: {
       >
         <NextIntlClientProvider messages={messages}>
           <Providers>
-            <div className="flex flex-col min-h-dvh overflow-y-auto">
+            <div className="flex flex-col min-h-dvh max-h-fit overflow-y-auto">
               <Navigation />
               <main className="container mx-auto max-w-7xl grow overflow-y-visible pt-16">
                 {children}
