@@ -1,9 +1,9 @@
 "use client";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
-import { Button } from "../ui/button";
-
 import { useRouter } from "@/i18n/routing";
+
+import { Button } from "../ui/button";
 
 type LubricanPaginationProps = {
   page: number;

@@ -3,14 +3,14 @@
 import useSWR from "swr";
 import { useTranslations } from "next-intl";
 
-import LubricantItem from "../lubricants/LubricantItem";
-
 import { Loading } from "@/components/_layout/Loading";
 import { TryAgainLater } from "@/components/_layout/TryAgainLater";
 import { Link } from "@/i18n/routing";
 import { fetcher } from "@/lib/utils";
 import { PRODUCTS_API } from "@/config/api";
 import { ListProducts } from "@/types/Api";
+
+import LubricantItem from "../lubricants/LubricantItem";
 
 export default function BestSellers() {
   const t = useTranslations("Home");

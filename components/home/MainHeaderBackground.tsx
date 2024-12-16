@@ -5,9 +5,9 @@ import Image from "next/image";
 import { useRef } from "react";
 import { ArrowDown } from "lucide-react";
 
-import { Button } from "../ui/button";
-
 import { title } from "@/components/primitives";
+
+import { Button } from "../ui/button";
 
 export default function MainHeaderBackground() {
   const t = useTranslations("Home");
