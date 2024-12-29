@@ -1,10 +1,23 @@
+"use client";
 import Image from "next/image";
 import { useFormatter } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { Product } from "@/types/Product";
+import { Button } from "../ui/button";
+import { Star } from "lucide-react";
+import clsx from "clsx";
+import { MouseEvent } from "react";
 
 export default function LubricantItem(item: Product) {
   const numberF = useFormatter();
+
+  const isFavorite = false;
+
+  const handleFavorite = (event: MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    console.log("Favorite");
+    // handle favorite here...
+  }
 
   return (
     <Link
@@ -13,6 +26,9 @@ export default function LubricantItem(item: Product) {
       flex flex-col items-center content-center rounded-lg
       sm:w-8/12 md:w-[12.25rem] md:h-fit
       dark:bg-slate-800 transition-colors hover:bg-orange-500/30" href={`/oil/${item.id}/`}>
+      <Button variant="outline" onClick={handleFavorite} className="absolute top-0 right-0 p-2 cursor-pointer pointer-events-auto">
+        <Star fill={clsx(isFavorite ? "#FFA34B" : "none")} color={"#FFA34B"} />
+      </Button>
       <Image
         alt={item.name}
         className="object-cover aspect-square w-[7rem] h-[7rem] md:w-[8.25rem] md:h-[8.25rem]"

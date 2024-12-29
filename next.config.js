@@ -4,10 +4,10 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    dynamicIO: true,
-    ppr: true,
-  }
+  //experimental: {
+  //  dynamicIO: true,
+  //  ppr: true,
+  //}
 };
 
 module.exports = withNextIntl(nextConfig);

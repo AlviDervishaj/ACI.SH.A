@@ -16,7 +16,10 @@ export const listProducts = (filters?: Partial<FILTER_MAP>, queries?: { [key: st
 }
 
 export const PRODUCTS_API = {
+  // TODO: Implement it
+  // Order based on popularity in ascending order
   GET: `${API_BASE_URL}/product/list`,
+  GET_POPULAR: `${API_BASE_URL}/product/list?sort=["popularity"]&order=desc`,
   POST: `${API_BASE_URL}/product/create`,
   PUT: `${API_BASE_URL}/product/update`,
   CATEGORY: {

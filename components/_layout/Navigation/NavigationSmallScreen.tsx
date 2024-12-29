@@ -1,3 +1,4 @@
+"use client";
 import { DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
@@ -7,9 +8,9 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/routing";
 import { siteConfig } from "@/config/site";
 
-export const NavigationSmallScreen = async ({ pathname }: { pathname: string }) => {
-  "use cache";
+export const NavigationSmallScreen = () => {
   const t = useTranslations("Navigation");
+  const pathname = usePathname();
 
   return (
     <DisclosurePanel className="lg:hidden w-full">

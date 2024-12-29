@@ -15,7 +15,7 @@ import LubricantItem from "../lubricants/LubricantItem";
 export default function BestSellers() {
   const t = useTranslations("Home");
   const { data, isLoading, error } = useSWR<ListProducts>(
-    PRODUCTS_API.GET,
+    PRODUCTS_API.GET_POPULAR,
     fetcher,
   );
 
