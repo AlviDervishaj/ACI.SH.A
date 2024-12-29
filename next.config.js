@@ -3,6 +3,11 @@ const createNextIntlPlugin = require('next-intl/plugin');
 const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  experimental: {
+    dynamicIO: true,
+    ppr: true,
+  }
+};
 
 module.exports = withNextIntl(nextConfig);

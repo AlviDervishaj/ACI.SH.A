@@ -19,6 +19,7 @@ import { routing } from "@/i18n/routing";
 // Styles
 import "@/styles/globals.css";
 import clsx from "clsx";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: {
@@ -38,23 +39,22 @@ export const viewport: Viewport = {
   ],
 };
 
+export async function generateStaticParams() {
+  // Define your supported locales
+  const locales = ["en", "al"]; // Replace with your actual locales
+  return locales.map((locale) => ({ locale }));
+}
+
 export default async function RootLayout(props: {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
   const params = await props.params;
-
   const { locale } = params;
-
   const { children } = props;
-
-  // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
-
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (
@@ -64,38 +64,7 @@ export default async function RootLayout(props: {
       lang={locale}
     >
       <head>
-        <title>AÇI SH.A</title>
-        <meta
-          content="hMECQvVGV3rwsQXLIq_URy0kEhB586JR1fXHpcj8oF4"
-          name="google-site-verification"
-        />
-        <meta content="AÇI SH.A" name="title" />
-        <meta
-          content="Distributor ekskluziv i Galp në Ballkan. Lubrifikante per Automjete e Industri - Vaj Motorri per makina"
-          name="description"
-        />
-        <meta content="website" property="og:type" />
-        <meta content="https://acilub.vercel.app/" property="og:url" />
-        <meta content="AÇI SH.A" property="og:title" />
-        <meta
-          content="Distributor ekskluziv i Galp në Ballkan. Lubrifikante per Automjete e Industri - Vaj Motorri per makina"
-          property="og:description"
-        />
-        <meta
-          content="https://acilub.vercel.app/images/aci-logo-dark-demo.jpg"
-          property="og:image"
-        />
-        <meta content="summary_large_image" property="twitter:card" />
-        <meta content="https://acilub.vercel.app/" property="twitter:url" />
-        <meta content="AÇI SH.A" property="twitter:title" />
-        <meta
-          content="Distributor ekskluziv i Galp në Ballkan. Lubrifikante per Automjete e Industri - Vaj Motorri per makina"
-          property="twitter:description"
-        />
-        <meta
-          content="https://acilub.vercel.app/images/aci-logo-dark-demo.jpg"
-          property="twitter:image"
-        />
+        <HeadData />
       </head>
       <body
         className={clsx(
@@ -103,21 +72,62 @@ export default async function RootLayout(props: {
           fontSans.variable,
         )}
       >
-        <NextIntlClientProvider messages={messages}>
-          <Providers>
-            <div className="flex flex-col min-h-dvh max-h-fit overflow-y-auto">
-              <Navigation />
-              <main className="container mx-auto max-w-7xl grow overflow-y-visible pt-16">
-                {children}
-              </main>
-              <Footer />
-            </div>
-            <Toaster />
-            <Analytics />
-            <SpeedInsights />
-          </Providers>
-        </NextIntlClientProvider>
+        <Suspense fallback={<div>Loading ...</div>}>
+          <NextIntlClientProvider messages={messages}>
+            <Providers>
+              <div className="flex flex-col min-h-dvh max-h-fit overflow-y-auto">
+                <Navigation />
+                <main className="container mx-auto max-w-7xl grow overflow-y-visible pt-16">
+                  {children}
+                </main>
+                <Footer />
+              </div>
+              <Toaster />
+              <Analytics />
+              <SpeedInsights />
+            </Providers>
+          </NextIntlClientProvider>
+        </Suspense>
       </body>
     </html>
+  );
+}
+
+const HeadData = () => {
+  return (
+    <>
+      <title>AÇI SH.A</title>
+      <meta
+        content="hMECQvVGV3rwsQXLIq_URy0kEhB586JR1fXHpcj8oF4"
+        name="google-site-verification"
+      />
+      <meta content="AÇI SH.A" name="title" />
+      <meta
+        content="Distributor ekskluziv i Galp në Ballkan. Lubrifikante per Automjete e Industri - Vaj Motorri per makina"
+        name="description"
+      />
+      <meta content="website" property="og:type" />
+      <meta content="https://acilub.vercel.app/" property="og:url" />
+      <meta content="AÇI SH.A" property="og:title" />
+      <meta
+        content="Distributor ekskluziv i Galp në Ballkan. Lubrifikante per Automjete e Industri - Vaj Motorri per makina"
+        property="og:description"
+      />
+      <meta
+        content="https://acilub.vercel.app/images/aci-logo-dark-demo.jpg"
+        property="og:image"
+      />
+      <meta content="summary_large_image" property="twitter:card" />
+      <meta content="https://acilub.vercel.app/" property="twitter:url" />
+      <meta content="AÇI SH.A" property="twitter:title" />
+      <meta
+        content="Distributor ekskluziv i Galp në Ballkan. Lubrifikante per Automjete e Industri - Vaj Motorri per makina"
+        property="twitter:description"
+      />
+      <meta
+        content="https://acilub.vercel.app/images/aci-logo-dark-demo.jpg"
+        property="twitter:image"
+      />
+    </>
   );
 }

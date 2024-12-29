@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef } from "react";
 import { ArrowDown } from "lucide-react";
+import { BlurImage } from "@/config/image";
 
 import { title } from "@/components/primitives";
 
@@ -30,6 +31,7 @@ export default function MainHeaderBackground() {
         <Image
           fill
           priority
+          blurDataURL={BlurImage}
           alt={"Oil Background"}
           className={"object-cover"}
           fetchPriority="high"
@@ -61,7 +63,7 @@ export default function MainHeaderBackground() {
 }
 
 function AnimatedArrow() {
-  const scrolltoHash = function (element_id: string) {
+  const scrolltoHash = function(element_id: string) {
     const element = document.getElementById(element_id);
 
     element?.scrollIntoView({
