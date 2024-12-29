@@ -1,19 +1,24 @@
+// Next Stuff
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Metadata, Viewport } from "next";
-import clsx from "clsx";
 
+// Components
+import { NavigationUI as Navigation } from "@/components/_layout/Navigation";
+import { Footer } from "@/components/_layout/Footer";
 import { Providers } from "@/providers/providers";
+import { Toaster } from "@/components/ui/sonner";
+// Configs
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { routing } from "@/i18n/routing";
-import { Footer } from "@/components/_layout/Footer";
-import { NavigationUI as Navigation } from "@/components/_layout/Navigation";
+
+// Styles
 import "@/styles/globals.css";
-import { Toaster } from "@/components/ui/sonner";
+import clsx from "clsx";
 
 export const metadata: Metadata = {
   title: {

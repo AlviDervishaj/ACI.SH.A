@@ -44,7 +44,7 @@ export default function BestSellers() {
         </div>
       )}
       {data && data.data.length >= 1 && (
-        <section className="flex flex-col md:flex-row items-center content-center justify-start px-3 md:justify-evenly gap-4 p-4 overflow-y-auto">
+        <section className="flex flex-col sm:flex-row items-center content-center justify-start px-3 md:justify-evenly gap-4 p-4 overflow-y-auto">
           {data.data.slice(0, 3).map((item) => (
             <LubricantItem key={item.id} {...item} />
           ))}

@@ -1,0 +1,275 @@
+diff --git a/app/[locale]/admin/page.tsx b/app/[locale]/admin/page.tsx
+deleted file mode 100644
+index 3e6ade8..0000000
+--- a/app/[locale]/admin/page.tsx
++++ /dev/null
+@@ -1,3 +0,0 @@
+-export default function AdminPage() {
+-  return <h2>Admin Page Here !</h2>;
+-}
+diff --git a/app/[locale]/layout.tsx b/app/[locale]/layout.tsx
+index 01747d1..69f3784 100644
+--- a/app/[locale]/layout.tsx
++++ b/app/[locale]/layout.tsx
+@@ -33,6 +33,10 @@ export const viewport: Viewport = {
+   ],
+ };
+ 
++export async function generateStaticParams() {
++  return [{ locale: "en" }, { locale: "al" }];
++}
++
+ export default async function RootLayout(props: {
+   children: React.ReactNode;
+   params: Promise<{ locale: string }>;
+diff --git a/app/[locale]/page.tsx b/app/[locale]/page.tsx
+index 76fdd40..d5335e8 100644
+--- a/app/[locale]/page.tsx
++++ b/app/[locale]/page.tsx
+@@ -1,19 +1,16 @@
+ import dynamic from "next/dynamic";
+ 
+-const AvailableLubricants = dynamic(
+-  () => import("@/components/home/AvailableLubricants"),
+-);
+-const MainHeaderBackground = dynamic(
+-  () => import("@/components/home/MainHeaderBackground"),
+-);
++const MainHeaderBackground = dynamic(() => import("@/components/home/MainHeaderBackground"));
++const AvailableLubricants = dynamic(() => import("@/components/home/AvailableLubricants"));
+ const BestSellers = dynamic(() => import("@/components/home/BestSellers"));
+ 
++
+ export default function Home() {
+   return (
+     <section className="flex flex-col items-center justify-center gap-4 h-full relative">
+       <MainHeaderBackground />
+-      <BestSellers />
+       <AvailableLubricants />
++      <BestSellers />
+     </section>
+   );
+ }
+diff --git a/bun.lockb b/bun.lockb
+index 1878ad8..eec58df 100755
+Binary files a/bun.lockb and b/bun.lockb differ
+diff --git a/components/_layout/LocaleSwitcherSelect.tsx b/components/_layout/LocaleSwitcherSelect.tsx
+index 57fb7fe..698d1a2 100644
+--- a/components/_layout/LocaleSwitcherSelect.tsx
++++ b/components/_layout/LocaleSwitcherSelect.tsx
+@@ -13,7 +13,7 @@ import { useRouter, usePathname } from "@/i18n/routing";
+ import { Button } from "../ui/button";
+ 
+ type Props = {
+-  children: ReactElement[];
++  children: ReactElement<any>[];
+   defaultValue: string;
+ };
+ 
+diff --git a/components/home/BestSellers.tsx b/components/home/BestSellers.tsx
+index 229e1a8..b4f1edd 100644
+--- a/components/home/BestSellers.tsx
++++ b/components/home/BestSellers.tsx
+@@ -44,7 +44,7 @@ export default function BestSellers() {
+         </div>
+       )}
+       {data && data.data.length >= 1 && (
+-        <section className="flex flex-col md:flex-row items-center content-center justify-start px-3 md:justify-evenly gap-4 p-4 overflow-y-auto">
++        <section className="grid grid-cols-1 md:grid-cols-3 place-items-center px-3 gap-4 p-4 overflow-y-auto">
+           {data.data.slice(0, 3).map((item) => (
+             <LubricantItem key={item.id} {...item} />
+           ))}
+diff --git a/components/lubricants/LubricantItem.tsx b/components/lubricants/LubricantItem.tsx
+index 2c732e3..0a2df7e 100644
+--- a/components/lubricants/LubricantItem.tsx
++++ b/components/lubricants/LubricantItem.tsx
+@@ -4,12 +4,17 @@ import { useFormatter } from "next-intl";
+ import { Button } from "@/components/ui/button";
+ import { Link } from "@/i18n/routing";
+ import { Product } from "@/types/Product";
++// Wait for image to load. Probably make this async and await the image to load
++//
++// Look at theo's video on how to make this async and server components loading
++// Look here : https://youtu.be/VMDydLUCLtE?si=PHEKoNRYye-cYC3s
++
+ 
+ export default function LubricantItem(item: Product) {
+   const numberF = useFormatter();
+ 
+   return (
+-    <Link className="w-fit h-fit" href={`/oil/${item.id}/`}>
++    <Link className="w-full h-fit md:w-fit md:h-fit" href={`/oil/${item.id}/`}>
+       <Button
+         key={`${item.id} ${item.name}`}
+         className="min-w-32 w-full h-full transition-colors-opacity
+diff --git a/hooks/useDialog.ts b/hooks/useDialog.ts
+index 2e59eb8..a4e0786 100644
+--- a/hooks/useDialog.ts
++++ b/hooks/useDialog.ts
+@@ -2,7 +2,7 @@ import { RefObject, useCallback, useReducer, useRef } from "react";
+ 
+ type DialogState = {
+   opened: boolean;
+-  ref: RefObject<HTMLDialogElement>;
++  ref: RefObject<HTMLDialogElement | null>;
+   error: string;
+ };
+ type DialogAction = { type: "open" } | { type: "close" };
+diff --git a/package.json b/package.json
+index 250fb05..389be2c 100644
+--- a/package.json
++++ b/package.json
+@@ -3,7 +3,7 @@
+   "version": "0.0.1",
+   "private": true,
+   "scripts": {
+-    "dev": "next dev",
++    "dev": "next dev --turbopack",
+     "turbo": "next dev --turbo",
+     "build": "next build",
+     "start": "next start",
+@@ -14,97 +14,101 @@
+     "@heroicons/react": "^2.2.0",
+     "@hookform/resolvers": "^3.9.1",
+     "@radix-ui/react-accordion": "^1.2.2",
+-    "@radix-ui/react-alert-dialog": "^1.1.3",
++    "@radix-ui/react-alert-dialog": "^1.1.4",
+     "@radix-ui/react-aspect-ratio": "^1.1.1",
+     "@radix-ui/react-avatar": "^1.1.2",
+     "@radix-ui/react-checkbox": "^1.1.3",
+     "@radix-ui/react-collapsible": "^1.1.2",
+-    "@radix-ui/react-context-menu": "^2.2.3",
+-    "@radix-ui/react-dialog": "^1.1.3",
+-    "@radix-ui/react-dropdown-menu": "^2.1.3",
+-    "@radix-ui/react-hover-card": "^1.1.3",
++    "@radix-ui/react-context-menu": "^2.2.4",
++    "@radix-ui/react-dialog": "^1.1.4",
++    "@radix-ui/react-dropdown-menu": "^2.1.4",
++    "@radix-ui/react-hover-card": "^1.1.4",
+     "@radix-ui/react-label": "^2.1.1",
+-    "@radix-ui/react-menubar": "^1.1.3",
+-    "@radix-ui/react-navigation-menu": "^1.2.2",
+-    "@radix-ui/react-popover": "^1.1.3",
++    "@radix-ui/react-menubar": "^1.1.4",
++    "@radix-ui/react-navigation-menu": "^1.2.3",
++    "@radix-ui/react-popover": "^1.1.4",
+     "@radix-ui/react-progress": "^1.1.1",
+     "@radix-ui/react-radio-group": "^1.2.2",
+     "@radix-ui/react-scroll-area": "^1.2.2",
+-    "@radix-ui/react-select": "^2.1.3",
++    "@radix-ui/react-select": "^2.1.4",
+     "@radix-ui/react-separator": "^1.1.1",
+     "@radix-ui/react-slider": "^1.2.2",
+     "@radix-ui/react-slot": "^1.1.1",
+     "@radix-ui/react-switch": "^1.1.2",
+     "@radix-ui/react-tabs": "^1.1.2",
+-    "@radix-ui/react-toast": "^1.2.3",
++    "@radix-ui/react-toast": "^1.2.4",
+     "@radix-ui/react-toggle": "^1.1.1",
+     "@radix-ui/react-toggle-group": "^1.1.1",
+-    "@radix-ui/react-tooltip": "^1.1.5",
+-    "@react-aria/ssr": "3.9.5",
+-    "@react-aria/visually-hidden": "3.8.15",
++    "@radix-ui/react-tooltip": "^1.1.6",
++    "@react-aria/ssr": "3.9.7",
++    "@react-aria/visually-hidden": "3.8.18",
+     "@studio-freight/lenis": "^1.0.42",
+-    "@tailwindcss/cli": "^4.0.0-beta.7",
++    "@tailwindcss/cli": "^0.1.2",
+     "@vercel/analytics": "^1.4.1",
+     "@vercel/speed-insights": "^1.1.0",
+     "class-variance-authority": "^0.7.1",
+     "clsx": "^2.1.1",
+-    "cmdk": "1.0.0",
++    "cmdk": "1.0.4",
+     "date-fns": "^4.1.0",
+     "embla-carousel-autoplay": "^8.5.1",
+-    "framer-motion": "^11.14.4",
++    "framer-motion": "^11.15.0",
+     "input-otp": "^1.4.1",
+     "intl-messageformat": "^10.7.10",
+-    "lucide-react": "^0.445.0",
+-    "next": "^15.1.0",
+-    "next-intl": "^3.26.1",
+-    "next-themes": "^0.3.0",
+-    "react": "^18.3.1",
+-    "react-day-picker": "8.10.1",
+-    "react-dom": "^18.3.1",
+-    "react-hook-form": "^7.54.1",
++    "lucide-react": "^0.469.0",
++    "next": "^15.1.3",
++    "next-intl": "^3.26.3",
++    "next-themes": "^0.4.4",
++    "react": "19.0.0",
++    "react-day-picker": "9.4.4",
++    "react-dom": "19.0.0",
++    "react-hook-form": "^7.54.2",
+     "react-resizable-panels": "^2.1.7",
+     "react-scroll-parallax": "^3.4.5",
+     "recharts": "^2.15.0",
+     "sharp": "^0.33.5",
+     "sonner": "^1.7.1",
+-    "swr": "^2.2.5",
+-    "tailwind-merge": "^2.5.5",
++    "swr": "^2.3.0",
++    "tailwind-merge": "^2.6.0",
+     "tailwindcss-animate": "^1.0.7",
+     "use-debounce": "^10.0.4",
+     "usehooks-ts": "^3.1.0",
+-    "vaul": "^0.9.9",
++    "vaul": "^1.1.2",
+     "zod": "^3.24.1"
+   },
+   "devDependencies": {
+     "@eslint/compat": "^1.2.4",
+     "@eslint/eslintrc": "^3.2.0",
+-    "@eslint/js": "^9.16.0",
++    "@eslint/js": "^9.17.0",
+     "@tailwindcss/aspect-ratio": "^0.4.2",
+     "@tailwindcss/container-queries": "^0.1.1",
+     "@tailwindcss/forms": "^0.5.9",
+-    "@tailwindcss/postcss": "^4.0.0-beta.7",
++    "@tailwindcss/postcss": "^0.0.0-development.1",
+     "@tailwindcss/typography": "^0.5.15",
+-    "@types/node": "22.5.5",
+-    "@types/react": "18.3.8",
+-    "@types/react-dom": "18.3.0",
+-    "@typescript-eslint/eslint-plugin": "8.6.0",
+-    "@typescript-eslint/parser": "8.6.0",
++    "@types/node": "22.10.2",
++    "@types/react": "19.0.2",
++    "@types/react-dom": "19.0.2",
++    "@typescript-eslint/eslint-plugin": "8.18.2",
++    "@typescript-eslint/parser": "8.18.2",
+     "autoprefixer": "10.4.20",
+     "embla-carousel-react": "^8.5.1",
+-    "eslint": "^9.16.0",
+-    "eslint-config-next": "^15.1.0",
++    "eslint": "^9.17.0",
++    "eslint-config-next": "15.1.3",
+     "eslint-config-prettier": "^9.1.0",
+     "eslint-plugin-import": "^2.31.0",
+     "eslint-plugin-jsx-a11y": "^6.10.2",
+     "eslint-plugin-node": "^11.1.0",
+     "eslint-plugin-prettier": "^5.2.1",
+-    "eslint-plugin-react": "^7.37.2",
+-    "eslint-plugin-react-hooks": "^4.6.2",
++    "eslint-plugin-react": "^7.37.3",
++    "eslint-plugin-react-hooks": "^5.1.0",
+     "eslint-plugin-unused-imports": "^4.1.4",
+-    "globals": "^15.13.0",
+-    "postcss": "8.4.47",
+-    "tailwind-variants": "0.2.1",
+-    "tailwindcss": "^4.0.0-beta.7",
+-    "typescript": "5.6.2"
++    "globals": "^15.14.0",
++    "postcss": "8.4.49",
++    "tailwind-variants": "0.3.0",
++    "tailwindcss": "^3.4.17",
++    "typescript": "5.7.2"
++  },
++  "overrides": {
++    "@types/react": "19.0.2",
++    "@types/react-dom": "19.0.2"
+   }
+ }

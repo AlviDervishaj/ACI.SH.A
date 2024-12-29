@@ -3,8 +3,6 @@ import { DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 
-// import Search from "./Search";
-
 import { Link, usePathname } from "@/i18n/routing";
 import { siteConfig } from "@/config/site";
 
