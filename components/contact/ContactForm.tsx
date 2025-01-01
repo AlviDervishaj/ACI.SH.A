@@ -1,4 +1,4 @@
-import { useActionState } from "react";
+import { useActionState, useRef } from "react";
 
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -22,18 +22,26 @@ export default function ContactForm() {
       <Input
         className="dark:bg-slate-700"
         name="first_name"
+        maxLength={20}
         placeholder="First Name"
       />
       <Input
         className="dark:bg-slate-700"
         name="last_name"
+        maxLength={40}
         placeholder="Last Name"
       />
-      <Input className="dark:bg-slate-700" name="email" placeholder="Email" />
+      <Input
+        className="dark:bg-slate-700"
+        name="email"
+        maxLength={60}
+        placeholder="Email"
+      />
       <Textarea
         className="max-w-sm text-base dark:bg-slate-700"
+        maxLength={180}
         name="message"
-        placeholder="Enter your message here. &#128515; "
+        placeholder="Enter your message here."
         rows={5}
       />
       {state?.error && (

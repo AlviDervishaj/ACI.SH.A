@@ -38,6 +38,11 @@
     "help": "Ndihma",
     "which_is_better": "Cili lubrifikant eshte me optimal ?"
   },
+  "Cart": {
+    "empty_cart": "Shporta juaj është bosh.",
+    "order_summary": "Përmbledhje e Porosisë",
+    "checkout": "Porositë"
+  },
   "Errors": {
     "bad_action": "Dicka shkoi keq.",
     "try_again_later": "Ju lutem provoni përsëri më vonë.",

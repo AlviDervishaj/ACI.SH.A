@@ -38,6 +38,11 @@
     "help": "Help",
     "which_is_better": "Which lubricant is better ?"
   },
+  "Cart": {
+    "empty_cart": "Your cart is empty.",
+    "order_summary": "Order Summary",
+    "checkout": "Checkout"
+  },
   "Errors": {
     "bad_action": "Something went wrong.",
     "try_again_later": "Please try again later.",

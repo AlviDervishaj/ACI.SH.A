@@ -1,7 +1,6 @@
 // Next Stuff
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Metadata, Viewport } from "next";
@@ -72,22 +71,20 @@ export default async function RootLayout(props: {
           fontSans.variable,
         )}
       >
-        <Suspense fallback={<div>Loading ...</div>}>
-          <NextIntlClientProvider messages={messages}>
-            <Providers>
-              <div className="flex flex-col min-h-dvh max-h-fit overflow-y-auto">
-                <Navigation />
-                <main className="container mx-auto max-w-7xl grow overflow-y-visible pt-16">
-                  {children}
-                </main>
-                <Footer />
-              </div>
-              <Toaster />
-              <Analytics />
-              <SpeedInsights />
-            </Providers>
-          </NextIntlClientProvider>
-        </Suspense>
+        <Providers locale={locale} messages={messages}>
+          <div className="flex flex-col min-h-dvh max-h-fit overflow-y-auto">
+            <Navigation />
+            <main className="container mx-auto max-w-7xl grow overflow-y-visible pt-16">
+              <Suspense fallback={<div>Loading ...</div>}>
+                {children}
+                <Toaster richColors closeButton />
+              </Suspense>
+            </main>
+            <Footer />
+          </div>
+          <Analytics />
+          <SpeedInsights />
+        </Providers>
       </body>
     </html>
   );

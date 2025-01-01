@@ -1,9 +1,13 @@
-import { ReactNode } from "react";
+import { Skeleton } from "@/components/ui/skeleton"
 
-import { Skeleton } from "@/components/ui/skeleton";
-
-export const Loading = ({ children }: { children?: ReactNode }) => {
+export const Loading = () => {
   return (
-    <Skeleton className="w-full h-[10rem] rounded-full">{children}</Skeleton>
-  );
-};
+    <div className="flex flex-col space-y-3">
+      <Skeleton className="h-[125px] w-[250px] rounded-xl" />
+      <div className="space-y-2">
+        <Skeleton className="h-4 w-[250px]" />
+        <Skeleton className="h-4 w-[200px]" />
+      </div>
+    </div>
+  )
+}

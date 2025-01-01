@@ -30,9 +30,7 @@ export const LubricantItems = async ({ page }: LubricantItemsProps) => {
         )}
       >
         {(error || !products || products.data.length === 0) && (
-          <div className="abcde" id="error">
-            <TryAgainLater />
-          </div>
+          <TryAgainLater />
         )}
         {products.data.length >= 1 && (
           <div className="flex h-full flex-col items-stretch content-center justify-center gap-3">

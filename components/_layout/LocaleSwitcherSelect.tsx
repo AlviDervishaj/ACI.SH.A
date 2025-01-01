@@ -27,8 +27,6 @@ export function LocaleSwitcherSelect({ children, defaultValue }: Props) {
   function onSelectChange(event: MouseEvent<HTMLButtonElement>) {
     const nextLocale = event.currentTarget.value;
 
-    console.log("nextLocale", nextLocale);
-
     startTransition(() => {
       router.replace(
         // @ts-expect-error -- TypeScript will validate that only known `params`
