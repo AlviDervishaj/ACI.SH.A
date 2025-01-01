@@ -8,7 +8,7 @@ export const getAllSorted = async (
 ): Promise<ListProducts> => {
 
   let endpoint = PRODUCTS_API.GET;
-  const _productsUrl: string = listProducts({ queries: [{sort: "name", order: "asc"}] });
+  const _productsUrl: string = listProducts({ filters: {}, queries: { sort: ["name"], order: "asc" } });
   switch (sort) {
     case "popular":
       endpoint = PRODUCTS_API.GET_POPULAR;

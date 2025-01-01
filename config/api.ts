@@ -14,7 +14,7 @@ export const listProducts = ({ filters, queries }: ListProductsUrlType): string 
     url = `${url}?${filter}`;
   }
   if (queries) {
-    const order = queries.order;
+    const order = queries;
     // Sort should have a format like this: /list?sort=["sell_price", "name"]&order=asc
     const sort = queries.sort.map((s) => `"${s}"`).join(",");
     url = `${url}?sort=[${sort}]&order=${order}`;
