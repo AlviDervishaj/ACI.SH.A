@@ -18,14 +18,30 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-const filters = [
+const sorters = [
   {
-    value: "discounted",
-    label: "Discounted",
+    value: "default",
+    label: "Default",
+  },
+  {
+    value: "popular",
+    label: "Popular",
+  },
+  {
+    value: "name",
+    label: "Name",
+  },
+  {
+    value: "price-highest-to-lowest",
+    label: "Price: Highest to Lowest",
+  },
+  {
+    value: "price-lowest-to-highest",
+    label: "Price: Lowest to Highest",
   },
 ];
 
-export default function Filters({ setSortingAction }: { setSortingAction: ({ type, value }: { type: "sort" | "filter", value: string }) => void }) {
+export default function Sorters({ setSortingAction }: { setSortingAction: ({ type, value }: { type: "sort" | "filter", value: string }) => void }) {
   const [open, setOpen] = useState<boolean>(false);
   const [value, setValue] = useState<string>("");
 
@@ -39,24 +55,24 @@ export default function Filters({ setSortingAction }: { setSortingAction: ({ typ
           variant="outline"
         >
           {value
-            ? filters.find((filter) => filter.value === value)?.label
-            : "Filter By"}
+            ? sorters.find((filter) => filter.value === value)?.label
+            : "Sort by"}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0 !bg-white">
         <Command>
-          <CommandInput placeholder="Filter by" />
+          <CommandInput placeholder="Sort by" />
           <CommandList>
-            <CommandEmpty>No filter found.</CommandEmpty>
+            <CommandEmpty>No sorting found.</CommandEmpty>
             <CommandGroup>
-              {filters.map((filter) => (
+              {sorters.map((filter) => (
                 <CommandItem
                   key={filter.value}
                   value={filter.value}
                   onSelect={(currentValue) => {
                     setValue(currentValue === value ? "" : currentValue);
-                    setSortingAction({type: "filter", value: currentValue === value ? "" : currentValue});
+                    setSortingAction({ type: "sort", value: currentValue === value ? "" : currentValue });
                     setOpen(false);
                   }}
                 >
@@ -73,6 +89,6 @@ export default function Filters({ setSortingAction }: { setSortingAction: ({ typ
           </CommandList>
         </Command>
       </PopoverContent>
-    </Popover>
+    </Popover >
   );
 }

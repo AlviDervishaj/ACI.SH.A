@@ -12,7 +12,7 @@ export default async function LubricantsPage(props: {
   return (
     <main className="pt-6 lg:pt-10 w-full h-full">
       <h1 className={title()}>{t("lubricants")}</h1>
-      <LubricantItems brand={brand || ""} page={parseInt(page || "1")} />
+      <LubricantItems brand={parseInt(brand || "0")} page={parseInt(page || "1")} />
     </main>
   );
 }

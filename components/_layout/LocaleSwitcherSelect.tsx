@@ -49,14 +49,13 @@ export function LocaleSwitcherSelect({ children, defaultValue }: Props) {
         if (child) {
           return child.props.value === defaultValue;
         }
-
         return null;
       }),
     [children.length, defaultValue],
   );
 
   return (
-    <section className="relative p-0 m-0 min-w-32">
+    <section className="relative p-0 m-0">
       <Button
         defaultValue={defaultValue}
         disabled={isPending}

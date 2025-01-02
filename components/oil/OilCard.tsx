@@ -8,21 +8,18 @@ import { Link } from "@/i18n/routing";
 
 type OilProps = {
   item: {
-    title: string;
+    id: number;
     image: string;
-    description?: string;
+    title: string;
   };
 };
 
 export const OilCard = memo(
   function OilCard({ item }: OilProps) {
     return (
-      <Link href={`/lubricants?oil=${item.title}`}>
+      <Link href={`/lubricants?brand=${item.id}`}>
         <Card className="w-fit select-none transition-transform duration-500 ease-in-out hover:scale-110 dark:bg-slate-800 overflow-hidden">
           <CardHeader className="p-0 absolute z-10 flex-col items-start">
-            <p className="p-1 text-tiny text-white/60 uppercase font-bold">
-              {item.description}
-            </p>
             <h4 className="pl-3 text-white font-bold tracking-wide text-2xl group-hover:text-yellow-500 transition-colors duration-300 ease-in-out">
               {item.title}
             </h4>
