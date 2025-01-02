@@ -1,8 +1,8 @@
-import { useActionState, useRef } from "react";
+import { useActionState } from "react";
 
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { handleFormSubmit } from "@/hooks/actions";
+import { handleContact } from "@/hooks/actions";
 
 import FormButton from "./FormButton";
 
@@ -12,7 +12,7 @@ const initialState = {
 };
 
 export default function ContactForm() {
-  const [state, formAction] = useActionState(handleFormSubmit, initialState);
+  const [state, formAction] = useActionState(handleContact, initialState);
 
   return (
     <form
@@ -21,20 +21,20 @@ export default function ContactForm() {
     >
       <Input
         className="dark:bg-slate-700"
-        name="first_name"
         maxLength={20}
+        name="first_name"
         placeholder="First Name"
       />
       <Input
         className="dark:bg-slate-700"
-        name="last_name"
         maxLength={40}
+        name="last_name"
         placeholder="Last Name"
       />
       <Input
         className="dark:bg-slate-700"
-        name="email"
         maxLength={60}
+        name="email"
         placeholder="Email"
       />
       <Textarea

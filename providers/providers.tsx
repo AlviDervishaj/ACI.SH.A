@@ -4,6 +4,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import { ReactNode, useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import { NextIntlClientProvider } from "next-intl";
+
 import { ShoppingCartProvider } from "./ShoppingCartProvider";
 
 export interface ProvidersProps {
@@ -19,14 +20,12 @@ export function Providers({ children, messages, locale }: ProvidersProps) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     };
+
     requestAnimationFrame(raf);
   }, []);
 
   return (
     <NextIntlClientProvider
-      locale={locale}
-      messages={messages}
-      timeZone={"Europe/Tirane"}
       formats={{
         number: {
           currency: {
@@ -34,7 +33,11 @@ export function Providers({ children, messages, locale }: ProvidersProps) {
             currency: "EUR",
           },
         },
-      }}>
+      }}
+      locale={locale}
+      messages={messages}
+      timeZone={"Europe/Tirane"}
+    >
       <ParallaxProvider>
         <NextThemesProvider
           disableTransitionOnChange
@@ -42,9 +45,7 @@ export function Providers({ children, messages, locale }: ProvidersProps) {
           attribute="class"
           defaultTheme="system"
         >
-          <ShoppingCartProvider>
-            {children}
-          </ShoppingCartProvider>
+          <ShoppingCartProvider>{children}</ShoppingCartProvider>
         </NextThemesProvider>
       </ParallaxProvider>
     </NextIntlClientProvider>

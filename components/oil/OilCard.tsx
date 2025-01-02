@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { memo } from "react";
 
@@ -16,7 +17,7 @@ type OilProps = {
 export const OilCard = memo(
   function OilCard({ item }: OilProps) {
     return (
-      <Link href={`/oil/${item.title.toLowerCase()}/`}>
+      <Link href={`/lubricants?oil=${item.title}`}>
         <Card className="w-fit select-none transition-transform duration-500 ease-in-out hover:scale-110 dark:bg-slate-800 overflow-hidden">
           <CardHeader className="p-0 absolute z-10 flex-col items-start">
             <p className="p-1 text-tiny text-white/60 uppercase font-bold">

@@ -1,20 +1,28 @@
 "use client";
-import { useShoppingCart } from "@/providers/ShoppingCartProvider";
 import Image from "next/image";
 import { useFormatter } from "next-intl";
-import { Link } from "@/i18n/routing";
-import { Product } from "@/types/Product";
 import { useMemo } from "react";
-import { Button } from "../ui/button";
 import { Minus, Plus } from "lucide-react";
 
+import { useShoppingCart } from "@/providers/ShoppingCartProvider";
+import { Link } from "@/i18n/routing";
+import { Product } from "@/types/Product";
+
+import { Button } from "../ui/button";
+
 export default function LubricantItem(item: Product) {
-  const { products, addProduct, isProductInCart, increaseQuantity, decreaseQuantity } = useShoppingCart();
+  const {
+    products,
+    addProduct,
+    isProductInCart,
+    increaseQuantity,
+    decreaseQuantity,
+  } = useShoppingCart();
   const numberF = useFormatter();
 
   const itemQuantity = useMemo(() => {
     return products.find((p) => p.product.id === item.id)?.quantity || 0;
-  }, [products.find((p) => p.product.id === item.id)?.quantity])
+  }, [products.find((p) => p.product.id === item.id)?.quantity]);
 
   return (
     <section
@@ -32,28 +40,45 @@ export default function LubricantItem(item: Product) {
         width={150}
       />
       <div className="lg:p-2 w-11/12 lg:w-full flex flex-col justify-between items-center content-center">
-        <Link href={`/oil/${item.id}/`} className="text-left text-xm md:text-sm font-medium tracking-wide self-end w-full truncate inline word-break">
+        <Link
+          className="text-left text-xm md:text-sm font-medium tracking-wide self-end w-full truncate inline word-break"
+          href={`/oil/${item.id}/`}
+        >
           {item.name}
         </Link>
         <p className="font-semibold tracking-wide self-end text-sm md:text-base">
-          {numberF.number(item.sell_price, 'currency')}
+          {numberF.number(item.sell_price, "currency")}
         </p>
       </div>
       <section className="w-full h-fit px-4 pb-2 flex items-center content-center">
         {isProductInCart(item) ? (
           <div className="flex flex-row items-center content-center justify-between w-full">
-            <Button size="sm" variant="outline" onClick={() => decreaseQuantity(item)}>
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={() => decreaseQuantity(item)}
+            >
               <Minus />
             </Button>
             <p className="text-center text-lg">{itemQuantity}</p>
-            <Button size="sm" variant="outline" onClick={() => increaseQuantity(item)}>
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={() => increaseQuantity(item)}
+            >
               <Plus />
             </Button>
           </div>
         ) : (
-          <Button className="mx-auto hover:border-orange-600 hover:bg-orange-500/60 transition-colors ease-in-out duration-200 active:bg-orange-500" variant="outline" onClick={() => addProduct(item)}>Add To Cart</Button>
+          <Button
+            className="mx-auto hover:border-orange-600 hover:bg-orange-500/60 transition-colors ease-in-out duration-200 active:bg-orange-500"
+            variant="outline"
+            onClick={() => addProduct(item)}
+          >
+            Add To Cart
+          </Button>
         )}
       </section>
-    </section >
+    </section>
   );
 }

@@ -6,6 +6,9 @@ import { notFound } from "next/navigation";
 import { Metadata, Viewport } from "next";
 
 // Components
+import clsx from "clsx";
+import { Suspense } from "react";
+
 import { NavigationUI as Navigation } from "@/components/_layout/Navigation";
 import { Footer } from "@/components/_layout/Footer";
 import { Providers } from "@/providers/providers";
@@ -17,8 +20,6 @@ import { routing } from "@/i18n/routing";
 
 // Styles
 import "@/styles/globals.css";
-import clsx from "clsx";
-import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: {
@@ -41,6 +42,7 @@ export const viewport: Viewport = {
 export async function generateStaticParams() {
   // Define your supported locales
   const locales = ["en", "al"]; // Replace with your actual locales
+
   return locales.map((locale) => ({ locale }));
 }
 
@@ -51,6 +53,7 @@ export default async function RootLayout(props: {
   const params = await props.params;
   const { locale } = params;
   const { children } = props;
+
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
@@ -77,7 +80,7 @@ export default async function RootLayout(props: {
             <main className="container mx-auto max-w-7xl grow overflow-y-visible pt-16">
               <Suspense fallback={<div>Loading ...</div>}>
                 {children}
-                <Toaster richColors closeButton />
+                <Toaster closeButton richColors />
               </Suspense>
             </main>
             <Footer />
@@ -127,4 +130,4 @@ const HeadData = () => {
       />
     </>
   );
-}
+};

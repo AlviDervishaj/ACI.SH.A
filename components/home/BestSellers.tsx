@@ -19,6 +19,8 @@ export default function BestSellers() {
     fetcher,
   );
 
+  console.log({ data });
+
   return (
     <div className="py-8 w-full md:w-full lg:w-[53rem]">
       <div className="w-full h-fit p-0 m-0 flex flex-row items-center content-center justify-between">

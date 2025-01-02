@@ -10,9 +10,11 @@ import { LubricanPagination } from "./LubricantPagination";
 
 type LubricantItemsProps = {
   page: number;
+  brand: string;
 };
 
 export const LubricantItems = async ({ page }: LubricantItemsProps) => {
+  // Also get by brand id if provided
   const { products, error } = await getAllProducts(page);
 
   const totalPages = products.pagination.next
