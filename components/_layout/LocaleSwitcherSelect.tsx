@@ -49,6 +49,7 @@ export function LocaleSwitcherSelect({ children, defaultValue }: Props) {
         if (child) {
           return child.props.value === defaultValue;
         }
+
         return null;
       }),
     [children.length, defaultValue],
@@ -66,7 +67,7 @@ export function LocaleSwitcherSelect({ children, defaultValue }: Props) {
         {!isActive ? <ChevronDown size={16} /> : <ChevronUp size={16} />}
       </Button>
       {isActive && (
-        <div className="absolute top-auto right-0 bg-background rounded-lg border-2 border-card">
+        <div className="absolute top-auto right-0 bg-background rounded-lg border border-card dark:shadow-background/20 shadow-foreground/20 shadow-xl">
           {children.map((child, index) => (
             <Button
               key={index}

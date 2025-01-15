@@ -47,7 +47,16 @@ export default function LubricantItem(item: Product) {
           {item.name}
         </Link>
         <p className="font-semibold tracking-wide self-end text-sm md:text-base">
-          {numberF.number(item.sell_price, "currency")}
+          {item.has_discount ? (
+            <>
+              <span className="line-through text-xs md:text-sm text-red-500">
+                {numberF.number(item.sell_price, "currency")}
+              </span>{" "}
+              {numberF.number(item.total_discount, "currency")}
+            </>
+          ) : (
+            numberF.number(item.sell_price, "currency")
+          )}
         </p>
       </div>
       <section className="w-full h-fit px-4 pb-2 flex items-center content-center">

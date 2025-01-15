@@ -1,11 +1,19 @@
 import { Input } from "@/components/ui/input";
-export default function Search() {
+type SearchProps = {
+  value: string,
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+}
+export default function Search(props: SearchProps) {
   return (
-    <Input
-      className="dark:bg-slate-600/70 lg:w-[20dvw] h-full text-base"
-      name="search_term"
-      placeholder="Search..."
-      type="search"
-    />
+    <div className="max-w-lg h-full">
+      <Input
+        className="dark:bg-slate-600/70 text-base"
+        name="search_term"
+        placeholder="Search..."
+        type="search"
+        onChange={props.onChange}
+      />
+      <small className="text-muted-foreground">Search applies to product name</small>
+    </div>
   );
 }

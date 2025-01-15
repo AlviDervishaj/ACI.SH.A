@@ -6,8 +6,10 @@ export const PRODUCTS_API = {
   GET: `${API_BASE_URL}/product/list`,
   GET_POPULAR: `${API_BASE_URL}/product/list?sort=["popularity"]&order=desc`,
   GET_DISCOUNTED: `${API_BASE_URL}/product/list?sort=["discount"]&order=desc`,
-  GET_BASED_ON_BRAND: (brand: string) => `${API_BASE_URL}/product/list?filter={"brand":"${brand}"}`,
-  GET_BASED_ON_CATEGORY: (category: string) => `${API_BASE_URL}/product/list?filter={"category":"${category}"}`,
+  GET_BASED_ON_BRAND: (brand: string) =>
+    `${API_BASE_URL}/product/list?filter={"brand":"${brand}"}`,
+  GET_BASED_ON_CATEGORY: (category: string) =>
+    `${API_BASE_URL}/product/list?filter={"category":"${category}"}`,
   GET_BASED_ON_DISCOUNT: `${API_BASE_URL}/product/list?filter={"discount":true}`,
   GET_PRICE_ASC: `${API_BASE_URL}/product/list?sort=["sell_price"]&order=asc`,
   GET_PRICE_DESC: `${API_BASE_URL}/product/list?sort=["sell_price"]&order=desc`,

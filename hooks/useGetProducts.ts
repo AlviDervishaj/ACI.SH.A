@@ -25,7 +25,6 @@ export const useGetProducts = () => {
 
       setProducts(data);
     } catch (error) {
-      console.log({ error });
       setProducts(_initialState);
       // An error occurred while fetching products.
       setError("");

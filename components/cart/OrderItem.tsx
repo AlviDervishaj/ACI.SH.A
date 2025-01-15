@@ -25,7 +25,7 @@ export const OrderItem = ({
       <div className="flex items-center content-center justify-start gap-3 w-3/5">
         <Image
           alt={item.product.name}
-          className="w-24 h-24 aspect-square border border-black rounded-sm sm:w-auto"
+          className="w-24 h-24 aspect-square border border-black rounded-sm sm:w-auto object-cover"
           height={98}
           src={item.product.main_image || "/images/no-image.avif"}
           width={98}
@@ -34,7 +34,9 @@ export const OrderItem = ({
           <h1 className="pt-1 self-center truncate w-28 sm:w-40">
             {item.product.name}
           </h1>
-          <p className="text-orange-700/50">{item.product.brand}</p>
+          <p className="text-orange-700/70 dark:text-orange-500/70">
+            {item.product.brand}
+          </p>
         </section>
       </div>
       <div className="w-fit flex flex-col items-center content-center justify-center space-y-1 pl-3">

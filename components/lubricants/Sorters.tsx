@@ -1,94 +1,113 @@
-"use client";
-import { Check, ChevronsUpDown } from "lucide-react";
-import { useState } from "react";
+'use client'
 
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import * as React from "react"
+import { useTransition, useCallback } from 'react'
+import { Check, ChevronsUpDown } from 'lucide-react'
+
+import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button"
 import {
   Command,
   CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
-  CommandList,
-} from "@/components/ui/command";
+} from "@/components/ui/command"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
+} from "@/components/ui/popover"
+import { SortingOptions } from "@/types/Api"
 
-const sorters = [
-  {
-    value: "default",
-    label: "Default",
-  },
-  {
-    value: "popular",
-    label: "Popular",
-  },
-  {
-    value: "name",
-    label: "Name",
-  },
-  {
-    value: "price-highest-to-lowest",
-    label: "Price: Highest to Lowest",
-  },
-  {
-    value: "price-lowest-to-highest",
-    label: "Price: Lowest to Highest",
-  },
-];
+type SortOption = {
+  name: string
+  value: string
+}
 
-export default function Sorters({ setSortingAction }: { setSortingAction: ({ type, value }: { type: "sort" | "filter", value: string }) => void }) {
-  const [open, setOpen] = useState<boolean>(false);
-  const [value, setValue] = useState<string>("");
+type SortersProps = {
+  setSortingAction: (params: { type: "sort" | "filter"; value: string; page: number; brand: number; prevState: SortingOptions }) => Promise<{ products: any; error: any; sorting_opts: SortingOptions }>
+  page: number
+  brand: number
+  emptyMessage?: string
+  placeholder?: string
+}
+
+const sortOptions: SortOption[] = [
+  { name: 'Price: Low to High', value: 'price_asc' },
+  { name: 'Price: High to Low', value: 'price_desc' },
+  { name: 'Newest', value: 'newest' },
+  { name: 'Popularity', value: 'popularity' },
+]
+
+export function Sorters({ setSortingAction, page, brand, emptyMessage = "No sorting options found.", placeholder = "Sort by..." }: SortersProps) {
+  const [open, setOpen] = React.useState(false)
+  const [value, setValue] = React.useState<string>('')
+  const [isPending, startTransition] = useTransition()
+
+  const handleSelect = useCallback((currentValue: string) => {
+    startTransition(() => {
+      setValue(currentValue)
+      const selectedOption = sortOptions.find(option => option.value === currentValue)
+      if (selectedOption) {
+        setSortingAction({
+          type: 'sort',
+          value: selectedOption.value,
+          page,
+          brand,
+          prevState: { sort: [], filter: [] }
+        })
+          .then((result) => {
+            console.log(result)
+          })
+          .catch((error) => {
+            console.error('Error in setSortingAction:', error)
+          })
+      }
+    })
+  }, [setSortingAction, page, brand])
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
         <Button
-          aria-expanded={open}
-          className="w-[140px] lg:w-[200px] justify-between"
-          role="combobox"
           variant="outline"
+          role="combobox"
+          aria-expanded={open}
+          className="w-[200px] justify-between"
+          disabled={isPending}
         >
           {value
-            ? sorters.find((filter) => filter.value === value)?.label
-            : "Sort by"}
+            ? sortOptions.find((option) => option.value === value)?.name
+            : placeholder}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[200px] p-0 !bg-white">
+      <PopoverContent className="w-[200px] p-0">
         <Command>
-          <CommandInput placeholder="Sort by" />
-          <CommandList>
-            <CommandEmpty>No sorting found.</CommandEmpty>
-            <CommandGroup>
-              {sorters.map((filter) => (
-                <CommandItem
-                  key={filter.value}
-                  value={filter.value}
-                  onSelect={(currentValue) => {
-                    setValue(currentValue === value ? "" : currentValue);
-                    setSortingAction({ type: "sort", value: currentValue === value ? "" : currentValue });
-                    setOpen(false);
-                  }}
-                >
-                  <Check
-                    className={cn(
-                      "mr-2 h-4 w-4",
-                      value === filter.value ? "opacity-100" : "opacity-0",
-                    )}
-                  />
-                  {filter.label}
-                </CommandItem>
-              ))}
-            </CommandGroup>
-          </CommandList>
+          <CommandInput placeholder="Search sorting options..." />
+          <CommandEmpty>{emptyMessage}</CommandEmpty>
+          <CommandGroup>
+            {sortOptions.map((option) => (
+              <CommandItem
+                key={option.value}
+                onSelect={() => handleSelect(option.value)}
+              >
+                <Check
+                  className={cn(
+                    "mr-2 h-4 w-4",
+                    value === option.value ? "opacity-100" : "opacity-0"
+                  )}
+                />
+                {option.name}
+              </CommandItem>
+            ))}
+          </CommandGroup>
         </Command>
       </PopoverContent>
-    </Popover >
-  );
+    </Popover>
+  )
 }
+
+export default Sorters
+

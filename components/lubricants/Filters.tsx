@@ -1,9 +1,6 @@
-"use client";
-import { Check, ChevronsUpDown } from "lucide-react";
-import { useState } from "react";
-
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { Check, ChevronsUpDown } from 'lucide-react'
+import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button"
 import {
   Command,
   CommandEmpty,
@@ -11,68 +8,108 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "@/components/ui/command";
+} from "@/components/ui/command"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
+} from "@/components/ui/popover"
+import { FormControl, FormItem, FormMessage } from "../ui/form"
+import { ControllerRenderProps, UseFormSetValue } from 'react-hook-form'
 
-const filters = [
-  {
-    value: "discounted",
-    label: "Discounted",
-  },
-];
+export type Option = {
+  name: string
+  value: string
+}
 
-export default function Filters({ setSortingAction }: { setSortingAction: ({ type, value }: { type: "sort" | "filter", value: string }) => void }) {
-  const [open, setOpen] = useState<boolean>(false);
-  const [value, setValue] = useState<string>("");
+type FiltersProps = {
+  multiple?: boolean
+  emptyMessage?: string
+  placeholder?: string
+  field: ControllerRenderProps<{ filter_by: Option[] }, "filter_by">
+  setValue: UseFormSetValue<{ filter_by: Option[] }>
+}
+
+
+
+export const filterOptions: Option[] = [
+  { name: 'discounted', value: 'discount' },
+  { name: 'not discounted', value: 'not_discount' },
+  { name: 'popular', value: 'popular' },
+  { name: 'new', value: 'new' },
+]
+
+export function Filters({
+  multiple = false,
+  emptyMessage = "No filters found.",
+  placeholder = "Select filters...",
+  field,
+  setValue,
+}: FiltersProps) {
+  const selectedValues = Array.isArray(field.value)
+    ? field.value
+    : (field.value ? [field.value] : []);
 
   return (
-    <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger asChild>
-        <Button
-          aria-expanded={open}
-          className="w-[140px] lg:w-[200px] justify-between"
-          role="combobox"
-          variant="outline"
-        >
-          {value
-            ? filters.find((filter) => filter.value === value)?.label
-            : "Filter By"}
-          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
-        </Button>
-      </PopoverTrigger>
-      <PopoverContent className="w-[200px] p-0 !bg-white">
-        <Command>
-          <CommandInput placeholder="Filter by" />
-          <CommandList>
-            <CommandEmpty>No filter found.</CommandEmpty>
-            <CommandGroup>
-              {filters.map((filter) => (
-                <CommandItem
-                  key={filter.value}
-                  value={filter.value}
-                  onSelect={(currentValue) => {
-                    setValue(currentValue === value ? "" : currentValue);
-                    setSortingAction({type: "filter", value: currentValue === value ? "" : currentValue});
-                    setOpen(false);
-                  }}
-                >
-                  <Check
-                    className={cn(
-                      "mr-2 h-4 w-4",
-                      value === filter.value ? "opacity-100" : "opacity-0",
-                    )}
-                  />
-                  {filter.label}
-                </CommandItem>
-              ))}
-            </CommandGroup>
-          </CommandList>
-        </Command>
-      </PopoverContent>
-    </Popover>
-  );
+    <FormItem className="flex flex-col">
+      <Popover>
+        <PopoverTrigger asChild>
+          <FormControl>
+            <Button
+              role="combobox"
+              className={cn(
+                "w-full justify-between capitalize",
+                !field.value && "text-muted"
+              )}
+            >
+              {selectedValues.length > 0
+                ? selectedValues.map(v => v.name).join(", ")
+                : placeholder}
+              <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+            </Button>
+          </FormControl>
+        </PopoverTrigger>
+        <PopoverContent className="w-full p-0">
+          <Command>
+            <CommandInput placeholder={placeholder} />
+            <CommandList>
+              <CommandEmpty>{emptyMessage}</CommandEmpty>
+              <CommandGroup>
+                {filterOptions.map((option) => (
+                  <CommandItem
+                    value={option.value}
+                    key={option.name}
+                    onSelect={() => {
+                      if (multiple) {
+                        const isInSelectedValues = selectedValues.some(v => v.value === option.value)
+                        // If is in selected values remove it, otherwise add it
+                        const newValue = isInSelectedValues ? selectedValues.filter(v => v.value !== option.value)
+                          : [...selectedValues, option];
+                        setValue(field.name, newValue as any);
+                      } else {
+                        setValue(field.name, option as any);
+                      }
+                    }}
+                    className="capitalize"
+                  >
+                    <Check
+                      className={cn(
+                        "mr-2 h-4 w-4",
+                        selectedValues.some(v => v.value === option.value) ? "opacity-100" : "opacity-0"
+                      )}
+                    />
+                    {option.name}
+                  </CommandItem>
+                ))}
+              </CommandGroup>
+            </CommandList>
+          </Command>
+        </PopoverContent>
+      </Popover>
+      <FormMessage />
+    </FormItem>
+  )
 }
+
+export default Filters
+

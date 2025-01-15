@@ -44,6 +44,7 @@
     "checkout": "Checkout"
   },
   "Errors": {
+    "no_search_results": "No search results found.",
     "bad_action": "Something went wrong.",
     "try_again_later": "Please try again later.",
     "not_found": "Page not found.",

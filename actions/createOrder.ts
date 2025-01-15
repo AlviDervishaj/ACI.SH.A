@@ -5,11 +5,15 @@ import { CreateOrderType } from "@/types/Api";
 type CreateOrderReturnType = {
   error: boolean;
   message: string;
-}
+};
 
-export const createOrder = async (
-  { order_products, name, email, address, is_admin }: CreateOrderType
-): Promise<CreateOrderReturnType> => {
+export const createOrder = async ({
+  order_products,
+  name,
+  email,
+  address,
+  is_admin,
+}: CreateOrderType): Promise<CreateOrderReturnType> => {
   const endpoint = PRODUCTS_API.ORDER.POST;
   const body: CreateOrderType = {
     order_products,
@@ -34,7 +38,6 @@ export const createOrder = async (
   if (!response.ok) {
     return { error: true, message: "Failed to create order" };
   }
+
   return { error: false, message: "Order created successfully" };
-
-}
-
+};

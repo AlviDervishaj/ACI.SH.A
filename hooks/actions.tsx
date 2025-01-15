@@ -43,8 +43,6 @@ export async function handleContact(_: any, formData: FormData) {
     .insert([_data]);
 
   if (status !== 201) {
-    console.log(data, error, status);
-
     return {
       error: "An error occurred while sending the message.",
       message: "",

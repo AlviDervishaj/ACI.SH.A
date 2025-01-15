@@ -5,6 +5,11 @@ export type ListProducts = {
   pagination: Pagination;
 };
 
+export type SortingOptions = {
+  sort: string[],
+  filter: string[]
+}
+
 export type Pagination = {
   count: number;
   next: string | null;
@@ -58,4 +63,4 @@ export type CreateOrderType = {
   is_admin: boolean;
   paid: boolean;
   order_products: OrderedProduct[];
-}
+};
