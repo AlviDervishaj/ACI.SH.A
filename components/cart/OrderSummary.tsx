@@ -34,7 +34,6 @@ export const OrderSummary = () => {
   const [message, setMessage] = useState<string>("");
   const [error, setError] = useState<string>("");
 
-
   const handleCreateOrder = async () => {
     setIsLoading(true);
     const _order = {
@@ -48,7 +47,7 @@ export const OrderSummary = () => {
       is_admin: false,
       printed_receipt: false,
       ...userData,
-    }
+    };
     const result = await createOrder(_order);
 
     if (result.error) {

@@ -1,14 +1,15 @@
-import { Suspense } from 'react';
-import { LubricanPagination } from "./LubricantPagination";
-import { TryAgainLater } from "../_layout/TryAgainLater";
-import { FiltersWrapper } from './FiltersWrapper';
 import { ListProducts } from "@/types/Api";
+
+import { TryAgainLater } from "../_layout/TryAgainLater";
+import { SearchWrapper } from "../_layout/SearchWrapper";
+
+import { LubricanPagination } from "./LubricantPagination";
+import { FiltersWrapper } from "./FiltersWrapper";
 import LubricantItem from "./LubricantItem";
-import { SearchWrapper } from '../_layout/SearchWrapper';
 
 type LubricantItemsProps = {
   page: number;
-  products: ListProducts
+  products: ListProducts;
   error: string | null;
   totalPages: number;
   isNextPageAvailable: boolean;
@@ -21,16 +22,16 @@ export const LubricantItems = async ({
   page,
   totalPages,
   isNextPageAvailable,
-  isPreviousPageAvailable
+  isPreviousPageAvailable,
 }: LubricantItemsProps) => {
   return (
     <>
-      <div className={"w-full !h-full block"} >
+      <div className={"w-full !h-full block"}>
         <div className="flex h-full flex-col items-stretch content-center justify-center gap-3">
           <div className="w-full h-fit pt-4">
             <SearchWrapper />
           </div>
-          <div className="flex flex-row items-center content-center justify-start lg:justify-end gap-5 pt-5 pb-3 w-full">
+          <div className="flex flex-row items-center content-center justify-start lg:justify-end gap-5 pt-5 pb-3 w-full  border-b-2 border-slate-400">
             <FiltersWrapper />
           </div>
 
@@ -60,4 +61,3 @@ export const LubricantItems = async ({
     </>
   );
 };
-

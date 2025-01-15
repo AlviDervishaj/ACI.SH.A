@@ -4,7 +4,6 @@ import { Analytics } from "@vercel/analytics/react";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Metadata, Viewport } from "next";
-
 // Components
 import clsx from "clsx";
 import { Suspense } from "react";

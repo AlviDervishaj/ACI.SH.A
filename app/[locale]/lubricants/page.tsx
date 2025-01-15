@@ -1,8 +1,8 @@
 import { getTranslations } from "next-intl/server";
+import { Suspense } from "react";
 
 import { title } from "@/components/primitives";
 import { LubricantItems } from "@/components/lubricants/LubricantItems";
-import { Suspense } from "react";
 import { Loading } from "@/components/_layout/Loading";
 import { getAllProducts } from "@/actions/getAllProducts";
 
@@ -14,9 +14,13 @@ export default async function LubricantsPage(props: {
   }>;
 }) {
   const t = await getTranslations("Navigation");
-  const { page: _page, filter: _filter, term: _term } = await props.searchParams;
+  const {
+    page: _page,
+    filter: _filter,
+    term: _term,
+  } = await props.searchParams;
   const page = parseInt(_page || "1");
-  const filter: string[] = _filter ? _filter.split(",").filter(a => a) : [];
+  const filter: string[] = _filter ? _filter.split(",").filter((a) => a) : [];
   const term: string = _term || "";
 
   const { products, error } = await getAllProducts(page, filter, term);
@@ -27,18 +31,17 @@ export default async function LubricantsPage(props: {
   const isNextPageAvailable = products.pagination.next !== null;
   const isPreviousPageAvailable = products.pagination.previous !== null;
 
-
   return (
     <main className="pt-6 lg:pt-10 w-full h-full">
       <h1 className={title()}>{t("lubricants")}</h1>
       <Suspense fallback={<Loading />}>
         <LubricantItems
-          totalPages={totalPages}
+          error={error}
           isNextPageAvailable={isNextPageAvailable}
           isPreviousPageAvailable={isPreviousPageAvailable}
-          products={products}
-          error={error}
           page={page}
+          products={products}
+          totalPages={totalPages}
         />
       </Suspense>
     </main>

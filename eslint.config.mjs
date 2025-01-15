@@ -44,6 +44,7 @@ export default [{
     "!**/tsup.config.ts",
   ],
 }, ...fixupConfigRules(compat.extends(
+  'plugin:@next/next/recommended',
   "plugin:react/recommended",
   "plugin:prettier/recommended",
   "plugin:react-hooks/recommended",

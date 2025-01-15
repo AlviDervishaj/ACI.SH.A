@@ -9,11 +9,17 @@ export function TryAgainLater({ isSearchError }: { isSearchError?: boolean }) {
   return (
     <section className="w-full h-full p-2 my-2 grid place-items-center gap-3 text-center">
       {isSearchError ? (
-        <h2 className="text-2xl md:text-3xl lg:text-4xl">{t("no_search_results")}</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl">
+          {t("no_search_results")}
+        </h2>
       ) : (
         <>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl">{t("no_products")}</h2>
-          <p className="text-xl md:text-2xl lg:text-3xl">{t("try_again_later")}</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl">
+            {t("no_products")}
+          </h2>
+          <p className="text-xl md:text-2xl lg:text-3xl">
+            {t("try_again_later")}
+          </p>
 
           <small className="text-base lg:text-lg">
             {t.rich("contact_support_team", {

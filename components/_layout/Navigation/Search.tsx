@@ -1,8 +1,8 @@
 import { Input } from "@/components/ui/input";
 type SearchProps = {
-  value: string,
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
-}
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+};
 export default function Search(props: SearchProps) {
   return (
     <div className="w-full max-w-md h-full">
