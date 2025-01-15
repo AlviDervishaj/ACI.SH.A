@@ -38,11 +38,12 @@ export async function handleContact(_: any, formData: FormData) {
   };
 
   const supabase = await createClient();
-  const { data, error, status } = await supabase
+  const { error, status } = await supabase
     .from("messages")
     .insert([_data]);
 
   if (status !== 201) {
+    console.log({ error });
     return {
       error: "An error occurred while sending the message.",
       message: "",

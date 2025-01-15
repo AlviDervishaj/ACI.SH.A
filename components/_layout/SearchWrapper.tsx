@@ -25,9 +25,12 @@ export const SearchWrapper = () => {
     router.push(pathname + "?" + createQueryString());
   }, 350);
   return (
-    <div className="flex flex-row items-start content-center justify-start gap-3 w-full">
-      <Search value={term} onChange={handleSearch} />
-      <Button className="h-full" onClick={() => router.push(pathname)}>Clear</Button>
-    </div>
+    <>
+      <div className="flex flex-row content-center justify-start gap-3 w-full h-fit items-center">
+        <Search value={term} onChange={handleSearch} />
+        <Button className="self-center h-full m-0 px-3 py-2.5" onClick={() => router.push(pathname)}>Clear</Button>
+      </div>
+      <small className="text-muted-foreground">Search applies to product name</small>
+    </>
   )
 }

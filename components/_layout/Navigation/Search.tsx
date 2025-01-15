@@ -5,7 +5,7 @@ type SearchProps = {
 }
 export default function Search(props: SearchProps) {
   return (
-    <div className="max-w-lg h-full">
+    <div className="w-full max-w-md h-full">
       <Input
         className="dark:bg-slate-600/70 text-base"
         name="search_term"
@@ -13,7 +13,6 @@ export default function Search(props: SearchProps) {
         type="search"
         onChange={props.onChange}
       />
-      <small className="text-muted-foreground">Search applies to product name</small>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import { Suspense } from 'react';
-import clsx from "clsx";
 import { LubricanPagination } from "./LubricantPagination";
 import { TryAgainLater } from "../_layout/TryAgainLater";
 import { FiltersWrapper } from './FiltersWrapper';
@@ -29,16 +28,10 @@ export const LubricantItems = async ({
       <div className={"w-full !h-full block"} >
         <div className="flex h-full flex-col items-stretch content-center justify-center gap-3">
           <div className="w-full h-fit pt-4">
-            <Suspense fallback={<div>Loading search...</div>}>
-              <div>
-                <SearchWrapper />
-              </div>
-            </Suspense>
+            <SearchWrapper />
           </div>
           <div className="flex flex-row items-center content-center justify-start lg:justify-end gap-5 pt-5 pb-3 w-full">
-            <Suspense fallback={<div>Loading filters...</div>}>
-              <FiltersWrapper />
-            </Suspense>
+            <FiltersWrapper />
           </div>
 
           {(error || !products || products.data.length === 0) && (

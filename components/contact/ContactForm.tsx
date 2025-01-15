@@ -2,7 +2,7 @@ import { useActionState } from "react";
 
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { handleContact } from "@/hooks/actions";
+import { handleContact } from "@/actions/handleContact";
 
 import FormButton from "./FormButton";
 
