@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
+import { flex, section, text, link } from "../primitives";
 
 type FooterLinkTypes = {
   href: string;
@@ -14,17 +15,17 @@ const footerLinks: FooterLinkTypes[] = [
   },
 
   {
-    href: "/",
+    href: "/contact",
     children: "contact",
   },
 
   {
-    href: "/",
+    href: "/about",
     children: "about_us",
   },
 
   {
-    href: "/",
+    href: "/lubricants",
     children: "lubricants",
   },
 ];
@@ -35,21 +36,32 @@ export function Footer() {
 
   return (
     <footer
-      className={
-        "w-full h-full relative flex flex-col md:flex-row p-4 gap-2 items-start content-center justify-evenly border-t-2 border-slate-400"
-      }
+      className={flex({
+        direction: "rowResponsive",
+        justify: "evenly",
+        align: "start",
+        gap: "md",
+        fullWidth: true,
+        className: "p-4 border-t-2 border-slate-400"
+      })}
     >
       <div>
         <ul
-          className={
-            "w-fit h-fit p-2 flex flex-col items-start gap-1 lg:gap-4 content-center justify-evenly "
-          }
+          className={section({
+            spacing: "sm",
+            padding: "sm", 
+            className: "w-fit h-fit"
+          })}
         >
-          <li className="text-xl md:text-2xl lg:text-3xl font-bold tracking-wider">
+          <li className={text({
+            size: "xl",
+            weight: "bold",
+            tracking: "wider"
+          })}>
             <h4>ACI SH.A</h4>
           </li>
-          {footerLinks.map((link, index) => (
-            <FooterLink key={index} href={link.href}>
+          {footerLinks.map((link) => (
+            <FooterLink key={link.href} href={link.href}>
               {tn(link.children)}
             </FooterLink>
           ))}
@@ -57,14 +69,20 @@ export function Footer() {
       </div>
       <div>
         <ul
-          className={
-            "w-fit h-fit p-2 flex flex-col items-start gap-1 lg:gap-4 content-center justify-evenly"
-          }
+          className={section({
+            spacing: "sm",
+            padding: "sm", 
+            className: "w-fit h-fit"
+          })}
         >
-          <li className="text-xl md:text-2xl lg:text-3xl font-bold tracking-wider">
+          <li className={text({
+            size: "xl",
+            weight: "bold",
+            tracking: "wider"
+          })}>
             <h4>{tf("help")}</h4>
           </li>
-          <FooterLink href={"/"}>{tf("which_is_better")}</FooterLink>
+          <FooterLink href={"/"} key="help-link-home">{tf("which_is_better")}</FooterLink>
         </ul>
       </div>
     </footer>
@@ -79,7 +97,11 @@ const FooterLink = ({
   children: ReactNode;
 }) => {
   return (
-    <li className="text-sm md:text-lg lg:text-xl border-b-2 hover:border-b-gray-600 border-b-transparent transition-colors duration-300 ease-in-out">
+    <li className={link({
+      variant: "default",
+      size: "lg",
+      className: "border-b-2 border-b-transparent"
+    })}>
       <Link href={href}>{children}</Link>
     </li>
   );

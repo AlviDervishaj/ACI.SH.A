@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { memo, ReactNode } from "react";
+import { memo, type ReactNode } from "react";
 
 import { title } from "@/components/primitives";
 export const FadeInHeader = memo(

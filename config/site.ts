@@ -12,18 +12,22 @@ export const siteConfig = {
     },
     {
       label: "gallery",
+      name: "Gallery",
       href: "/gallery",
     },
     {
       label: "about_us",
+      name: "About Us",
       href: "/about",
     },
     {
       label: "lubricants",
+      name: "Lubricants",
       href: "/lubricants",
     },
     {
       label: "contact",
+      name: "Contact",
       href: "/contact",
     },
   ],

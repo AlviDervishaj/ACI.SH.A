@@ -1,11 +1,6 @@
 import { useParams } from "next/navigation";
-import {
-  MouseEvent,
-  ReactElement,
-  useMemo,
-  useState,
-  useTransition,
-} from "react";
+import { useMemo, useState, useTransition } from "react";
+import type { MouseEvent, ReactElement } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 import { useRouter, usePathname } from "@/i18n/routing";
@@ -52,7 +47,7 @@ export function LocaleSwitcherSelect({ children, defaultValue }: Props) {
 
         return null;
       }),
-    [children.length, defaultValue],
+    [children, defaultValue],
   );
 
   return (
@@ -68,9 +63,9 @@ export function LocaleSwitcherSelect({ children, defaultValue }: Props) {
       </Button>
       {isActive && (
         <div className="absolute top-auto right-0 bg-background rounded-lg border border-card dark:shadow-background/20 shadow-foreground/20 shadow-xl">
-          {children.map((child, index) => (
+          {children.map((child) => (
             <Button
-              key={index}
+              key={child.props.value}
               className="w-full h-fit py-1 border-b border-slate-700/60 last:border-0 rounded-b-none"
               value={child.props.value}
               variant="ghost"

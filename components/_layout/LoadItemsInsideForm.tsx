@@ -3,7 +3,7 @@ import { LoaderCircle } from "lucide-react";
 import { useFormStatus } from "react-dom";
 
 import { Button } from "@/components/ui/button";
-import { Product } from "@/types/Product";
+import type { Product } from "@/types/Product";
 
 export function LoadItemsInsideForm({ items }: { items: Product[] }) {
   const { pending } = useFormStatus();
@@ -13,6 +13,7 @@ export function LoadItemsInsideForm({ items }: { items: Product[] }) {
       {pending ? (
         <div className="absolute mt-1 rounded-md z-50 p-1 left-0 w-full h-full bg-default-200 flex flex-row items-center content-center justify-center">
           <button
+          type="button"
             className="animate-spin w-fit h-fit flex flex-row items-center content-center"
             onClick={() => {}}
           >

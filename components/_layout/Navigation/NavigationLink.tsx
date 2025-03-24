@@ -2,7 +2,7 @@
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 
-import { siteConfig } from "@/config/site";
+import type { siteConfig } from "@/config/site";
 import { Link, usePathname } from "@/i18n/routing";
 
 export function NavigationBigScreenLinks({
@@ -17,7 +17,7 @@ export function NavigationBigScreenLinks({
     <>
       {links.map((item) => (
         <Link
-          key={item.href}
+          key={`nav-link-${item.href}`}
           aria-current={item.href === pathname ? "page" : undefined}
           className={clsx(
             item.href === pathname

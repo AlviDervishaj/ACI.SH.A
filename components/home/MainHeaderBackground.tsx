@@ -63,7 +63,7 @@ export default function MainHeaderBackground() {
 }
 
 function AnimatedArrow() {
-  const scrolltoHash = function (element_id: string) {
+  const scrolltoHash = (element_id: string) => {
     const element = document.getElementById(element_id);
 
     element?.scrollIntoView({

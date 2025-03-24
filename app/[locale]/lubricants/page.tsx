@@ -19,7 +19,7 @@ export default async function LubricantsPage(props: {
     filter: _filter,
     term: _term,
   } = await props.searchParams;
-  const page = parseInt(_page || "1");
+  const page = Number.parseInt(_page || "1");
   const filter: string[] = _filter ? _filter.split(",").filter((a) => a) : [];
   const term: string = _term || "";
 

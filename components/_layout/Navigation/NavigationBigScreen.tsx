@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 
 import { Link, usePathname } from "@/i18n/routing";
 import { siteConfig } from "@/config/site";
+import { flex, section } from "../../primitives";
 
 export const NavigationBigScreen = () => {
   const t = useTranslations("Navigation");
@@ -14,14 +15,14 @@ export const NavigationBigScreen = () => {
 
   return (
     <DisclosurePanel className="lg:hidden w-full">
-      <div className="space-y-1 px-2 pb-3 pt-2">
-        {/* Search */}
-        {/* <div className="w-full h-full p-0 m-0 inset-y-0">
-          <Search />
-        </div> */}
+      <div className={section({
+        spacing: "sm",
+        padding: "sm",
+        className: "pb-3 pt-2"
+      })}>
         {siteConfig.navItems.map((item) => (
           <DisclosureButton
-            key={item.href}
+            key={`nav-panel-${item.href}`}
             aria-current={item.href === pathname ? "page" : undefined}
             as={Link}
             className={clsx(

@@ -9,7 +9,7 @@ import { usePathname, useRouter } from "@/i18n/routing";
 import { Form, FormControl, FormField, FormItem } from "../ui/form";
 import { Button } from "../ui/button";
 
-import Filters, { filterOptions, Option } from "./Filters";
+import Filters, { filterOptions, type Option } from "./Filters";
 
 type FormType = {
   filter_by: { name: string; value: string }[];
@@ -41,7 +41,7 @@ export const FiltersWrapper = () => {
         form.setValue("filter_by", [filters]);
       }
     }
-  }, [searchParams]);
+  }, [searchParams, form]);
 
   const createQueryString = (name: string, value: string) => {
     const params = new URLSearchParams(searchParams.toString());
@@ -52,14 +52,15 @@ export const FiltersWrapper = () => {
   };
 
   const handleOnSubmit = (data: FormType) => {
-    if (data.filter_by) {
+    if (data.filter_by && data.filter_by.length > 0) {
       const filter = data.filter_by.map((f) => f.value).join(",");
-
-      router.push(pathname + "?" + createQueryString("filter", filter));
-
-      return;
+      router.push(`${pathname}?${createQueryString("filter", filter)}`);
     } else {
-      router.push(pathname);
+      // If no filters, remove filter param and keep other params if any
+      const params = new URLSearchParams(searchParams.toString());
+      params.delete("filter");
+      const queryString = params.toString();
+      router.push(`${pathname}${queryString ? `?${queryString}` : ''}`);
     }
   };
 

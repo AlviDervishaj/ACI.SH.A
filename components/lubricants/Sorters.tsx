@@ -1,7 +1,6 @@
 "use client";
 
-import * as React from "react";
-import { useTransition, useCallback } from "react";
+import { useTransition, useCallback, useState } from "react";
 import { Check, ChevronsUpDown } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -18,7 +17,8 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { SortingOptions } from "@/types/Api";
+import type { SortingOptions } from "@/types/Api";
+import type { Product } from "@/types/Product";
 
 type SortOption = {
   name: string;
@@ -32,7 +32,11 @@ type SortersProps = {
     page: number;
     brand: number;
     prevState: SortingOptions;
-  }) => Promise<{ products: any; error: any; sorting_opts: SortingOptions }>;
+  }) => Promise<{ 
+    products: Product[];
+    error: Error | null;
+    sorting_opts: SortingOptions 
+  }>;
   page: number;
   brand: number;
   emptyMessage?: string;
@@ -53,8 +57,8 @@ export function Sorters({
   emptyMessage = "No sorting options found.",
   placeholder = "Sort by...",
 }: SortersProps) {
-  const [open, setOpen] = React.useState(false);
-  const [value, setValue] = React.useState<string>("");
+  const [open, setOpen] = useState(false);
+  const [value, setValue] = useState<string>("");
   const [isPending, startTransition] = useTransition();
 
   const handleSelect = useCallback(
@@ -94,7 +98,6 @@ export function Sorters({
           aria-expanded={open}
           className="w-[200px] justify-between"
           disabled={isPending}
-          role="combobox"
           variant="outline"
         >
           {value

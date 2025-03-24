@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDebouncedCallback } from "use-debounce";
 import { useSearchParams } from "next/navigation";
 
@@ -23,17 +23,26 @@ export const SearchWrapper = () => {
 
       setTerm(_term);
       const createQueryString = () => {
-        const params = new URLSearchParams(searchParams.toString());
+        const params: URLSearchParams = new URLSearchParams(searchParams.toString());
 
         params.set("term", _term);
 
         return params.toString();
       };
 
-      router.push(pathname + "?" + createQueryString());
+      router.push(`${pathname}?${createQueryString()}`);
     },
-    350,
+    550,
   );
+
+  useEffect(() => {
+    setTerm(searchParams.toString().split("term=")[1] || "");
+  }, [searchParams]);
+
+  const handleClear = () => {
+    setTerm("");
+    router.push(pathname);
+  }
 
   return (
     <>
@@ -41,7 +50,7 @@ export const SearchWrapper = () => {
         <Search value={term} onChange={handleSearch} />
         <Button
           className="self-center h-full m-0 px-3 py-2.5"
-          onClick={() => router.push(pathname)}
+          onClick={handleClear}
         >
           Clear
         </Button>

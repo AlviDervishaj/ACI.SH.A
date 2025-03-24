@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 import { useRouter } from "@/i18n/routing";
 
-export default function Error({
+export default function ErrorPage({
   error,
   reset,
 }: {
@@ -18,12 +18,13 @@ export default function Error({
     /* eslint-disable no-console */
     console.error(error);
     router.push("/");
-  }, [error]);
+  }, [error, router.push]);
 
   return (
     <div>
       <h2>Something went wrong!</h2>
       <button
+      type="button"
         onClick={
           // Attempt to recover by trying to re-render the segment
           () => reset()

@@ -1,5 +1,6 @@
 "use client";
 import { ShoppingCart as SCIcon } from "lucide-react";
+import { useState, useEffect } from "react";
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -9,6 +10,12 @@ import { useRouter } from "@/i18n/routing";
 export default function ShoppingCart() {
   const { totalQuantity } = useShoppingCart();
   const router = useRouter();
+  const [isMounted, setIsMounted] = useState(false);
+  
+  // Only show the badge after component has mounted on the client
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <Button
@@ -17,7 +24,8 @@ export default function ShoppingCart() {
       variant="outline"
       onClick={() => router.push("/cart")}
     >
-      {totalQuantity > 0 && (
+      {/* Only render the badge on the client side */}
+      {isMounted && totalQuantity > 0 && (
         <Badge
           className="absolute -top-2 -right-3 bg-orange-600/50"
           variant="secondary"

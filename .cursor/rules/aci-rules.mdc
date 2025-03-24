@@ -1,0 +1,45 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Aci Sh.A
+
+I am trying to make an e-commerce app for a company located in Albania, called Aci Sh.A. It sells it's oil products ( for cars ) online, and we need to make the code as easy to manage in the future, as idempotent and as refactorable as possible.
+
+- Never use the default import of React. 
+Always use named exports for variables, types, components.
+It's more clear that way.
+- Always look for idempotent solutions.
+- Never use classes.
+- Always use types and not interfaces.
+- Optimize re-renders.
+- Handle a good shopping cart / context logic.
+
+How this project is set up ?
+1. I use NextJs, Typescript, Biome, Tailwind, ShadCn.
+2. I use the Supabase API to integrate a messaging feature, where users can leave a message and it gets stored there until an admin sees the message.
+3. The backend is provided by my friend and is written in Python with Django REST.
+4. Below is an list of API's that the backend exposes.
+
+    a. If path is localhost:8000/product  :
+      Using the URLconf defined in ACIBackEnd.urls, Django tried these URL patterns, in this order:
+        product/ list/ [name='product-list']
+        product/ list<drf_format_suffix:format> [name='product-list']
+        product/ create/ [name='product-create']
+        product/ create<drf_format_suffix:format> [name='product-create']
+        product/ update/<int:pk>/ [name='product-update']
+        product/ update/<int:pk><drf_format_suffix:format> [name='product-update']
+        product/ category/list/create/ [name='category-list-create']
+        product/ category/list/create<drf_format_suffix:format> [name='category-list-create']
+        product/ brand/list/create/ [name='brand-list-create']
+        product/ brand/list/create<drf_format_suffix:format> [name='brand-list-create']
+        product/ order/create/ [name='order-create']
+        product/ order/create<drf_format_suffix:format> [name='order-create']
+        product/ order/list/ [name='order-list']
+        product/ order/list<drf_format_suffix:format> [name='order-list']
+        product/ discount/set/
+        product/ discount/set<drf_format_suffix:format>
+    The API structure is kinda messy for me so I am relying on you to provide the correct paths and correct params for the API request to be successful.
+With that said, that's all the rules for now. You can go and solve the stupid problems that I can not :)).

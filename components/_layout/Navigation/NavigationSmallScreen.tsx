@@ -2,8 +2,8 @@ import Image from "next/image";
 import { DisclosureButton } from "@headlessui/react";
 import { Menu as MIcon, X } from "lucide-react";
 
-import { Link } from "@/i18n/routing";
 import { siteConfig } from "@/config/site";
+import { Link } from "@/i18n/routing";
 
 import { ThemeSwitch } from "../ThemeSwitcher";
 import { LocaleSwitcher } from "../LocaleSwitcher";
@@ -21,6 +21,7 @@ export const NavigationSmallScreen = () => {
             <Link
               className="flex justify-start items-center gap-1 justify-self-start"
               href="/"
+              key="logo-link"
             >
               <Image
                 priority

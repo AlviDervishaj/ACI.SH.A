@@ -3,8 +3,8 @@ import Image from "next/image";
 import { Minus, Plus } from "lucide-react";
 import { useFormatter } from "next-intl";
 
-import { ShoppingCartProductsType } from "@/types/Providers";
-import { Product } from "@/types/Product";
+import type { ShoppingCartProductsType } from "@/types/Providers";
+import type { Product } from "@/types/Product";
 
 import { Button } from "../ui/button";
 

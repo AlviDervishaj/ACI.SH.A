@@ -10,9 +10,15 @@ const MainHeaderBackground = dynamic(
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 h-full relative">
-      <MainHeaderBackground />
-      <BestSellers />
-      <AvailableLubricants />
+      <div key="home-header">
+        <MainHeaderBackground />
+      </div>
+      <div key="home-bestsellers">
+        <BestSellers />
+      </div>
+      <div key="home-lubricants">
+        <AvailableLubricants />
+      </div>
     </section>
   );
 }

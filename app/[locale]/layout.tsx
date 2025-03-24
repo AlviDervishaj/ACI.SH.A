@@ -3,10 +3,10 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { Metadata, Viewport } from "next";
-// Components
+import type { Metadata, Viewport } from "next";
 import clsx from "clsx";
 import { Suspense } from "react";
+// Components
 
 import { NavigationUI as Navigation } from "@/components/_layout/Navigation";
 import { Footer } from "@/components/_layout/Footer";
@@ -53,7 +53,7 @@ export default async function RootLayout(props: {
   const { locale } = params;
   const { children } = props;
 
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as "en" | "al")) {
     notFound();
   }
   const messages = await getMessages();
@@ -68,6 +68,7 @@ export default async function RootLayout(props: {
         <HeadData />
       </head>
       <body
+        suppressHydrationWarning={true}
         className={clsx(
           "w-full min-h-dvh font-sans antialiased relative overflow-y-auto overflow-x-hidden",
           fontSans.variable,
