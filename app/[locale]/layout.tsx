@@ -1,9 +1,10 @@
 // Next Stuff
+import type { Metadata, Viewport } from "next";
+
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
-import type { Metadata, Viewport } from "next";
 import clsx from "clsx";
 import { Suspense } from "react";
 // Components
@@ -68,11 +69,11 @@ export default async function RootLayout(props: {
         <HeadData />
       </head>
       <body
-        suppressHydrationWarning={true}
         className={clsx(
           "w-full min-h-dvh font-sans antialiased relative overflow-y-auto overflow-x-hidden",
           fontSans.variable,
         )}
+        suppressHydrationWarning={true}
       >
         <Providers locale={locale} messages={messages}>
           <div className="flex flex-col min-h-dvh max-h-fit overflow-y-auto">

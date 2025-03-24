@@ -23,7 +23,9 @@ export const SearchWrapper = () => {
 
       setTerm(_term);
       const createQueryString = () => {
-        const params: URLSearchParams = new URLSearchParams(searchParams.toString());
+        const params: URLSearchParams = new URLSearchParams(
+          searchParams.toString(),
+        );
 
         params.set("term", _term);
 
@@ -42,7 +44,7 @@ export const SearchWrapper = () => {
   const handleClear = () => {
     setTerm("");
     router.push(pathname);
-  }
+  };
 
   return (
     <>

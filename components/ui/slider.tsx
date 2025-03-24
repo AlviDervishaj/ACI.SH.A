@@ -21,15 +21,16 @@ const Slider = React.forwardRef<
       <SliderPrimitive.Range className="absolute h-full bg-orange-500 dark:bg-orange-500" />
     </SliderPrimitive.Track>
     {/* Create as many thumbs as there are values in the array */}
-    {Array.isArray(props.value) 
-      ? props.value.map((value, i) => (
-          <SliderPrimitive.Thumb 
-            key={`thumb-${i}-${value}`}
-            className="block h-5 w-5 rounded-full border-2 border-orange-500 bg-white ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:border-orange-400 dark:bg-neutral-950 dark:ring-offset-neutral-950 dark:focus-visible:ring-orange-400" 
-          />
-        ))
-      : <SliderPrimitive.Thumb className="block h-5 w-5 rounded-full border-2 border-orange-500 bg-white ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:border-orange-400 dark:bg-neutral-950 dark:ring-offset-neutral-950 dark:focus-visible:ring-orange-400" />
-    }
+    {Array.isArray(props.value) ? (
+      props.value.map((value, i) => (
+        <SliderPrimitive.Thumb
+          key={`thumb-${i}-${value}`}
+          className="block h-5 w-5 rounded-full border-2 border-orange-500 bg-white ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:border-orange-400 dark:bg-neutral-950 dark:ring-offset-neutral-950 dark:focus-visible:ring-orange-400"
+        />
+      ))
+    ) : (
+      <SliderPrimitive.Thumb className="block h-5 w-5 rounded-full border-2 border-orange-500 bg-white ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:border-orange-400 dark:bg-neutral-950 dark:ring-offset-neutral-950 dark:focus-visible:ring-orange-400" />
+    )}
   </SliderPrimitive.Root>
 ));
 

@@ -11,7 +11,7 @@ export default function ShoppingCart() {
   const { totalQuantity } = useShoppingCart();
   const router = useRouter();
   const [isMounted, setIsMounted] = useState(false);
-  
+
   // Only show the badge after component has mounted on the client
   useEffect(() => {
     setIsMounted(true);

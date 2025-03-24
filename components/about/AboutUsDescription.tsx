@@ -7,12 +7,12 @@ export default function AboutUsDescription() {
 
   return (
     <section className="space-y-9 py-6 px-4 md:px-6">
-      <h1 className={`${title({fullWidth: true, size: "sm"})} !w-full text-left`}>
+      <h1
+        className={`${title({ fullWidth: true, size: "sm" })} !w-full text-left`}
+      >
         {t.rich("header", {
           distributor: (chunk) => (
-            <p className={title({ size: "md", color: "orange" })}>
-              {chunk}
-            </p>
+            <p className={title({ size: "md", color: "orange" })}>{chunk}</p>
           ),
         })}
       </h1>

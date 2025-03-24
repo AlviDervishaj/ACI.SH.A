@@ -19,9 +19,9 @@ export const NavigationSmallScreen = () => {
         <div className="flex flex-1 items-center justify-between lg:justify-start">
           <div className="flex shrink-0 items-center justify-self-center self-center">
             <Link
+              key="logo-link"
               className="flex justify-start items-center gap-1 justify-self-start"
               href="/"
-              key="logo-link"
             >
               <Image
                 priority

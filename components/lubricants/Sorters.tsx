@@ -1,5 +1,8 @@
 "use client";
 
+import type { SortingOptions } from "@/types/Api";
+import type { Product } from "@/types/Product";
+
 import { useTransition, useCallback, useState } from "react";
 import { Check, ChevronsUpDown } from "lucide-react";
 
@@ -17,8 +20,6 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import type { SortingOptions } from "@/types/Api";
-import type { Product } from "@/types/Product";
 
 type SortOption = {
   name: string;
@@ -32,10 +33,10 @@ type SortersProps = {
     page: number;
     brand: number;
     prevState: SortingOptions;
-  }) => Promise<{ 
+  }) => Promise<{
     products: Product[];
     error: Error | null;
-    sorting_opts: SortingOptions 
+    sorting_opts: SortingOptions;
   }>;
   page: number;
   brand: number;
@@ -76,15 +77,10 @@ export function Sorters({
             page,
             brand,
             prevState: { sort: [], filter: [] },
-          })
-            .then((result) => {
-              // eslint-disable-next-line no-console
-              console.log(result);
-            })
-            .catch((error) => {
-              // eslint-disable-next-line no-console
-              console.error("Error in setSortingAction:", error);
-            });
+          }).catch((error) => {
+            // eslint-disable-next-line no-console
+            console.error("Error in setSortingAction:", error);
+          });
         }
       });
     },

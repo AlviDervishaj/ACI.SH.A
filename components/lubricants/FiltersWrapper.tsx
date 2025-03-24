@@ -54,13 +54,16 @@ export const FiltersWrapper = () => {
   const handleOnSubmit = (data: FormType) => {
     if (data.filter_by && data.filter_by.length > 0) {
       const filter = data.filter_by.map((f) => f.value).join(",");
+
       router.push(`${pathname}?${createQueryString("filter", filter)}`);
     } else {
       // If no filters, remove filter param and keep other params if any
       const params = new URLSearchParams(searchParams.toString());
+
       params.delete("filter");
       const queryString = params.toString();
-      router.push(`${pathname}${queryString ? `?${queryString}` : ''}`);
+
+      router.push(`${pathname}${queryString ? `?${queryString}` : ""}`);
     }
   };
 

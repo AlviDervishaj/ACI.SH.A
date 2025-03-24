@@ -1,8 +1,9 @@
 "use client";
+import type { siteConfig } from "@/config/site";
+
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 
-import type { siteConfig } from "@/config/site";
 import { Link, usePathname } from "@/i18n/routing";
 
 export function NavigationBigScreenLinks({

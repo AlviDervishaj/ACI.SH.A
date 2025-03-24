@@ -6,9 +6,9 @@ export type ListProducts = {
 };
 
 export type SortingOptions = {
-  sort: string[],
-  filter: string[]
-}
+  sort: string[];
+  filter: string[];
+};
 
 export type Pagination = {
   count: number;

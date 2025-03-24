@@ -12,7 +12,11 @@ export type FilterState = {
 
 // Mock data (to be replaced with API data)
 export const CATEGORIES: CategoryOption[] = [
-  { id: "engine_oil", name: "Engine Oil", description: "Oils for vehicle engines" },
+  {
+    id: "engine_oil",
+    name: "Engine Oil",
+    description: "Oils for vehicle engines",
+  },
   { id: "transmission_fluid", name: "Transmission Fluid" },
   { id: "brake_fluid", name: "Brake Fluid" },
   { id: "hydraulic_oil", name: "Hydraulic Oil" },
@@ -30,4 +34,4 @@ export const BRANDS: BrandOption[] = [
 
 // Min and max price can be adjusted based on your products
 export const MIN_PRICE = 0;
-export const MAX_PRICE = 100; 
+export const MAX_PRICE = 100;

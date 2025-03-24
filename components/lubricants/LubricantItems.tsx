@@ -32,7 +32,7 @@ export const LubricantItems = async ({
         <div className="w-full h-fit pt-4">
           <SearchWrapper />
         </div>
-        
+
         {/* Filters and Sorting Section */}
         <div className="w-full flex flex-wrap items-center justify-between gap-4 pt-5 pb-3 border-b-2 border-slate-400 dark:border-slate-700">
           {/* Left section - Basic & Advanced filters */}
@@ -40,7 +40,7 @@ export const LubricantItems = async ({
             <FiltersWrapper />
             <AdvancedFilterMenu />
           </div>
-          
+
           {/* Right section - Sorting */}
           <div className="ml-auto">
             <PriceSorter />

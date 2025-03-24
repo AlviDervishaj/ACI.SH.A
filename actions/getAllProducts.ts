@@ -1,7 +1,7 @@
 import "server-only";
-import { PRODUCTS_API } from "@/config/api";
+import type { ListProducts } from "../types/Api";
 
-import { ListProducts } from "../types/Api";
+import { PRODUCTS_API } from "@/config/api";
 
 const buildProductUrl = (
   page?: number,
@@ -14,7 +14,7 @@ const buildProductUrl = (
   if (page) {
     url += `?page=${page}`;
   } else {
-    url += `?page=1`;
+    url += "?page=1";
   }
   if (filter && Object.keys(filter).length > 0) {
     url += `&filter=${JSON.stringify(filter)}`;
@@ -31,16 +31,16 @@ export const getAllProducts = async (
   products: ListProducts;
   error: string | null;
 }> => {
-  let filter_opts: { [key: string]: boolean | string } = {};
+  const filter_opts: { [key: string]: boolean | string } = {};
 
   if (filters && filters.filter.length > 0) {
     if (term && term.trim() !== "") {
-      filter_opts["name"] = term;
+      filter_opts.name = term;
     }
     filters.map((filter) => {
       const inverse = filter.includes("not_");
       const filterName = inverse ? filter.split("not_")[1] : filter;
-      const filterValue = inverse ? false : true;
+      const filterValue = !inverse;
 
       filter_opts[filterName] = filterValue;
 
@@ -49,7 +49,7 @@ export const getAllProducts = async (
   }
   const endpoint = buildProductUrl(page, filter_opts);
   let error = null;
-  let result: ListProducts = {
+  const result: ListProducts = {
     data: [],
     pagination: { previous: null, count: 0, next: null },
   };
@@ -61,10 +61,10 @@ export const getAllProducts = async (
     result.data = data.data;
     result.pagination = data.pagination;
   } catch (_error) {
-    error = "Something unexpected happened. Please try again later.";
+    error = "An error occurred while fetching products.";
     // eslint-disable-next-line no-console
-    console.log({ getAllProductsError: _error });
-  } finally {
-    return { products: result, error };
+    console.error("Error in getAllProducts:", _error);
   }
+
+  return { products: result, error };
 };

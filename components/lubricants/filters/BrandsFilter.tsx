@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import {
@@ -28,33 +29,33 @@ export const BrandsFilter = ({
         Brands
       </AccordionTrigger>
       <AccordionContent>
-        <motion.div 
+        <motion.div
+          animate={{ opacity: 1 }}
           className="space-y-2"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
           transition={{ staggerChildren: 0.1, delayChildren: 0.2 }}
         >
           {brands.map((brand, index) => (
-            <motion.div 
-              key={brand.id} 
+            <motion.div
+              key={brand.id}
+              animate={{ opacity: 1, x: 0 }}
               className="flex items-center space-x-2"
               initial={{ opacity: 0, x: -10 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ 
+              transition={{
                 delay: 0.1 * index,
                 type: "spring",
                 stiffness: 300,
-                damping: 24
+                damping: 24,
               }}
             >
-              <Checkbox 
-                id={`brand-${brand.id}`} 
+              <Checkbox
                 checked={selectedBrands.includes(brand.id)}
+                id={`brand-${brand.id}`}
                 onCheckedChange={() => onToggleBrand(brand.id)}
               />
-              <Label 
-                htmlFor={`brand-${brand.id}`}
+              <Label
                 className="cursor-pointer text-sm"
+                htmlFor={`brand-${brand.id}`}
               >
                 {brand.name}
               </Label>
@@ -64,4 +65,4 @@ export const BrandsFilter = ({
       </AccordionContent>
     </AccordionItem>
   );
-}; 
+};

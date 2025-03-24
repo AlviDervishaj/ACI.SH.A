@@ -76,8 +76,8 @@ export const container = tv({
   },
   defaultVariants: {
     size: "md",
-    center: true
-  }
+    center: true,
+  },
 });
 
 // Section layouts
@@ -99,12 +99,12 @@ export const section = tv({
       sm: "py-4 px-2",
       md: "py-6 px-4 md:px-6",
       lg: "py-8 px-4 md:px-8",
-    }
+    },
   },
   defaultVariants: {
     spacing: "md",
-    padding: "md"
-  }
+    padding: "md",
+  },
 });
 
 // Flex layouts
@@ -271,9 +271,11 @@ export const buttonCustom = tv({
   base: "",
   variants: {
     customVariant: {
-      accent: "hover:border-orange-600 hover:bg-orange-500/60 transition-colors ease-in-out duration-200 active:bg-orange-500 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700/80 dark:border-slate-600 dark:hover:border-orange-400",
+      accent:
+        "hover:border-orange-600 hover:bg-orange-500/60 transition-colors ease-in-out duration-200 active:bg-orange-500 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700/80 dark:border-slate-600 dark:hover:border-orange-400",
       dark: "dark:border-slate-600 dark:hover:bg-slate-800/50 dark:text-slate-200",
-      neutral: "bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-900 dark:text-gray-100",
+      neutral:
+        "bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-900 dark:text-gray-100",
     },
   },
 });

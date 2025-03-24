@@ -1,7 +1,7 @@
 "use client";
-import { useCallback, useEffect, useState } from "react";
+import type { ListProducts } from "@/types/Api";
 
-import { ListProducts } from "@/types/Api";
+import { useCallback, useEffect, useState } from "react";
 
 const apiEndpoint = process.env.NEXT_PUBLIC_ACI_ENDPOINT;
 
@@ -27,7 +27,8 @@ export const useGetProducts = () => {
     } catch (error) {
       setProducts(_initialState);
       // An error occurred while fetching products.
-      setError("");
+      setError("An error occurred while fetching products.");
+      throw error;
     } finally {
       setIsLoading(false);
     }

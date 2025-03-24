@@ -1,6 +1,7 @@
+import type { MouseEvent, ReactElement } from "react";
+
 import { useParams } from "next/navigation";
 import { useMemo, useState, useTransition } from "react";
-import type { MouseEvent, ReactElement } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 import { useRouter, usePathname } from "@/i18n/routing";

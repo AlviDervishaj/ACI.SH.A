@@ -1,5 +1,7 @@
 "use client";
 
+import type { ListProducts } from "@/types/Api";
+
 import useSWR from "swr";
 import { useTranslations } from "next-intl";
 
@@ -8,7 +10,6 @@ import { TryAgainLater } from "@/components/_layout/TryAgainLater";
 import { Link } from "@/i18n/routing";
 import { fetcher } from "@/lib/utils";
 import { PRODUCTS_API } from "@/config/api";
-import type { ListProducts } from "@/types/Api";
 
 import LubricantItem from "../lubricants/LubricantItem";
 import { container, flex, section, title } from "../primitives";
@@ -23,7 +24,7 @@ export default function BestSellers() {
   return (
     <section className={container({ size: "lg" })}>
       <div className={flex({ justify: "between" })}>
-        <h2 
+        <h2
           className={title({ size: "sm", color: "foreground" })}
           id="bestSellers"
         >
@@ -38,13 +39,13 @@ export default function BestSellers() {
       </div>
 
       {error && <TryAgainLater />}
-      
+
       {isLoading && (
         <div className={flex({ justify: "center", fullWidth: true })}>
           <Loading />
         </div>
       )}
-      
+
       {data && data.data.length >= 1 && (
         <div className={section({ grid: 3 })}>
           {data.data.slice(0, 3).map((item) => (

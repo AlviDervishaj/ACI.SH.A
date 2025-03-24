@@ -1,6 +1,8 @@
+import type { ReactNode } from "react";
+
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import type { ReactNode } from "react";
+
 import { flex, section, text, link } from "../primitives";
 
 type FooterLinkTypes = {
@@ -42,22 +44,24 @@ export function Footer() {
         align: "start",
         gap: "md",
         fullWidth: true,
-        className: "p-4 border-t-2 border-slate-400"
+        className: "p-4 border-t-2 border-slate-400",
       })}
     >
       <div>
         <ul
           className={section({
             spacing: "sm",
-            padding: "sm", 
-            className: "w-fit h-fit"
+            padding: "sm",
+            className: "w-fit h-fit",
           })}
         >
-          <li className={text({
-            size: "xl",
-            weight: "bold",
-            tracking: "wider"
-          })}>
+          <li
+            className={text({
+              size: "xl",
+              weight: "bold",
+              tracking: "wider",
+            })}
+          >
             <h4>ACI SH.A</h4>
           </li>
           {footerLinks.map((link) => (
@@ -71,18 +75,22 @@ export function Footer() {
         <ul
           className={section({
             spacing: "sm",
-            padding: "sm", 
-            className: "w-fit h-fit"
+            padding: "sm",
+            className: "w-fit h-fit",
           })}
         >
-          <li className={text({
-            size: "xl",
-            weight: "bold",
-            tracking: "wider"
-          })}>
+          <li
+            className={text({
+              size: "xl",
+              weight: "bold",
+              tracking: "wider",
+            })}
+          >
             <h4>{tf("help")}</h4>
           </li>
-          <FooterLink href={"/"} key="help-link-home">{tf("which_is_better")}</FooterLink>
+          <FooterLink key="help-link-home" href={"/"}>
+            {tf("which_is_better")}
+          </FooterLink>
         </ul>
       </div>
     </footer>
@@ -97,11 +105,13 @@ const FooterLink = ({
   children: ReactNode;
 }) => {
   return (
-    <li className={link({
-      variant: "default",
-      size: "lg",
-      className: "border-b-2 border-b-transparent"
-    })}>
+    <li
+      className={link({
+        variant: "default",
+        size: "lg",
+        className: "border-b-2 border-b-transparent",
+      })}
+    >
       <Link href={href}>{children}</Link>
     </li>
   );

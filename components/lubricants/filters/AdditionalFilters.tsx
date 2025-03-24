@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import {
@@ -24,30 +25,25 @@ export const AdditionalFilters = ({
         Additional Filters
       </AccordionTrigger>
       <AccordionContent>
-        <motion.div 
+        <motion.div
+          animate={{ opacity: 1 }}
           className="space-y-4"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
           {/* In Stock Filter */}
-          <motion.div 
+          <motion.div
+            animate={{ opacity: 1, y: 0 }}
             className="flex items-center space-x-2"
             initial={{ opacity: 0, y: 5 }}
-            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.3 }}
           >
-            <Checkbox 
-              id="in-stock" 
+            <Checkbox
               checked={inStock}
-              onCheckedChange={(checked) => 
-                onToggleInStock(checked as boolean)
-              }
+              id="in-stock"
+              onCheckedChange={(checked) => onToggleInStock(checked as boolean)}
             />
-            <Label 
-              htmlFor="in-stock"
-              className="cursor-pointer text-sm"
-            >
+            <Label className="cursor-pointer text-sm" htmlFor="in-stock">
               In Stock Only
             </Label>
           </motion.div>
@@ -55,4 +51,4 @@ export const AdditionalFilters = ({
       </AccordionContent>
     </AccordionItem>
   );
-}; 
+};

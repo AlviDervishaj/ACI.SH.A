@@ -1,7 +1,7 @@
 import "server-only";
-import { PRODUCTS_API } from "@/config/api";
+import type { ListProducts } from "../types/Api";
 
-import { ListProducts } from "../types/Api";
+import { PRODUCTS_API } from "@/config/api";
 
 export const getOneProduct = async (
   product_name: string,
@@ -11,7 +11,7 @@ export const getOneProduct = async (
 }> => {
   const endpoint: string = PRODUCTS_API.GET_ONE(product_name);
   let error: string | null = null;
-  let result: ListProducts = {
+  const result: ListProducts = {
     data: [],
     pagination: { previous: null, count: 0, next: null },
   };
@@ -23,10 +23,10 @@ export const getOneProduct = async (
     result.data = data.data;
     result.pagination = data.pagination;
   } catch (_error) {
-    error = "Something unexpected happened. Please try again later.";
+    error = "An error occurred while fetching products.";
     // eslint-disable-next-line no-console
-    console.log({ getAllProductsError: _error });
-  } finally {
-    return { products: result, error };
+    console.error("Error in getOneProduct:", _error);
   }
+
+  return { products: result, error };
 };

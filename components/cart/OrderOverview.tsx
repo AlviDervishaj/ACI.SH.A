@@ -1,6 +1,6 @@
-import { useFormatter } from "next-intl";
-
 import type { useShoppingCart } from "@/providers/ShoppingCartProvider";
+
+import { useFormatter } from "next-intl";
 
 import { ScrollArea } from "../ui/scroll-area";
 

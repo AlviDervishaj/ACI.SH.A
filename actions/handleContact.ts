@@ -1,9 +1,10 @@
 "use server";
+import type { Tables } from "@/types/Database";
+
 import { createClient } from "@/lib/supabase/server";
-import { Tables } from "@/types/Database";
 
 // prevState and formData
-export async function handleContact(_: any, formData: FormData) {
+export async function handleContact(_prevState: unknown, formData: FormData) {
   const rawFormData = {
     firstName: formData.get("first_name"),
     lastName: formData.get("last_name"),
@@ -16,17 +17,17 @@ export async function handleContact(_: any, formData: FormData) {
     rawFormData.firstName.toString().trim() === ""
   ) {
     return { error: "Please provide a first name.", message: "" };
-  } else if (
-    !rawFormData.lastName ||
-    rawFormData.lastName.toString().trim() === ""
-  ) {
+  }
+
+  if (!rawFormData.lastName || rawFormData.lastName.toString().trim() === "") {
     return { error: "Please provide a last name.", message: "" };
-  } else if (!rawFormData.email || rawFormData.email.toString().trim() === "") {
+  }
+
+  if (!rawFormData.email || rawFormData.email.toString().trim() === "") {
     return { error: "Please provide an email.", message: "" };
-  } else if (
-    !rawFormData.message ||
-    rawFormData.message.toString().trim() === ""
-  ) {
+  }
+
+  if (!rawFormData.message || rawFormData.message.toString().trim() === "") {
     return { error: "Please provide a message.", message: "" };
   }
 
@@ -40,9 +41,7 @@ export async function handleContact(_: any, formData: FormData) {
   const supabase = await createClient();
   const { error, status } = await supabase.from("messages").insert([_data]);
 
-  if (status !== 201) {
-    console.log({ error });
-
+  if (status !== 201 && error) {
     return {
       error: "An error occurred while sending the message.",
       message: "",

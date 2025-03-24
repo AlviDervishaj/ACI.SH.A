@@ -7,7 +7,8 @@ import { useTranslations } from "next-intl";
 
 import { Link, usePathname } from "@/i18n/routing";
 import { siteConfig } from "@/config/site";
-import { flex, section } from "../../primitives";
+
+import { section } from "../../primitives";
 
 export const NavigationBigScreen = () => {
   const t = useTranslations("Navigation");
@@ -15,11 +16,13 @@ export const NavigationBigScreen = () => {
 
   return (
     <DisclosurePanel className="lg:hidden w-full">
-      <div className={section({
-        spacing: "sm",
-        padding: "sm",
-        className: "pb-3 pt-2"
-      })}>
+      <div
+        className={section({
+          spacing: "sm",
+          padding: "sm",
+          className: "pb-3 pt-2",
+        })}
+      >
         {siteConfig.navItems.map((item) => (
           <DisclosureButton
             key={`nav-panel-${item.href}`}
