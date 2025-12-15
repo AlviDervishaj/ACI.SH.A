@@ -58,7 +58,7 @@
     "input-otp": "^1.4.2",
     "intl-messageformat": "^10.7.16",
     "lucide-react": "^0.445.0",
-    "next": "^15.2.3",
+    "next": "15.2.8",
     "next-intl": "^3.26.5",
     "next-themes": "^0.3.0",
     "react": "^18.3.1",
